@@ -10,17 +10,21 @@ All credit belongs entirely to the original authors and the communities that spe
 
 This repository is built on the hard work of the following projects. Here is the exact list of sources pulled during the automation process:
 
-* [EasyList](https://easylist.to/easylist/easylist.txt)
-* [Fanboy's Cookie Monster List](https://secure.fanboy.co.nz/fanboy-cookiemonster.txt)
-* [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt)
-* [Fanboy's Annoyance List](https://secure.fanboy.co.nz/fanboy-annoyance.txt)
-* [Fanboy's Social Blocking List](https://easylist.to/easylist/fanboy-social.txt)
 * [1Hosts (Lite)](https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/hosts.txt)
 * [1Hosts (Xtra)](https://raw.githubusercontent.com/badmojr/1Hosts/refs/heads/master/Xtra/adblock.txt)
+* [AdGuard Annoyances Filter](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)
 * [AdGuard Base Filter](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt)
 * [AdGuard Tracking Protection](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt)
 * [AdGuard URL Tracking Filter](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt)
-* [AdGuard Annoyances Filter](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)
+* [Dan Pollock's Hosts File](https://someonewhocares.org/hosts/hosts)
+* [EasyList](https://easylist.to/easylist/easylist.txt)
+* [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt)
+* [Fanboy's Annoyance List](https://secure.fanboy.co.nz/fanboy-annoyance.txt)
+* [Fanboy's Cookie Monster List](https://secure.fanboy.co.nz/fanboy-cookiemonster.txt)
+* [Fanboy's Social Blocking List](https://easylist.to/easylist/fanboy-social.txt)
+* [OISD Big](https://big.oisd.nl/domainswild)
+* [Peter Lowe's Ad and Tracking Server List](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext)
+* [Steven Black's Hosts](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)
 
 ### How It Works
 
