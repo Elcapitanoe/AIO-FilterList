@@ -9,3 +9,7 @@ adguard-base.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/m
 adguard-tracking.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
 adguard-tracking-url.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
 adguard-annoyances.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt
+peter-lowes-ad-tracking-server.txt https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
+steven-black-host.txt https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+oisd-big.txt https://big.oisd.nl/domainswild
+dan-pollock-host.txt https://someonewhocares.org/hosts/hosts
