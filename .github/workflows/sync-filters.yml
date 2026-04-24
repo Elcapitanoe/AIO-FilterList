@@ -28,17 +28,19 @@ jobs:
       - name: Generate AIO merged list
         run: ./scripts/merge_filters.sh
 
+      - name: Update README dynamic table
+        run: ./scripts/update_readme.sh
+
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Stage the raw filters, generated AIO list, and the build log
-          git add filters/ AIO_Filter_List.txt build.log
+          git add filters/ AIO_Filter_List.txt build.log README.md
           
           if git diff-index --quiet HEAD --; then
             echo "No upstream changes detected today. Skipping commit."
           else
-            git commit -m "feat(filters): update AIO list and generate build log" -m "Automated routine triggered by GitHub Actions."
+            git commit -m "build(core): overhaul automation and inject dynamic README table" -m "Automated routine triggered by GitHub Actions."
             git push
           fi
