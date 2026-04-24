@@ -36,6 +36,7 @@ This repository is built on the hard work of the following projects. Here is the
 | Peter Lowe's Ad and Tracking Server List | [Original](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext) | [Mirror](https://hosts.domi.my.id/filters/peter-lowes-ad-tracking-server.txt) | 2026-04-23 |
 | Spam404 Blocklist | [Original](https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt) | [Mirror](https://hosts.domi.my.id/filters/spam404-blocklist.txt) | - |
 | Steven Black's Hosts | [Original](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts) | [Mirror](https://hosts.domi.my.id/filters/steven-black-host.txt) | 2026-04-23 |
+| URLhaus Malicious URL Blocklist | [Original](https://malware-filter.gitlab.io/malware-filter/urlhaus-filter.txt) | [Mirror](https://hosts.domi.my.id/filters/urlhaus-malicious.txt) | - |
 
 ### How It Works
 
