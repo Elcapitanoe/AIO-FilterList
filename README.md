@@ -16,23 +16,6 @@ https://hosts.domi.my.id/AIO_Filter_List.txt
 
 This repository is built on the hard work of the following projects. Here is the exact list of sources pulled during the automation process:
 
-* [1Hosts (Lite)](https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/hosts.txt)
-* [1Hosts (Xtra)](https://raw.githubusercontent.com/badmojr/1Hosts/refs/heads/master/Xtra/adblock.txt)
-* [AdGuard Annoyances Filter](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt)
-* [AdGuard Base Filter](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt)
-* [AdGuard Tracking Protection](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt)
-* [AdGuard URL Tracking Filter](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt)
-* [Dan Pollock's Hosts File](https://someonewhocares.org/hosts/hosts)
-* [EasyList](https://easylist.to/easylist/easylist.txt)
-* [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt)
-* [Fanboy's Annoyance List](https://secure.fanboy.co.nz/fanboy-annoyance.txt)
-* [Fanboy's Cookie Monster List](https://secure.fanboy.co.nz/fanboy-cookiemonster.txt)
-* [Fanboy's Social Blocking List](https://easylist.to/easylist/fanboy-social.txt)
-* [OISD Big](https://big.oisd.nl/domainswild)
-* [Peter Lowe's Ad and Tracking Server List](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext)
-* [Spam404 Blocklist](https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt)
-* [Steven Black's Hosts](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)
-
 ### How It Works
 
 A GitHub Action runs automatically every day to pull the latest raw text files from the URLs listed above. The script strips out the original metadata headers to prevent parsing errors, removes duplicate rules to keep the file lightweight, and compiles everything into the `AIO_Filter_List.txt` file located in the root directory.
