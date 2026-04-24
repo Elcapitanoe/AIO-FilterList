@@ -13,3 +13,4 @@ peter-lowes-ad-tracking-server.txt https://pgl.yoyo.org/adservers/serverlist.php
 steven-black-host.txt https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 oisd-big.txt https://big.oisd.nl/domainswild
 dan-pollock-host.txt https://someonewhocares.org/hosts/hosts
+spam404-blocklist.txt https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
