@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202604240122
+! Version: 202604240347
 ! Title: Fanboy's Social Blocking List
-! Last modified: 24 Apr 2026 01:22 UTC
+! Last modified: 24 Apr 2026 03:47 UTC
 ! Expires: 4 days (update frequency)
-! Commit: ffab0f5500ffd7e3035e95a0d0ab991f8ed8d62d
+! Commit: 304bd36cff7c341b41ebf9bd7055fc3453a5100b
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -11140,6 +11140,7 @@ cultofmac.com##.google-preferred-source
 restofworld.org##.google-preferred-v1
 bolde.com##.google-source-button
 goal.com##.google-trusted-source
+scientificamerican.com##.google_cta-CuF5m
 coinpedia.org##.google_news-space
 techadvisor.com##.google_news_button
 oilprice.com##.google_preferred_source_banner_sidebar
