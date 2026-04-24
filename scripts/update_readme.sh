@@ -17,7 +17,7 @@ echo "All credit belongs entirely to the original authors and the communities th
 echo "" >> "$README_FILE"
 echo "### Direct Access" >> "$README_FILE"
 echo '```text' >> "$README_FILE"
-echo "[https://hosts.domi.my.id/AIO_Filter_List.txt](https://hosts.domi.my.id/AIO_Filter_List.txt)" >> "$README_FILE"
+echo "https://hosts.domi.my.id/AIO_Filter_List.txt" >> "$README_FILE"
 echo '```' >> "$README_FILE"
 echo "" >> "$README_FILE"
 echo "### Upstream Sources" >> "$README_FILE"
@@ -40,16 +40,21 @@ sort -t '|' -k3 -f "$CONFIG_FILE" | while IFS='|' read -r filename url title; do
         if [[ -n "$EXTRACTED" ]]; then
             CLEAN_DATE=$(echo "$EXTRACTED" | sed -E 's/[\.\+]+$//g' | sed 's/T/ /g')
             if [[ "$CLEAN_DATE" =~ ^[0-9]{12}$ ]]; then
-                CLEAN_DATE=$(echo "$CLEAN_DATE" | sed -E 's/([0-9]{4})([0-9]{2})([0-9]{2})([0-9]{2})([0-9]{2})/\1-\2-\3 \4:\5:00/')
+                CLEAN_DATE=$(echo "$CLEAN_DATE" | sed -E 's/([0-9]{4})([0-9]{2})([0-9]{2}).*/\1-\2-\3/')
             fi
-            PARSED_DATE=$(date -u -d "$CLEAN_DATE" +'%Y-%m-%d %H:%M:%S' 2>/dev/null)
+            PARSED_DATE=$(date -u -d "$CLEAN_DATE" +'%Y-%m-%d' 2>/dev/null)
             if [[ -n "$PARSED_DATE" ]]; then
                 LAST_UPDATE="$PARSED_DATE"
             else
-                LAST_UPDATE="${CLEAN_DATE:0:19}"
+                REGEX_DATE=$(echo "$CLEAN_DATE" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | head -n 1)
+                if [[ -n "$REGEX_DATE" ]]; then
+                    LAST_UPDATE="$REGEX_DATE"
+                else
+                    LAST_UPDATE=$(date -u +'%Y-%m-%d')
+                fi
             fi
         else
-            LAST_UPDATE=$(date -u +'%Y-%m-%d %H:%M:%S')
+            LAST_UPDATE=$(date -u +'%Y-%m-%d')
         fi
     fi
     
