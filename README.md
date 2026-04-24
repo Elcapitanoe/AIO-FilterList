@@ -29,6 +29,4 @@ This repository is built on the hard work of the following projects. Here is the
 
 ### How It Works
 
-A GitHub Action runs automatically every day to pull the latest raw text files from the URLs listed above. The script strips out the original metadata headers to prevent parsing errors, removes duplicate rules to keep the file lightweight, and compiles everything into the `AIO_Filter_List.txt` file located in the root directory. 
-
-You can point your preferred adblocker directly to the raw URL of the generated list.
+A GitHub Action runs automatically every day to pull the latest raw text files from the URLs listed above. The script strips out the original metadata headers to prevent parsing errors, removes duplicate rules to keep the file lightweight, and compiles everything into the `AIO_Filter_List.txt` file located in the root directory.
