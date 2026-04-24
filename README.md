@@ -24,6 +24,7 @@ This repository is built on the hard work of the following projects. Here is the
 * [Fanboy's Social Blocking List](https://easylist.to/easylist/fanboy-social.txt)
 * [OISD Big](https://big.oisd.nl/domainswild)
 * [Peter Lowe's Ad and Tracking Server List](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext)
+* [Spam404 Blocklist](https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt)
 * [Steven Black's Hosts](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)
 
 ### How It Works
