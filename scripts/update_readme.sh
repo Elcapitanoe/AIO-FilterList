@@ -33,28 +33,27 @@ sort -t '|' -k3 -f "$CONFIG_FILE" | while IFS='|' read -r filename url title; do
     fi
     
     FILE_PATH="$OUTPUT_DIR/$filename"
-    LAST_UPDATE="Unknown"
+    LAST_UPDATE="-"
     
     if [[ -f "$FILE_PATH" ]]; then
-        EXTRACTED=$(grep -m 1 -iE '^[!#] *(TimeUpdated|Updated|Last Update|Version|Last modified):' "$FILE_PATH" | tr -d '\r' | cut -d':' -f2- | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')
+        EXTRACTED=$(grep -m 1 -iE '^[!#][[:space:]]*(Last modified|Last updated|Date|Version)[[:space:]]*:' "$FILE_PATH" | tr -d '\r' | cut -d':' -f2- | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')
+        
         if [[ -n "$EXTRACTED" ]]; then
-            CLEAN_DATE=$(echo "$EXTRACTED" | sed -E 's/[\.\+]+$//g' | sed 's/T/ /g')
+            CLEAN_DATE=$(echo "$EXTRACTED" | sed 's/ at / /gi' | tr -d '()')
+            
             if [[ "$CLEAN_DATE" =~ ^[0-9]{12}$ ]]; then
-                CLEAN_DATE=$(echo "$CLEAN_DATE" | sed -E 's/([0-9]{4})([0-9]{2})([0-9]{2}).*/\1-\2-\3/')
-            fi
-            PARSED_DATE=$(date -u -d "$CLEAN_DATE" +'%Y-%m-%d' 2>/dev/null)
-            if [[ -n "$PARSED_DATE" ]]; then
-                LAST_UPDATE="$PARSED_DATE"
+                LAST_UPDATE=$(echo "$CLEAN_DATE" | sed -E 's/([0-9]{4})([0-9]{2})([0-9]{2}).*/\1-\2-\3/')
             else
-                REGEX_DATE=$(echo "$CLEAN_DATE" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | head -n 1)
-                if [[ -n "$REGEX_DATE" ]]; then
-                    LAST_UPDATE="$REGEX_DATE"
+                PARSED_DATE=$(date -u -d "$CLEAN_DATE" +'%Y-%m-%d' 2>/dev/null)
+                if [[ -n "$PARSED_DATE" ]]; then
+                    LAST_UPDATE="$PARSED_DATE"
                 else
-                    LAST_UPDATE=$(date -u +'%Y-%m-%d')
+                    REGEX_DATE=$(echo "$CLEAN_DATE" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | head -n 1)
+                    if [[ -n "$REGEX_DATE" ]]; then
+                        LAST_UPDATE="$REGEX_DATE"
+                    fi
                 fi
             fi
-        else
-            LAST_UPDATE=$(date -u +'%Y-%m-%d')
         fi
     fi
     
