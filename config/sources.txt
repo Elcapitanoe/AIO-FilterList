@@ -1,16 +1,16 @@
-easylist.txt https://easylist.to/easylist/easylist.txt
-fanboy-cookiemonster.txt https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
-easyprivacy.txt https://easylist.to/easylist/easyprivacy.txt
-fanboy-annoyance.txt https://secure.fanboy.co.nz/fanboy-annoyance.txt
-fanboy-social.txt https://easylist.to/easylist/fanboy-social.txt
-1host-lite.txt https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/hosts.txt
-1host-xtra.txt https://raw.githubusercontent.com/badmojr/1Hosts/refs/heads/master/Xtra/adblock.txt
-adguard-base.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt
-adguard-tracking.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
-adguard-tracking-url.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
-adguard-annoyances.txt https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt
-peter-lowes-ad-tracking-server.txt https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
-steven-black-host.txt https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-oisd-big.txt https://big.oisd.nl/domainswild
-dan-pollock-host.txt https://someonewhocares.org/hosts/hosts
-spam404-blocklist.txt https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
+1host-lite.txt|https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/hosts.txt|1Hosts (Lite)
+1host-xtra.txt|https://raw.githubusercontent.com/badmojr/1Hosts/refs/heads/master/Xtra/adblock.txt|1Hosts (Xtra)
+adguard-annoyances.txt|https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt|AdGuard Annoyances Filter
+adguard-base.txt|https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt|AdGuard Base Filter
+adguard-tracking.txt|https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt|AdGuard Tracking Protection
+adguard-tracking-url.txt|https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt|AdGuard URL Tracking Filter
+dan-pollock-host.txt|https://someonewhocares.org/hosts/hosts|Dan Pollock's Hosts File
+easylist.txt|https://easylist.to/easylist/easylist.txt|EasyList
+easyprivacy.txt|https://easylist.to/easylist/easyprivacy.txt|EasyPrivacy
+fanboy-annoyance.txt|https://secure.fanboy.co.nz/fanboy-annoyance.txt|Fanboy's Annoyance List
+fanboy-cookiemonster.txt|https://secure.fanboy.co.nz/fanboy-cookiemonster.txt|Fanboy's Cookie Monster List
+fanboy-social.txt|https://easylist.to/easylist/fanboy-social.txt|Fanboy's Social Blocking List
+oisd-big.txt|https://big.oisd.nl/domainswild|OISD Big
+peter-lowes-ad-tracking-server.txt|https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext|Peter Lowe's Ad and Tracking Server List
+spam404-blocklist.txt|https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt|Spam404 Blocklist
+steven-black-host.txt|https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts|Steven Black's Hosts
