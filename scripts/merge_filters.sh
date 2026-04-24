@@ -60,6 +60,3 @@ Status          : SUCCESS
 EOF
 
 echo "AIO Filter List and build log successfully generated."
-
-echo "Creating permalink at /filters..."
-cp "$MERGED_FILE" "$OUTPUT_DIR/index.html"
