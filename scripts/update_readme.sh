@@ -33,9 +33,9 @@ sort -t '|' -k3 -f "$CONFIG_FILE" | while IFS='|' read -r filename url title; do
         continue
     fi
     
-    filename=$(echo "$filename" | xargs | tr -d '\r')
-    url=$(echo "$url" | xargs | tr -d '\r')
-    title=$(echo "$title" | xargs | tr -d '\r')
+    filename=$(echo "$filename" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
+    url=$(echo "$url" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
+    title=$(echo "$title" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
     
     MIRROR_LINK="https://hosts.domi.my.id/filters/$filename"
     echo "| $title | [Original]($url) | [Mirror]($MIRROR_LINK) | $LAST_SYNCED |" >> "$README_FILE"
