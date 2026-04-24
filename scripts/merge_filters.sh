@@ -20,8 +20,7 @@ EOF
 echo "Merging lists and stripping original headers..."
 SOURCE_COUNT=0
 for file in "$OUTPUT_DIR"/*; do
-    if [[ -f "$file" && "$file" != *".gitkeep"* ]]; then
-        # Count the number of source files processed
+    if [[ -f "$file" && "$file" != *".gitkeep"* && "$file" != *"index.html"* ]]; then
         ((SOURCE_COUNT++))
         grep -Ev '^[!#]' "$file" | grep -v '^$' >> "$TEMP_FILE"
     fi
@@ -61,3 +60,6 @@ Status          : SUCCESS
 EOF
 
 echo "AIO Filter List and build log successfully generated."
+
+echo "Creating permalink at /filters..."
+cp "$MERGED_FILE" "$OUTPUT_DIR/index.html"
