@@ -3,7 +3,7 @@
 CONFIG_FILE="config/sources.txt"
 README_FILE="README.md"
 OUTPUT_DIR="filters"
-LAST_SYNCED=$(date -u +'%Y-%m-%d')
+LAST_SYNCED=$(date -u +'%Y-%m-%d %H:%M UTC')
 
 > "$README_FILE"
 
@@ -26,7 +26,7 @@ echo "" >> "$README_FILE"
 echo "This repository is built on the hard work of the following projects. Here is the exact list of sources pulled during the automation process:" >> "$README_FILE"
 echo "" >> "$README_FILE"
 echo "| Filter Name | Original Source | Mirror Link | Last Synced |" >> "$README_FILE"
-echo "|---|---|---|---|" >> "$README_FILE"
+echo "|---|:---:|:---:|:---:|" >> "$README_FILE"
 
 sort -t '|' -k3 -f "$CONFIG_FILE" | while IFS='|' read -r filename url title; do
     if [[ -z "$filename" ]]; then
