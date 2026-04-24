@@ -14,3 +14,5 @@ oisd-big.txt|https://big.oisd.nl/domainswild|OISD Big
 peter-lowes-ad-tracking-server.txt|https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext|Peter Lowe's Ad and Tracking Server List
 spam404-blocklist.txt|https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt|Spam404 Blocklist
 steven-black-host.txt|https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts|Steven Black's Hosts
+abpindo.txt|https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt|ABPindo
+hagezi-pro.txt|https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt|HaGeZi's Pro
