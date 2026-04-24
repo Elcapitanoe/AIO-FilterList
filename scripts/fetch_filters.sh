@@ -5,12 +5,12 @@ OUTPUT_DIR="filters"
 
 mkdir -p "$OUTPUT_DIR"
 
-while read -r filename url; do
+while IFS='|' read -r filename url title; do
     if [[ -z "$filename" || "$filename" == \#* ]]; then
         continue
     fi
     
-    echo "Fetching $filename from upstream..."
+    echo "Fetching $title from upstream..."
     curl -sSL "$url" -o "$OUTPUT_DIR/$filename"
 done < "$CONFIG_FILE"
 
