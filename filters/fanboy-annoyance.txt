@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: RX5sCbbKd1upcS3SUAxgow
-! Version: 202604240425
+! Checksum: SuO5r7Yfa0RfBNjPFWkCLQ
+! Version: 202604240925
 ! Title: Fanboy's Annoyance List
-! Last modified: 2026-04-24 04:25 UTC
+! Last modified: 2026-04-24 09:25 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -38885,7 +38885,6 @@ tiktok.com##tiktok-cookie-banner
 globalblue.com##.gbnew-cookie-bar
 ! Include ubO specific
 !#include easylist_cookie_specific_uBO.txt
-! easylist_cookie_specific_uBO.txt
 !
 ! :style fixes
 bbc.com##body:has(div[class*="Styled"][class*="Container"] [data-testid="bbc-logo-wrapper"]) > .fc-consent-root:style(display: flex !important)
@@ -39786,7 +39785,7 @@ aa.com##+js(set-cookie, cookie_banner, closed)
 pangleglobal.com##+js(set-cookie, cookie_banner_preference, reject)
 bookings.hermesairports.com##+js(set-cookie, cookie_choice_made, decline)
 mifcom.*##+js(set-cookie, cookie_closed, 1)
-ayudatpymes.com,shoutcast.com,thefly.com,zipjob.com##+js(set-cookie, cookie_consent, 1)
+ayudatpymes.com,rg.ru,shoutcast.com,thefly.com,zipjob.com##+js(set-cookie, cookie_consent, 1)
 amd.by,scitec.it,shopbuilder.co.nl,thenounproject.com##+js(set-cookie, cookie_consent, 1, , reload, 1)
 web.spaggiari.eu##+js(set-cookie, cookie_consent, 3)
 ludlowbrewery.co.uk##+js(set-cookie, cookie_consent, all, , reload, 1)
@@ -40862,7 +40861,6 @@ unisa.ac.za##+js(set-local-storage-item, cookieConsent, essential)
 dorkgpt.com,foodvessel.com,kyutai.org,lazyrecords.app,unmute.sh,varusteleka.com##+js(set-local-storage-item, cookieConsent, false)
 notthebee.com##+js(set-local-storage-item, cookieConsent, granted)
 axionnews.live,comnet.com.tr,cricketgully.com,estrelabet.bet.br,firsty.app,gpuscout.nl,hiring.amazon.com,paapiidesign.com,parrotsec.org,printedwaste.com,remanga.org##+js(set-local-storage-item, cookieConsent, true)
-rg.ru##+js(set-local-storage-item, cookieConsent, {})
 mastersintime.com,watch.co.uk##+js(set-local-storage-item, cookieConsentV2, 1)
 eyeletic.com##+js(set-local-storage-item, cookieInfoDismissed, true)
 sberdisk.ru##+js(set-local-storage-item, cookieIsAccepted, true)
