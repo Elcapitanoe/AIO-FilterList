@@ -1,10 +1,16 @@
-# AIO Filter List
-
+<br />
+<h1 align="center">AIO Filter List</h1>
+<br />
 Before you dive in, I want to make it absolutely clear that I do not claim ownership or take any credit for the filter rules found in this repository. I did not write them, and I do not maintain the original blocklists.
 
 This project is simply an automated aggregation tool. It routinely fetches, cleans, and merges several highly respected community filter lists into a single file for my own convenience, and I am making it public in case others find it useful.
 
 All credit belongs entirely to the original authors and the communities that spend their time keeping these web filters updated. If you appreciate the ad-blocking and privacy protection provided here, please support the upstream maintainers.
+
+### Direct Access
+```
+https://hosts.domi.my.id/AIO_Filter_List.txt
+```
 
 ### Upstream Sources
 
