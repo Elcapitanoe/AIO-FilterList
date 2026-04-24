@@ -5,7 +5,7 @@ MERGED_FILE="AIO_Filter_List.txt"
 TEMP_FILE="temp_rules.txt"
 LOG_FILE="build.log"
 
-VERSION=$(date -u +'%Y.%m.%d.%H%M')
+VERSION=$(date -u +'%y.%m.%d.%H%M')
 TIME_UPDATED=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
 
 echo "Building custom header..."
@@ -54,8 +54,6 @@ Sources Synced  : $SOURCE_COUNT upstream lists
 Raw Rules       : $(printf "%'d" "$RAW_COUNT")
 Duplicates Drop : $(printf "%'d" "$DUPLICATE_COUNT")
 Final Payload   : $(printf "%'d" "$FINAL_COUNT") active rules
-==================================================
-Status          : SUCCESS
 ==================================================
 EOF
 
