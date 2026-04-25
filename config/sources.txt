@@ -17,3 +17,46 @@ steven-black-host.txt|https://raw.githubusercontent.com/StevenBlack/hosts/master
 abpindo.txt|https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt|ABPindo
 hagezi-pro.txt|https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt|HaGeZi's Pro
 urlhaus-malicious.txt|https://malware-filter.gitlab.io/malware-filter/urlhaus-filter.txt|URLhaus Malicious URL Blocklist
+mute.txt|http://mute.bradconte.com/mute.txt|Mute
+ricklist.txt|http://rickrolldb.com/ricklist.txt|Ricklist
+clickbait.txt|https://assets.windscribe.com/custom_blocklists/clickbait.txt|Clickbait
+nt-adblock.txt|https://bitbucket.org/nicktabick/adblock-rules/raw/master/nt-adblock.txt|Nt Adblock
+antiadblockfilters.txt|https://easylist-downloads.adblockplus.org/antiadblockfilters.txt|Antiadblockfilters
+fanboy-antifacebook.txt|https://fanboy.co.nz/fanboy-antifacebook.txt|Fanboy Antifacebook
+fanboy-problematic-sites.txt|https://fanboy.co.nz/fanboy-problematic-sites.txt|Fanboy Problematic Sites
+notrack-malware.txt|https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt|Notrack Malware
+betterfyitrackersblocklist.txt|https://raw.githubusercontent.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt|Better Fyi Trackers Blocklist
+list.txt|https://raw.githubusercontent.com/austinhuang0131/0131-block-list/master/list.txt|Austin Huang List
+filterlist.txt|https://raw.githubusercontent.com/bcye/Hello-Goodbye/master/filterlist.txt|Hello Goodbye Filterlist
+filters.txt|https://raw.githubusercontent.com/betterwebleon/international-list/master/filters.txt|International Filters
+fuckfuckadblock.txt|https://raw.githubusercontent.com/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt|Fuckfuckadblock
+clickbait-blocklist.txt|https://raw.githubusercontent.com/cpeterso/clickbait-blocklist/master/clickbait-blocklist.txt|Clickbait Blocklist
+android-scum-class.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Android%20Scum%20Class%20%E2%80%94%20Fake%20notification%20counters.txt|Android Scum Class
+anti-christmas-carols-list.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-%27Christmas%20carols%27%20List.txt|Anti Christmas Carols List
+anti-custom-cursors-list.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-%27Custom%20cursors%27%20List.txt|Anti Custom Cursors List
+anti-elsagate-list.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate%20List.txt|Anti Elsagate List
+anti-futa-list.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Futa%20List.txt|Anti Futa List
+anti-imdb-list.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-IMDB%20List.txt|Anti Imdb List
+antiabuseporn.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAbusePorn.txt|Antiabuseporn
+antiamazonlistfortwitch.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAmazonListForTwitch.txt|Antiamazonlistfortwitch
+antiawfulcommentslist.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAwfulCommentsList.txt|Antiawfulcommentslist
+browsewebsiteswithoutloggingin.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt|Browsewebsiteswithoutloggingin
+dandelion-sprouts-website-stretcher.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion Sprout's Website Stretcher.txt|Dandelion Sprout's Website Stretcher
+dandelion-sprouts-anti-malware-list.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt|Dandelion Sprout's Anti Malware List
+extremelycondensedlist.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ExtremelyCondensedList.txt|Extremelycondensedlist
+i-dont-want-to-download-your-browser.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt|I Don't Want To Download Your Browser
+ihateoverpromotedgames.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/IHateOverpromotedGames.txt|Ihateoverpromotedgames
+reddittrashremovalservice.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RedditTrashRemovalService.txt|Reddittrashremovalservice
+socialsharelist.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SocialShareList.txt|Socialsharelist
+wikiapurebrowsingexperience.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WikiaPureBrowsingExperience.txt|Wikiapurebrowsingexperience
+youtubeevenmorepurevideoexperience.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeEvenMorePureVideoExperience.txt|Youtubeevenmorepurevideoexperience
+adblock-list.txt|https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt|Adblock List
+ichigofilter.txt|https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/ichigo_filter.txt|Ichigo Filter
+kamefilter.txt|https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/kame_filter.txt|Kame Filter
+kujirafilter.txt|https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/kujira_filter.txt|Kujira Filter
+nopelist.txt|https://raw.githubusercontent.com/genediazjr/nopelist/master/nopelist.txt|Nopelist
+hexxiumthreatlist.txt|https://raw.githubusercontent.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt|Hexxiumthreatlist
+hosts.txt|https://raw.githubusercontent.com/hit3shjain/Andromeda-ublock-list/master/hosts.txt|Andromeda Hosts
+privacybadgerblocklist.txt|https://raw.githubusercontent.com/hl2guide/DNS-Sinkhole-Lists-A2/master/Extras/privacybadger_blocklist.txt|Privacybadger Blocklist
+typosquattingblocklist.txt|https://raw.githubusercontent.com/hl2guide/DNS-Sinkhole-Lists-A2/master/Extras/typosquatting_blocklist.txt|Typosquatting Blocklist
+nocoin.txt|https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt|Nocoin
