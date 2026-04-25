@@ -39,11 +39,11 @@ sort -t '|' -k3 -f "$CONFIG_FILE" | while IFS='|' read -r filename url title; do
     FILE_PATH="$OUTPUT_DIR/$filename"
     
     if [[ -n $(git status --porcelain "$FILE_PATH") ]]; then
-        LAST_UPDATED=$(TZ='Asia/Jakarta' date +'%Y-%m-%d %H:%M:%S UTC+7')
+        LAST_UPDATED=$(TZ='Asia/Jakarta' date +'%Y-%m-%d %H:%M:%S')
     else
-        LAST_UPDATED=$(git log -1 --format="%cd" --date=format:'%Y-%m-%d %H:%M:%S UTC+7' -- "$FILE_PATH")
+        LAST_UPDATED=$(git log -1 --format="%cd" --date=format:'%Y-%m-%d %H:%M:%S' -- "$FILE_PATH")
         if [[ -z "$LAST_UPDATED" ]]; then
-            LAST_UPDATED=$(TZ='Asia/Jakarta' date +'%Y-%m-%d %H:%M:%S UTC+7')
+            LAST_UPDATED=$(TZ='Asia/Jakarta' date +'%Y-%m-%d %H:%M:%S')
         fi
     fi
     
