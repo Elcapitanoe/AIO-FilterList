@@ -1,0 +1,344 @@
+﻿[Adblock Plus 3.13]
+! Title: 👩 Anti-Futa List
+! Version: 29March2026v1
+! Expires: 3 days
+! Description: It seems to me that a common thought process on porn sites are "Hey, do you know what would've made this cute woman even sexier? I know. We should give her a dick!". Well, not anymore, thanks to this list.
+! Note 1: On some of these sites, such as Pixiv and Fur Aﬀinity, quite a few futa images are uploaded without having "futa" in its title or in its search result metadata, making them practically unblockable through this method. Categories known to have significant slipthrough percentages are marked with a 🔴.
+! Note 2: Because I know someone will ask me about it, if it's in 50min or 50 years: Sites like E621 should be very, very deeply ashamed of themselves, for treating "intersex" and "futanari" as the exact same thing. "Intersex" is an actual medical thing where someone have both male and female organs at the same time. "Futanari" is anti-woman, because its target audience is men who want to have sex with women but who are so frightened by vaginas that they cannot stand the sight of them, so they can only handle seeing male penises instead.
+! Note 3: Futanari has _nothing whatsoever_ to do with not having got bottom surgery. If anyone claims it does, then they have very obviously not seen even one single "futanari hyper_penis" upload in their entire lives.
+! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
+
+!#if !env_mv3
+!#if !ext_ubol
+!#if !adguard_ext_android_cb
+! ——— General ———
+! hentaifoxCOM
+##.futanari
+##.dickgirl
+##.dickgirls-only
+##.dickgirl-on-dickgirl
+! hentaipornsNET
+##.tag-futanari
+
+! ——— Pixiv ———
+!#if !env_mobile
+! New search results, image suggestions on image pages, and carousel items on image pages
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=futa i]:not([alt*=futari i],[alt*=futaba i],[alt*=futago i]))
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=dickgirl i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=lolita][alt*=" penis"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=ふたなり])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=フタナリ])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt^=ふた×])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=" ふた×"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=ロリ巨根])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=후타나리])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=扶他那])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=สาวดุ้น])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=Футанари i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=男の娘])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*="Love Live" i][alt*=ちんちん])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=shota i][alt*=huge i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=MAXBODY])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*="Link and Zelda's Milking Session"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*="Evil Jade's Take over"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*="Gabys Vacbed"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=Doll-Mination])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=DaughterXMother])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=Posscock i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=Jazzabelle i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=cockexpansion i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=乳首チンコ])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=チクチン])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=dicknipple i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=hyper_cock i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"] img[alt*=girldick i])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has-text(洗脳くノ一 クラゲちゃん)
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has-text(SrCansado)
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has-text(bosomancer)
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has-text(FUCKHEADmanip)
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has-text(Hanshyn)
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has-text(Necrobern)
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has-text(Mutagenica)
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has-text(/Futa([.,:;s?!n=_#’“”-]|\s|\'|\"|$)/)
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/2090534"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/6714417"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/45479613"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/6019486"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/5218489"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/36281621"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/20168333"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/304481"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/54343137"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/44893998"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/14735788"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/673299"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/1793667"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/37073713"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/32896165"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/1497694"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/12905383"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"]):has(a[href$="users/30782986"])
+pixiv.net##.grid-flow-dense > div[class^=col-span-]:has(a[href*="/artworks/"][data-gtm-user-id="82552424"]):not(:has-text(Lisa))
+! Promotion cards on some user galleries
+pixiv.net#?#ul > li > div:last-of-type:nth-of-type(2):has-text(/Futa([ac-qs-zA-Z0-9.,:;?!=_#’“”-]|\s|\'|\"|$)/)
+pixiv.net#?#ul > li > div:last-of-type:nth-of-type(2):has-text(/ futa([.,:;?!=s_#’“”-]|\s|\'|\"|$)/i)
+pixiv.net#?#ul > li > div:last-of-type:nth-of-type(2):has-text(/futanari/i)
+pixiv.net#?#ul > li > div:last-of-type:nth-of-type(2):has-text(/dickgirl/i)
+pixiv.net#?#ul > li > div:last-of-type:nth-of-type(2):has-text(ふたなり)
+pixiv.net#?#ul > li > div:last-of-type:nth-of-type(2):has-text(フタナリ)
+pixiv.net#?#ul > li > div:last-of-type:nth-of-type(2):has-text(扶他那)
+pixiv.net#?#ul > li > div:last-of-type:nth-of-type(2):has-text(후타나리)
+!#endif
+!#if env_mobile
+! Phone version
+pixiv.net##.works-item:has(img[alt*=futa i]:not([alt*=futaba i],[alt*=futari i],[alt*=futago i]))
+pixiv.net##.works-item:has(img[alt*=dickgirl i])
+pixiv.net##.works-item:has(img[alt*=lolita][alt*=" penis"])
+pixiv.net##.works-item:has(img[alt*=ふたなり])
+pixiv.net##.works-item:has(img[alt*=フタナリ])
+pixiv.net##.works-item:has(img[alt*=ロリ巨根])
+pixiv.net##.works-item:has(img[alt*=후타나리])
+pixiv.net##.works-item:has(img[alt*=扶他那])
+pixiv.net##.works-item:has(img[alt*=สาวดุ้น])
+pixiv.net##.works-item:has(img[alt*=Футанари i])
+pixiv.net##.works-item:has(img[alt*=男の娘])
+pixiv.net##.works-item:has(img[alt*=srcansado i])
+pixiv.net##.works-item:has(img[alt*="Love Live" i][alt*="ちんちん"])
+pixiv.net##.works-item:has(img[alt*=shota i][alt*=huge i])
+pixiv.net##.works-item:has(img[alt*=MAXBODY])
+pixiv.net##.works-item:has(img[alt*=Doll-Mination])
+pixiv.net##.works-item:has(img[alt*=DaughterXMother])
+pixiv.net##.works-item:has(img[alt*=Posscock i])
+pixiv.net##.works-item:has(img[alt*=Jazzabelle i])
+pixiv.net##.works-item:has(img[alt*=cockexpansion i])
+pixiv.net##.works-item:has(img[alt*=乳首チンコ])
+pixiv.net##.works-item:has(img[alt*=チクチン])
+pixiv.net##.works-item:has(img[alt*=Dicknipple i])
+pixiv.net##.works-item:has(img[alt*=hyper_cock i])
+pixiv.net##.works-item:has(img[alt*=girldick i])
+pixiv.net##.works-item:has(img[alt*=DARKCRAFT])
+pixiv.net##.works-item:has(img[alt^=ふた×])
+pixiv.net##.works-item:has(img[alt*=" ふた×"])
+!#endif
+dic.pixiv.net##article-list[fetch-url] article:has(a[href*=Futanari i])
+dic.pixiv.net###ranking-weekly > li:has(a[href*=Futanari i])
+dic.pixiv.net##li.justify-start.flex:has(a[href*=Futanari i])
+
+! ——— LusciousNET ———
+luscious.net#?#.block_wrapper:has-text(Futa)
+luscious.net#?#.genre-list-item:has-text(Futanari)
+luscious.net#?#li:has(> a:has-text(Futa))
+luscious.net#?#.o-justified-box:has-text(Futa)
+luscious.net##.o-justified-box:has(img[src*=Futa i])
+
+! ——— Fur Aﬀinity ——— 🔴
+furaffinity.net#?#.t-image:has-text(/Futa([.,:;?!=s_#’“”-]|\s|\'|\"|$)/)
+furaffinity.net#?#.t-image:has-text(/ futa([.,:;?!=s_#’“”-]|\s|\'|\"|$)/i)
+furaffinity.net#?#.t-image:has-text(/futanari/i)
+furaffinity.net#?#.t-image:has-text(/dickgirl/i)
+furaffinity.net#?#figure:has-text(/Futa(by|n|.,:;?!=_#’“”-]|\s|\'|\"|$)/)
+furaffinity.net#?#.t-image:has(a[href*="/moaja/" i])
+furaffinity.net#?#.t-image:has(a[href*=hyperflannel i])
+furaffinity.net#?#.t-image:has(a[href*=archneweb i])
+furaffinity.net##figure:has(img[data-tags*=futanari])
+furaffinity.net##figure:has(img[data-tags*=futas])
+furaffinity.net##figure:has(img[data-tags~=futa])
+furaffinity.net##.t-image:has(img[data-tags*=intersex])
+furaffinity.net##.t-image:has(a[title*=IcarasMkII i])
+furaffinity.net##.t-image:has(a[title*=azudaneFonFon i])
+furaffinity.net##.t-image:has(a[title$=ustedConscious])
+furaffinity.net##.t-image:has(a[title*=ruitofthedoom i])
+
+! ——— Rule34xxx ———
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*=futanari])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*=" futa_"])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*="_futa "])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title~=futa])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*="1futa"])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*="2futa"])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*="3futa"])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*="4futa"])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*="5futa"])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*="6futa"])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net,rule34.paheal.net##.thumb:has(img[title*=dickgirl])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=gigantic_breasts][title*=gigantic_penis])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net###subnavbar a[href$="&s=random"]
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net###subnavbar > li:has(> [href*=toptag])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=hyper_balls][title*=hyper_penis])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=multi_breasts][title*=multi_penis])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=intersex][title*=solo][title*=breast]:is([title*=penis],[title~=knot],[title~=erection]):not([title*=pussy]))
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=intersex][title*=breast]:is([title*=hyper_penis],[title*=big_penis],[title*=huge_cock]))
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=" solo"][title*=breast]:is([title*=hyper_penis],[title*=big_penis],[title*=huge_cock],[title*=huge_penis],[title*=" bulge"]))
+rule34.xxx##.thumb:has(img[title*=intersex][title*=gynomorph]:is([title*=penis],[title*=huge_cock],[title*=huge_balls],[title~=canid],[href*=" giraff"],[href*=" elephant"]))
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*="/futa"])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*="futa/"])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*=solo_futa])
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,rule34hentai.net,tentaclerape.net##.thumb:has(img[title*=intersex][title~=invalid_tag]:not([title*=pussy i]))
+rule34.xxx,booru.org,sankakucomplex.com,tbib.org,xbooru.com,tentaclerape.net##.thumb:has(img[title*=hung_futa])
+
+! ——— Gelbooru ———
+gelbooru.com##.thumbnail-preview:has(img[title*=futanari])
+gelbooru.com##.thumbnail-preview:has(img[title*=" futa_"])
+gelbooru.com##.thumbnail-preview:has(img[title~=futa])
+gelbooru.com##.thumbnail-preview:has(img[title*="1futa"])
+gelbooru.com##.thumbnail-preview:has(img[title*="2futa"])
+gelbooru.com##.thumbnail-preview:has(img[title*="3futa"])
+gelbooru.com##.thumbnail-preview:has(img[title*="4futa"])
+gelbooru.com##.thumbnail-preview:has(img[title*="5futa"])
+gelbooru.com##.thumbnail-preview:has(img[title*="6futa"])
+gelbooru.com##.thumbnail-preview:has(img[title*=dickgirl])
+gelbooru.com##.thumbnail-preview:has(img[title*=gigantic_breasts][title*=gigantic_penis])
+gelbooru.com##.thumbnail-preview:has(img[title*=hyper_balls][title*=hyper_penis])
+gelbooru.com##.thumbnail-preview:has(img[title*=multi_breasts][title*=multi_penis])
+gelbooru.com##.thumbnail-preview:has(img[title*=intersex][title*=solo][title*=breast]:is([title*=penis],[title~=knot],[title~=erection]):not([title*=pussy]))
+gelbooru.com##.thumbnail-preview:has(img[title*=intersex][title*=breast]:is([title*=hyper_penis],[title*=big_penis],[title*=huge_cock]))
+gelbooru.com##.thumbnail-preview:has(img[title*=" solo"][title*=breast]:is([title*=hyper_penis],[title*=big_penis],[title*=huge_cock],[title*=huge_penis],[title*=" bulge"]))
+gelbooru.com##.thumbnail-preview:has(img[title*=intersex][title*=gynomorph]:is([title*=penis],[title*=huge_cock],[title*=huge_balls],[title~=canid],[href*=" giraff"],[href*=" elephant"]))
+gelbooru.com##.thumbnail-preview:has(img[title*="/futa"])
+gelbooru.com##.thumbnail-preview:has(img[title*="futa/"])
+gelbooru.com##.thumbnail-preview:has(img[title*=solo_futa])
+gelbooru.com##.thumbnail-preview:has(img[title*=intersex][title~=invalid_tag]:not([title*=pussy i]))
+
+! ——— Paheal Rule 34 ——— 🔴
+rule34.paheal.net,rule34hentai.net##.thumb:has(img[title*=futa])
+
+! ——— NHentai ———
+nhentai.net##div[class=gallery][data-tags^="779 "]
+nhentai.net##div[class=gallery][data-tags*=" 779 "]
+
+! ——— Hentai Haven ———
+hentaihaven.org##div[class*="brick "][class*=futanari]
+
+! ——— Hentaiporns.net ———
+hentaiporns.net#?#.tag-cloud-link:has-text(futanari)
+
+! ——— Reddit ———
+reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.Post:has(a[href="/r/futanari/"])
+reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.Post:has-text([Futa])
+||reddit.com/r/futanari$document
+||reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/r/futanari$document
+
+! ——— Booru.org ———
+||futabooru.booru.org^$document
+
+! ——— KissHentai ——— 🔴
+kisshentai.net#?##subcontent > div > div:has-text(Futanari)
+kisshentai.net##a[href="/Genre/Futanari"]
+kisshentai.net##a[href="/Genre/Futanari"] + br
+
+! ——— 9Hentai ——— 🔴
+9hentai.*#?#.tag-list li:has(a[href^="/t/"]:has-text(/Futanari/i))
+9hentai.*#?#.tag-list li:has(a[href^="/t/"]:has-text(/Dickgirl/i))
+9hentai.*#?#.p-1:has-text(/Futanari/i)
+9hentai.*#?#.p-1:has-text(Futa )
+
+! ——— Konabooru ———
+konachan.com,yande.re,hypnohub.net,lolibooru.moe###post-list-posts > li:has(img[title*=futanari])
+konachan.com,yande.re,hypnohub.net,lolibooru.moe###post-list-posts > li:has(img[title*=dickgirl])
+
+! ——— E-Hentai ———
+e-hentai.org#?#tr:has-text(futanari)
+
+! ——— E621 ———
+e621.net,e926.net,donmai.us,allthefallen.moe##article[data-tags*=futanari]
+e621.net,e926.net,donmai.us,allthefallen.moe##article[data-tags*=" futa_"]
+e621.net,e926.net,donmai.us,allthefallen.moe##article[data-tags*="1futa"]
+e621.net,e926.net,donmai.us,allthefallen.moe##article[data-tags*=dickgirl]
+e621.net,e926.net,donmai.us,allthefallen.moe##article[data-tags*=" solo"][data-tags*=big_breasts][data-tags*=big_penis]
+e621.net,e926.net,donmai.us,allthefallen.moe##article[data-tags*=" solo"][data-tags*=huge_breasts][data-tags*=huge_penis]
+e621.net,e926.net,donmai.us,allthefallen.moe##article[data-tags*=" solo"][data-tags*=hyper_breasts][data-tags*=hyper_penis]
+e621.net,e926.net,donmai.us,allthefallen.moe##article[data-tags*=" solo"][data-tags*=multi_breasts][data-tags*=multi_penis]
+e621.net,e926.net##article[data-tags*=intersex]
+
+! ——— Steam Store ———
+store.steampowered.com##a[data-ds-itemkey][href*=Futanari]
+store.steampowered.com##a[data-ds-itemkey][href*=Futa_]
+
+! ——— Mastodon ———
+!#if !adguard
+mastodon.*,mstdn.*,mas.to,pawoo.net,tchncs.de,octodon.social,sinblr.com,baraag.net,xxxtumblr.org#?#.entry,.statuses-grid__item,.status:has-text(/futanari/i)
+mastodon.*,mstdn.*,mas.to,pawoo.net,tchncs.de,octodon.social,sinblr.com,baraag.net,xxxtumblr.org#?#.entry,.statuses-grid__item,.status:has-text(/Futa([.,:;?!=s_#’“”-]|\s|\'|\"|$)/)
+mastodon.*,mstdn.*,mas.to,pawoo.net,tchncs.de,octodon.social,sinblr.com,baraag.net,xxxtumblr.org#?#.entry,.statuses-grid__item,.status:has-text(/(#|\s)futa([.,:;?!=s_#’“”-]|\s|\'|\"|$)/i)
+mastodon.*,mstdn.*,mas.to,pawoo.net,tchncs.de,octodon.social,sinblr.com,baraag.net,xxxtumblr.org#?#.entry,.statuses-grid__item,.status:has-text(ふたなり)
+mastodon.*,mstdn.*,mas.to,pawoo.net,tchncs.de,octodon.social,sinblr.com,baraag.net,xxxtumblr.org#?#.entry,.statuses-grid__item,.status:has-text(フタナリ)
+mastodon.*,mstdn.*,mas.to,pawoo.net,tchncs.de,octodon.social,sinblr.com,baraag.net,xxxtumblr.org#?#.entry,.statuses-grid__item,.status:has-text(/dickgirl/i)
+mastodon.*,mstdn.*,mas.to,pawoo.net,tchncs.de,octodon.social,sinblr.com,baraag.net,xxxtumblr.org#?#.entry,.statuses-grid__item,.status:has-text(Futabu)
+!#endif
+
+! ——— Inkbunny ———
+inkbunny.net##.widget_thumbnailLargeCompleteFromSubmission:has(img[title*=futa])
+
+! ——— Rule34.art ———
+rule34.art,multporn.net##li:has(a[href="/category/futanari"])
+rule34.art,multporn.net##td[class^=col-]:has(a[href="/category/futanari"])
+
+! ——— Hentai Foundry ———
+hentai-foundry.com#?#.thumb_square:has-text(/Futanari/i)
+hentai-foundry.com#?#.thumb_square:has-text(Futa):not(:has-text(Futaba)):not(:has-text(Futari))
+
+! ——— Bobsvagene ———
+bobsvagene.club#?#.native_plug_container > p:has-text(/Futanari/i)
+
+! ——— Game Jolt ———
+gamejolt.com#?#.game-grid-item:has-text(/Futanari/i)
+gamejolt.com#?#.game-grid-item:has-text(/ Futa /i)
+
+! ——— deviantART (Experimental; coverage of mature art is spotty) ———
+deviantart.com##div[style^="width:"][style*="display:"]:has(a[href*="/art/"][href*=futanari i])
+deviantart.com##div[style^="width:"][style*="display:"]:has(a[href*="/art/"][href*=-futa- i])
+deviantart.com##div[style^="width:"][style*="display:"]:has(a[href*="/art/"][href*="/futa-" i])
+deviantart.com##div[style^="width:"][style*="display:"]:has(a[href*="/art/"][href*="/arashiv/"])
+deviantart.com##div[style^="width:"][style*="display:"]:has(a[href*="/art/"][href*=sarahtxxx i])
+deviantart.com##a[data-hook][href*="/art/"][href*=futanari i]
+deviantart.com##a[data-hook][href*="/art/"][href*=-futa- i]
+deviantart.com##a[data-hook][href*="/art/"][href*="/futa-" i]
+deviantart.com##a[data-hook][href*="/art/"][href*="/arashiv/"]
+deviantart.com##a[data-hook][href*="/art/"][href*=sarahtxxx i]
+
+! ——— Newgrounds ———
+newgrounds.com##div.align-center.span-1:has(a[href*=-futa-])
+newgrounds.com##div.align-center.span-1:has(a[href*="/futa-"])
+
+! ——— Artstation ———
+artstation.com#?#:is(.gallery-grid-item,.project):has-text(/^.*futanari.*$/i)
+artstation.com#?#:is(.gallery-grid-item,.project):has-text(/^.*(\s|-)futa(\s|-).*$/i)
+
+! ——— Rule34US ———
+rule34.us##div[class$=ail-container] > div:has(img[title*=futanari])
+rule34.us##div[class$=ail-container] > div:has(img[title*=dickgirl])
+rule34.us##div[class$=ail-container] > div:has(img[title*="1futa"])
+rule34.us##div[class$=ail-container] > div:has(img[title*="2futa"])
+rule34.us##div[class$=ail-container] > div:has(img[title*="3futa"])
+rule34.us##div[class$=ail-container] > div:has(img[title*="4futa"])
+rule34.us##div[class$=ail-container] > div:has(img[title*="5futa"])
+rule34.us##div[class$=ail-container] > div:has(img[title*="6futa"])
+rule34.us##div[class$=ail-container] > div:has(img[title*=futa_only])
+rule34.us##div[class$=ail-container] > div:has(img[title*=futa_focus])
+rule34.us##div[class$=ail-container] > div:has(img[title~=futa])
+
+! ——— Lettuce•secret•graphics ——— 🔴
+lettuce.secret.graphics##div.thumbnail[title*="hyper penis" i]
+lettuce.secret.graphics##div.thumbnail:is([data-id^="2-4cMQ"],[data-id^="4DDAqA"],[data-id^="5mXs10"],[data-id^="9px3_t"],[data-id^=_CRVe5],[data-id^=a893yX],[data-id^=Dnej9t],[data-id^=ENoXwA],[data-id^=GsdfIW],[data-id^=hHXDjB],[data-id^=imE4_W],[data-id^=M9S2AN],[data-id^=ocm5I0],[data-id^=Qfx8pb],[data-id^=RhIfO7],[data-id^=svOb7D],[data-id^=TWTrn2],[data-id^=UyChJ5],[data-id^=xpahEc])
+
+! ——— Other sites ———
+||hentai-futanari-xxx.com^$document
+||futadomworld.itch.io^$document
+||futanari.$document
+/futanari/*$document
+||futaworld.com^$document
+||futa.xxx^$document
+||futa3dx.com^$document
+||agentredgirl.com^$document
+||futasentaisquad.com^$document
+||futahentai.org^$document
+||futakawaii.neocities.org^$document
+||dgarchive.neocities.org^$document
+||futapo.com^$document
+||futalab.com$document
+||slushe.com^$document
+
+! ——— Twitter ———
+! Twitter support was removed due to Musk being a white supremacist; see https://www.theguardian.com/technology/2023/sep/18/elon-musk-accuses-george-soros-foundation-of-wanting-to-destroy-western-civilisation
+!#endif
+!#endif
+!#endif

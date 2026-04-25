@@ -1,0 +1,105 @@
+﻿[Adblock Plus 3.12]
+! Title: ↖ Anti-'Custom cursors' List
+! Version: 06March2026v1-Beta
+! Expires: 14 days
+! Description: This list aims to replace websites' custom cursors with the default OS cursor.
+! Note that any Wikia-related entries currently do not work in ABP or AdBlock, due to EasyList having a whitelisting for the nocookieNET domain that can only be circumvented with "$badfilter" or "$important", neither of which are supported by those two extensions.
+! If you encounter non-covered custom-cursor-using sites, or serious site functionality breakage, do not hesitate to tell me about it on GitHub.
+! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
+
+! ——— Wikia (I still don't accept their attempt at stealing the word "Fandom") ———
+! https://winx•fandom•com/wiki/Tecna
+/images/*/Cursor
+||images.wikia.nocookie.net/*/Cursor
+@@||wikia.nocookie.net^*/images/$image,badfilter
+! https://disney•fandom•com/wiki/Disney_Fairies (https://wiki•pcsx2•net/Gendai_Yougo_no_Kiso_Chishiki_2001)
+||wikia.nocookie.net/*/Mouse.png|
+/Mousehover.$image
+fandom.com,wikia.org#?#a:link:style(cursor: pointer !important)
+! https://corpseparty•fandom•com/wiki/Corpseparty_Wiki
+cursor_hover.$image
+! https://kanal•fandom•com/el/wiki/KanalWiki
+.cur/$image
+! https://freddy-fazbears-pizza•fandom•com/wiki/Five_Nights_at_Freddy%27s_Wiki
+/CustomCursor$image
+! https://pikmin•fandom•com/wiki/Pikmin_Wiki
+||nocookie.net/*/OnionSprite$image
+! https://pawpatrol•fandom•com/wiki/Princess_of_Barkingburg
+||nocookie.net/*_cursor_*.png^
+! https://kidicarus•fandom•com/wiki/Viridi
+||nocookie.net/*cursor.png^
+! https://bindingofisaac•fandom•com/wiki/The_Binding_of_Isaac_Wiki
+||imgur.com/eQ15Dp8.png^$third-party
+! https://github.com/DandelionSprout/adfilt/issues/63#issuecomment-628026235
+! bindingofisaac•fandom•com/pl/wiki/The_Nail
+||nocookie.net/*/bindingofisaac/*Knife_Icon.png|
+! https://melanie-martinez•fandom•com/wiki/Melanie_Martinez_Wiki
+||rw-designer.com/cursor-view^$image,third-party
+! https://yakusokunoneverland•fandom•com/wiki/The_Promised_Neverland_Wiki
+||vignette.wikia.nocookie.net/*/Nat195.$image,domain=yakusokunoneverland.fandom.com
+yakusokunoneverland.fandom.com#?#*:style(cursor: unset !important)
+! https://angrybirds•fandom•com/wiki/Angry_Birds_Breakfast
+_Cursor1.png^
+! https://ghibli•fandom•com/wiki/Ghibli_Wiki
+||nocookie.net/*/Cursor1.
+! beardrustPL (15/02/2026)
+##.theme-custom-cursor:note(html,body)
+
+! ——— Tumblr ———
+! starbowdream•tumblr•com (07/08/2023)
+tumblr.com##.custom-cursor:style(cursor: unset !important)
+tumblr.com##.custom-cursor a:style(cursor: pointer !important)
+! 800db-cloud•tumblr•com (10/11/2023)
+tumblr.com,strategix.dk##body:style(cursor: unset !important)
+! https://crystalrainwish•tumblr•com/post/663725190025494528 (17/02/2024)
+||cursors-4u.net^$third-party
+
+! ——— Other sites ———
+! https://amigalove•com/viewtopic•php?f=6&t=1031 (09/01/2026)
+/images/pointer.
+! muttagencyCOM (09/01/2026)
+/svg/arrow-home
+! sanremo•themall•it (09/01/2026)
+###cursor
+! flockofsiegelTV (Dead source)
+/images/Cursor.
+/images/Cursor-
+! iliketoplayDK (09/01/2026)
+/Assets/*/cursor.png|
+! https://www•dessins-animes•net/t360-grisu-le-petit-dragon (09/01/2026)
+.cur|$image,domain=~pixiv.net|~deviantart.com
+@@://maps.gstatic.com/*.cur|$image
+! eventy-onlinePL (09/01/2026)
+##.circle-cursor:not(html, body)
+! designcognitifCO (09/01/2026)
+/hello-elementor-child/pointer.$script,stylesheet
+! https://veenus•art/users/lottev (09/01/2026)
+/static/cursor.png|
+! https://witchitalia•forumcommunity•net/?t=57541984&st=60 (09/01/2026)
+||altervista.*/puntatore_$image
+! https://github.com/DandelionSprout/adfilt/issues/453
+apis-sklep.pl##.cursor
+! https://github.com/DandelionSprout/adfilt/issues/552
+##div[class^=styles__CursorWrapper-]
+! https://github.com/DandelionSprout/adfilt/issues/564
+/assets/js/Cursor_1__1.min.js
+##div[data-s^=cursor_1__]
+! https://github.com/DandelionSprout/adfilt/issues/598
+ourcodeworld.com##.mouse-cursor
+! https://lottev•moe/writings/alomyria/ (09/01/2026)
+/wp-content/uploads/*/cursor.png|
+! https://www•nerdelandslaget•no/anmeldelser/nintendo-switch-sports (09/01/2026)
+nerdelandslaget.no##html:style(cursor: auto !important)
+! https://github.com/DandelionSprout/adfilt/discussions/779#discussioncomment-5961379
+||uniqueseo.pl/wp-content/uploads/20*/agencja-seo-sem-google-ads-reklama-facebook.png$image
+! https://www•dragon-mania-legends•wiki/wiki/Update_1.8 (09/01/2026)
+/Cursor_Icon.png|
+/Indicator_Arrow_Icon.png|
+! https://epipheo•com/epipheo-films/ (28/10/2025)
+##.n-cursor:not(html,body)
+
+! ——— No example in particular ———
+.ani|$domain=~pixiv.net|~deviantart.com
+.cursor|$domain=~pixiv.net|~deviantart.com
+
+!#include uBO%20list%20extensions/AntiCustomCursors-uBOExtend.txt
