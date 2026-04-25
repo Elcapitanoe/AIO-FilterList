@@ -1,11 +1,11 @@
 ==================================================
         AIO FILTER LIST - AUTOMATED BUILD LOG     
 ==================================================
-Build Timestamp : 2026-04-25 00:40:39 UTC
-Version tag     : 26.04.25.0040
+Build Timestamp : 2026-04-25 01:09:43 UTC
+Version tag     : 26.04.25.0109
 Sources Synced  : 19 upstream lists
 ==================================================
-Raw Rules       : 2117975
-Duplicates Drop : 173274
-Final Payload   : 1944701 active rules
+Raw Rules       : 2117996
+Duplicates Drop : 173275
+Final Payload   : 1944721 active rules
 ==================================================
