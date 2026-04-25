@@ -3,7 +3,6 @@
 CONFIG_FILE="config/sources.txt"
 README_FILE="README.md"
 OUTPUT_DIR="filters"
-LAST_SYNCED=$(date -u +'%Y-%m-%d %H:%M UTC')
 
 > "$README_FILE"
 
@@ -25,7 +24,7 @@ echo "### Upstream Sources" >> "$README_FILE"
 echo "" >> "$README_FILE"
 echo "This repository is built on the hard work of the following projects. Here is the exact list of sources pulled during the automation process:" >> "$README_FILE"
 echo "" >> "$README_FILE"
-echo "| Filter Name | Original Source | Mirror Link | Last Synced |" >> "$README_FILE"
+echo "| Filter Name | Original Source | Mirror Link | Last Updated |" >> "$README_FILE"
 echo "|---|:---:|:---:|:---:|" >> "$README_FILE"
 
 sort -t '|' -k3 -f "$CONFIG_FILE" | while IFS='|' read -r filename url title; do
@@ -37,8 +36,14 @@ sort -t '|' -k3 -f "$CONFIG_FILE" | while IFS='|' read -r filename url title; do
     url=$(echo "$url" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
     title=$(echo "$title" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
     
+    LAST_UPDATED=$(git log -1 --format="%cd" --date=format:'%Y-%m-%d %H:%M:%S UTC+7' -- "$OUTPUT_DIR/$filename")
+    
+    if [[ -z "$LAST_UPDATED" ]]; then
+        LAST_UPDATED=$(TZ='Asia/Jakarta' date +'%Y-%m-%d %H:%M:%S UTC+7')
+    fi
+    
     MIRROR_LINK="https://hosts.domi.my.id/filters/$filename"
-    echo "| $title | [Original]($url) | [Mirror]($MIRROR_LINK) | $LAST_SYNCED |" >> "$README_FILE"
+    echo "| $title | [Original]($url) | [Mirror]($MIRROR_LINK) | $LAST_UPDATED |" >> "$README_FILE"
 done
 
 echo "" >> "$README_FILE"
