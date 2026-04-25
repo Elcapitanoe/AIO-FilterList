@@ -36,10 +36,15 @@ sort -t '|' -k3 -f "$CONFIG_FILE" | while IFS='|' read -r filename url title; do
     url=$(echo "$url" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
     title=$(echo "$title" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | tr -d '\r')
     
-    LAST_UPDATED=$(git log -1 --format="%cd" --date=format:'%Y-%m-%d %H:%M:%S UTC+7' -- "$OUTPUT_DIR/$filename")
+    FILE_PATH="$OUTPUT_DIR/$filename"
     
-    if [[ -z "$LAST_UPDATED" ]]; then
+    if [[ -n $(git status --porcelain "$FILE_PATH") ]]; then
         LAST_UPDATED=$(TZ='Asia/Jakarta' date +'%Y-%m-%d %H:%M:%S UTC+7')
+    else
+        LAST_UPDATED=$(git log -1 --format="%cd" --date=format:'%Y-%m-%d %H:%M:%S UTC+7' -- "$FILE_PATH")
+        if [[ -z "$LAST_UPDATED" ]]; then
+            LAST_UPDATED=$(TZ='Asia/Jakarta' date +'%Y-%m-%d %H:%M:%S UTC+7')
+        fi
     fi
     
     MIRROR_LINK="https://hosts.domi.my.id/filters/$filename"
