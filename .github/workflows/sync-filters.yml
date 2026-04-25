@@ -6,7 +6,7 @@ on:
       - 'config/sources.txt'
       - 'scripts/*.sh'
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 17 * * *'
   workflow_dispatch:
 
 jobs:
@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Grant execution rights to scripts
         run: chmod +x scripts/*.sh
