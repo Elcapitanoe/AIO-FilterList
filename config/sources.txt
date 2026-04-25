@@ -41,7 +41,7 @@ antiabuseporn.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/maste
 antiamazonlistfortwitch.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAmazonListForTwitch.txt|Antiamazonlistfortwitch
 antiawfulcommentslist.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAwfulCommentsList.txt|Antiawfulcommentslist
 browsewebsiteswithoutloggingin.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt|Browsewebsiteswithoutloggingin
-dandelion-sprouts-website-stretcher.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion Sprout's Website Stretcher.txt|Dandelion Sprout's Website Stretcher
+dandelion-sprouts-website-stretcher.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Website%20Stretcher.txt|Dandelion Sprout's Website Stretcher
 dandelion-sprouts-anti-malware-list.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt|Dandelion Sprout's Anti Malware List
 extremelycondensedlist.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ExtremelyCondensedList.txt|Extremelycondensedlist
 i-dont-want-to-download-your-browser.txt|https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt|I Don't Want To Download Your Browser
