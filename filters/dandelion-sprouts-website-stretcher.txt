@@ -1,0 +1,541 @@
+﻿! Title: 🖥️ Dandelion Sprout's Website Stretcher
+! Version: 17March2026v2
+! Expires: 3 days
+! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
+! Description: Have you ever felt bothered by how many websites still think that everyone are using narrow monitors? Well, here's how to stretch them out like a piece of gum!
+! Note that the list is designed for screens that are ≥1440px wide, and it should not be used on phones, pre-2007 monitors, or cheap Windows laptops.
+! Special thanks go out to elypter (https://github.com/elypter), who inadvertently taught me that adblockers can be used to edit elements' CSS styles.
+! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
+
+! ————————————————————————————————————————
+
+! Category: Prisjakt
+! Redesign
+prisjakt.*,pricespy.*,prisjagt.dk,hintaopas.fi,ledenicheur.fr##.category-page > div:style(max-width: 98vw !important)
+prisjakt.*,pricespy.*,prisjagt.dk,hintaopas.fi,ledenicheur.fr##.category-page--wrapper:style(max-width: none !important)
+prisjakt.*,pricespy.*,prisjagt.dk,hintaopas.fi,ledenicheur.fr##div[class^=Content-]:style(max-width: calc(100vw - 100px) !important)
+prisjakt.*,pricespy.*,prisjagt.dk,hintaopas.fi,ledenicheur.fr##div[class^=PageContent-]:style(max-width: 97vw !important)
+prisjakt.*,pricespy.*,prisjagt.dk,hintaopas.fi,ledenicheur.fr##.category-list--top-level-item:style(flex: unset !important; margin-right: 15px !important)
+prisjakt.*,pricespy.*,prisjagt.dk,hintaopas.fi,ledenicheur.fr##nav[class^=Navigation-]:style(max-width: 95vw !important)
+prisjakt.*,pricespy.*,prisjagt.dk,hintaopas.fi,ledenicheur.fr##div[class^=sc-] > div[class^=sc-]:style(max-width: none !important)
+prisjakt.*,pricespy.*,prisjagt.dk,hintaopas.fi,ledenicheur.fr##.pj-ui-product-listing--item:style(min-width: 200px !important; flex: unset !important)
+prisjakt.*,pricespy.*,prisjagt.dk,hintaopas.fi,ledenicheur.fr##.app--main > div[class^=sc-]:style(max-width: 97vw !important)
+prisjakt.*,pricespy.*,prisjagt.dk,hintaopas.fi,ledenicheur.fr##div[data-test=SidebarDesktop]:style(min-width: unset !important)
+prisjakt.*,pricespy.*,prisjagt.dk,hintaopas.fi,ledenicheur.fr##div[class^=CategoryPageWrapper-sc-]:style(max-width: 1700px !important)
+
+! —————————————————————————————————————————
+
+! Category: Vidlii
+vidlii.com##.wrapper:style(width:1370px !important)
+vidlii.com###vtbl_actions:style(width: 950px !important; margin-right: 10px !important)
+vidlii.com###vtbl_desc:style(width:410px !important)
+vidlii.com###vtbl_pl:style(width:940px !important; height:700px !important)
+vidlii.com##.pr_hd_wrapper:style(width:1350px !important)
+vidlii.com##.search_bar:style(width:600px !important)
+vidlii.com##.h_l:style(width:1030px !important)
+vidlii.com##.vc_r:style(width:1150px !important)
+vidlii.com##.ln2:style(width:220px !important)
+vidlii.com##input#em:style(width:340px !important)
+
+! —————————————————————————————————————————
+
+! Category: MeWe (Deprecated section)
+! General entries
+mewe.com##.header_inner:style(max-width: none !important; margin: 0 20px !important)
+mewe.com##.header_nav_list:style(width:40vw !important)
+mewe.com##.header_logo_wrapper:style(margin: 0 30px !important)
+mewe.com##.header_notification-btn:style(margin: 0 60px !important)
+mewe.com##.content-all-wrapper:style(max-width: none !important; width: 98vw !important)
+mewe.com##.c-mw-post:style(max-width: calc(80vw - 350px)!important)
+mewe.com##.c-mw-postbox-placeholder:style(max-width: none !important)
+mewe.com##.postbox_header_textarea:style(max-width: none !important)
+mewe.com##.c-feed-simple:style(max-width: none !important)
+mewe.com##.nofollow:style(white-space: normal !important)
+mewe.com##.mewe-app-wrapper:style(max-width: none !important)
+mewe.com##.mewe-app-content > .h-size-600:style(max-width: none !important; flex: unset !important)
+
+! Media viewer
+mewe.com##.media-dialog_post--comment-fixed:style(width:40vw !important)
+mewe.com##.media-dialog_inner:style(max-width: none !important)
+mewe.com##.media-dialog.content-high.c-mw-comment-your:style(width:40vw !important)
+
+! Emoji picker
+mewe.com##.c-mw-emoji-picker:style(width:670px !important; margin-left: -300px !important)
+mewe.com##div[class*="c-app-route myworld ember-view"] + div[class*=c-mw-emoji-picker]:style(left: 35vw !important)
+mewe.com##ul.like-category li:style(width:45px !important)
+mewe.com##ul.category li:style(width:45px !important)
+mewe.com##.search.active:style(padding-top:6px !important; padding-bottom:3px !important)
+
+! Groups
+mewe.com###content-wrapper:style(max-width: none !important)
+mewe.com##.group-feed-routable_feed:style(flex-basis: 100% !important)
+mewe.com##.sidebar-right-group:style(width: auto !important)
+
+! Fullscreen chat
+!!!mewe.com##.chat-message_content:style(max-width: 100% !important)
+mewe.com##.chat-message_main:style(flex: unset !important)
+
+! Search results
+mewe.com##.dialog_inner:style(max-width: 80% !important; padding-right: 45px !important)
+mewe.com##.smart-search_results:style(max-width: none !important; width: 70vw !important)
+mewe.com##.smart-search_menu--visible:style(margin-left: -5vw !important)
+
+! Userpages
+mewe.com##.profile-posts-routable_feed:style(flex-basis: 100% !important)
+
+! ——————————————————————————————————————
+
+! Category: Pixiv
+
+! Bookmarks
+pixiv.net##div:style(max-width: none !important)
+pixiv.net##figcaption > div > div:style(width: 90% !important)
+pixiv.net##header > div:style(width: 80vw !important)
+pixiv.net##header > div li:style(margin-right: 35px !important)
+pixiv.net##.layout-column-2:style(width:85vw !important;float:right)
+pixiv.net##.layout-a:style(width:98vw !important)
+pixiv.net##div[class^=sc-] + div[class*=" "]:not([class^=sc-]) > div[class^=sc-][class*=" "]:only-of-type:style(width: unset !important; padding-left: 4px !important)
+
+! Search pages (November 2019 redesign)
+pixiv.net##section > div > ul:style(grid-template-columns: repeat(auto-fill, 175px) !important)
+pixiv.net###root > div > div > div > div > div[class*=" sc"]:only-child:style(padding-left: 10px !important)
+pixiv.net###root > div > div > div:only-child:style(width: 98vw !important; padding: 4px !important)
+pixiv.net##div[class*=" "]:not([class^=sc-]) > div[class*=" sc-"]:style(margin: 10px !important; padding: 4px !important)
+pixiv.net###root > div > div > div:last-child > div:only-child:style(width: 99vw !important; padding: 0 !important)
+pixiv.net###root > div > div > div > div > div > div > ul:style(padding-left: 8px !important)
+pixiv.net##div[class^=sc-]:nth-of-type(4):last-of-type > div[class^=sc-]:only-of-type:style(width: unset !important; padding: 0 3px !important)
+pixiv.net##div[class^=sc-]:nth-of-type(5):last-of-type > div[class^=sc-]:only-of-type:style(width: unset !important; padding: 0 3px !important)
+pixiv.net##div > section:upward(1):style(width: unset !important; padding-left: 8px !important; padding-right: 0px !important)
+! 12th of September 2023
+pixiv.net##section > div > div > ul:style(display: flex !important; gap: 16px !important)
+pixiv.net##section > div + div:not(:first-of-type) > div:first-of-type:style(width: 99vw !important; padding-left: 2px !important)
+
+! Front page (May 2020 redesign)
+pixiv.net###root > div > div > div > div > div > ul:style(padding-left: 8px !important)
+pixiv.net##section > div:last-of-type > div:only-of-type > ul:style(width: 98vw !important)
+pixiv.net##div:not([class]) > div[class^=sc-] > div[class]:not([class^=sc-]) > div[class^=sc-]:only-of-type:style(width: unset !important; padding: 0 3px !important)
+!!!pixiv.net##div:matches-css(width: 1224px):style(width: 98vw !important)
+pixiv.net##div[class^=gtm-toppage-] > div:not([class]) > div[class]:style(width: unset !important)
+pixiv.net##section[data-ga4-label=tag_works_content] + div li.col-span-2:style(grid-column:unset!important)
+
+! Image collage on image pages
+pixiv.net##div[style^="position: relative;"]:style(width: unset !important)
+pixiv.net##main[class]:style(min-width: 1060px !important; width: 75px !important)
+
+! The search bar on the front page and on search pages
+pixiv.net##[class=ui-search]:style(width: 460px !important)
+pixiv.net##[class=ui-search] > .container:style(width: 400px !important)
+pixiv.net##[class=ui-search] > .container > #suggest-input:style(width: 400px !important)
+
+! The search bar on image pages
+pixiv.net##form[action="/search.php"]:style(margin-left: 0 !important; width: 460px !important)
+pixiv.net##input[placeholder="Search results"]:style(width: 400px !important)
+
+! Image pages
+pixiv.net##.sc-AykKD:style(width: 97vw !important)
+pixiv.net###root > div[class^=sc-] > div[class^=sc-]:only-child:style(margin: 0 !important; padding: 2px !important)
+pixiv.net##.gtm-illust-recommend-zone > div:not([class]) > div[class*=" "]:style(width: 97vw !important)
+pixiv.net##div[data-theme] > div:not([class]) > div[class] > div:only-of-type:style(padding: 0 !important)
+pixiv.net##div[style^="margin-left:"][style*=columns] > div:only-of-type > div:only-of-type:style(padding: 0 !important; margin-left: 5px !important)
+
+! Search bar
+pixiv.net##input[autocapitalize][name=word]:style(width: 400px !important)
+pixiv.net##header form:style(margin-left: -120px !important)
+
+! Artist pages' art logs
+pixiv.net##div[role=presentation] > div > form:style(min-width: 600px !important)
+pixiv.net##div:not([class]) + div:not([class=" "]) > div > section:style(max-width: none !important)
+pixiv.net##div:not([class]) + div:not([class=" "]) > div > section > ul > li:style(margin-right: 4px !important)
+!!!pixiv.net##div > div[class*=" "]:nth-of-type(2) > div[class*=" "]:only-of-type > div[class*=" "]:only-of-type:style(width: 95vw !important; padding-left: 5px !important) (Moves main images too far right in guest mode.)
+pixiv.net##li[size="1"][offset="0"]:style(margin-right: 4px !important)
+! https://www•pixiv•net/en/users/2284714/artworks
+pixiv.net##nav + div > section:style(max-width: 97vw !important)
+pixiv.net##nav + div > section > ul > li:style(margin-right: 0 !important)
+pixiv.net###root > div > div:only-of-type > div:nth-of-type(2) section:style(max-width: 98vw !important)
+pixiv.net###root > div > div:only-of-type > div:nth-of-type(2) section > ul > li:style(margin-right: 4px !important)
+
+! Discovery page
+pixiv.net##.layout-body:style(width:98vw !important)
+pixiv.net###wrapper:style(margin-left: 2px !important; margin-right: 2px !important; width: 98vw !important)
+pixiv.net###js-react-search-mid > div:style(margin-left: 0 !important; margin-right: 0 !important)
+pixiv.net##._premium-lead-popular-d-body:style(max-width: 100vw !important)
+
+! Novel reading pages 
+pixiv.net###gtm-novel-work-scroll-begin-reading:upward(1):style(max-width: 90% !important)
+! Recommended works, 12th of September 2023
+!!!pixiv.net##li[style]:style(grid-column: unset !important) (Until I can figure out all the things they've changed in the 2025 redesign.)
+pixiv.net##li[style^="visibility: hidden"]:style(visibility: visible !important)
+pixiv.net##div[class*=toppage] li:style(grid-column: unset !important)
+pixiv.net##div[class*=toppage] li:has(iframe[name*=branding])
+pixiv.net##div[class*=toppage] li:empty
+pixiv.net##div[class*=toppage] li:style(min-width: 184px !important; padding-bottom: 8px !important)
+
+! Fix the width of the main page's tag bar on top
+www.pixiv.net##div:first-of-type:has(+ div[class*=" sc-"]) > div:has(ul .gtm-toppage-tag-follow-illustration):style(padding-left: 0 !important; max-width: 85vw !important)
+
+! ——————————————————————————————————————————————————————————————————
+
+! Category: Google Play
+! General entries
+play.google.com##.card-list.two-cards:style(margin-left: 220px !important; margin-right:15px)
+play.google.com##.cluster-heading:style(margin-left: 220px !important)
+
+! Article pages
+play.google.com##.UTg3hd:style(margin-left:5px !important;margin-top:5px !important;max-width:none !important)
+play.google.com##.tlG8q:style(margin-left:10px !important;margin-top:10px !important)
+play.google.com##.LXrl4c:style(width: 860px !important)
+play.google.com##.hkhL9e:style(width: 220px !important)
+play.google.com##.hAyfc:style(width: 250px !important)
+play.google.com##.W4P4ne:style(padding-left: 10px !important;padding-right: 10px !important)
+	
+! User reviews
+play.google.com##.UD7Dzf:style(width: 762px !important)
+play.google.com##.W4P4nw:style(margin-left: 10px !important;margin-right: 10px !important)
+	
+! Article preview images
+play.google.com##.XYLQ2b:style(width: 900px !important)
+play.google.com##.Eg31qe:style(width: 780px !important)
+	
+! Google Play Books article pages
+play.google.com##.Njo8s:style(width:900px !important)
+	
+! Google Play Books notes on how to read content
+play.google.com##.wAHRxd:style(width:420px !important;max-width:450px !important)
+	
+! Google Play Books owned books list
+play.google.com##.body-content:style(margin-left:205px !important)
+	
+! Google Play Music article pages
+play.google.com##div.main-content:style(margin-left:7px !important)
+play.google.com##div.meta-info:style(width:200px !important)
+
+! ————————————————————————————————————————————————————————————————————————
+
+! Category: ASUS Router
+asusrouter.*,router.asus.*##.NM_table:style(width:1100px !important)
+asusrouter.*,router.asus.*###_NM_table:style(width:570px)
+asusrouter.*,router.asus.*###wl_ssid.input_25_table:style(width:350px !important)
+asusrouter.*,router.asus.*##.NM_radius_bottom:style(width:440px !important)
+asusrouter.*,router.asus.*##.NM_radius_bottom_container:style(width:440px !important)
+asusrouter.*,router.asus.*###rt_table:style(width:400px !important)
+asusrouter.*,router.asus.*###wl_wpa_psk:style(width:400px !important)
+asusrouter.*,router.asus.*##.loading_bar:style(width:230px !important)
+asusrouter.*,router.asus.*###deviceOption_1.input_option:style(width:180px !important)
+asusrouter.*,router.asus.*##.clientlist_viewlist:style(width:1120px !important)
+asusrouter.*,router.asus.*##.input_32_table:style(width:410px !important)
+asusrouter.*,router.asus.*##.input_18_table:style(width:168px !important)
+	
+! Login screen
+asusrouter.*,router.asus.*##.form_input:style(width:600px !important)
+
+! ————————————————————————————————————————————————————————————————————
+
+! Category: Wikia
+! This category is based on 'Clean Wikia', made by Phoenixsong (https://userstyles.org/users/161415)
+wikia.org,fandom.com###WikiaPage:style(width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important)
+wikia.org,fandom.com###PageHeader:style(padding: 16px 10px 12px)
+wikia.org,fandom.com###WikiaMainContent:style(width: 100% !important; margin: 0 !important)
+wikia.org,fandom.com###WikiaMainContentContainer:style(margin: 0 !important)
+! Flow the sidebars (which were moved to the bottom of the page) into 2 columns to save vertical space.
+! These rules mostly emulate the website’s rules at a small breakpoint when this happens naturally.
+! (Causes unnecessary whitespace on https://winx•fandom•com/wiki/Tecna)
+!!!wikia.org,fandom.com##.WikiaRail:style(display: block !important; column-count: 2 !important; width: auto !important)
+!!!wikia.org,fandom.com##.rail-module:style(break-inside: avoid !important)
+!!!wikia.org,fandom.com##.rail-sticky-module:style(position: static !important)
+! For 2-column Wikias, e.g. https://spyro.fandom.com/wiki/Fairies
+fandom.com##.WikiaSiteWrapper:style(width: 98vw !important)
+fandom.com##.article-with-rail .WikiaRail:style(max-width: 250px !important; column-count: 1 !important)
+! For the new GUI with the toolbar on the left
+fandom.com##.resizable-container:style(max-width: none !important)
+! For smaller-popularity Gamepedias
+! https://angelswithscalywings•fandom•com/wiki/Reza
+fandom.com###bodyContent + div[id^=siderail_]
+fandom.com##body[class*=gamepedia] #bodyContent:style(width: unset !important)
+
+! ————————————————————————————————————————————————————————————————————
+
+! Category: FinnNO
+! Front page
+finn.no##.ad-stream__unit:style(width: 230px !important)
+finn.no##.pageholder:style(max-width: none !important)
+!!!finn.no##.market-grid__item:style(width: 20% !important)
+	
+! Torget category list page
+finn.no##.container.bg-ice.pbs:style(max-width: none !important; padding-top: 0 !important)
+finn.no##.page:style(max-width: none !important)
+	
+! Product lists (Grid)
+finn.no##.ads--list > .ads__unit:style(max-width: none !important)
+finn.no##.ads__unit:style(max-width:310px !important)
+	
+! Product pages
+finn.no##.grid__unit.u-r-size1of3:style(width: 30% !important)
+finn.no##.grid__unit.u-r-size2of3:style(width: 70% !important)
+	
+! Top bar
+finn.no##.top-bar-top-bar__nav-1O8LN:style(max-width: none !important)
+finn.no##.top-bar-top-bar__menu-item-3kxIT:style(padding-right: 40px !important; padding-left: 40px !important)
+
+! Real estate search section
+www.finn.no##+js(rc, ads__unit--premium, .ads__unit, stay)
+
+! Whatever in goodness' name happened to that site in mid-July 2022
+finn.no##main.page-container:style(max-width: none !important)
+finn.no##div.sf-stacking-context-1:style(grid-template-columns: repeat(5,minmax(0,1fr)) !important)
+finn.no##div.sf-stacking-context-1 > div[class="md:col-span-2"]:style(grid-column: span 4 !important)
+
+! ——————————————————————————————————————————————————————————————————————————
+
+! Category: GitHub
+! This category is based on entries from 'GitHub Wide', which is maintained by https://github.com/mdo at https://github.com/mdo/github-wide, and which is licenced under MIT.
+! General entries
+github.com##.container-lg:style(max-width: none !important)
+github.com##.container:style(width: 100% !important; padding-left: 30px !important; padding-right: 30px !important)
+github.com##.container-lg:style(width: 100% !important; padding-left: 30px !important; padding-right: 30px !important)
+github.com##.file-header::after:style(clear: left !important)
+github.com##.container-xl:style(max-width: none !important)
+
+! Repo Next layout
+github.com##.repository-content:style(width: 100% !important)
+github.com##.repository-with-sidebar:style(padding-right: 60px !important)
+github.com##.repository-with-sidebar > .repository-sidebar:style(margin-right: -60px !important)
+github.com##.summary-stats:style(display: table; width: 100%)
+github.com##.authors-and-code:style(display: table; width: 100%)
+github.com##.summary-stats > li:style(width: 25%)
+github.com##.authors-and-code > .section:style(width: 50%)
+
+! Repo Next Code page
+github.com##.with-full-navigation:style(padding-right: 190px !important)
+github.com##.with-full-navigation > .repository-sidebar:style(margin-right: -190px !important)
+
+! Issues/PRs
+github.com##.discussion-sidebar:style(width: 220px !important)
+github.com##.discussion-timeline:style(width: 100% !important)
+github.com##.col-9:style(width: 100% !important)
+github.com###discussion_bucket > .col-12.col-md-9:style(width: calc(100vw - 285px) !important)
+github.com###partial-discussion-sidebar[data-channel^=issue]:style(margin-left: 24px !important)
+github.com##.col-md-3.col-12.flex-shrink-0:style(width: 200px !important)
+!!!github.com###discussion_bucket .col-md-3.col-12.flex-shrink-0:style(margin-left: 5px !important)
+github.com##.flex-shrink-0.col-12.col-md-9:style(width: calc(100% - 250px) !important)
+!!! github.com##.js-discussion:style(width: calc(100vw - 370px) !important)
+!!!github.com###discussion_bucket:style(width: 100% !important)
+! (https://github.com/DandelionSprout/adfilt/issues/803)
+!!!github.com##.Layout:style(--Layout-sidebar-width: 200px !important)
+! https://github.com/AdguardTeam/AdguardFilters/issues/193320
+github.com##.Layout-sidebar:style(max-width:220px!important;padding-left:10px!important)
+! 03/02/2026
+github.com##[class^=prc-PageLayout-Content-]:style(max-width:2500px!important)
+github.com##[id$=conversation-sidebar]:style(max-width:240px!important)
+
+! PRs only
+github.com##.pull-request-tab-content:style(width: calc(100vw - 275px) !important)
+github.com##.gutter-condensed > .col-3:style(width: 200px !important)
+
+! New issues and Dashboard
+github.com###dashboard:style(position: relative !important)
+github.com##.new-issue-form:style(position: relative !important)
+github.com##html[lang] > body:not(.full-width) .dashboard-sidebar:style(position: absolute !important; top: 0 !important; right: 0 !important)
+github.com##.new-issue-form > .discussion-sidebar:style(position: absolute !important; top: 0 !important; right: 0 !important)
+github.com##button.discussion-sidebar-toggle:style(width: 100% !important)
+github.com##.timeline-new-comment:style(max-width: none !important)
+
+! Dashboard
+github.com##html[lang] > body:not(.full-width) .news:style(float: none !important; margin-right: 360px !important)
+
+! Settings
+github.com##.settings-content:style(float: none !important; width: auto !important; overflow: auto !important)
+github.com##.repo-settings-content:style(float: none !important; width: auto !important; overflow: auto !important)
+github.com##.container > .settings-content, .repo-settings-content:style(margin-left: 260px !important)
+github.com###repo-settings > .menu-container:style(width: 240px !important)
+github.com###js-flash-container > .flash-messages:style(width: 100% !important; padding-left: 30px !important; padding-right: 30px !important)
+
+! Profile avatar tooltip
+github.com##.u-photo .avatar:style(width: 230px !important)
+github.com##.h-card:style(width: 230px; margin-right: 16px)
+
+! Commit feed notes on a repo's front page
+github.com##.commit-desc > .text-small:style(max-width: none !important)
+
+! Commit comments
+github.com###comments > .timeline-comment-wrapper:style(width: calc(100vw - 240px) !important)
+
+! Filename textfields
+github.com##.js-blob-filename:style(width: 400px !important)
+
+! Profile page
+github.com##body.page-profile .flex-shrink-0.col-12.col-md-9:style(margin-left: 40px !important)
+
+! https://github.com/DandelionSprout/adfilt/issues/803
+github.com##.Layout--sidebarPosition-flowRow-end:style(width: 96vw !important; --Layout-sidebar-width: 220px !important; --Layout-gutter: -5px !important)
+
+! Repo layout 13 December 2023
+github.com##div[tabindex] + div > div[class^=Box-sc-][class*=" "]:style(max-width: unset !important)
+github.com##div[data-selector*=repos-split-pane-content i]:style(max-width: unset !important)
+
+! https://github.com/DandelionSprout/adfilt/issues/962
+github.com##div.Layout--sidebarPosition-end:style(grid-template-columns: calc(100vw - 275px) 210px !important)
+!!!github.com##.timeline-comment:style(width: calc(100vw - 335px) !important)
+
+! Early 2025's redesign of issue reports' pages
+github.com##div[class^=IssueMetadata-] ~ div[class^=Box-]:style(max-width:2000px!important)
+
+! Hotfixes 03/02/2026
+github.com##div[class*=prc-PageLayout-Content-]:style(max-width:2200px!important)
+github.com##div[id$=conversation-sidebar]:style(width:240px!important)
+github.com##div[class^=IssueViewer] > div[class^=ContentWrapper]:style(max-width:2400px!important)
+
+! —————————————————————————————————————————————————————————————————————
+
+! Category: Patreon
+! General entries
+patreon.com##.sc-Rmtcm:style(max-width: none !important)
+patreon.com##.gHmKBb:style(white-space: normal !important)
+patreon.com##div.HztiF.sc-cvbbAY:style(max-width: 380px !important)
+patreon.com##div > iframe:style(left: 0 !important)
+
+! List of active pledges
+patreon.com##div > div[data-tag=pledges-your-pledges-pledge-info]:style(width: 190% !important)
+patreon.com##.FhviP:style(max-width: 95vw !important)
+patreon.com##div.gRYtWI:nth-of-type(1):style(max-width: 450px !important)
+patreon.com##div[data-tag^=activePledgeToCreator-] > div[data-tag=right-column]
+
+! —————————————————————————————————————————————————————————————————————
+
+! Category: SoundCloud
+soundcloud.com##.l-container:style(width: 95vw !important)
+!!!soundcloud.com##html[lang] > body:style(background: none !important) (https://github.com/DandelionSprout/adfilt/issues/1185)
+
+! Making it easier to see the thumbnails in the video player bar
+soundcloud.com##.playbackSoundBadge__avatar > div > .sc-artwork:style(width: 46px !important; height: 46px !important)
+soundcloud.com##.playbackSoundBadge__avatar > div:style(width: 46px !important; height: 46px !important)
+soundcloud.com##.playbackSoundBadge__avatar:style(width: 46px !important; height: 46px !important; margin-right: 3px !important)
+
+! —————————————————————————————————————————————————————————————————————
+
+! Category: Nintendo of America
+! Amiibo pages
+! Some mild flicker may occur on some pages
+nintendo.com##.compatible-amiibo > .wrapper:style(max-width: none !important; width: 98vw !important)
+nintendo.com##.figures li:style(width: auto !important)
+nintendo.com##.figures:style(column-count: 7 !important)
+nintendo.com###game-detail-page:style(max-width: none !important; width: 98vw !important)
+nintendo.com###game-set > li:style(width: auto !important)
+nintendo.com###game-set:style(column-count: 8 !important)
+
+! —————————————————————————————————————————————————————————————————————
+
+! Category: Wikipedia and other Vector-skin wikis
+! For a new interface that had initially been introduced to Wikipedia and Wiktionary in some languages, e.g. fr•wikipedia•org
+! The Square Button mode has since improved to a sufficiently functional state that the entries could be dramatically reduced in number.
+wikipedia.org##.mw-page-container:style(padding-left: 5px !important; padding-right: 5px !important)
+
+! —————————————————————————————————————————————————————————————————————
+
+! Category: Bulbapedia
+bulbapedia.bulbagarden.net##.bg-global-menu + #globalWrapper #content:style(margin-left: 10px !important; margin-right: 10px !important; max-width: 95vw !important)
+bulbapedia.bulbagarden.net###left_rail
+bulbapedia.bulbagarden.net###right_rail
+bulbapedia.bulbagarden.net###content:style(max-width: 1800px !important; margin-right: 10px !important)
+
+! —————————————————————————————————————————————————————————————————————
+
+! Category: ModTheSims
+! https://modthesims•info/ts3/
+modthesims.info##div[class=container]:style(width:98%!important)
+modthesims.info###maincontentwrapper:style(width:98%!important)
+! https://modthesims•info/ (20/11/2024)
+modthesims.info##.row:not([style]) > .maincontentwrapper:style(width:unset!important;max-width:2300px!important)
+modthesims.info##.row:not([style]) .span8:style(width:unset!important)
+
+! —————————————————————————————————————————————————————————————————————
+
+! Category: Google Gemini
+gemini.google.com##.conversation-container:style(max-width:2300px!important)
+! Things related to Canvas mode
+gemini.google.com##.input-area-container:style(max-width:1600px!important)
+gemini.google.com##.immersives-mode:style(max-width:2000px!important;margin-right:2px!important)
+
+! —————————————————————————————————————————————————————————————————————
+
+! Overcategory: Loosely assorted sites with ≤2 entries
+
+! Category: Telenor Digital Norway
+telenor.no##.container:style(width: 98vw)
+telenor.no##.minesider-container:style(max-width: none; width: 98vw)
+
+! Category: Qwant
+qwant.com##.results-column:style(max-width: none !important; width: 1200px !important)
+
+! Category: GitLab
+! (Given the sheer number of domains that'd be needed to add, self-hosted GitLab instances are not supported by this list.)
+gitlab.com##.container-fluid.container-limited:not(.breadcrumbs):style(max-width: 100% !important)
+gitlab.com##.wiki.md.file-content:style(max-width: none !important)
+
+! Category: PayPal
+! Account frontpage
+paypal.com##.vx_mainContent:style(max-width: 1500px !important)
+
+! Category: Bitwarden Vault
+vault.bitwarden.*##.container.page-content:style(width: 100%)
+
+! Category: Piliapp
+piliapp.com##.container:style(width: 100vw !important)
+piliapp.com##div#content:style(width: 78% !important)
+
+! Category: Travis CI
+travis-ci.org##.wrapper-main:style(max-width: none !important; width: 92% !important)
+travis-ci.org##.main:style(max-width: none !important)
+
+! Category: TwitchMetrics
+twitchmetrics.net##div.container:style(max-width: 95vw !important)
+
+! Category: Font Meme
+fontmeme.com###wrap:style(width: 97vw !important)
+
+! r34X³
+rule34.xxx##input#source:style(width:1000px!important)
+
+! Category: dafontFREE
+dafontfree.net##.wrappage:style(width: 98vw !important)
+
+! Category: Reddit
+! When opening a post in New Reddit in a new tab
+reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##div[aria-hidden] > div[tabindex] > div:nth-of-type(1):style(max-width: 1000px !important)
+
+! Category: Fark
+fark.com###container:style(width: 95vw !important)
+fark.com###newsContainer:style(width: 96% !important)
+
+! Category: Color-hex
+! Makes the text input bar display all of its info placeholder text properly
+color-hex.com###colorvalue:style(width: 230px !important)
+
+! Category: TV Tropes
+tvtropes.org###main-container:style(width: unset !important)
+
+! Category: ChatGPT
+chatgpt.com##div[class*=turn-messages]:style(--thread-content-max-width:unset!important;max-width:2000px)
+chatgpt.com##div.text-base:style(--thread-content-max-width:unset!important;max-width:2000px)
+
+! Category: Winstall
+winstall.app##ul[class^=apps_all__]:style(grid-template-columns: repeat(6, 1fr)!important)
+winstall.app##div.container:style(max-width:2400px!important)
+
+! Category: PerplexityAI
+perplexity.ai##.max-w-threadContentWidth:style(max-width:2000px!important)
+
+! Category: CoPilot. Like... the actual CoPilot. Not the atrocious renaming of Microsoft Office. (18/09/2025)
+copilot.microsoft.com##.max-w-chat:style(max-width:1900px!important)
+
+! Category: duckaiAI
+app.duckai.ai##.max-w-3xl.w-full:style(max-width:2000px!important)
+
+! Category: Google Web Search
+! The front search bar (17/03/2026)
+www.google.*,ipv6.google.com##div[jsmodel*="       "]:style(max-width:2000px!important)
+
+! metaAI
+! Result(s)
+www.meta.ai##div[class*=" "]:nth-of-type(2) > div[class*=" "]:first-of-type:has(+ div[aria-hidden=true]):style(max-width:1900px!important)
+! Text fields
+www.meta.ai##div[class*=" "]:nth-of-type(2):has(> div > div[data-pagelet*=KadabraPrivateComposer]):style(max-width:1600px!important;align-self:center!important;min-width:1400px!important)
