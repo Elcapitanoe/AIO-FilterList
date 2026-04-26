@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202604251708
+! Version: 202604261707
 ! Title: Fanboy's Social Blocking List
-! Last modified: 25 Apr 2026 17:08 UTC
+! Last modified: 26 Apr 2026 17:07 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 33abe1160197cf23e6aa8da217368f7ae9289f34
+! Commit: 3c7b017f8755d861e46a8cf9ea6ed3c21565e562
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -11988,6 +11988,7 @@ destructoid.com##.wp-block-gamurs-footer-nav__website-info__socials
 hsph.harvard.edu##.wp-block-hsph-sharing
 ogbongeblog.com##.wp-block-jetpack-send-a-message
 comicbook.com,hyperallergic.com,reneweconomy.com.au,vice.com##.wp-block-jetpack-sharing-buttons
+vice.com##.wp-block-jetpack-sharing-buttons-wrapper
 publichealthpolicyjournal.com,theonion.com##.wp-block-outermost-social-sharing
 newsreleases.sandia.gov##.wp-block-snl-blocks-snl-social-share-btns
 techcrunch.com##.wp-block-techcrunch-social-share
