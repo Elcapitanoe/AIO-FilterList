@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202605040334
+! Version: 202605040359
 ! Title: EasyList
-! Last modified: 04 May 2026 03:34 UTC
+! Last modified: 04 May 2026 03:59 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 1622dcb98e5e9e296fc1ce919e600556d6cb977d
+! Commit: 67e83645776c211a939d1f7cacc5483fe44458e4
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -67563,6 +67563,7 @@ browsershots.org#@#.advert_area
 ||ytqzrtpejocyh.space^
 ||ytsa.net^
 ||ytseotpnuzrdc.site^
+||ytsivzidynwtl.site^
 ||ytsjtdehsznbu.online^
 ||ytsmqchsmmozq.space^
 ||ytsuptbpkgdq.net^
@@ -85723,6 +85724,7 @@ eztv.tf,eztv.yt##a > img[alt="Anonymous Download"]
 designtaxi.com##a.a-click[target="_blank"]
 cript.to##a.btn[target="_blank"][href^="https://cript.to/"]
 infowars.com##a.css-1yw960t
+scloud.ws##a.download-button
 darkreader.org##a.logo-link[target="_blank"]
 hulkshare.com##a.nhsIndexPromoteBlock
 steam.design##a.profile_video[href^="https://duobot.com/"]
