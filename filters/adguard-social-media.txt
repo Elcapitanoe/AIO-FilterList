@@ -678,6 +678,11 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+foodnavigator.com##.share-bar-buttons
+igroray.ru##.product-controls__button--shared
+youtube.com##.icon-share_arrow
+arcticwolf.com##.elementor-widget-heading[data-widget_type="heading.default"]:has(+ .elementor-widget-share-buttons)
+espncricinfo.com##.ds-flex > div.ds-flex:has(> div.ds-popper-wrapper > div.ds-flex > i.icon-share-outlined)
 gamingonlinux.com##.article_list_social_media
 suzuri.jp##.share-area
 tria.ge##div.button-bar:has(> a[href^="https://twitter.com/intent/"])
@@ -5962,7 +5967,7 @@ cojicaji.jp##.article-footer__sns
 xiaomitime.com,xiaomiui.net##.share_float_container
 cepa.org##.home-news2
 jalan.net##.jln-btn-share
-anglers.jp,sketch.pixiv.net,scientificrussia.ru,htmlgames.com,carscoops.com,meteoblue.com,regnum.ru,vashotel.ru,axolot.mave.digital,stopcor.org,life4me.plus,obrazovaka.ru,myabandonware.com,winporn.net,earthsight.org.uk,1news.az,mahjong.com,zabkagroup.com,buy.line.me,hromadske.radio,intellinews.com,zaochnik.ru##.socials
+ishiguro-gr.com,anglers.jp,sketch.pixiv.net,scientificrussia.ru,htmlgames.com,carscoops.com,meteoblue.com,regnum.ru,vashotel.ru,axolot.mave.digital,stopcor.org,life4me.plus,obrazovaka.ru,myabandonware.com,winporn.net,earthsight.org.uk,1news.az,mahjong.com,zabkagroup.com,buy.line.me,hromadske.radio,intellinews.com,zaochnik.ru##.socials
 corp.rakuten.co.jp##.snsSharing
 books.rakuten.co.jp##.itemSocialBtn
 sport-express.ru##div[class^="se-shareblock"]
