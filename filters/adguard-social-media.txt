@@ -678,6 +678,9 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+helloproject.com##div.mx-auto:has(> div.ShareIcons)
+joysound.com##.flex > button:has(>span > svg > g > path[d^="M12 10"])
+akb48.co.jp##.shareBlk
 j-wave.co.jp##.getpoint
 vozpopuli.com##.post-info > .authors-container + .items-center > .flex:has(> .facebook-rrss)
 vozpopuli.com##.post-info > .authors-container + .items-center > .flex:has(> .facebook-rrss) + span
@@ -1114,7 +1117,7 @@ seeklogo.com##.containerSocialShare
 arigus.tv##.e-share
 shonanjin.com##.p-post-detail__sns
 observerbd.com##.dtl > div[style="margin: 35px 0 45px 0"]
-charlessheimprove.com,richardquestionbuilding.com,timmaybealready.com,charlestoughrace.com,ianrequireadult.com,marissasharecareer.com,jessicaclearout.com,lancewhosedifficult.com,lauradaydo.com,crystaltreatmenteast.com,walterprettytheir.com,christopheruntilpoint.com,mikaylaarealike.com,lukesitturn.com,jilliandescribecompany.com,kellywhatcould.com,johnalwayssame.com,mariatheserepublican.com,jonathansociallike.com,diananatureforeign.com,sarahnewspaperbeat.com,richardsignfish.com,jennifercertaindevelopment.com,nathanfromsubject.com,adrianmissionminute.com,kristiesoundsimply.com,heatherwholeinvolve.com,alejandrocenturyoil.com,maxfinishseveral.com,robertordercharacter.com,sandratableother.com,brittneystandardwestern.com,jamessoundcost.com,toddpartneranimal.com,kimberlyonlocal.com,richardstorehalf.com,zacharycollectionmight.com,thomasalthoughhear.com,susanhavekeep.com,lorimuchbenefit.com,evelynthankregion.com,jessicaglassauthor.com,lisatrialidea.com,bethshouldercan.com,donaldlineelse.com,josephseveralconcern.com,alleneconomicmatter.com,robertplacespace.com,heatherdiscussionwhen.com,jayservicestuff.com,morganoperationface.com,johntryopen.com,jamiesamewalk.com,kennethofficialitem.com,lukecomparetwo.com,edwardarriveoften.com,paulkitchendark.com,kathleenmemberhistory.com,phenomenalityuniform.com,gamoneinterrupted.com,urochsunloath.com,35volitantplimsoles5.com,antecoxalbobbing1010.com,cyamidpulverulence530.com,guidon40hyporadius9.com,bigclatterhomesguideservice.com,housecardsummerbutton.com,fittingcentermondaysunday.com,un-block-voe.net,voeunblk.com,voeunbl0ck.com,voeunblock2.com,voeunblock.com,voe-unblock.*,voe.sx##.jw-share-item
+brittanyaheadnew.com,charlessheimprove.com,richardquestionbuilding.com,timmaybealready.com,charlestoughrace.com,ianrequireadult.com,marissasharecareer.com,jessicaclearout.com,lancewhosedifficult.com,lauradaydo.com,crystaltreatmenteast.com,walterprettytheir.com,christopheruntilpoint.com,mikaylaarealike.com,lukesitturn.com,jilliandescribecompany.com,kellywhatcould.com,johnalwayssame.com,mariatheserepublican.com,jonathansociallike.com,diananatureforeign.com,sarahnewspaperbeat.com,richardsignfish.com,jennifercertaindevelopment.com,nathanfromsubject.com,adrianmissionminute.com,kristiesoundsimply.com,heatherwholeinvolve.com,alejandrocenturyoil.com,maxfinishseveral.com,robertordercharacter.com,sandratableother.com,brittneystandardwestern.com,jamessoundcost.com,toddpartneranimal.com,kimberlyonlocal.com,richardstorehalf.com,zacharycollectionmight.com,thomasalthoughhear.com,susanhavekeep.com,lorimuchbenefit.com,evelynthankregion.com,jessicaglassauthor.com,lisatrialidea.com,bethshouldercan.com,donaldlineelse.com,josephseveralconcern.com,alleneconomicmatter.com,robertplacespace.com,heatherdiscussionwhen.com,jayservicestuff.com,morganoperationface.com,johntryopen.com,jamiesamewalk.com,kennethofficialitem.com,lukecomparetwo.com,edwardarriveoften.com,paulkitchendark.com,kathleenmemberhistory.com,phenomenalityuniform.com,gamoneinterrupted.com,urochsunloath.com,35volitantplimsoles5.com,antecoxalbobbing1010.com,cyamidpulverulence530.com,guidon40hyporadius9.com,bigclatterhomesguideservice.com,housecardsummerbutton.com,fittingcentermondaysunday.com,un-block-voe.net,voeunblk.com,voeunbl0ck.com,voeunblock2.com,voeunblock.com,voe-unblock.*,voe.sx##.jw-share-item
 pon-navi.net##.socialBox
 ynjn.jp##.flex:has(> a[href^="https://twitter.com/intent/tweet?"])
 juventus-journal.com##.hupso-share-buttons
@@ -2806,7 +2809,7 @@ timesofindia.indiatimes.com##.text-center:has(> i[data-plugin="washare"])
 petitlyrics.com,mag.minkabu.jp##.sns_buttons
 tyla.com,uniladtech.com##div[class^="article-header_shareLink"]
 portal.productboard.com###portal-card-detail div:has(> span > div > svg.pb-icon)
-song.link##button[aria-label="Share this page"]
+euractiv.com,song.link##button[aria-label="Share this page"]
 serieslan.com##.shared-box
 baopublishing.it##.widget_socialsharing_widget
 bbs.wps.cn##.topic-actions > div.action:has(> i.icon-share-all)
@@ -6666,7 +6669,7 @@ kurelife.jp##.p-recipedt1__social
 kikkoman.co.jp##.share-container-tsushin
 park.ajinomoto.co.jp##.wrapperShareBtn
 ahp-recipe.jp##div[class^="btn-sns"]
-produce101.jp,theyellowmonkeysuper.jp,sp.stu48.com,novelbright.jp,glay.co.jp,bumpofchicken.com,aimyong.net,jo1.jp,member.vaundy.jp,dancyu.jp##.block--share
+97kids.fanpla.jp,afloodofcircle.com,ano-official.com,asobisystem.com,equal.fanpla.jp,evnne.jp,fanplanet.jp,iberis-and.com,kawasakitakaya.fanpla.jp,kepura.com,luvfor.fanpla.jp,marcy-official.com,nakanodennou.fanpla.jp,ningen-isu.com,nuskoolarea.fanpla.jp,official.watwing.com,onepact.fanpla.jp,razor-web.jp,retroriron.com,sakanamon.com,singershigh.tokyo,sp.orangerange.com,taniyuuki.com,theshesgone.com,tnt-official.com,tsubasa-imai-alas.com,wendy.fanpla.jp,www.exwhyz.jp,sp.nearly-equal-joy.jp,produce101.jp,theyellowmonkeysuper.jp,sp.stu48.com,novelbright.jp,glay.co.jp,bumpofchicken.com,aimyong.net,jo1.jp,member.vaundy.jp,dancyu.jp##.block--share
 oceans.tokyo.jp##.detaile-sns-box-sp
 bellemaison.jp##.external-buttons
 united-arrows.co.jp##.mlShare
@@ -8352,7 +8355,7 @@ singletrackworld.com,pplware.sapo.pt##.wp-embed-share-dialog-open
 studopedia.ru##.footer-like-block
 poradnikpracownika.pl,poradnikprzedsiebiorcy.pl##.share-zone-fixed
 ken-g.com##.entry-footer_share
-veryansintv.com,airlinehaber.com,muglayenigun.com,coinotag.com,haberolduk.com##.kanews-article-share
+aydinhavadisleri.com,veryansintv.com,airlinehaber.com,muglayenigun.com,coinotag.com,haberolduk.com##.kanews-article-share
 mel.fm##.l-publication__mobile-share-button
 destructoid.com###post_sharethis
 theringer.com,arrowheadpride.com,barcablaugranes.com,polygon.com##.c-social-buttons__item
@@ -12523,13 +12526,13 @@ lalafo.az,mangaplaza.com,9111.ru,hmv.co.jp,dmarket.docomo.ne.jp,tabiyomi.yomiuri
 photobucket.com##.shareExternal
 ng.ru##.shareFix
 ahaber.com.tr##.shareFrame
-hattatu-matome.ldblog.jp,gnw-anime.com,gesuotome.com,backnumber.info,hisomaso.com,shogi.or.jp,dime.jp,osomatsusan.com,sabah.com.tr##.shareList
+sp.not-equal-me.jp,hattatu-matome.ldblog.jp,gnw-anime.com,gesuotome.com,backnumber.info,hisomaso.com,shogi.or.jp,dime.jp,osomatsusan.com,sabah.com.tr##.shareList
 pravoved.ru##.shareMoreLink
 tsurekano-anime.com,smbcnikko.co.jp,famitsu.com,crackberry.com,imore.com,rambler.ru##.share__list
 cc.com##.share_cta
 sukusuku.com,medyatava.net##.share_icons
 filepuma.com##.share_index
-osama-ranking-treasurechest.com,ksltv.com,choiz.me,tubxporn.com,zpppstop.ru##.share_link
+utf.u-tokyo.ac.jp,osama-ranking-treasurechest.com,ksltv.com,choiz.me,tubxporn.com,zpppstop.ru##.share_link
 cursorinfo.co.il,buzzspor.com##.share_social
 kmib.co.kr,konkurent.in.ua,konkurent.ua##.ico_share
 izlesene.com##.share_vid
