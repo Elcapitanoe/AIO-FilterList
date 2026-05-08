@@ -18,20 +18,20 @@ This repository is built on the hard work of the following projects. Here is the
 
 | Filter Name | Original Source | Mirror Link | Last Updated |
 |---|:---:|:---:|:---:|
-| ABPindo | [Original](https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt) | [Mirror](https://hosts.domi.my.id/filters/abpindo.txt) | 2026-05-06 17:30:34 |
-| AdGuard Annoyances | [Original](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt) | [Mirror](https://hosts.domi.my.id/filters/adguard-annoyances.txt) | 2026-05-08 00:33:50 |
-| AdGuard Base | [Original](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt) | [Mirror](https://hosts.domi.my.id/filters/adguard-base.txt) | 2026-05-08 00:33:50 |
-| AdGuard Mobile ADS | [Original](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt) | [Mirror](https://hosts.domi.my.id/filters/adguard-mobile-ads.txt) | 2026-05-08 00:33:50 |
-| AdGuard Protection | [Original](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt) | [Mirror](https://hosts.domi.my.id/filters/adguard-tracking-protection.txt) | 2026-05-08 00:33:50 |
-| AdGuard Social Media | [Original](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt) | [Mirror](https://hosts.domi.my.id/filters/adguard-social-media.txt) | 2026-05-08 00:33:50 |
-| AdGuard URL Tracking | [Original](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt) | [Mirror](https://hosts.domi.my.id/filters/adguard-url-tracking.txt) | 2026-05-08 00:33:50 |
-| EasyList | [Original](https://easylist.to/easylist/easylist.txt) | [Mirror](https://hosts.domi.my.id/filters/easylist.txt) | 2026-05-08 00:33:50 |
-| EasyList Cookie List | [Original](https://secure.fanboy.co.nz/fanboy-cookiemonster.txt) | [Mirror](https://hosts.domi.my.id/filters/fanboy-cookiemonster.txt) | 2026-05-08 00:33:50 |
-| Fanboy's Annoyance List | [Original](https://secure.fanboy.co.nz/fanboy-annoyance.txt) | [Mirror](https://hosts.domi.my.id/filters/fanboy-annoyance.txt) | 2026-05-08 00:33:50 |
-| Fanboy's Social Blocking List | [Original](https://easylist.to/easylist/fanboy-social.txt) | [Mirror](https://hosts.domi.my.id/filters/fanboy-social.txt) | 2026-05-08 00:33:50 |
-| HaGeZi's Pro | [Original](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt) | [Mirror](https://hosts.domi.my.id/filters/hagezi-pro.txt) | 2026-05-08 00:33:50 |
-| OISD Big | [Original](https://big.oisd.nl/domainswild) | [Mirror](https://hosts.domi.my.id/filters/oisd-big.txt) | 2026-05-08 00:33:50 |
-| URLhaus Malicious URL Blocklist | [Original](https://malware-filter.gitlab.io/malware-filter/urlhaus-filter.txt) | [Mirror](https://hosts.domi.my.id/filters/urlhaus-malicious.txt) | 2026-05-08 00:33:50 |
+| ABPindo | [Original](https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt) | [Mirror](https://hosts.domi.my.id/filters/abpindo.txt) | 2026-05-09 00:28:50 |
+| AdGuard Annoyances | [Original](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt) | [Mirror](https://hosts.domi.my.id/filters/adguard-annoyances.txt) | 2026-05-09 00:28:50 |
+| AdGuard Base | [Original](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt) | [Mirror](https://hosts.domi.my.id/filters/adguard-base.txt) | 2026-05-09 00:28:50 |
+| AdGuard Mobile ADS | [Original](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt) | [Mirror](https://hosts.domi.my.id/filters/adguard-mobile-ads.txt) | 2026-05-09 00:28:50 |
+| AdGuard Protection | [Original](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt) | [Mirror](https://hosts.domi.my.id/filters/adguard-tracking-protection.txt) | 2026-05-09 00:28:50 |
+| AdGuard Social Media | [Original](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt) | [Mirror](https://hosts.domi.my.id/filters/adguard-social-media.txt) | 2026-05-09 00:28:50 |
+| AdGuard URL Tracking | [Original](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt) | [Mirror](https://hosts.domi.my.id/filters/adguard-url-tracking.txt) | 2026-05-07 17:33:51 |
+| EasyList | [Original](https://easylist.to/easylist/easylist.txt) | [Mirror](https://hosts.domi.my.id/filters/easylist.txt) | 2026-05-09 00:28:50 |
+| EasyList Cookie List | [Original](https://secure.fanboy.co.nz/fanboy-cookiemonster.txt) | [Mirror](https://hosts.domi.my.id/filters/fanboy-cookiemonster.txt) | 2026-05-09 00:28:50 |
+| Fanboy's Annoyance List | [Original](https://secure.fanboy.co.nz/fanboy-annoyance.txt) | [Mirror](https://hosts.domi.my.id/filters/fanboy-annoyance.txt) | 2026-05-09 00:28:50 |
+| Fanboy's Social Blocking List | [Original](https://easylist.to/easylist/fanboy-social.txt) | [Mirror](https://hosts.domi.my.id/filters/fanboy-social.txt) | 2026-05-09 00:28:50 |
+| HaGeZi's Pro | [Original](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt) | [Mirror](https://hosts.domi.my.id/filters/hagezi-pro.txt) | 2026-05-09 00:28:50 |
+| OISD Big | [Original](https://big.oisd.nl/domainswild) | [Mirror](https://hosts.domi.my.id/filters/oisd-big.txt) | 2026-05-09 00:28:50 |
+| URLhaus Malicious URL Blocklist | [Original](https://malware-filter.gitlab.io/malware-filter/urlhaus-filter.txt) | [Mirror](https://hosts.domi.my.id/filters/urlhaus-malicious.txt) | 2026-05-09 00:28:50 |
 
 ### How It Works
 

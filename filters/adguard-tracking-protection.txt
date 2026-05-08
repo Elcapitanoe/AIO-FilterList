@@ -568,6 +568,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||htplayground.com^
 ||mod.leftnewsex.com^
 ||magtorr.com^
 ||eventtrace.ru^
@@ -182177,6 +182178,7 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||autoguide.com/api/posts/*/impressions
 ||global.one.yomiuri.co.jp/ssc-ym-client.v*.js
 ||247wallst.com/b66d/|$script
 ||247wallst.com/wp-content/plugins/fwp-247-analytics-old/js/dist/fwp-analytics-main.js
@@ -184336,7 +184338,6 @@ thehindu.com###sectiondivicymi
 ||static.lefigaro.fr/figanalytics/
 ||community.theta360.guide/assets/google-universal-analytics-v4
 ||dpg.danawa.com/*/rest/*getStampEvent
-||www-direct.upgradedhome.com/eventStream
 ||fap.bar/a.js
 ||cue.search.naver.com/api/*/log/
 ||roadster.com/roadster_dealer_analytics
@@ -184532,8 +184533,7 @@ lto.de##img[src^="https://ssl-wolterskluwer.met.vgwort.de/"]
 ||computerbase.de/analytics
 ||rec1.smt.docomo.ne.jp/bcn_access_log/
 ||kccsrecommend.site/torimochi_log/
-||www-direct.motorcycle.com/eventStream
-||www-direct.autoguide.com/eventStream
+/eventStream|$domain=autoguide.com|motorcycle.com|upgradedhome.com
 ||hub.fromdoppler.com/public/dhtrack.js
 ||kick.com/*&loaderVersion=
 ||connatix.com/scripts/hotjar.js
@@ -191974,6 +191974,8 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/uBlockOrigin/uAssets/issues/32857
+@@||dd.subito.it.first-party-js.datadome.co^$script,xmlhttprequest,domain=areariservata.subito.it
 ! https://github.com/AdguardTeam/AdguardFilters/issues/229453
 @@||g.alicdn.com/alilog/mlog/aplus_o.js$domain=v.youku.com
 @@||log.mmstat.com/eg.js$domain=v.youku.com
@@ -197127,6 +197129,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||chaireggnog.com^
 ||chairscrack.com^
 ||chairsdonkey.com^
+||chalkdream.com^
 ||chalkoil.com^
 ||changeablecats.com^
 ||channelcamp.com^
@@ -197353,6 +197356,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||dollarthrill.com^
 ||domaincolumn.com^
 ||doomhedge.com^
+||dotshellmain.com^
 ||doubledefend.com^
 ||doubtdrawer.com^
 ||dq95d35.com^
