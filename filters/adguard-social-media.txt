@@ -678,6 +678,7 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+tools.pdf24.org###sharePageSection
 amazon.co.jp##.new-social-share-widget-container
 amazon.co.jp##.profile-masthead-social-share-container
 transparencyreport.google.com##.h-c-social__title
@@ -3667,7 +3668,7 @@ watabe-wedding.co.jp###SnsShare
 iprimo.jp##.detail_column_sns
 horimiya-anime.com##.p-nav__snslist
 nippon.com##div[name="addthis_tools"]
-ecosistemastartup.com,conservativebrief.com,kayiprihtim.com,glassalmanac.com,karanpc.com,mrmad.com.tw##.ns-buttons
+thecookingfoodie.com,ecosistemastartup.com,conservativebrief.com,kayiprihtim.com,glassalmanac.com,karanpc.com,mrmad.com.tw##.ns-buttons
 food.ru##div[class^="shareRateMaterial_"] > div[class^="shareRateMaterial_contentItem"]:last-child
 iodonna.it##.eltdf-woo-social-share-holder
 google.com##.xzCJ9 > div[jscontroller] + div[class]
@@ -12594,7 +12595,7 @@ radyo.trt.net.tr##.social-icons-small
 acura.com##.social-icons:not(.last)
 theatlantic.com##.social-kit__item
 rzn.info,skidkaonline.ru##.social-like
-serelseramik.com.tr,cyber.sports.ru,danslescoulisses.com,estore.ua,kyssfm.com,denofgeek.com,newsroom.pinterest.com,espreso.tv,twicomi.com,gap.co.jp,beautyhack.ru,rlsnet.ru,culture.pl,transfermarkt.de,yeniakit.com.tr,calciomercato.it,ikinciyeni.com,outlookindia.com,dailymail.co.uk##.social-links
+fotospor.com.tr,serelseramik.com.tr,cyber.sports.ru,danslescoulisses.com,estore.ua,kyssfm.com,denofgeek.com,newsroom.pinterest.com,espreso.tv,twicomi.com,gap.co.jp,beautyhack.ru,rlsnet.ru,culture.pl,transfermarkt.de,yeniakit.com.tr,calciomercato.it,ikinciyeni.com,outlookindia.com,dailymail.co.uk##.social-links
 xrite.com,pchela.news,mrsgreenapple.com,siecledigital.fr,riotgames.com,vk.sportsbull.jp,alfalfalfa.com,kto-chto-gde.ru,prozoro.net.ua,focus.ua,skysports.com,vice.com,sovsport.ru##.social-list
 idnes.cz##.social-list-bubble
 imhonet.ru##.social-net
@@ -15846,8 +15847,6 @@ tvnetil.net###backgroundPopup
 vgolos.com.ua###likesplash
 vgolos.com.ua###fader
 topito.com###social-slide-box
-trancepodcasts.com##.cp-overlay
-trancepodcasts.com##.cp-social-media
 ||weather.com/sites/all/modules/glomo/modules/glomo_like_gate/
 dailylviv.com###followdaily
 gamerconfig.eu###fb_wrapper
