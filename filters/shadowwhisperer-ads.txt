@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 26,680
-# Updated: 5/11/2026  10:56 (10:56 AM CST)
+# Domains: 26,742
+# Updated: 5/13/2026  11:51 (11:51 AM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -1042,6 +1042,7 @@ accengage.net
 accent-technologies.com
 acceptableads.com
 acceptableads.org
+acceptablecause.pro
 acceptable-customer.pro
 acceptablegrand.pro
 accesstrade.co.id
@@ -7571,6 +7572,7 @@ all-essay.pro
 alleswegenmicha.de
 alleythecat.com
 allgrad.site
+allhoney.pro
 allinviews.com
 all-kick.pro
 allmediadesk.com
@@ -8206,6 +8208,7 @@ associationmediagroup.com
 assurance.sysnetgs.com
 assured-character.pro
 assuredgod.pro
+assuredguide.pro
 assured-peace.com
 assuredroute.com
 assured-sandwich.com
@@ -9016,6 +9019,7 @@ bigtalkmediahouse.com
 big-village.com
 bigworldfashion.com
 bi-instatag.com
+bikeexerciser.com
 bikenetzwerk.de
 bikepaws.com
 bikiko.com
@@ -9257,6 +9261,7 @@ bokeden.com
 boldapps.net
 boldbars.com
 bolderlouder.com
+boldinformation.pro
 bolditem.pro
 bold-potential.com
 bollyocean.com
@@ -9701,6 +9706,7 @@ camads.net
 cambs.eu
 camdough.com
 camelsfestival.com
+camelspark.com
 campaign.adobe.com
 campaign.avg.com
 campaign.dasmart.eu
@@ -9758,6 +9764,7 @@ carefreemom.pro
 carefree-ship.pro
 carelesscamp.pro
 caringfishing.pro
+caringfortune.pro
 caringpast.com
 caring-tune.pro
 carnivalmobile.com
@@ -10512,6 +10519,7 @@ common-professional.pro
 common-smile.pro
 communicationcrafts.in
 compassionate-dependent.pro
+compassionatereach.pro
 compassionmedia.com
 competent-partner.pro
 competentspecific.com
@@ -10691,6 +10699,7 @@ convertise.io
 converto.com
 convertzoom.com
 cooins.mobi
+cookedvisit.pro
 cookie-accept.com
 cookieassistant.com
 cookiebanner.phusion.nl
@@ -11281,6 +11290,7 @@ cybmas.com
 cyclinghere.com
 cyclopsdial.com
 cycsfe.com
+cylindrical-leg.pro
 cylindrical-presentation.com
 cylindrical-style.pro
 cyrusson.com
@@ -11442,6 +11452,7 @@ damaged-transition.com
 damaged-unit.pro
 damngood.agency
 damp-escape.pro
+damp-opportunity.pro
 dampratio.pro
 damptouch.com
 danadm.com
@@ -11450,6 +11461,7 @@ danarimedia.com
 danarimediappc.com
 dandlooke-bid.com
 dandydune.com
+dangerous-bench.pro
 dangerousease.pro
 dangerous-leader.pro
 dangleads.com
@@ -11662,6 +11674,7 @@ dental-human.com
 dentobiznes.pl
 dentsu.com
 dentsu.de
+dependable-party.pro
 dependentbar.pro
 deployads.com
 deployinput.com
@@ -12409,6 +12422,7 @@ elatedattack.com
 elated-big.pro
 elativeknut.cfd
 elcjj.com
+elderly-device.pro
 eleadmedia.com
 eleavers.com
 elections.ap.org
@@ -12465,6 +12479,7 @@ emodoinc.com
 emotionaldrink.pro
 emotionallock.pro
 emotionalmedia.pro
+emotionalshoot.pro
 emotiveapp.co
 emotivecdn.io
 empirecdn.io
@@ -12597,6 +12612,7 @@ eqmpw.com
 eqmx04n5s0.ru
 eqolot.com
 equal-engineer.pro
+equalfall.pro
 equativ.com
 equativ-match.dotomi.com
 equatorialboy.pro
@@ -12656,6 +12672,7 @@ ethicalads.io
 ethicalads.ochsavidare.nu
 ethical.etc.se
 ethicalfootball.pro
+ethical-page.pro
 ethicalpractice.pro
 ethniconlinenetwork.com
 ethos-marketing.com
@@ -13129,6 +13146,7 @@ fit-ad.jp
 fitmessage.com
 fitnessmapper.com
 fitravel.net
+fittingjob.pro
 fitting-music.pro
 fitting-whole.pro
 fivesidedsquare.com
@@ -13711,6 +13729,7 @@ giddypercentage.pro
 giftbox.asus.com
 gifted-garbage.pro
 giftedself.pro
+giftedworker.pro
 gigabitadex.com
 gigapromo.de
 gigkarma.com
@@ -14070,6 +14089,7 @@ greystripe.com
 grfpr.com
 gridadvertising.com
 gridbelow.com
+gridoffers.com
 grifanme.com
 grim-currency.com
 grimmel.com.au
@@ -14115,6 +14135,7 @@ growlingpension.com
 growmatik.ai
 grow.me
 growmobile.com
+grown-collar.pro
 grownshopping.pro
 growthloop.com
 growthspin.co.uk
@@ -14217,6 +14238,7 @@ hamdadvertising.com
 hamsterspot.com
 hanapinmarketing.com
 handmadehit.com
+handsome-check.pro
 handy-beat.pro
 handy-spite.pro
 hankyu-ad.jp
@@ -14329,6 +14351,7 @@ helltraffic.com
 helpfulduty.pro
 helpfuloil.pro
 helpingbits.com
+helplessdecision.pro
 heqgr.com
 heraldtrack.com
 heraldtribunemediasource.com
@@ -14580,6 +14603,7 @@ hungryjudge.pro
 hunopajy.pro
 hunter-hub.com
 hurricanedigitalmarketing.com
+hurtful-layer.pro
 hurtfulmagazine.pro
 hushmoney.com
 husky-meet.pro
@@ -14871,6 +14895,7 @@ imperturbableappearance.pro
 imperturbabletown.pro
 impetus.one
 impish-boss.pro
+importantfeedback.pro
 important-operation.pro
 important-speed.pro
 impracticalemploy.pro
@@ -14885,6 +14910,7 @@ impressionmedia.cz
 impressionmonster.com
 impressiveride.pro
 imprev.net
+improbable-ride.pro
 improveads.fi
 improvedigital.com
 improvewebfuture.com
@@ -15868,6 +15894,7 @@ launchjack.com
 laurenlabeled.com
 lavamedia.vn
 lavanetwork.net
+lavish-bill.pro
 lavisheat.com
 lavish-joke.pro
 lawclick.co.uk
@@ -16370,6 +16397,7 @@ mad-adz.com
 madbanner.com
 madebyintent.com
 madeupenergy.pro
+madeup-number.pro
 madeupphysical.pro
 madeup-win.pro
 mad-ex.com
@@ -16461,6 +16489,7 @@ makumva.all-usanomination.com
 malafaat.com
 malastasho.pro
 malbis.com
+male-fight.pro
 malikadvertising.com
 malinesmanses.com
 malware.wicar.org
@@ -16686,6 +16715,7 @@ mean-number.com
 measlyglove.pro
 meatydeath.com
 meatyenergy.pro
+meatyimplement.pro
 mecash.ru
 med4ad.com
 medallia.com
@@ -17780,6 +17810,7 @@ next14.com
 nextadagency.com
 next-ad.co
 nexta.io
+nextclass.pro
 nextclick.pl
 nextday.media
 nextdigital.co.id
@@ -17959,6 +17990,7 @@ novobanner.com
 nowaymail.com
 nowinteract.com
 now.plsgotoasg.com
+noxious-location.pro
 nozzorli.com
 np2.inptrgood.com
 npbvqqkpuele.cdnvideo3.com
@@ -18078,7 +18110,9 @@ obese-chicken.pro
 obese-horror.pro
 objecthero.com
 objectsnetwork.com
+oblong-passenger.pro
 oblong-people.pro
+oblongstick.pro
 oboxads.com
 obscurespace.com
 obsidiangems.com
@@ -18216,6 +18250,7 @@ o.laudato.hr
 oldercdncom.com
 oldfashionedcity.pro
 oldfashioned-fold.pro
+oldfashionedperiod.pro
 oldfashionedsing.pro
 oldfashionedstructure.pro
 oldfollowing.pro
@@ -18580,6 +18615,7 @@ outthereadvertising.com
 outtimburrtor.com
 outyanmegaom.com
 ouverchur.com
+ovalpool.pro
 oveeo.com
 overbrowser.com
 overcooked-count.com
@@ -18841,6 +18877,7 @@ peacefulfish.pro
 peaceful-room.pro
 peacockadvertising.com
 peakcreative.net
+peakcreator.com
 peakperformanceadvertising.com
 peaksadvertising.com
 peakseven.com
@@ -19240,6 +19277,7 @@ plus.ag
 pluseight.co.uk
 plushpanic.com
 plush-region.pro
+plus.timesofindia.com
 plus.tourispo.com
 plutoclean.com
 pluto.sina.cn
@@ -19559,6 +19597,7 @@ preroll.hostave3.net
 presage.io
 presentblue.pro
 present-mark.com
+present-sentence.pro
 presentunique.pro
 presscoder.com
 presscommtech.com
@@ -19573,8 +19612,10 @@ prestoris.com
 prettybicycle.com
 prettyeasycafe.com
 prettylearning.com
+pretty-serve.pro
 pretty-site.com
 preventrobots.com
+previous-specific.pro
 previous-trip.pro
 prezna.com
 pricey-shock.pro
@@ -20626,11 +20667,14 @@ recentopportunity.com
 receptivity.io
 receptix.us
 rechiol.info
+reckless-message.pro
 reckless-relative.com
+reckless-variation.pro
 recollectsideway.com
 recommendation-hybrid.wpdigital.net
 recommendation-newsletter.wpdigital.net
 recontent.services.tvn.pl
+reco.slike.in
 recreativ.com
 recreativdesign.com
 recreativ.ru
@@ -20692,6 +20736,7 @@ refundradar.com
 regal-diet.pro
 regalrisemedia.com
 reg.ancensored.com
+regenergize.com
 regentcomm.com
 regexmail.com
 regie.5by5.fr
@@ -20779,6 +20824,7 @@ remoteladder.pro
 remotemountain.com
 remowhedy.pro
 renaissanceindia.in
+renchregular.pro
 renegadeinternet.com
 renesabio.com
 renewmedia.org
@@ -21007,6 +21053,7 @@ righthref.com
 right-spot.pro
 rigid-call.com
 rigidnation.pro
+rigid-push.pro
 rigidveil.com
 rigorlab.com
 rimg.abv.bg
@@ -21700,6 +21747,7 @@ sandydrunk.com
 sandypocket.com
 sandythought.pro
 sane-entertainment.pro
+sanespend.pro
 saooti.com
 sapienceglobal.com
 sapnest.com
@@ -22177,6 +22225,7 @@ sequenceindia.com
 serconmp.com
 serenitygem.com
 ser.everydayporn.co
+serious-local.pro
 serious-partners.com
 serious-sample.com
 servads.co.za
@@ -22808,6 +22857,7 @@ solutionshindsight.net
 solutions.interactiveone.com
 som4okn1qku1r9p0ul.xyz
 soma.3xforum.ro
+sombermistake.pro
 sombes.com
 somethingmassive.com
 somethingmassivela.com
@@ -23093,6 +23143,7 @@ staging6adsupply.com
 staid-host.pro
 staid-property.pro
 stained-a.pro
+stained-lay.pro
 stainedphilosophy.pro
 stakedances.com
 stakeschips.com
@@ -23115,6 +23166,7 @@ starkscale.com
 starlingmedia.com
 starmedia.ca
 starmobmedia.com
+starry-abroad.pro
 starrylook.com
 starsmarter.com
 stars.pl
@@ -23345,6 +23397,7 @@ stunning-perception.pro
 stunning-version.pro
 stupendousconcept.pro
 stupid-analyst.pro
+stupid-command.pro
 stupid-luck.com
 stupidquantity.pro
 sturdyassociate.pro
@@ -23370,6 +23423,7 @@ sublimerevenue.com
 sublime.xyz
 submissivefun.com
 submissive-horror.com
+submissivemate.pro
 subscribers.com
 subscribe.washingtonpost.com
 subscription.indianexpress.com
@@ -23381,6 +23435,7 @@ sub.superxxxfree.com
 subsworker.bid
 subtle-give.pro
 subtle-stick.pro
+suburbanfoot.pro
 suburbannegative.pro
 subxpk.com
 sub.xxx-porn-tube.com
@@ -23441,6 +23496,7 @@ supplyreward.com
 support.brighteon.com
 supporters.redbankgreen.com
 supportiveaside.pro
+supportivespot.pro
 supportivestage.pro
 support.streamjav.top
 support-v2.sweetwaternow.com
@@ -23673,6 +23729,7 @@ tarjani.co
 taroads.com
 tarrobads.com
 tarteaucitron.io
+tart-excitement.pro
 tartlay.com
 tart-price.pro
 tashowy.de
@@ -24686,6 +24743,7 @@ unanihappyallowblast.xyz
 unative.com
 unaware-bend.pro
 unaware-ice.pro
+unawarepatience.pro
 unblockia.com
 uncobalionr.com
 uncommon-dealer.pro
@@ -24786,6 +24844,8 @@ untidy-log.pro
 untimely-chemistry.com
 untimely-hate.pro
 untimely-patient.pro
+untimely-proof.pro
+untimely-way.pro
 untriedcause.pro
 untriednegative.com
 unumbonum.com
@@ -25485,6 +25545,7 @@ wareneingang.edeka.de
 wargaming-aff.com
 warlikearm.pro
 warmheartedengine.com
+warm-product.pro
 warnermediasales.co.uk
 warp90.com
 warpedbrother.pro
@@ -25932,6 +25993,7 @@ woglasagency.com
 wolftain.com
 wolqundera.com
 wonderfulborder.com
+wonderfulsafety.pro
 wonderlandads.com
 wondermakings.com
 wondermars.com
