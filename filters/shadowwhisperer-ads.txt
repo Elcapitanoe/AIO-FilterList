@@ -2,7 +2,7 @@
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
 # Domains: 26,742
-# Updated: 5/13/2026  11:51 (11:51 AM CST)
+# Updated: 5/14/2026  14:04 (2:04 PM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -2117,7 +2117,6 @@ adimages.go.com
 adimages.homestore.com
 adimages.infotorg.se
 adimages.marriagetrac.com
-adimages.microcenter.com
 adimage.sphdigital.com
 adimages.proforums.com
 adimages.realtor.com
@@ -13178,6 +13177,7 @@ flashytomorrow.pro
 flat-ads.com
 flat-car.pro
 flatironmedia.com
+flavedo.io
 flawed-earth.pro
 flawlesssubstance.com
 flaxdescale.com

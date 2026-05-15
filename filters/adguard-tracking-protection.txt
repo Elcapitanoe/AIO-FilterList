@@ -571,6 +571,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||ezoicanalytics.com^
 ||dn666andut2j1.cloudfront.net^
 ||htplayground.com^
 ||mod.leftnewsex.com^
@@ -182205,6 +182206,8 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 ! NOTE: Specific rules
 !
 ! tracking
+||politiken.dk/proxy/pza
+||stepik.org/api/metrics/
 ||api-prod.xboostapp.io/xboost_webhook/
 ||cdn.shopify.com/shopifycloud/arrive-server/pay/vite-pay/assets/AnalyticsProvider-*.js
 ||shop-apotheke.com/te/
@@ -187903,6 +187906,8 @@ adguard.info,adguard.com,adguard.app#$#.hello_from_adguard_advanced_protection_i
 ! Bad:  example.org#@##cookie
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/231330
+@@||m.happymh.com^$cookie=/^_ga_/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/222085
 @@||hood.de^$cookie=DSID
 ! https://x.com/Tightnaven/status/1974739387994030253
@@ -187989,6 +187994,8 @@ adguard.info,adguard.com,adguard.app#$#.hello_from_adguard_advanced_protection_i
 ! Bad:  ||example.com^$cookie=flat_r_mb (should be in cookies_specific.txt)
 !
 !
+! Rakuten
+$cookie=rmStoreGateway
 ! Comscore
 $cookie=cs_fpid
 ! Contentinsights
@@ -191260,6 +191267,9 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/230901
+@@||edge.adobedc.net/*/identity/acquire?$domain=goldmansachs.com
+goldmansachs.com#%#//scriptlet('prevent-fetch', 'edge.adobedc.net')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/230906
 @@||cdn.cquotient.com/js/*/gretel.min.js$domain=jp.drmartens.com
 @@||e.cquotient.com/recs/blgg-DoctorMartens/$domain=jp.drmartens.com
@@ -198140,6 +198150,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||supportwaves.com^
 ||surfacesmedia.com^
 ||surfbangles.com^
+||sustaindenim.com^
 ||swankysquare.com^
 ||sweetslope.com^
 ||swellstocking.com^
@@ -198245,6 +198256,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||toomanyalts.com^
 ||topbookgifts.com^
 ||topcrazypress.com^
+||topicalcartel.com^
 ||topthrowbacks.com^
 ||torpidtongue.com^
 ||tortoisepage.com^
