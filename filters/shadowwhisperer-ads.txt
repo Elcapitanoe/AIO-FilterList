@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 26,742
-# Updated: 5/14/2026  14:04 (2:04 PM CST)
+# Domains: 26,744
+# Updated: 5/17/2026  01:16 (1:16 AM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -6079,6 +6079,7 @@ adswell.ru
 ads.wellsmedia.com
 ads.wellspublishing.com
 ads.welovetennis.fr
+ads.wenet.pl
 ads.wesped.com
 ads.wesped.es
 ads.wetpussy.sexy
@@ -21873,6 +21874,7 @@ sdda.livecode.it
 sdf3rt243.cc
 sdfer.xyz
 sdk.ffxpub.com
+sdk-notification-service.cloudbees.io
 sdk.playtem.com
 sdk.starbolt.io
 sdqk.me

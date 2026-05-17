@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202605170245
+! Version: 202605171716
 ! Title: Fanboy's Social Blocking List
-! Last modified: 17 May 2026 02:45 UTC
+! Last modified: 17 May 2026 17:16 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 5ac6ff7f1776f62250c804a6d78b39d0d7c6c5fe
+! Commit: 5b66d9b64d688bd9922cedb73b2db205ae8d0f4e
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -11490,6 +11490,7 @@ crealitycloud.com##.right-share-box
 pulse.com.gh,pulse.ng##.ring-detail-social-share
 reviewjournal.com##.rj-story-social
 outlookindia.com##.rm-social-share
+ringsidenews.com##.rsn-follow-box
 publicbooks.org##.rss
 magazine.artstation.com##.s-bar
 cryptodaily.co.uk##.s-video-h
