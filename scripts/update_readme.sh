@@ -24,8 +24,8 @@ echo "### Upstream Sources" >> "$README_FILE"
 echo "" >> "$README_FILE"
 echo "This repository is built on the hard work of the following projects. Here is the exact list of sources pulled during the automation process:" >> "$README_FILE"
 echo "" >> "$README_FILE"
-echo "| Filter Name | Original Source | Mirror Link | Last Updated |" >> "$README_FILE"
-echo "|---|:---:|:---:|:---:|" >> "$README_FILE"
+echo "| Filter Name | Primary | Mirror | Updated At |" >> "$README_FILE"
+echo "|:---|:---:|:---:|:---:|" >> "$README_FILE"
 
 sort -t '|' -k3 -f "$CONFIG_FILE" | while IFS='|' read -r filename url title; do
     if [[ -z "$filename" ]]; then
@@ -48,7 +48,7 @@ sort -t '|' -k3 -f "$CONFIG_FILE" | while IFS='|' read -r filename url title; do
     fi
     
     MIRROR_LINK="https://hosts.domi.my.id/filters/$filename"
-    echo "| $title | [Original]($url) | [Mirror]($MIRROR_LINK) | $LAST_UPDATED |" >> "$README_FILE"
+    echo "| $title | [Main URL]($url) | [Mirror URL]($MIRROR_LINK) | $LAST_UPDATED |" >> "$README_FILE"
 done
 
 echo "" >> "$README_FILE"
