@@ -185801,7 +185801,6 @@ tourister.ru##.nt-foot-item[style="overflow:hidden;"]
 ||terra.com.br/coletor/
 ||tonkosti.ru/JS/statistic.php
 ||static.tonkosti.ru/tonkosti/www/js/snvars.js
-fategrandorder.info##.sidebar_acr.side_inline
 ||emea.flow.microsoft.com/providers/Internal.Telemetry
 ||nice264.com/data?$third-party
 ||glbimg.com/vendor/libs/comScore-*.min.js
@@ -196700,6 +196699,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||dicemoments.com^
 ||difficultfog.com^
 ||digestiondrawer.com^
+||digitalblend.net^
 ||digithalo.com^
 ||dinnerquartz.com^
 ||diplomahawaii.com^
@@ -198068,6 +198068,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||squidlogic.com^
 ||squishybears.com^
 ||squishykiosk.com^
+||stadiumzoo.net^
 ||stakedances.com^
 ||stakeschips.com^
 ||stakingbasket.com^
