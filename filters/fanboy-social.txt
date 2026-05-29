@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202605281743
+! Version: 202605291736
 ! Title: Fanboy's Social Blocking List
-! Last modified: 28 May 2026 17:43 UTC
+! Last modified: 29 May 2026 17:36 UTC
 ! Expires: 4 days (update frequency)
-! Commit: f8f7a30da20a419c18f93fe192ebab2e8c4dbe37
+! Commit: bcf5d78203c38d77048a77261ceb0f86ffba0c33
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -12088,6 +12088,7 @@ indiewire.com##[class^="_socialMedia_"]
 techcommunity.microsoft.com##[class^="custom_widget_MicrosoftFooter_social-share_"]
 motortrend.com##[data-c="social-share"]
 news.sky.com##[data-component-name="sdc-article-strapline"]
+theguardian.com##[data-component="preferred-source-button-prefer"]
 lifehacker.com##[data-ga-element="social-link"]
 cnet.com##[data-meta="footer-section-social"]
 cnet.com##[data-meta="footer-section-social"] + ul
