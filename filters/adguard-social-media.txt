@@ -678,6 +678,22 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+fbc.biz.ua##.side_socials
+crash.net##.social-sharing-buttons
+huskers.com##.article-head__share
+kosht.media###shared
+kosht.media###socialsMain
+ru.krymr.com##a[href^="https://t.me/krymrealii"]
+ftm.nl##.sharewrapper
+oricon.co.jp##.block-sub-sns
+antalyahurses.com##div.py-1:has(> div.flex > ul > li > a.native-share)
+antalyahurses.com##main > div.fixed:has(> ul > li > a.native-share)
+antalyahurses.com###sidebar > div.container:has(> div.grid > a[title="Twitter"])
+robota.ua##alliance-social-block
+rugbypass.com##.mobile-share
+efsyn.gr##.nav-list--icons:has(> li.nav-item > a[href^="https://www.facebook.com/sharer/sharer.php?"])
+lectortmoo.com#$#.ztgi-modal { display: none !important; }
+lectortmoo.com#$#html { overflow: auto !important; }
 frontstretch.com##.widget_block:has(> .wp-block-social-links)
 racingnews365.com##.js-share-page
 konhaber.com##div.flex:has(> a#share-twitter)
@@ -9112,7 +9128,7 @@ mfa.gov.ua##.customShare
 7dach.ru##.floating-hat__share
 pasport.org.ua,i-ua.tv,wz.lviv.ua###jursssocial
 womanel.com##.widget_sfp_page_plugin_widget
-outkick.com,publico.es,pet7.ru,womanel.com###custom_html-5
+sqmagazine.co.uk,outkick.com,publico.es,pet7.ru,womanel.com###custom_html-5
 sozcu.com.tr##.promo-info-share-icons
 animal.mx###ax_single_bar_sharers
 allcalidad.la###barraPlus1
@@ -14812,7 +14828,7 @@ href^="https://facebook.com/sharer?u=
 ###facebook_soc_button
 ###facebooktrend
 ###fb-friends-recent-activity
-~viralomania.com,~akyatirim.com.tr,~isitdownrightnow.com,~frekvence1.cz,~kpt.kyiv.ua,~roblox.com,~facebook.com,~junodownload.com,~king.com,~myshared.ru,~petsplace.nl,~thefurnish.ru###fb-root:not(body):not(html)
+~viralomania.com,~akyatirim.com.tr,~isitdownrightnow.com,~frekvence1.cz,~kpt.kyiv.ua,~roblox.com,~facebook.com,~king.com,~myshared.ru,~petsplace.nl,~thefurnish.ru###fb-root:not(body):not(html)
 ###fbLikeButton
 ~facebook.com###fb_groups
 ###fb_iframe_widget
