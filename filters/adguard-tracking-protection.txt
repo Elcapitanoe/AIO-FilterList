@@ -13,8 +13,12 @@
 !
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/232549
-bilibili.com#%#//scriptlet('trusted-replace-argument', 'history.pushState', '2', 'repl:/(?<=[?&])(?:vd_source|trackid|spm_id_from)=[^&#]*&?//g')
-bilibili.com#%#//scriptlet('trusted-replace-argument', 'history.replaceState', '2', 'repl:/(?<=[?&])(?:vd_source|trackid|spm_id_from)=[^&#]*&?//g')
+! Disable because of these reports:
+! https://github.com/AdguardTeam/AdguardFilters/issues/233039
+! https://github.com/AdguardTeam/AdguardFilters/issues/233148
+! https://github.com/AdguardTeam/AdguardFilters/issues/233149
+! bilibili.com#%#//scriptlet('trusted-replace-argument', 'history.pushState', '2', 'repl:/(?<=[?&])(?:vd_source|trackid|spm_id_from)=[^&#]*&?//g')
+! bilibili.com#%#//scriptlet('trusted-replace-argument', 'history.replaceState', '2', 'repl:/(?<=[?&])(?:vd_source|trackid|spm_id_from)=[^&#]*&?//g')
 !
 ! Youtube
 !+ NOT_PLATFORM(ext_chromium_mv3)
@@ -565,6 +569,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||umami.vidup.to^
+||umami.vidfast.pro^
 ||umami.vidcore.net^
 ||g10498469755.co^
 ||handler.rgstats.com^
@@ -79305,6 +79311,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||tracking.vbr.ru^
+||track.shiksha.com^
+||stats.sailtheship.xyz^
 ||analytics.oeksound.com^
 ||dd.qwant.com^
 ||k.qwant.com^
@@ -181410,6 +181419,8 @@ zonedirector.avadacom.com$image
 !+ NOT_OPTIMIZED
 /.well-known/private-click-measurement
 !
+.js?tg=$~third-party
+/advanced-ads-tracking/assets/dist/ga-tracking.js
 /hit-track.php
 /wp-content/plugins/jetpack/jetpack_vendor/automattic/woocommerce-analytics/*
 /phenomtrack.min.js$script
@@ -182155,8 +182166,8 @@ _tracking.php?b=
 !
 ! Tealium
 ! The site should be carefully checked when you add this rule
-||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca|taylor.com|news.com.au|agoda.com|vodafone.com.tr|huawei.com|the-sun.com
-||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org|calvinklein.ca|hosteurope.de|news.com.au
+||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca|taylor.com|news.com.au|agoda.com|vodafone.com.tr|huawei.com|the-sun.com|lavazza.com
+||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org|calvinklein.ca|hosteurope.de|news.com.au|lavazza.com
 !
 !
 ! TODO: check the allowlist file from time to time to remove unnecessary exceptions
@@ -182225,6 +182236,14 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||shuba.life/api/views
+||cdn.viberu.ru/dist/tracking.*.js
+||rugbypass.com/api/tracking/
+||static0.pocketlintimages.com/assets/sentinel-events-tracker.*.js
+||dulo.tv/api/ping
+||happycow.net/analytics_socket|
+||operationsports.com/plow-lite-bundle
+||shingakunet.com/rnet/dlpo/
 ||oeksound.com/pl/api/event
 ||featureassets.org^$xmlhttprequest
 ||qwant.com/action/
@@ -191357,6 +191376,8 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/uBlockOrigin/uAssets/issues/33222
+@@||cdn.petametrics.com^$script,domain=meidasnews.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/139956
 @@||smetrics.airmiles.ca/*identity/acquire?$domain=oauth.airmiles.ca
 ! https://aswbe.ana.co.jp/webapps/reservation/payment-input
@@ -197154,6 +197175,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||idlecollect.com^
 ||illinvention.com^
 ||illustriousoatmeal.com^
+||imagebuffer.com^
 ||imagecutie.com^
 ||immensehoney.com^
 ||imminentshake.com^

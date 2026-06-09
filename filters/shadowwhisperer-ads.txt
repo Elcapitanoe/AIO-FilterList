@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 26,827
-# Updated: 6/4/2026  00:19 (12:19 AM CST)
+# Domains: 26,828
+# Updated: 6/8/2026  19:46 (7:46 PM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -20455,6 +20455,7 @@ quaintlake.com
 qualgrow.com
 qualiclicks.com
 qualifiedblog.com
+quality-traffic.com
 quallsbenson.com
 quangcaodantri.vn
 quanta-wave.com
