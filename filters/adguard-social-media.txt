@@ -676,12 +676,18 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+supertaste.tvbs.com.tw##header > div.flex > div[class]:has(> div.flex > button[name="share-button"])
+supertaste.tvbs.com.tw##section + div.flex:has(> div[class] > button[name="share-button"])
+health.harvard.edu##article > div.mt-12:has(> div > div > a[href^="https://www.facebook.com/sharer/sharer.php"])
+sud.ua##li:has(> div.b-news-item a[href^="https://www.facebook.com/sudgazeta"])
+change.org##div[data-testid="native-share-mobile"]
+pasqualepillitteri.it##div.inner-box > div.engage-block:has(.engage-share-buttons)
 racer.com##.MuiStack-root > div.MuiBox-root:has(> div.MuiBox-root > div[class^="mui-"] > div[id^="sharethis-"])
 vbr.ru##.social-btns-colorful
 ketv.com,gulfcoastnewsnow.com##.share-widget-content
 indiatimes.com##.socialShareArticalShowWrapper
 gentosha.co.jp##.p-book-share__sns
-slovoidilo.ua##.compare-banner:has(> a[href^="http://t.me/"])
+slovoidilo.ua##.compare-banner
 osvita.ua##a[href="https://t.me/osvitatopnews"]
 osvita.ua##div.banner-telegram
 kod.ru##div[class^="MainPageContent_banner"]:has(> div[class^="NewSocialBanner_container"])
