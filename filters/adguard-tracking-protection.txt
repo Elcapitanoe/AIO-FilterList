@@ -1136,7 +1136,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ||analytically.net^$third-party
 ||datafa.st^$third-party
 ||new-access802.net^
-||srvgl.com^
 ||webmaxlogger.net^
 ||mythad.com^
 ||ga2.getresponse.com^
@@ -79308,6 +79307,10 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||transporter.makemytrip.global^
+||cchome-stage.adobe.io^
+||cchome.adobe.io^
+||analytics.trbna.com^
 ||udderstack.allstar.gg^
 ||plausible.root-nation.net^
 ||cdnw.onlinelearning.hms.harvard.edu^
@@ -182259,6 +182262,11 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||cdntbl.com/gtm/
+||tabletki.ua/analyticsdata/
+||services.account.adobe.com/log/message
+||tralut.*.*/collect
+||the-race.com/.ghost/analytics/
 ||api.prod.allstar.dev/methods/track
 ||api.prod.allstar.dev/methods/clip-views
 ||rivnepost.rv.ua/wp-admin/admin-ajax.php?action=rbcollect
@@ -189001,6 +189009,8 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! telefonnyjdovidnyk.com.ua
+||telefonnyjdovidnyk.com.ua^$cookie=goog_ads
 ! rtl.hr
 ||rtl.hr^$cookie=device-id
 ! ahaber.com.tr
@@ -191404,6 +191414,9 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/233404
+@@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=ok.co.uk
+@@||feliz.data.tm-awx.com/smile-web-v*/$domain=ok.co.uk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/233276
 @@||api.clerk.io/v*/log/click?payload=$domain=ringo.no
 ! https://github.com/uBlockOrigin/uAssets/issues/33222
@@ -192856,8 +192869,6 @@ abema.tv#%#//scriptlet('remove-node-text', 'script', 'NREUM')
 @@||sheinsz.ltwebstatic.com/*/libs/devices/fpv*.js$domain=shein.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/153286
 @@||tt.omtrdc.net/rest/$xmlhttprequest,domain=shop.shoppersdrugmart.ca
-! https://github.com/AdguardTeam/AdguardFilters/issues/153343
-@@||googletagmanager.com/gtm.js$domain=tribuna.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/153515
 @@||ws.mmstat.com/ws$domain=v.youku.tv
 ! https://github.com/AdguardTeam/AdguardFilters/issues/153458
@@ -197254,6 +197265,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||jigsawlucky.com^
 ||joblessdrum.com^
 ||jobmist.com^
+||joshpaintings.com^
 ||joyfulharbor.com^
 ||joyouspool.com^
 ||joyoussurprise.com^
@@ -197269,6 +197281,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||juicebard.com^
 ||juiceblocks.com^
 ||juicingoasis.com^
+||jumbochalk.com^
 ||justconfig.com^
 ||justicejudo.com^
 ||justlagoon.com^
@@ -198636,6 +198649,9 @@ bitdefender.com#$#body[style="opacity: 0;"] { opacity: 1 !important; }
 ! Bad: ||example.org^$script (treated it as regular analytics and block it in the Tracking Protection filter,
 !      if a script in not proxied)
 !
+! Temu
+api-euo.temu.com/callback/doha/open/track?
+api-euo.temu.com%2Fcallback%2Fdoha%2Fopen%2Ftrack%3F
 ! forbes.com
 image.read.forbes.com$image
 ! conquerclub.com subscriptions
@@ -198735,6 +198751,8 @@ i.groovehq.com%2F*%40groovehq.com.gif$image
 c.groovehq.com/*.gif$image
 c.groovehq.com%2F*.gif$image
 ! Yandex
+supersender.yandex.net/v1/$image
+supersender.yandex.net%2Fv1%2F$image
 click.sender.yandex.ru/px/$image
 click.sender.yandex.ru%2Fpx%2F$image
 feedback.send.yandex.ru/px/$image
