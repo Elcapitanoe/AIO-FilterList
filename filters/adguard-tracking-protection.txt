@@ -565,6 +565,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||welovedata.go2cloud.org^
+||analytics.ekonsilio.io^
 ||insights.xyba.dev^
 ||sts.marketingsuite.jp^
 ||image-sap.sfmc-content.com^
@@ -79309,6 +79311,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||adtech.abs-cbn.com^
 ||sgtm.cmoa.jp^
 ||transporter.makemytrip.global^
 ||cchome-stage.adobe.io^
@@ -79380,7 +79383,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ||sas.f.peacocktv.com^
 ||sas.f.stable-int.peacocktv.com^
 ||sas.int-nft.peacocktv.com^
-||sas.peacocktv.com^
 ||sas.stable-int.peacocktv.com^
 ||goto.simplywall.st^
 ||swssp.simplywall.st^
@@ -182264,6 +182266,13 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||senvio.ai/api/*/events/
+||health.ems.onet.pl/*/metric/collector
+||rent.com/api/analytics|
+||session-api.cloud.pji.nu/sessions/*/events
+||prisjakt.no/_next/monitoring
+||prisjakt.no/rbr9/
+||hdrezka.ax/api/logs/event
 ||assets.poool.fr/engage.min.js
 ||usine-digitale.fr/pf/resources/newrelic.js
 ||advertising.amazon.dev/v1/ad-events/
@@ -191425,6 +191434,8 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/233239
+@@||cdn.optimizely.com/datafiles/*.json$domain=bbc.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/233440
 @@||app.lyrebirdhealth.com/_app/immutable/chunks/google-analytics*.js$domain=app.lyrebirdhealth.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/233404
@@ -197629,6 +197640,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||pigmentpaper.com^
 ||pinchsquirrel.com^
 ||pincourse.com^
+||pingsurvey.com^
 ||piquantgrove.com^
 ||piquantmeadow.com^
 ||piquantpigs.com^
