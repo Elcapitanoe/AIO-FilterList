@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 26,821
-# Updated: 6/15/2026  21:58 (9:58 PM CST)
+# Domains: 26,827
+# Updated: 6/16/2026  17:40 (5:40 PM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -13131,6 +13131,7 @@ filter.uptowntraction.com
 filter.vokut.com
 fimserve.com
 finad.de
+finallymidwife.com
 financeads.net
 finative.com
 finative.eu
@@ -13571,6 +13572,7 @@ gadsbee.com
 gad-s.com
 gadsme.com
 gadzoog.com
+gahfinallytame.com
 gajja.online
 galaksion.com
 galaxiemedia.fr
@@ -19952,6 +19954,7 @@ p.sowp.cloud
 pspladvertising.com
 psser.com
 p.sslph.com
+psstentice.com
 pstatp.com
 pstreetma.com
 psurigrabi.com
@@ -23770,6 +23773,7 @@ talkingmetal.com
 talkmego.com
 tallwinter.pro
 talroo.com
+tamealongpast.com
 tamebonus.com
 tamesuspect.pro
 tangible-guarantee.pro
@@ -25383,6 +25387,7 @@ videochart.net
 videocx.com
 video.doubleverify.com.cdn.cloudflare.net
 videogram.com
+video-loads.com
 videologygroup.com
 videonow.ru
 video.olanoanime.space
@@ -26781,6 +26786,7 @@ zorosrv.com
 zorwrite.com
 zotabox.com
 z.oviss.space
+zowiejump.com
 zowpo.com
 zp0o8pii.xyz
 zpush.biz
