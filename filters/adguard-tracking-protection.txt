@@ -565,6 +565,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||clickhouse-collector.*.prod.plat.agency^
 ||metrics-web.help^
 ||nehalist.io^
 ||broadstreet.ai^
@@ -79313,6 +79314,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||mcs-normal-*.capcutapi.com^
+||performance-events.guardianapis.com^
 ||tracker-proxy.getmimo.com^
 ||a.cineflix.st^
 ||adtech.abs-cbn.com^
@@ -80863,7 +80866,6 @@ prd.api.bleacherreport.com^
 ||collector.reelevant.com^
 ||scripts-repo.reelevant.com^
 ||analytics.lunaweb.cloud^
-||analytics.onedio.com^
 ||log-lb.skyperfectv.co.jp^
 ||ana.gomtv.com^
 ||log.gomlab.com^
@@ -181455,6 +181457,7 @@ zonedirector.avadacom.com$image
 !+ NOT_OPTIMIZED
 /.well-known/private-click-measurement
 !
+/posthog-recorder.js
 .js?tg=$~third-party
 /advanced-ads-tracking/assets/dist/ga-tracking.js
 /hit-track.php
@@ -182271,10 +182274,15 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||edit-api-*.capcut.com/lv/v1/event/
+||api.anyembed.xyz/api/user/event|
+thestar.com.my#%#//scriptlet('set-local-storage-item', 'nx_anon_id_v1', '$remove$')
+||st-a.cdp.asia/insight.js
+||ph.givebutter.com^$ping
 ||work.ua/api/v1/view-page/
 ||compo-de.frontnow.app/api/event|
 ||economx.hu/ident-fingerprint/
-||dex.hu/x.php
+||dex.hu/x.php$xmlhttprequest
 ||senvio.ai/api/*/events/
 ||health.ems.onet.pl/*/metric/collector
 ||rent.com/api/analytics|
@@ -190121,6 +190129,7 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||stats-sdk.tange365.com^
 ||dc.oppomobile.com^
 ||aki-gb-sdklog.kurogames.net^
 ||log1.pwsdk.com^
@@ -198120,6 +198129,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||stakingsmile.com^
 ||staleshow.com^
 ||stalesummer.com^
+||starfurniture.net^
 ||starkscale.com^
 ||starrynets.com^
 ||starsmarter.com^
@@ -198171,6 +198181,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||strivesquirrel.com^
 ||strokesystem.com^
 ||strongercity.com^
+||studioalkaline.com^
 ||studycooking.com^
 ||stupendoussleet.com^
 ||stupendoussnow.com^

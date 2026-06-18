@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 26,827
-# Updated: 6/16/2026  17:40 (5:40 PM CST)
+# Domains: 26,835
+# Updated: 6/17/2026  23:34 (11:34 PM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -3360,6 +3360,7 @@ adsbookie.com
 ads.bookingfax.com
 ads.boostbank.com
 ads.boostbank.io
+adsboosters.xyz
 ads.botasot.info
 ads.botevgrad.news
 adsbound.com
@@ -11760,6 +11761,7 @@ dexpredict.com
 df782abg.de
 dfa.pressflex.net
 dfnb-ads.com
+dfstrck.com
 dg1pu8fiy5cr6.cloudfront.net
 dgfhkp.com
 dggaenaawxe8z.cloudfront.net
@@ -12794,6 +12796,7 @@ exchange-traffic.com
 excitedassist.pro
 excitedoperation.pro
 excitedteam.com
+excitedwing.pro
 excitingdates.com
 excitingspring.pro
 exclk.com
@@ -14043,6 +14046,7 @@ go-v4.splashandsunshine.com
 go.vidspass.com
 govoxpopme.com
 go.waveblossom.com
+go.wpnaffiliates.com
 goxithosho.com
 gp12ptrk.com
 gpartner.com.pl
@@ -14128,6 +14132,7 @@ greenstick.io
 greenstickmarketing.com
 gregariousclock.com
 gregarious-control.pro
+gregariousskin.pro
 greg.zuulo.xyz
 greky.xyz
 gremlinbootcamp.com
@@ -14384,6 +14389,7 @@ hear-there.com
 heavenly-jump.pro
 heavenly-poem.pro
 heavydetail.com
+heavy-management.com
 hedwiga.internet.sk
 hefty-trick.pro
 heimsferdir.cloud
@@ -15037,6 +15043,7 @@ indystarmedia.com
 inegolreklam.net
 ineryturbomousglider.online
 infamousbill.pro
+infamous-growth.pro
 infantile-dot.pro
 infatuatedburn.pro
 infectiousmedia.com
@@ -17778,6 +17785,7 @@ network-n.com
 networknyc.com
 neubornmedia.com
 neudesicmediagroup.com
+neurabid.ai
 neverboring.com
 new17write.com
 newad.com
