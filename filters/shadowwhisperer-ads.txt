@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 26,835
-# Updated: 6/17/2026  23:34 (11:34 PM CST)
+# Domains: 26,850
+# Updated: 6/19/2026  00:37 (12:37 AM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -627,6 +627,7 @@
 734map.net
 73771m3q.xyz
 739trk.com
+73foxoid.com
 74d963ww.xyz
 75625358935.com
 768guangg1.oss-cn-guangzhou.aliyuncs.com
@@ -5981,6 +5982,7 @@ adsupplyssl.com
 ads.upsu.net
 ads.up-value.de
 ads.urban-geeks.com
+ads.urgentfury.com
 ads.urlit.fi
 adsurve.com
 adsushi.de
@@ -8267,6 +8269,7 @@ atozadvertising.com
 atozcityads.com
 a.trusa.xyz
 ats.otto.de
+atsptp.com
 attekmi.com
 attendthinktank.com
 attentive-path.com
@@ -10193,6 +10196,7 @@ cleansysprotect.com
 cleantracksafe.com
 clearadnetwork.com
 clear-ads.com
+clearbidtechnologies.com
 clearbrain.com
 clearcast.co.uk
 clearcode.cc
@@ -11887,6 +11891,7 @@ dirty-sail.com
 disastrousfinal.pro
 disastrousgoal.pro
 disastrous-protection.com
+disclosure.sportsvot.com
 discobar.space
 discopond.com
 discourage072925.shop
@@ -11975,6 +11980,7 @@ dlads.cn
 dlgongfu.com
 dl.indexmovies.xyz
 dlpvhn0f8mnlz.cloudfront.net
+dlserve.ai
 dlv.itmedia.jp
 dmarc.net
 dmdj655uxuj8f.cloudfront.net
@@ -13352,6 +13358,7 @@ fourpawsahead.com
 fout.co.jp
 fout.jp
 foxlagoon.com
+foxova.net
 foxpush.com
 foxpush.io
 foxpush-leads.com
@@ -14082,6 +14089,7 @@ granns.co.zw
 granth.info
 granularcloud.com
 granulardear.pro
+granulargame.com
 grapeads.com
 grape.ba
 grapefruit6705068.brizy.site
@@ -15614,6 +15622,7 @@ jxteaj.com
 jxtgroup.com
 jxvjiq.com
 jy-cy-hei.space
+jyeh.net
 jyh88802.cc
 jz8zyg3f.xyz
 jzduxkeumwnrfp6x.exasrv.com
@@ -15796,6 +15805,7 @@ knowing-tooth.pro
 knowledgeable-attention.pro
 knowledgeableshe.com
 knowmad.com
+knownmatch.com
 known-television.com
 knowonlineadvertising.com
 kobeden.com
@@ -16035,6 +16045,7 @@ leads-permagroup.ch
 leads.su
 leads.the-web-guys.com
 leadstoyou.net
+leadsy.ai
 leadtoconversion.com
 leadzai.com
 leadzu.com
@@ -18053,6 +18064,7 @@ nqizef.com
 nqych.com
 nrcffa.com
 nr-data.com
+nresystems.com
 n.rich
 nrich.ai
 nrtru.com
@@ -18981,6 +18993,7 @@ pensarmedia.com
 pentalime.com
 pentamarketing.com
 pentamob.com
+peoriacommunityagainstviolence.org
 pepperjam.com
 pepperjamnetwork.com
 peppertt.com
@@ -22287,6 +22300,7 @@ sendwebpush.com
 seniordynamic.com
 senja.io
 sensible-ads.com
+sensitiveclick.com
 sentimentalconflict.pro
 sentimental-dear.pro
 sentrymagic.com
@@ -26278,6 +26292,7 @@ xiod.xyz
 xipteq.com
 xjwzbo.com
 xkpbcd.com
+xkpq.net
 xksqb.com
 xktbdw.com
 x.latelust.site
