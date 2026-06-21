@@ -33,7 +33,8 @@ SOURCE_COUNT=0
 
 for file in "$OUTPUT_DIR"/*; do
     if [[ -f "$file" && "$file" != *".gitkeep"* && "$file" != *"index.html"* ]]; then
-        ((SOURCE_COUNT++))
+        
+        SOURCE_COUNT=$((SOURCE_COUNT + 1))
         awk '{ sub(/\r$/, ""); if (/^[!#]/ || /^\[Adblock/ || /^$/) next; print }' "$file" >> "$TEMP_FILE"
     fi
 done
