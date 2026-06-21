@@ -1,14 +1,17 @@
 #!/bin/bash
 
+set -eo pipefail
+
 OUTPUT_DIR="filters"
 MERGED_FILE="AIO_Filter_List.txt"
 TEMP_FILE="temp_rules.txt"
+FINAL_TEMP_FILE="final_rules.txt"
 LOG_FILE="build.log"
 
 VERSION=$(TZ="Asia/Jakarta" date +'%y.%m.%d.%H%M')
 TIME_UPDATED=$(TZ="Asia/Jakarta" date +'%Y-%m-%d %H:%M:%S UTC+7')
 
-echo "Building custom header..."
+echo "Building production artifact header..."
 cat <<EOF > "$MERGED_FILE"
 ! Title: AIO Filter List
 ! Description: AIO Filter List Many Sources.
@@ -24,32 +27,30 @@ cat <<EOF > "$MERGED_FILE"
 !
 EOF
 
-echo "Merging lists and stripping original headers..."
+echo "Merging rulesets and executing sanitization protocols..."
 SOURCE_COUNT=0
+> "$TEMP_FILE"
+
 for file in "$OUTPUT_DIR"/*; do
     if [[ -f "$file" && "$file" != *".gitkeep"* && "$file" != *"index.html"* ]]; then
         ((SOURCE_COUNT++))
-        grep -Ev '^[!#]|^\[Adblock.*\]$' "$file" | grep -v '^$' >> "$TEMP_FILE"
+        grep -Ev '^[!#]|^\[Adblock.*\]$' "$file" | grep -v '^$' | tr -d '\r' >> "$TEMP_FILE"
     fi
 done
 
-# Calculate raw rules count
 RAW_COUNT=$(wc -l < "$TEMP_FILE")
 
-echo "Removing duplicate rules..."
-awk '!seen[$0]++' "$TEMP_FILE" >> "$MERGED_FILE"
+echo "Executing high-performance sorting and deduplication..."
+LC_ALL=C sort -u "$TEMP_FILE" > "$FINAL_TEMP_FILE"
 
-# Calculate final rules count (subtracting the 12 header lines)
-FINAL_COUNT=$(wc -l < "$MERGED_FILE")
-FINAL_COUNT=$((FINAL_COUNT - 12))
-
-# Calculate removed duplicates
+FINAL_COUNT=$(wc -l < "$FINAL_TEMP_FILE")
 DUPLICATE_COUNT=$((RAW_COUNT - FINAL_COUNT))
 
-# Clean up
-rm "$TEMP_FILE"
+cat "$FINAL_TEMP_FILE" >> "$MERGED_FILE"
 
-echo "Generating build log..."
+rm -f "$TEMP_FILE" "$FINAL_TEMP_FILE"
+
+echo "Generating telemetry build log..."
 cat <<EOF > "$LOG_FILE"
 ==================================================
         AIO FILTER LIST - AUTOMATED BUILD LOG     
@@ -64,4 +65,4 @@ Final Payload   : $(printf "%'d" "$FINAL_COUNT") active rules
 ==================================================
 EOF
 
-echo "AIO Filter List and build log successfully generated."
+echo "AIO Filter List artifact compiled successfully."
