@@ -34,7 +34,7 @@ SOURCE_COUNT=0
 for file in "$OUTPUT_DIR"/*; do
     if [[ -f "$file" && "$file" != *".gitkeep"* && "$file" != *"index.html"* ]]; then
         ((SOURCE_COUNT++))
-        grep -Ev '^[!#]|^\[Adblock.*\]$' "$file" | grep -v '^$' | tr -d '\r' >> "$TEMP_FILE"
+        awk '{ sub(/\r$/, ""); if (/^[!#]/ || /^\[Adblock/ || /^$/) next; print }' "$file" >> "$TEMP_FILE"
     fi
 done
 
@@ -47,7 +47,6 @@ FINAL_COUNT=$(wc -l < "$FINAL_TEMP_FILE")
 DUPLICATE_COUNT=$((RAW_COUNT - FINAL_COUNT))
 
 cat "$FINAL_TEMP_FILE" >> "$MERGED_FILE"
-
 rm -f "$TEMP_FILE" "$FINAL_TEMP_FILE"
 
 echo "Generating telemetry build log..."
