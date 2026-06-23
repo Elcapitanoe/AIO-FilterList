@@ -565,6 +565,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||avsplow.com^
 ||codedrink.com^
 ||mfilterit.net^$third-party
 ||clickhouse-collector.*.prod.plat.agency^
@@ -79316,6 +79317,12 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||event-collector.analytics.onedio.com^
+||obs.forseasky.com^
+||t.ofsys.com^
+||collector.umogames.com^
+||collector.quizzop.com^
+||collector.feedzop.com^
 ||blink.willowmovies.com^
 ||stats.mappl.tv^
 ||mcs-normal-*.capcutapi.com^
@@ -182278,6 +182285,21 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||cdn.flowplayer.com/releases/native/3/stable/plugins/ga4.min.js
+||ynet-pic1.yit.co.il/Common/Api/Scripts/GA4/ga4-ynetnews-*.js
+thesun.co.uk#%#//scriptlet('set-local-storage-item', '/^optimizely_data/', '$remove$')
+||onetwotrip.com/_api_misc/kismx/e^
+||onetwotrip.com/_avia/statistics/
+||geeky-gadgets.net/api/event
+||aviakassa.com/api/v*/logger
+mego.travel#%#//scriptlet('set-local-storage-item', '/^snowplowOutQueue_/', '$remove$')
+||skyscanner.*/g/banana-tallyman/tallyman/track/
+||skyscanner.*/g/aps/public/api/v1/
+||skyscanner.*/slipstream/
+||x.com/1.1/graphql/app_context.json
+||x.com/1.1/graphql/viewer_context.json
+||x.com/i/api/1.1/graphql/app_context.json
+||x.com/i/api/1.1/graphql/viewer_context.json
 ||twinfinite.net/*/gamurs-group-analytics/
 ||ledevoir.com/js/analytics/
 ||ledevoir.com/js/pianoAnalyticsTags.js
@@ -182674,7 +182696,6 @@ myhixel.com#%#//scriptlet('set-local-storage-item', 'user_id', '$remove$')
 ||webmd.com/static/v/c?
 ||img.lb.wbmdstatic.com/webmd_static_vue/file-explorer/webmd/js/mmtrack.js
 ||img.lb.wbmdstatic.com/webmd_static_vue/file-explorer/webmd/global-metrics/
-thegentlemansjournal.com#%#//scriptlet('set-local-storage-item', '__anon_id', '$remove$')
 ||glowing.com/unilog
 ||zocdoc.com/metrics/
 ||api.4lapy.ru/api/v*/events/
@@ -182967,7 +182988,6 @@ food4less.com#%#//scriptlet('set-local-storage-item', 'analytics-device', '$remo
 ralphs.com,smithsfoodanddrug.com,frysfood.com,fredmeyer.com#%#//scriptlet('set-local-storage-item', 'analytics-device', '$remove$')
 ||embeds.beehiiv.com/attribution.js
 thekrazycouponlady.com#%#//scriptlet('set-local-storage-item', '/^ab\.storage\./', '$remove$')
-thekrazycouponlady.com#%#//scriptlet('set-local-storage-item', '__anon_id', '$remove$')
 ||img.enuri.info/images/partner/dsac.min.js
 ||enuri.com/*/js/logTailFunc.js
 ||enuri.com/view/Loginsert_
@@ -183211,7 +183231,7 @@ express.co.uk,iflscience.com,nypost.com#%#//scriptlet('set-local-storage-item', 
 ||parchment.com/wp-content/themes/wp-parchment/assets/utm-tags.min.js
 ||try.elevenlabs.io/pr/js
 ||elevenlabs.io/hog/
-flo.com.tr#%#//scriptlet('set-local-storage-item', '__anon_id', '$remove$')
+ricardocuisine.com,thegentlemansjournal.com,thekrazycouponlady.com,flo.com.tr#%#//scriptlet('set-local-storage-item', '__anon_id', '$remove$')
 ||market.samm.com/0/sendEventV2
 ezviz.ru#%#//scriptlet('set-local-storage-item', 'userUuid', '$remove$')
 ||c.sberlead.ru/clickstream.bundle.js
@@ -191475,6 +191495,8 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/234202
+@@||cdn.clerk.io/clerk.js$domain=jaktdepotet.no
 ! https://github.com/AdguardTeam/AdguardFilters/issues/234127
 ! Creating an account problem
 @@||tesco.com/akam/13/$domain=tesco.com
@@ -196785,6 +196807,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||coralcranes.com^
 ||coralreverie.com^
 ||corgibeachday.com^
+||correctedcode.com^
 ||cosmicsculptor.com^
 ||cosmosjackson.com^
 ||cosplaygalaxy.com^
@@ -197071,6 +197094,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||fitnessmapper.com^
 ||fivesidedsquare.com^
 ||fixedfold.com^
+||fjordsand.com^
 ||flakyfeast.com^
 ||flameuncle.com^
 ||flashtexting.com^

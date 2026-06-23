@@ -676,6 +676,18 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+koha.net##li:has(> div.social_media)
+elpinguino.com##.encuesta-compartir
+elpinguino.com##.site3-compartir-diario
+elpinguino.com##div.site3-widget:has(> div.site3-widget-content > div.fb-page)
+security.nl##.content_right > div.sidebar_block:has(> div.posting > div.category_promotion)
+geeky-gadgets.com##.ess-button--email
+hurriyet.com.tr##button[data-action="toggle-share-menu"]
+onedio.com##.mt-2:has(> div > img[alt="article/share"])
+geitopi.com###social_box > ul.clearfix > li:not(.page-comments)
+geitopi.com#?#.single_bottom_sns > ul.clearfix > li:not(:has(> a.icon-comments))
+techcabal.com##.is-content-justification-right .wp-block-group:has(> .block-social-sharing)
+ricardocuisine.com##.c-sharing-button-wrapper
 farmaciasdesimilares.com##div[class*="shareContainer"]
 redmas.com.co###button-google-profile
 zamin.uz##.tg-cta
@@ -6249,7 +6261,7 @@ lidea.today##.aa-share
 president.jp##.article-header__bottom:has(> .js-sns-wrap)
 president.jp##.js-sns-wrap
 iz.ru##.get_yandex_subscription_links
-fintechmagazine.com,aripaev.ee##div[class^="ArticleShare_"]
+telcomagazine.com,fintechmagazine.com,aripaev.ee##div[class^="ArticleShare_"]
 almasryalyoum.com##.share_buttons_container
 1000.menu###soc_share_bt
 opindia.com##.tdb-author-box + div.td_block_separator
@@ -7008,7 +7020,7 @@ house.goo.ne.jp,gdm.or.jp##.detailSns
 railfile.jp,damtomomatsuri.com###sns_block
 koi-kiseichu.jp###share-inner
 tama-kyu.com##.footer-share-header
-xn--pckua2a7gp15o89zb.com,bosai-nippon.com,zeromeat.jp,anime.granbluefantasy.jp##.p-sns
+nissui.co.jp,xn--pckua2a7gp15o89zb.com,bosai-nippon.com,zeromeat.jp,anime.granbluefantasy.jp##.p-sns
 monarkgame.com##.foot--detail__main__links--share
 anime.d4dj-pj.com##.icon_list
 anime.shadowverse.jp##.l-snsShare
@@ -9875,7 +9887,7 @@ ngoisao.net##.block_share > .total
 interfax.ru##.header__soc
 inoreader.com##span[onclick^="share_article"]
 viajenaviagem.com##li[id^="compartilhar-"]
-myphone.gr,gsminfo.com.ua,tek.id##.post-sharing
+webrazzi.com,myphone.gr,gsminfo.com.ua,tek.id##.post-sharing
 bild.de,jetzt.de##.sharingbar
 vimeo.com##.share_social_icons
 gamingbolt.com,cyberdaily.au,vidup.io##.social-media-container
@@ -14407,6 +14419,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_ext
 !+ PLATFORM(ios) NOT_OPTIMIZED
 adguard.info,adguard.com,adguard.app#$#.hello_from_adguard_advanced_protection_ios { display: none !important; }
 !
+
 !-------------------------------------------------------------------------------!
 !-------------- General hiding rules -------------------------------------------!
 !-------------------------------------------------------------------------------!
