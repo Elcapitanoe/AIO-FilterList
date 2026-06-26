@@ -565,6 +565,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||opecloud.com^
 ||sf-insights.io^
 ||avsplow.com^
 ||codedrink.com^
@@ -79318,6 +79319,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||analytics.wispbyte.com^
 ||trk.edf.fr^
 ||a.boredpanda.bio^
 ||appview.fafafa.ai^
@@ -182288,6 +182290,8 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||harant-test.ru/statistics.php
+||iculture.nl/ic-cgi/report/
 ||majikichi.com/js/tracking.js
 ||plantet.pl/products/ping/
 ||liveball.sx/albert
@@ -190508,7 +190512,6 @@ dlsdk.appsflyer.com^
 -client-report.honkaiimpact3.com^
 ||*-datareceiver.aki-game.net^
 ||data-detect.nie.easebar.com^
-||mgbsdk*.matrix.easebar.com^
 ||applog*.matrix.easebar.com^
 ||tapi.axcadsf.cfd^$app=com.apkpure.aegon
 ||tr.acobt.tech^$app=com.apkpure.aegon
