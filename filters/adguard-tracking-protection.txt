@@ -565,6 +565,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||telemetry.adsninja.ca^
 ||dsp-track-global.zmaticoo.com^
 ||opecloud.com^
 ||sf-insights.io^
@@ -605,7 +606,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ||t.journify.io^
 ||static.journify.io^
 ||umamix.fadunews.in^
-||acustomizedgift.com^$script,redirect=noopjs
 ||globalsiteanalytics.com^
 ||content-settings.com^
 ||config-factory.com^
@@ -79320,6 +79320,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||litags.feedblitz.com^
 ||posthog.football24.ua^
 ||analytics.wispbyte.com^
 ||trk.edf.fr^
@@ -182292,6 +182293,14 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||cdn.iz.ru/profiles/portal/themes/purple/js/statistics/custom_criteo*.js
+||news.gnezdo2.ru/gnezdo_news_tracker_new.js
+||cs.rambler.ru/api/v*/events
+||static.gazeta.ru/nm*/js/block_counter_v*.js
+||gazeta.ru/atlas/metrics/
+||api.sales-ninja.me/*/events/
+||static.ridicdn.net/books-backend/*/tracking/ridi-tracking-sdk.js
+||ridibooks.com/_ext/g/js?id=
 mashable.com#%#//scriptlet('href-sanitizer', 'a[href^="https://zdcs.link/"]', '?u')
 mashable.com#%#//scriptlet('href-sanitizer', 'a[href^="https://cc.mashable.com/v1/otc/"]', '?url')
 ||nlab.itmedia.co.jp/scripts/cx.js
@@ -183656,7 +183665,7 @@ boredpanda.*#%#//scriptlet('set-local-storage-item', 'bp-analytics', '$remove$')
 ||nhk.or.jp/mpulse/boomerang/
 ||fatosdesconhecidos.com.br/wp-content/cache/*/analytics/tag.js
 ||skyscanner.co.kr/g/aps/public/api/v1/pixel/
-||wcs.naver.net/wcslog.js^
+||wcs.naver.net/wcslog.js^$domain=~map.vworld.kr
 ||player.javboys.cam/cdn-cgi/trace
 ||gateway.us.zip.co/analytics^
 ||wzzm13.com/taboola_
@@ -189118,6 +189127,10 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/234433
+||ridibooks.com^$cookie=fingerprint
+||ridibooks.com^$cookie=attribution_tool_params
+||ridibooks.com^$cookie=pvid
 ! dugun.com
 ||dugun.com^$cookie=uniqueId
 ! matchtv.ru
@@ -191522,6 +191535,10 @@ d4?appid*type*
 !@@||mc.yandex.ru/metrika/watch.js$domain=
 !
 !
+! fix infinite scroll
+@@||st.top100.ru/top100/top100.js$domain=gazeta.ru|lenta.ru
+! https://github.com/AdguardTeam/AdguardFilters/issues/234452
+@@||duckduckgo.com/local.js?tg=$~third-party
 ! https://github.com/easylist/easylist/issues/24516
 ||directg.jp/js/fingerprint2.js$script,redirect=fingerprintjs2
 !+ PLATFORM(ios, ext_safari, ext_android_cb)
@@ -197786,6 +197803,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||potatoinvention.com^
 ||powerfulblends.com^
 ||powerfulcopper.com^
+||powertoolwiki.com^
 ||preciousplanes.com^
 ||precisear.com^
 ||predictplate.com^
