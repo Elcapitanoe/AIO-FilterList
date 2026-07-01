@@ -565,6 +565,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||pcx-events.revbox.co^
 ||telemetry.adsninja.ca^
 ||dsp-track-global.zmaticoo.com^
 ||opecloud.com^
@@ -79320,6 +79321,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||t.experte.de^
+||stats.mapple.*^
+||rest.comfy.ua^
 ||litags.feedblitz.com^
 ||posthog.football24.ua^
 ||analytics.wispbyte.com^
@@ -182293,6 +182297,11 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||service.iz.ru/api/*/view/inc?sourceId=
+||api.experte.com/t/
+||esim.io/monitoring
+||comfy.ua/api/analytics/
+||comfy.ua/api/auth/v*/gtm/
 ||cdn.iz.ru/profiles/portal/themes/purple/js/statistics/custom_criteo*.js
 ||news.gnezdo2.ru/gnezdo_news_tracker_new.js
 ||cs.rambler.ru/api/v*/events
@@ -196807,6 +196816,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||coalkitchen.com^
 ||coatfood.com^
 ||cobaltoverture.com^
+||coffeefire.net^
 ||coffeesidehustle.com^
 ||coldbalance.com^
 ||coldcallpro.com^
