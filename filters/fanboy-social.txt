@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202607041732
+! Version: 202607051734
 ! Title: Fanboy's Social Blocking List
-! Last modified: 04 Jul 2026 17:32 UTC
+! Last modified: 05 Jul 2026 17:34 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 42c69ead2d61a82acec4602cd19480f10aab719a
+! Commit: 007ee37e63140415e2d1b8bcaa7ed4d6e39aa734
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -11856,6 +11856,7 @@ venturebanc.com##.social_share_buttons
 outlookindia.com##.social_sharing_article
 foodsforbetterhealth.com##.social_top_bar
 businesstoday.in##.social_tracking
+notebookcheck.net##.socialarea
 kleinezeitung.at,meduniwien.ac.at,shipmag.it,today.rtl.lu,videocardz.com##.socialbar
 videocardz.com##.socialbar-sidebar
 realestate-magazine.rs##.socialhover
