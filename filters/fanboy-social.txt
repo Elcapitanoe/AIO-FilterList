@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202607071839
+! Version: 202607081805
 ! Title: Fanboy's Social Blocking List
-! Last modified: 07 Jul 2026 18:39 UTC
+! Last modified: 08 Jul 2026 18:05 UTC
 ! Expires: 4 days (update frequency)
-! Commit: ca11210d92f07a8b6844d810ca7870868aeb5e8c
+! Commit: 164236411832d0d3cd59c0137f4f6fbd6ee3b73a
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -12146,6 +12146,7 @@ newstalkzb.co.nz##[data-test-ui="social-connect"]
 sundayworld.com##[data-testid="article-share"]
 stuff.co.nz##[data-testid="body-cta"]
 nytimes.com##[data-testid="social-group"]
+codecademy.com##[data-testid="social-share-dropdown"]
 dw.com##[data-tracking-name="footer-section-social-media"]
 dw.com##[data-tracking-name^="sharing-icons-"]
 news.yahoo.com##[data-ylk="elm:partnercta;itc:0;sec:google-pub;"]
