@@ -568,6 +568,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||bidmachine.io^
 ||logws*.ati-host.net^
 ||rum.catchmetrics.io^
 ||mradx.net^
@@ -79331,6 +79332,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||anonymized-metrics.rmbl.ws^
 ||m.privatesportshop.es^
 ||analytics.pextra.cloud^
 ||jitsu.www1.ru^
@@ -182255,7 +182257,7 @@ _tracking.php?b=
 !
 ! Tealium
 ! The site should be carefully checked when you add this rule
-||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|thesun.co.uk|anantara.com|iflscience.com|calvinklein.ca|taylor.com|news.com.au|agoda.com|vodafone.com.tr|huawei.com|the-sun.com|lavazza.com|greenmangamingbundles.com
+||tags.tiqcdn.com/utag/*/prod/utag.js$domain=mcafee.com|help.dropbox.com|radissonhotels.com|post.ch|usnews.com|krymr.com|cnet.com|adidas.co.uk|adidas.nl|adidas.pl|lineadirecta.com|sibreal.org|modernatx.com|louisvuitton.com|simplybusiness.co.uk|uber.com|monroeandmain.com|totaljobs.com|mitsubishi-motors.co.jp|ubereats.com|grubhub.com|talksport.com|truecar.com|hulu.com|qvc.jp|brother-usa.com|mtvema.com|mtv.co.uk|mtv.de|mtv.it|anantara.com|iflscience.com|calvinklein.ca|taylor.com|news.com.au|agoda.com|vodafone.com.tr|huawei.com|the-sun.com|lavazza.com|greenmangamingbundles.com
 ||tags.tiqcdn.com/utag/*/utag.sync.js$domain=yousee.dk|sibreal.org|calvinklein.ca|hosteurope.de|news.com.au|lavazza.com
 !
 !
@@ -182325,6 +182327,8 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+x.com#%#//scriptlet('set-constant', '__INITIAL_STATE__.featureSwitch.defaultConfig.rweb_home_jot_context_enabled.value', 'false')
+x.com#%#//scriptlet('set-constant', '__INITIAL_STATE__.featureSwitch.user.config.rweb_home_jot_context_enabled.value', 'false')
 ||credistory.ru/api/Metrics/
 ||files.userlink.ai/public/tracking.js
 ||api.faphouse.com^$ping
@@ -187998,6 +188002,8 @@ dreamprogs.net##td[width="88"][height="31"]
 ||ztat.net/*/webtrekk.min.js^
 ||google.com/log?$redirect=nooptext
 ||yandex.ru/clck/click|
+!+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
+||x.com/i/api/1.1/flow/viewer.json
 ! AdRiver
 spletnik.ru#%#//scriptlet('set-local-storage-item', 'adrcid', '$remove$')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/231486
@@ -196822,6 +196828,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||cannonchange.com^
 ||canvasandsocks.com^
 ||canyonpizza.net^
+||capitalopera.com^
 ||capriciouscorn.com^
 ||captainstick.com^
 ||captivatingcanyon.com^
@@ -197800,6 +197807,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||onedropocean.com^
 ||onekindmarket.com^
 ||onespecify.com^
+||onioncomic.com^
 ||onlinestarten.net^
 ||onlywoofs.com^
 ||opalquill.com^
@@ -198806,4 +198814,9 @@ bitdefender.com#$#body[style="opacity: 0;"] { opacity: 1 !important; }
 ||curos.ca/res/*/resources/scripts/lib/fingerprint.js$important,redirect=fingerprintjs2,script
 ! https://github.com/uBlockOrigin/uAssets/issues/31330
 ||metrics.streaks.jp^$redirect=nooptext,xmlhttprequest
-
+! https://github.com/uBlockOrigin/uAssets/issues/33072
+x.com#%#//scriptlet('ubo-set', '__INITIAL_STATE__.featureSwitch.defaultConfig.rweb_home_jot_context_enabled.value', 'false')
+x.com#%#//scriptlet('ubo-set', '__INITIAL_STATE__.featureSwitch.user.config.rweb_home_jot_context_enabled.value', 'false')
+!#if env_firefox
+||abs.twimg.com/responsive-web/client-web/main.$script,replace=/t\.isTrue\("rweb_home_jot_context_enabled"\)/false/
+!#endif
