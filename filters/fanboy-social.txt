@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202607131816
+! Version: 202607141752
 ! Title: Fanboy's Social Blocking List
-! Last modified: 13 Jul 2026 18:16 UTC
+! Last modified: 14 Jul 2026 17:52 UTC
 ! Expires: 4 days (update frequency)
-! Commit: e522d00fc624ae55f062c8bca0dce505b0cf92a6
+! Commit: 7a368b9d6e8efbfa3e8b8adaa86922ebda5d82f1
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -12169,6 +12169,7 @@ irishnews.com##[href^="https://whatsapp.com/channel/"]
 dataconomy.com,digitaltrends.com,driveteslacanada.ca,mothership.sg##[href^="https://www.google.com/preferences/source"]
 militarywatchmagazine.com##[href^="https://x.com/MilitaryWatchM"]
 ynetnews.com##[style="display: flex; justify-content: center; width:100%;height:65px;border: 1px solid #e6e6e6;border-radius: 5px;background-color: #fff;box-sizing: border-box; margin: 20px auto;"]
+startuphub.ai##[title="Follow us on Google News"]
 colourlovers.com##a.mr-10.left > [src]
 hackster.io##a.social_icons__icon__BxTgB
 telekom.com##a[title="Share"]
