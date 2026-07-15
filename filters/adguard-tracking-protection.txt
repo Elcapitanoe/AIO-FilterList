@@ -568,6 +568,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 !
 !
 !
+||external-tag.mysquadbeyond.com^
+||heatmap.support-inc.co.jp^
 ||clktrkd.com^
 ||analytics.infraloods.nl^
 ||bidmachine.io^
@@ -182335,6 +182337,7 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||celebtattler.com/world/cache/analytics.js
 complex.com#%#//scriptlet('set-local-storage-item', 'poll_anonymous_id', '$remove$')
 ||media.complex.com/common/catalyst.js
 ||media-trend.mail.ru/pixel/
@@ -198178,6 +198181,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||scrubswim.com^
 ||sealtravels.com^
 ||seamlesssalon.com^
+||seaotterplay.com^
 ||seatsmoke.com^
 ||secondhandfall.com^
 ||secretivesheep.com^
@@ -198191,6 +198195,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||selectivesummer.com^
 ||selfishsea.com^
 ||selfishsnake.com^
+||sendinblast.com^
 ||sendingspire.com^
 ||seniordynamic.com^
 ||sentinelp.com^
@@ -198456,6 +198461,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||surfacesmedia.com^
 ||sustaindenim.com^
 ||swankysquare.com^
+||swanwebcreations.com^
 ||sweetslope.com^
 ||swellstocking.com^
 ||swiftintro.com^
