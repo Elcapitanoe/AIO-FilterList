@@ -182343,6 +182343,7 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+x.com#%#//scriptlet('prevent-fetch', '/i/api/1.1/flow/viewer.json')
 ||abs.twimg.com/responsive-web/client-web/loader.HomeTimelineAdblockNotice
 ||na.web.skill.music.a2z.com/api/elementClicked
 ||na.web.skill.music.a2z.com/api/audioAdStarted
@@ -182370,7 +182371,6 @@ peacocktv.com#%#//scriptlet('set-local-storage-item', 'impressionTrackingSession
 biznesenter.pl#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'gtm.start')
 ||bifrost-api.hotstar.com/v*/events
 ||linuxcommunity.io/assets/google-universal-analytics-*.js
-x.com#%#//scriptlet('prevent-fetch', '/i/api/1.1/flow/viewer.json')
 ||credistory.ru/api/Metrics/
 ||files.userlink.ai/public/tracking.js
 ||api.faphouse.com^$ping
@@ -188049,8 +188049,6 @@ dreamprogs.net##td[width="88"][height="31"]
 ||ztat.net/*/webtrekk.min.js^
 ||google.com/log?$redirect=nooptext
 ||yandex.ru/clck/click|
-!+ NOT_PLATFORM(ios, ext_android_cb)
-||x.com/i/api/1.1/flow/viewer.json
 ! AdRiver
 spletnik.ru#%#//scriptlet('set-local-storage-item', 'adrcid', '$remove$')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/231486
@@ -196738,6 +196736,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||bandborder.com^
 ||barbarousbase.com^
 ||barbershirts.com^
+||barcodetool.com^
 ||barkfactor.com^
 ||barqueue.com^
 ||baseboosters.com^
@@ -198669,7 +198668,6 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||verdantsculpture.com^
 ||verseballs.com^
 ||versuswall.com^
-||verybark.com^
 ||verybouncy.com^
 ||vibrantcelebration.com^
 ||vibrantgale.com^
@@ -198831,6 +198829,7 @@ usatoday.com#%#//scriptlet('ubo-set', 'gnt.x.adm', '')
 ||oceancloudhosts.com^$redirect=noopjson,xmlhttprequest
 ||ubiquitoussea.com^$redirect=noopjs,script
 ||unloadyourself.com^$redirect=noopjs,script
+||verybark.com^$redirect=noopjs,script
 ! anikore.jp
 anikore.jp#$#html[class^="loading"] { visibility: visible !important; }
 ! https://github.com/uBlockOrigin/uAssets/issues/31343
@@ -198883,4 +198882,8 @@ bitdefender.com#$#body[style="opacity: 0;"] { opacity: 1 !important; }
 ||curos.ca/res/*/resources/scripts/lib/fingerprint.js$important,redirect=fingerprintjs2,script
 ! https://github.com/uBlockOrigin/uAssets/issues/31330
 ||metrics.streaks.jp^$redirect=nooptext,xmlhttprequest
+! https://github.com/uBlockOrigin/uAssets/issues/33072
+!#if env_firefox
+x.com#%#//scriptlet('ubo-no-xhr-if', '/i/api/1.1/flow/viewer.json')
+!#endif
 
