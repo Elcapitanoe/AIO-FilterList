@@ -676,6 +676,11 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+firtka.if.ua##.single-article ul.header-social-links
+socialxup.com##button[aria-label="Xでシェア"]
+schwaebische.de##.article-share-x
+schwaebische.de##.article-share-mail
+schwaebische.de##.article-share-facebook
 tengrinews.kz##.social-wa
 tengrinews.kz##.social-tg
 tengrinews.kz##.social-fb
@@ -4744,7 +4749,7 @@ xn--pckua2a7gp15o89zb.com##.c-articleShare
 ysklog.net##article .yarpp-related-website
 m.timesofindia.com##.floatingwhatsapp
 instamod.net##.gmr-share
-[$domain=/yavasgir\d+\.com/]##button[data-tab-id="video-share"]
+[$domain=/yavasgir\d+\.(com|live)/]##button[data-tab-id="video-share"]
 fullxcinema1.com##button[data-tab-id="video-share"]
 windows101tricks.com##.elementor-widget-uael-social-share
 st-andrews.ac.uk##.article-header__meta-share
@@ -5208,8 +5213,7 @@ metanit.com##.socBlock
 a101.com.tr##.brochures-actions
 givemesport.com##.gms-share
 kusurinomadoguchi.com##.detail-sns-box
-from-ua.com##.header-social > a[aria-label^="Share"]
-from-ua.com##.header-social > a[aria-label^="Share"] ~ *
+from-ua.com##article .header-social
 bangla.bdnews24.com##.social-share-template-wrapper
 tradingview.com##div[class^="shareButton"]
 cnbnews.com##.viewsubject > ul
@@ -14900,7 +14904,7 @@ href^="https://facebook.com/sharer?u=
 ##.st_facebook_custom
 ##.st_sharethis_custom
 ##.st_pinterest_custom
-~xmind.app,~redgifs.com,~gfycat.com,~tvtime.com,~dropbox.com,~ge.tt,~recite.com,~act.hoyolab.com##.share-page
+~kimi.com,~xmind.app,~redgifs.com,~gfycat.com,~tvtime.com,~dropbox.com,~ge.tt,~recite.com,~act.hoyolab.com##.share-page
 ##.addthis_button_google_plusone_share
 ##.addthis_button_pinterest_share
 ##.social-links-block
@@ -15251,7 +15255,7 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ##.gplus-like-button
 ##.gs-share
 ##.hdsocial2
-~from-ua.com,~dzfoot.com,~joinfo.ua,~gardenista.com,~sinemia.com,~9to5google.com,~9to5mac.com,~9to5toys.com,~electrek.co##.header-social
+~dzfoot.com,~joinfo.ua,~gardenista.com,~sinemia.com,~9to5google.com,~9to5mac.com,~9to5toys.com,~electrek.co##.header-social
 ~codepen.io##.heart-button
 ##.heart-it-button
 ##.help-social-buttons
