@@ -182346,6 +182346,7 @@ mexc.com#%#//scriptlet('set-local-storage-item', '_yjsu_yjad', '$remove$')
 !
 ! NOTE: Specific rules
 !
+||iportal.ru/static/mediadash/tracker.iife.min.js
 ||streamsports99.su/assets/trackingManager.*.js
 ||api.strem.io/api/events
 gazetadopovo.com.br##section[class^="pianoRecommender"]
@@ -183995,7 +183996,6 @@ hindustantimes.com#%#//scriptlet('set-local-storage-item', 'ht_cdp', '$remove$')
 ||content.kaspersky-labs.com/public/analytics-scripts/analytical_functions.js
 ||pcgames.de/webservices/edash/
 ||ca.cafe24data.com/analytics.js
-||api.laftel.net/api/*/status/$xmlhttprequest,redirect=noopjs
 ||laftel.net/twitter-pixel.js
 ||capi.connatix.com/tr/$important
 ||g.alicdn.com/alilog/s/*/plugin/aplus_spmact.js
@@ -188132,16 +188132,6 @@ mediamarkt.de#%#//scriptlet('abort-on-property-write', 'ftr__startScriptLoad')
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/197963
 ! aglint-disable no-invalid-modifiers
-!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
-||digidip.net/visit?url=$urltransform=/%3A/:/
-!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
-||digidip.net/visit?url=$urltransform=/%2F/\//
-!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
-||digidip.net/visit?url=$urltransform=/%3F/?/
-!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
-||digidip.net/visit?url=$urltransform=/%3D/=/
-!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
-||digidip.net/visit?url=$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?.*\.digidip\.net.*url=([^&]*).*/\$1/
 ! aglint-enable no-invalid-modifiers
 !
 ! dzen.ru
@@ -197648,6 +197638,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||lamplow.com^
 ||landkarts.com^
 ||landlordspy.com^
+||landsuites.com^
 ||landwestern.com^
 ||largebrass.com^
 ||lastanonymous.com^
@@ -197688,6 +197679,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||lonelyflavor.com^
 ||longingtrees.com^
 ||longloops.com^
+||looprecycled.com^
 ||loosecase.com^
 ||looseloaf.com^
 ||lorenzourban.com^
@@ -197765,6 +197757,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||memopilot.com^
 ||memorizematch.com^
 ||memorizeneck.com^
+||menteechain.com^
 ||mentorsticks.com^
 ||mercuryace.com^
 ||meremark.com^
@@ -198359,6 +198352,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||sneezecovers.com^
 ||snoresmile.com^
 ||snowmentor.com^
+||socialsend.net^
 ||sockpacks.com^
 ||soggysponge.com^
 ||soilcontent.com^
@@ -198831,8 +198825,8 @@ kizi.com#%#window.google_trackConversion = function() {};
 ! https://github.com/AdguardTeam/AdguardFilters/issues/218663
 ||d21y75miwcfqoq.cloudfront.net/436f3341$image,redirect=nooptext
 ! GPC
-accuweather.com,acmemarkets.com,aiskillsnavigator.microsoft.com,boston.com,capezio.com,chime.com,costco.com,crunchyroll.com,deezer.com,delta.com,dnb.co.uk,dnb.com,dollargeneral.com,engadget.com,espn.com,eventbrite.com,filson.com,flyfrontier.com,formula1.com,geizhals.de,gladiatorgarageworks.com,harborfreight.com,hopwtr.com,jdsports.com,kkrt.com,lenscrafters.com,livewithkellyandmark.com,madewell.com,mail.yahoo.com,mazdausa.com,milesplit.live,monsterenergy.com,newyorker.com,norton.com,pandora.com,payment.nba.com,porsche.com,qobuz.com,rivals.com,soundcloud.com,spotify.com,subway.com,techcrunch.com,ticketmaster.*,tidal.com,tirerack.com,twitter.com,uber.com,ubereats.com,usaa.com,vimeo.com,visible.com,weather.com,wunderground.com,www.yahoo.com,x.com#%#//scriptlet('ubo-set', 'Navigator.prototype.globalPrivacyControl', 'false')
-accuweather.com,acmemarkets.com,aiskillsnavigator.microsoft.com,boston.com,capezio.com,chime.com,costco.com,crunchyroll.com,deezer.com,delta.com,dnb.co.uk,dnb.com,dollargeneral.com,engadget.com,espn.com,eventbrite.com,filson.com,flyfrontier.com,formula1.com,geizhals.de,gladiatorgarageworks.com,harborfreight.com,hopwtr.com,jdsports.com,kkrt.com,lenscrafters.com,livewithkellyandmark.com,madewell.com,mail.yahoo.com,mazdausa.com,milesplit.live,monsterenergy.com,newyorker.com,norton.com,pandora.com,payment.nba.com,porsche.com,qobuz.com,rivals.com,soundcloud.com,spotify.com,subway.com,techcrunch.com,ticketmaster.*,tidal.com,tirerack.com,twitter.com,uber.com,ubereats.com,usaa.com,vimeo.com,visible.com,weather.com,wunderground.com,www.yahoo.com,x.com#%#//scriptlet('ubo-set', 'navigator.globalPrivacyControl', 'false')
+accuweather.com,acmemarkets.com,aiskillsnavigator.microsoft.com,boston.com,capezio.com,chime.com,costco.com,crunchyroll.com,deezer.com,delta.com,dnb.co.uk,dnb.com,dollargeneral.com,engadget.com,espn.com,eventbrite.com,filson.com,flyfrontier.com,formula1.com,geizhals.de,gladiatorgarageworks.com,harborfreight.com,hopwtr.com,jdsports.com,kkrt.com,lenscrafters.com,livewithkellyandmark.com,madewell.com,mail.yahoo.com,mazdausa.com,michaels.com,milesplit.live,monsterenergy.com,newyorker.com,norton.com,pandora.com,payment.nba.com,porsche.com,qobuz.com,rivals.com,soundcloud.com,spotify.com,subway.com,techcrunch.com,ticketmaster.*,tidal.com,tirerack.com,twitter.com,uber.com,ubereats.com,usaa.com,vimeo.com,visible.com,weather.com,wunderground.com,www.yahoo.com,x.com#%#//scriptlet('ubo-set', 'Navigator.prototype.globalPrivacyControl', 'false')
+accuweather.com,acmemarkets.com,aiskillsnavigator.microsoft.com,boston.com,capezio.com,chime.com,costco.com,crunchyroll.com,deezer.com,delta.com,dnb.co.uk,dnb.com,dollargeneral.com,engadget.com,espn.com,eventbrite.com,filson.com,flyfrontier.com,formula1.com,geizhals.de,gladiatorgarageworks.com,harborfreight.com,hopwtr.com,jdsports.com,kkrt.com,lenscrafters.com,livewithkellyandmark.com,madewell.com,mail.yahoo.com,mazdausa.com,michaels.com,milesplit.live,monsterenergy.com,newyorker.com,norton.com,pandora.com,payment.nba.com,porsche.com,qobuz.com,rivals.com,soundcloud.com,spotify.com,subway.com,techcrunch.com,ticketmaster.*,tidal.com,tirerack.com,twitter.com,uber.com,ubereats.com,usaa.com,vimeo.com,visible.com,weather.com,wunderground.com,www.yahoo.com,x.com#%#//scriptlet('ubo-set', 'navigator.globalPrivacyControl', 'false')
 ! Clear GPC storage item
 madewell.com#%#//scriptlet('ubo-cookie-remover', 'dns_cookie')
 visible.com#%#//scriptlet('ubo-set-local-storage-item', 'browser-ids', '$remove$')

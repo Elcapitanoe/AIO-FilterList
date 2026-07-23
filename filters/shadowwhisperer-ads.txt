@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 27,050
-# Updated: 7/21/2026  21:52 (9:52 PM CST)
+# Domains: 27,056
+# Updated: 7/23/2026  12:28 (12:28 PM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -4249,7 +4249,6 @@ adserver.sigma-foto.de
 adserver.sinjali.com
 adserver.skaterock.cz
 adserver.skiresort-service.com
-adserver.smartframe.io
 adserver.smgfiles.com
 adserver.snewsonline.com
 adserver.socastdigital.com
@@ -8832,6 +8831,7 @@ beaconadnetwork.com
 beaconads.com
 beacon.flow.io
 beaconpush.com
+beamed.com
 beancontrol.com
 beanedbounds.shop
 beanse.com
@@ -8984,12 +8984,14 @@ bibbmedia.com
 bibfdjhgbeicbfajiaba.world
 bicytaxi.com
 bid4keywords.com
+bid-algorix.com
 bidargo.com
 bidbarrel.cbsnews.com
 bidberry.net
 bidbuddy.co.in
 bidclix.com
 bidclix.net
+biddager.com
 biddeo.me
 bidderads.com
 biddercore.io
@@ -14832,6 +14834,7 @@ ib-broker.co
 ib-broker.global
 ibeamads.net
 ibillboard.com
+ib.msn.com
 ibo-ad.com
 ibroad7.com
 ib-trade.co
@@ -16460,6 +16463,7 @@ lovecash.com
 loved.by
 lovelybingo.com
 lovemoney.vn
+loveota.com
 lovercash.com
 lovingassociate.com
 lovingdrop.pro
@@ -18248,6 +18252,7 @@ nxstrib.com
 nxtanchor.com
 nxthost-1.info
 nyetm2mkch.com
+nym2-ib.msn.com
 nymphacebids.com
 nysvbl.com
 nytive.com
@@ -18867,7 +18872,6 @@ p16-tiktok-ads-sg.tiktokcdn1.xyz
 p16-va.lemon8cdn.com
 p17-tiktok-ads-us.tiktokcdn1.xyz
 p19-ad-site-sign-sg.tiktokcdn.com
-p1.meituan.net
 p2l.info
 p2yn.com
 p30rank.ir
@@ -21301,6 +21305,7 @@ riverpush.com
 rivertraffic.com
 rivet.works
 rixaka.com
+rixengine.com
 rixserv.com
 rjconlin.com
 rjuhasta.com
@@ -22510,7 +22515,6 @@ servedby.polity.org.za
 servedby.quirks.com
 servedby.schrotundkorn.de
 servedbysmart.com
-servedby.smartframe.io
 servedby.tahoe.com
 servedby.thinkresult.in
 servedby.tourismirelandemail.com
@@ -22902,6 +22906,7 @@ smartadserver.fr
 smartadserver.it
 smartadserver.pl
 smartadtags.com
+smartbid.ai
 smart.bulley.com
 smart.bwbmn.com
 smartcard.ee
@@ -26370,6 +26375,7 @@ wrathfulsafety.pro
 writerhubs.com
 writhing-uncle.com
 writingcalls.com
+wrongscreen.com
 wrxads.golfwrx.com
 wry-boss.com
 wry-kiss.pro
