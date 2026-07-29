@@ -676,6 +676,10 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+group.ntt##.c-sns-2
+leparisien.fr##.tooltip-share-article-container
+haberturk.com##li[onclick="HTJS.newsShare(this)"]
+itmedia.co.jp##.p-sns-box
 ovvah.com##.widget_social
 sexvid.xxx##div[href="#Share-moadl"]
 respawn.outlookindia.com##.items-center > button:has(> img[alt="share icon"])
@@ -9037,7 +9041,7 @@ film.org.pl##.widget-post-share
 wpexplorer.com###fixed-social-share
 goodhouse.ru##.widget-test-sharing
 internalpointers.com##.ip-post__social-tools
-moviebox.ph,movieboxapp.in,themoviebox.org,moviebox.pk,movieboxapp.in,123movienow.cc,nvidianews.nvidia.com,koreaboo.com,vue.gov.ua,esports.net,voguegirl.jp,blog.logitech.com,kurashiru.com,getpocket.com##div[class$="-share"]
+moviebox.ac,moviebox.ph,movieboxapp.in,themoviebox.org,moviebox.pk,movieboxapp.in,123movienow.cc,nvidianews.nvidia.com,koreaboo.com,vue.gov.ua,esports.net,voguegirl.jp,blog.logitech.com,kurashiru.com,getpocket.com##div[class$="-share"]
 peoplesworld.org##.sub-header .social_icon
 steampowered.com##.discussionwidget_ShareBtn_22m-G > img[class^="partnereventshared_Button_"]
 portalimprensa.com.br##.clsTabsModTwitterFacebook
@@ -14620,6 +14624,7 @@ adguard.info,adguard.com,adguard.app#$#.hello_from_adguard_advanced_protection_i
 ! generic cooking sites
 ##body[class*="adthrive-device-"] > .site-container .block-social-share
 !
+##.fvfacebook_share
 ##a[href^="https://threads.com/intent/post?text="]
 ###utilitybar__button--share
 ##.wpex-social-share
@@ -14964,7 +14969,7 @@ href^="https://facebook.com/sharer?u=
 ~yandex.ru##a[href^="https://share.yandex.ru/go.xml?service="]
 ##.nc_socialPanel
 ~pressdigital.es,~immersive-fox.com,~indiegogo.com##.share-icon
-~accounts.stella-it.com,~nikkansports.com,~la7.it,~bluedart.com,~thehackernews.com##.social-box
+~wargaming.net,~accounts.stella-it.com,~nikkansports.com,~la7.it,~bluedart.com,~thehackernews.com##.social-box
 ~pinterest.com##a[href^=" https://pinterest.com/pin/create/link/?"]
 ###cm-social-overlay
 ~ok.ru##a[href^="http://connect.ok.ru/offer?url="]
