@@ -182369,6 +182369,8 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||e.meloming.com/static/web-vitals.js
+||e.meloming.com/i/v0/e
 ||globes.co.il/news/scripts/fp2.min.js
 ||moika78.ru/wp-json/optimization-detective/v*/url-metrics
 theplayerstribune.com#%#//scriptlet('set-local-storage-item', 'userIdentifier', '$remove$')
@@ -196773,6 +196775,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||amusedbucket.com^
 ||analyzecorona.com^
 ||ancientact.com^
+||andfauna.net^
 ||animalcoder.com^
 ||annoyedairport.com^
 ||annoyingacoustics.com^
@@ -196826,6 +196829,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||barcodetool.com^
 ||barkfactor.com^
 ||barqueue.com^
+||barrelcider.com^
 ||baseboosters.com^
 ||basilfish.com^
 ||basketballbelieve.com^
@@ -197220,6 +197224,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||dinnerquartz.com^
 ||direfuldesk.com^
 ||disagreeabledrop.com^
+||discjockeys.net^
 ||discopond.com^
 ||discreetfield.com^
 ||discreetquarter.com^
@@ -197271,6 +197276,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||effervescentvista.com^
 ||effulgentnook.com^
 ||effulgenttempest.com^
+||eggrecipe.com^
 ||eightgreens.com^
 ||eighthlayer.net^
 ||elasticchange.com^
