@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 27,103
-# Updated: 8/2/2026  10:51 (10:51 AM CST)
+# Domains: 27,108
+# Updated: 8/2/2026  23:10 (11:10 PM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -349,6 +349,7 @@
 2m3gdt0gc.de
 2m55gqleg.de
 2mdesignseg.com
+2mdn.net
 2mg2ibr6b.de
 2mke5l187.de
 2mo3neop.de
@@ -9321,6 +9322,7 @@ bodyclick.net
 boffoadsapi.com
 boffoads.com
 boffoadsfeeds.com
+bogos.io
 bogusproperty.com
 boiledegglabs.com
 boilingmadsoup.com
@@ -22066,6 +22068,7 @@ s.brilmaver.com
 sbs-ad.com
 sbxutkvzi.com
 scaleout.jp
+scalibur.io
 scandicpartners.se
 scapesolutions.in
 scarce-award.pro
@@ -24132,6 +24135,7 @@ teiaoz.xyz
 tekirdagagirnakliyat.com
 tektokmedia.com
 telaria.com
+tele-cdn.s3.us-east-2.amazonaws.com
 teleportapi.com
 teleproff.com
 telllwrite.com
@@ -26998,6 +27002,7 @@ zfsfkp.com
 zgqbb.com
 zgxrht.com
 zhangeiline.xyz
+zhblpljqjwsog.site
 zhibo128x.xyz
 zhifuz10888.com
 zhongnanhaicn.com
