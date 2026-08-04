@@ -676,6 +676,9 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+farsroid.com##.shadowed-btn--telegram
+farsroid.com##.shadowed-btn--instagram
+sud.ua##div.b-news-item-info:has(> p > a[href="https://t.me/sudua"])
 cincinnati.com##.nsb-link
 slivki.tj##.social-media-share-block
 google.com##form[role="search"] + div > div[role="button"][data-sf][aria-label]
@@ -735,7 +738,7 @@ celebtattler.com##.web_share
 oricon.co.jp##.sns-share-area2
 comments.ua##.menus > div.soc_il
 newarab.com##.social-google-wrapper
-watchott.ru#%#//scriptlet('set-local-storage-item', 'watchott-share-dismissed', 'true')
+watchott.org#%#//scriptlet('set-local-storage-item', 'watchott-share-dismissed', 'true')
 movieboxonline.net###detail-page > .justify-start.inline-flex div.flex.justify-start.items-center:has(> div[title="share to Facebook"])
 siliconrepublic.com##.social-horizontal-container
 accuradio.com##a[class^="PlayerChannelSection__ShareSongWrapper-"]
@@ -13112,7 +13115,6 @@ yahoo.com##iframe[src^="https://www.facebook.com/plugins/likebox.php"]
 filehorse.com##iframe[title^="+Badge"]
 zvuki.ru##iframe[title^="fb:like"]
 ajans23.com,ekippolishaber.com##img[alt="facebook-paylas"]
-computerera.co.in##ism_wrap
 huffpost.com##li.pinterest
 huffpost.com,huffingtonpost.co.uk##li.facebook
 huffpost.com,huffingtonpost.co.uk##li.twitter
