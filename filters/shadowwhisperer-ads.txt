@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 27,117
-# Updated: 8/4/2026  18:03 (6:03 PM CST)
+# Domains: 27,140
+# Updated: 8/7/2026  01:06 (1:06 AM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -1102,6 +1102,7 @@ a.cilon.site
 acinet.in
 a.cingo.sbs
 ackhoo.com
+ackzany.com
 a.clickintact.com
 a.cloba.xyz
 a.coinhub.wiki
@@ -2566,6 +2567,7 @@ ad-mixr.com
 admized.com
 ad.miztec.pt
 admlb.com
+admndx.com
 ad-m.net
 admob.biz
 ad.mobcho.com
@@ -7048,6 +7050,7 @@ ad.yx.city
 adz2you.co
 adz2you.com
 adz2you.net
+adz2you.xyz
 adzadvertising.com
 adzappy.com
 adzbazar.com
@@ -8378,6 +8381,7 @@ autopush.in
 autopush.prod.mozaws.net
 autoroll.biz
 autoroll.info
+auwoocmair.net
 auxmoney-partnerprogramm.de
 av5.mofoshd.org
 avada.io
@@ -10385,6 +10389,7 @@ click-v4.plarimoexocli.com
 click-v4.rpdmkrclk.com
 click-v4.yoclpknu.com
 clickwerx.net
+clickwhore.com
 clickyab.com
 clickzs.com
 clickzzs.nl
@@ -10815,6 +10820,7 @@ cookiebox.ro
 cookie-cdn.cookiepro.com
 cookiechoices.org
 cookieconsent.com
+cookie-consent.ucl.ac.uk
 cookiefirst.com
 cookiehub.net
 cookieinformation.com
@@ -12880,6 +12886,7 @@ evolvemediallc.com
 evolvenation.com
 evowise.com
 evyy.net
+ew32thr6.t0r.space
 ewaffiliates.com
 ewayads.com
 ewcqq.com
@@ -13118,6 +13125,7 @@ fcm.googleapis.com
 fcmrn.com
 fcmtoken.googleapis.com
 fcm-xmpp.googleapis.com
+fcp.codes
 fcwuye.com
 fdcjadjdeiacbhihaadb.world
 fderty.com
@@ -14198,6 +14206,7 @@ grandiose-tell.com
 grandkingdom.com
 grandmobi.com
 grandmobi.net
+grandrim.com
 grandslammedia.com
 granlite.com
 granns.co.zw
@@ -14402,6 +14411,7 @@ hadekomas.com
 hads.huuuge.net
 haelate.de
 haelite.de
+hai8g.com
 haikusoap.com
 hairy-level.pro
 hairy-sensitive.pro
@@ -14753,6 +14763,7 @@ htfywebpush.in
 htkcm.com
 htlbid.com
 html5maker.com
+html-load.cc
 htpanel.com
 htplayground.com
 httpads.com
@@ -14974,6 +14985,7 @@ ikec.ir
 ikeyword.com
 ikfhqj.com
 ikikik.xyz
+ik.jagatreview.com
 ikjwmfeds.xyz
 ikkxw.com
 iklan.pawartajatim.com
@@ -16368,6 +16380,7 @@ live.zrmtrm.com
 lividgod.pro
 lividmind.pro
 ljecur.com
+ljline.com
 ljovi.com
 lkg6g644.de
 lknxdluctcdyou.com
@@ -19335,6 +19348,7 @@ physicaltransition.pro
 physicstees.com
 phywifupta.com
 pi4.piczhq.com
+pia4y5u.t0r.space
 piads.vn
 p.ianjumb.com
 pianwela.xyz
@@ -19772,6 +19786,7 @@ pptable.rtv.rs
 ppu.asgadsts.cc
 p.pukt.cloud
 p.puyjjq.com
+ppwpn.com
 pqggt.com
 p.qlogo.cn
 pqrtd9hhtu9x.info
@@ -20620,6 +20635,7 @@ qntv.io
 qo-ni-tye.space
 qootkj.com
 qortex.ai
+qovani.com
 q.pairies.site
 qpetfb.com
 qpidaffiliate.com
@@ -21436,6 +21452,7 @@ roseavemedia.com
 rose.ixbt.com
 rosenadvertising.com
 rosseladvertising.be
+rosstv.ru
 rosyfeeling.pro
 rosytrip.pro
 rotate4all.com
@@ -22622,6 +22639,7 @@ setupcmp.com
 setuptrust.com
 sevendeer.com
 sevenhalves.com
+several-load.com
 severecontrol.pro
 sexcash.com
 sexinfinity.cc
@@ -23192,6 +23210,7 @@ sour-hate.pro
 sovrn.com
 sovtrk.com
 sovtrk.ru
+sowve.com
 soxg.xyz
 soxivuphy.com
 sozhb.com
@@ -23412,6 +23431,7 @@ srvqck7.com
 srvqck8.com
 srvqck9.com
 srvqck.com
+srvqk.com
 srv.realpython.net
 srxy.xyz
 ssacdn.com
@@ -24915,6 +24935,7 @@ tututu46.oss-accelerate.aliyuncs.com
 tututu666.vip
 tv2h87.net
 tv33whpr.com
+tv35zeg6.t0r.space
 tvadsync.com
 tvp.tv
 tvsquared.com
@@ -26046,6 +26067,7 @@ wee-dare.pro
 weedshoop.de
 weepy-attack.com
 wefellintothebox.com
+weforads.com
 wegotohouse.com
 weightabsenteekmonthly.com
 weinbachgroup.com
@@ -26302,6 +26324,7 @@ wingardiumads.com
 winged-addition.com
 winged-attitude.pro
 wingedphoto.com
+wingsmob.com
 wink.eham.net
 winkleads.com
 winmo.com
