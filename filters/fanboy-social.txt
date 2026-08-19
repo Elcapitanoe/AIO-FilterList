@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202608181658
+! Version: 202608191705
 ! Title: Fanboy's Social Blocking List
-! Last modified: 18 Aug 2026 16:58 UTC
+! Last modified: 19 Aug 2026 17:05 UTC
 ! Expires: 4 days (update frequency)
-! Commit: e34b9c863369c9fdd2fbee7e20a013f5090171df
+! Commit: 37e6393fd25586d1117a9bbdf0cd47425d812216
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -12195,7 +12195,7 @@ eteknix.com##[href^="http://bit.ly/"]
 frvr.com##[href^="http://google.com/preferences/source"]
 webfail.com##[href^="http://twitter.com/intent/tweet"]
 windowslatest.com##[href^="https://google.com/preferences/source"]
-newskarnataka.com,psypost.org##[href^="https://news.google.com/publications/"]
+dexerto.com,newskarnataka.com,psypost.org##[href^="https://news.google.com/publications/"]
 goodyfeed.com##[href^="https://t.me/"]
 irishnews.com##[href^="https://whatsapp.com/channel/"]
 dataconomy.com,digitaltrends.com,driveteslacanada.ca,mothership.sg##[href^="https://www.google.com/preferences/source"]

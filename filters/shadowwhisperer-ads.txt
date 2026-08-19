@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 27,363
-# Updated: 8/18/2026  00:41 (12:41 AM CST)
+# Domains: 27,412
+# Updated: 8/19/2026  11:20 (11:20 AM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -12,6 +12,7 @@
 00px.com.br
 00px.net
 03ab2paradisecdn.com
+041gg.com
 04697a0ddea24c610de68229dadbc4390c37813647c2827bbc1f9041.com
 05e6775b2e7e9fbe8ed69f85c04874dbf64236caa3f28638318868d0.com
 064kk.com
@@ -1883,6 +1884,7 @@ ad.ettoday.net
 adeum.click
 adevolver.com
 adevppl.com
+adexad.com
 adexchangeclear.com
 adexchangerapid.com
 adexchanger.com
@@ -2185,6 +2187,7 @@ adinch.com
 adinc.kr
 ad.incorp.media
 adincube.com
+adindex.com
 adindex.de
 adinfinitum.in
 adinfo.aol.com
@@ -2259,6 +2262,7 @@ adjsimg.fun
 adjsimg.xyz
 adjug.com
 adjuggler.com
+adjumpa.com
 ad.jump-to.link
 ad.jumu.hu
 ad.junggm.com
@@ -7705,6 +7709,7 @@ altkraft.com
 altpubli.com
 altruisticminute.com
 altwebpush.com
+a.luckygoon.cc
 aluhutmafia.de
 alusfsrudcz.com
 alwaysahorse.com
@@ -9666,6 +9671,7 @@ buddytraveller.com
 budindia.com
 budvawshes.ru
 buffaloadvertising.com
+bufingarribes.com
 bugpizza.com
 buildbilled.com
 buildtraffic.com
@@ -9839,6 +9845,7 @@ caishen.alibaba-inc.com
 cakeagenda.com
 calcpol.com
 calculatingequal.pro
+caldory.com
 calexito.com
 callahan.agency
 callalelel.info
@@ -9875,6 +9882,7 @@ camsads.com
 cams.gratis
 camstripper.online
 candid-cell.pro
+candid-revenue.com
 can-digital.net
 candy-network.com
 cangatu.xyz
@@ -10515,6 +10523,7 @@ clkn3.apostle.onl
 clknrtrg.pro
 clkoffers.com
 clkoplardir.com
+clk.ourdreamer.com
 clkpback3.com
 clkrev.com
 clksite.com
@@ -11922,6 +11931,7 @@ detailedhit.pro
 determined-client.pro
 determinedinternational.pro
 detourgame.com
+deuxseethe.com
 dev-applovin.com
 devbuddy.ca
 developermedia.com
@@ -13144,6 +13154,7 @@ faithfulevening.com
 faithlifeads.com
 faithrowold.com
 fajukc.com
+fake-anything.com
 fakedisguise.com
 fake-maximum.pro
 fakemeal.pro
@@ -13318,6 +13329,7 @@ ffprhp8r.de
 ff.sweetconnect.site
 ff.trakerton.com
 fg09t.com
+fgchfhmkh.com
 fggjifajhjigjegeaadd.world
 fgjhxldtbgxmid.com
 f-g-l-j.22yy6.com
@@ -13524,6 +13536,7 @@ focusedquit.pro
 focused-west.pro
 focusfitwear.com
 folderplan.com
+followfarrow.com
 followistic.com
 fomofly.com
 fonaso.eu
@@ -14160,6 +14173,7 @@ goadsexchange.com
 go.adxm.site
 goaffpro.app
 goaffpro.com
+goallanding.com
 goalsmedia.com
 go.aoalmfwinbsstec23.com
 goaserv.com
@@ -14293,6 +14307,7 @@ gp2hmr.com
 gpartner.com.pl
 g.pcmag.com
 gpcrn.com
+gpnpcumptjlun.site
 gprhe.com
 gpsecureads.com
 gqckjiewg.com
@@ -14478,6 +14493,7 @@ guacamoleadvertising.com
 guanggaotu2.oss-cn-beijing.aliyuncs.com
 guarantee-cdn.com
 guardfruit.com
+guarriancha.qpon
 guchihyfa.pro
 guerilla.africa
 guftyx.com
@@ -14745,6 +14761,7 @@ hjtupiantz.com
 hkg1.aastocks.com
 hkg3.aastocks.com
 hkg8.aastocks.com
+hlaukhywawaqi.site
 hldlrm.com
 hlg-tech.com
 hlsads.gannett-cdn.com
@@ -15058,6 +15075,7 @@ ieiso.com
 iengage.in
 ievolved.com
 iexqhm.com
+iexyxnegvztmaf.com
 ieyri61b.xyz
 ifaulkner.com
 iffcbfgajgfceajjaaej.world
@@ -15459,6 +15477,7 @@ intercordoba.com.ar
 interdfp.com
 intergi.com
 intergient.com
+interlinecustomroofingllc.com
 intermarkets.net
 intermedia-advertising.com
 internal-bank.com
@@ -15622,6 +15641,7 @@ ix2.deepsexvids.com
 ixmzrw.com
 iyangka.com
 iytlj.com
+izctg.click
 iz.do
 izjzyykiyn.club
 izooto.com
@@ -16009,6 +16029,7 @@ kineticdigital.ca
 kinetickoncepts.com
 kingads.mobi
 kingfish.fishing.net.nz
+kingoftraffic2025.com
 kingyonlendir.link
 kinkadservercdn.com
 kinkledunendly.com
@@ -16069,6 +16090,7 @@ knowmad.com
 knownmatch.com
 known-television.com
 knowonlineadvertising.com
+knoyxfsxspvmc.site
 kobeden.com
 kochi562.top
 kodcad.kr
@@ -16443,6 +16465,7 @@ linkback.seoul.co.kr
 linkbucks.com
 linkbuddies.com
 linkbux.com
+linkclick.buzz
 linkedleg.com
 linketal.co.za
 linkexchange.com
@@ -16655,6 +16678,7 @@ lsn.hqbang.com
 lsnp.flashscore.com
 lsuix.com
 lsvfzskgudyyr.site
+lth4n5r.t0r.space
 lucidmedia.com
 lucienmann.pro
 luckyads.pro
@@ -18075,6 +18099,7 @@ netexs.com
 netfilia.com
 net.fuckxstream.com
 netgravity.com
+nethcdn.com
 netinfocompany.bg
 netizen.co
 netmera.com
@@ -18086,6 +18111,7 @@ netpeak.net
 netpeak.us
 netpub.media
 netrbx.com
+netriven.com
 netsalesmedia.pl
 netsertive.com
 netshelter.net
@@ -18439,6 +18465,7 @@ nxcmlk.com
 nxstrib.com
 nxtanchor.com
 nxthost-1.info
+nya5.com
 nyetm2mkch.com
 nym2-ib.msn.com
 nymphacebids.com
@@ -18497,6 +18524,7 @@ obsidiangems.com
 obvious-report.pro
 obviousruin.pro
 obvious-stress.pro
+obvolojzmblcf.online
 ocaeliek.com
 ocardoniel.com
 ocast.com
@@ -18973,6 +19001,7 @@ ouigrowth.com
 ouo3ophlpm.ru
 ouradvert.com
 ourblogthing.com
+ourdreamer.com
 ourinsideedge.com
 ourtown.toledoparent.com
 ourtown.westportjournal.com
@@ -19507,6 +19536,7 @@ picassoclouds.com
 pic.cytcm.com
 picdn.vip
 pich18.com
+pickalink.com
 picklemonkads.in
 pickmicro.com
 pickystory.com
@@ -20282,7 +20312,6 @@ protizer.ru
 proud-branch.pro
 pro.vegan3000.info
 provely.io
-provenpixel.com
 provenpixel.net
 proventusquantum.com
 provers.pro
@@ -20467,6 +20496,7 @@ pure-argan-oil.info
 purecars.com
 pure-college.com
 purecreations.in
+pureguard.io
 purei.com
 purelocalmedia.de
 puresilvercreative.com
@@ -20761,6 +20791,7 @@ qc.designervn.net
 qckclk.com
 qclsdthy.com
 qcroag.com
+qcwhyhayjcxra.online
 qdb6gd3nth.ru
 qdnpv.fapnow.xxx
 qdorz.com
@@ -20782,6 +20813,7 @@ qiota.com
 qirnz.com
 qj399ht1.de
 qjjto.com
+qjpnrtiykhycf.space
 qjrkum.com
 qkdtat.com
 qksrv.biz
@@ -20811,6 +20843,7 @@ qrushaffiliate.com
 qsdr.mysunnylawn.com
 qtaplabs.com
 qt.media
+qtraffic.me
 qtuzld.com
 quabads.com
 quadquality.com
@@ -20897,6 +20930,7 @@ qwrsuhuuxtafcn.com
 qxyam.com
 qyusgj.xyz
 qyxwfe.com
+qzhwkhkpnpjxq.com
 qzppd.com
 r0ckeet.com
 r0wa9z6t8t.ru
@@ -21104,6 +21138,7 @@ realtyww.info
 reashr.com
 reasonableabroad.pro
 reasonablepie.com
+reatasesetitoefa.com
 rebel.ai
 rebelai.com
 rebelinteractivegroup.com
@@ -21996,6 +22031,7 @@ rtb.audiretrade.fm
 rtb.bingg.ca
 rtb.buzz
 rtb.cat
+rtbcl.com
 rtbcon.com
 rtb-configuration.bqstreamer.com
 rtbdemand.com
@@ -22033,6 +22069,7 @@ rtg-adroute.focas.jp
 rthsu.com
 rtk.io
 rtmark.net
+rtouchingthewaterw.com
 rtpdn15.com
 rtrgt2.com
 rtrgt.com
@@ -22155,6 +22192,7 @@ s8hm223a.de
 s.8jfbt5va3r.com
 s98k2dmmbm.ru
 saambaa.com
+saawsedge.com
 saa.zdnet.com
 saba-e.com
 sabavision.com
@@ -22220,6 +22258,7 @@ sandypocket.com
 sandythought.pro
 sane-entertainment.pro
 sanespend.pro
+sanynouncem.org
 saooti.com
 sapienceglobal.com
 sapnest.com
@@ -22892,6 +22931,7 @@ sherwoodsutton.pro
 shestrozo.com
 shestugele.pro
 s.hhyggy.com
+shibahsjessing.qpon
 shimmering-concept.pro
 shimmering-spot.com
 shimmering-strike.pro
@@ -23128,6 +23168,7 @@ smac-ad.com
 smadex.com
 s.makolper.com
 small-ads.com
+smallanywhere.com
 smallbusinessmiracles.com
 smallershops.com
 s.mangoporn.site
@@ -23898,6 +23939,7 @@ studads.com
 studentspool.ch
 studio1hub.com
 studiotiktok.in
+studiousaccess.com
 studiouscode.pro
 studiousfood.pro
 studybreakmedia.com
@@ -24071,6 +24113,7 @@ switchadhub.com
 s.wlink1.com
 s.wlink2.com
 swordkura.com
+swtraffic.me
 swypeconnect.com
 s.xintube.us
 sxmmedia.com
@@ -24905,6 +24948,7 @@ traffictarget2.ru
 traffictrade.pro
 trafficviews.com
 trafficvn.com
+trafficworldclass.com
 trafficwurkz.com
 traffiliate.com
 traffinity.pro
@@ -25054,6 +25098,7 @@ trustedstack.com
 trustingage.pro
 trusting-secret.pro
 trustmarkthai.com
+trustpielote.com
 trustpush.net
 trustseal.enamad.ir
 trustworthypick.pro
@@ -25361,6 +25406,7 @@ uniteldirect.co.uk
 unitelgroup.co.uk
 unitixads.com
 unityads.unity3d.com
+unjnxrzonftrw.online
 unkemptlecture.com
 unkempt-media.pro
 unkempt-safety.pro
@@ -25525,6 +25571,7 @@ uwuyn.us
 uwxtp.com
 uxzah.com
 uygab.com
+uytxeqdovxhhx.site
 uze-mobility.com
 uze-mobility.group
 uzkvpu.com
@@ -26173,6 +26220,7 @@ wdziitkl.com
 we3red.com
 weakbirthday.pro
 weak-sense.pro
+wearadmiration.com
 wearehearken.com
 weareilluma.com
 wearelaunchmedia.com
@@ -26988,6 +27036,7 @@ ybz1jsblbv.com
 yceml.net
 ychrpd.com
 yd2oq9bo.xyz
+ydijyktidlacj.site
 yeah1media.vn
 yeahmobi.com
 yeahtargeter.com
