@@ -676,12 +676,15 @@ cogconnected.com,echofm.online,antirez.com,comicbook.com,alexp.pl,2ality.com,sma
 !
 ! NOTE: Specific rules
 !
+kinopoisk.ru##div[class^="styles_share"]
+patronlardunyasi.com##.homepage-socialbar
+patronlardunyasi.com##.flex > div.inline-flex:has(> div.items-center > a[href^="https://www.facebook.com/sharer/"])
 pciconcursos.com.br##.sharelink-noticia
 bz-berlin.de##section[data-block-id="B.Z. folgen"]
 marketingturkiye.com.tr###thb_social_links_widget-4
 marketingturkiye.com.tr##.ci-ad
 drom.ru##div[data-app-root="review-single-body"] > div > div:has(> div > a[href^="https://vk.com/share.php"])
-soccerbox.me,soccerbox.*##.cat-soc-share
+mlbbox.me,mlbbox.*,mmabox.me,mmabox.*,nbabox.*,nbabox.co,soccerbox.me,soccerbox.*##.cat-soc-share
 thehealthy.com###pch-social-share-container
 fp1-siken.com,fp2-siken.com,fp3-siken.com,ap-siken.com,db-siken.com,fe-siken.com,itpassportsiken.com,nw-siken.com,pm-siken.com,sc-siken.com,sg-siken.com##.social-btn-list_mini
 webook.com##[id^="webook_social_"]
@@ -7488,7 +7491,6 @@ zi.media##.line_at_button
 unian.ua,1plus1.video##.o-share-control
 tsn.ua##button[on="tap:share"]
 pornicom.com##.addthis-holder
-webtoons.com##ul.spi_area > li:nth-child(3)
 overclockers.ru##.soci-link
 issuu.com##button[aria-describedby="share_tooltip"]
 m.webtoons.com###_shareArea
@@ -10615,7 +10617,8 @@ vnexpress.net##.share_tw
 desinhibition.com###share-text
 bgr.in,bollywoodlife.com,akcenty.com.ua,znaj.ua##a[href^="https://m.me/"]
 primerahora.com##a[href="javascript:void(0);"][onclick^="gigya.services.socialize"]
-webtoons.com##.spi_area > li:not([class])
+webtoons.com##ul.spi_area > li:has(> a.ico_facebook)
+webtoons.com##ul.spi_area > li:has(> a.ico_twitter)
 harpersbazaar.com.tr,samdan.com.tr,esquire.com.tr##ul.sharebtn
 clutch.ua##.btn-ms
 nhl.com##.social-share__wrapper
