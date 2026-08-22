@@ -314729,6 +314729,7 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||xn--pckua2a7gp15o89zb.com/api/am/v1/t?
 ||hna.de/fdn/
 ||yandex.ru/appcry/event|
 ||meetingpoint-jl.de/api/*-track|
@@ -329731,6 +329732,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||dodgebugs.com^
 ||dogcollarfavourbluff.com^
 ||dollardelta.com^
+||dollarpuzzle.com^
 ||dollarthrill.com^
 ||dolphinsrule.com^
 ||domaincolumn.com^
@@ -329748,6 +329750,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||driftpizza.com^
 ||droidwiz.com^
 ||drollwharf.com^
+||drumfills.com^
 ||drydrum.com^
 ||dualping.com^
 ||dustydime.com^
@@ -330040,6 +330043,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||goldstudies.com^
 ||golfcartlaws.com^
 ||golfersrow.com^
+||golfinglounge.com^
 ||gondolagnome.com^
 ||goodfoodtours.com^
 ||gorgeousedge.com^
@@ -331470,6 +331474,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||vividplume.com^
 ||vocalsure.com^
 ||voicepins.com^
+||voicewinds.com^
 ||voidgoo.com^
 ||volatileprofit.com^
 ||volatilevessel.com^
