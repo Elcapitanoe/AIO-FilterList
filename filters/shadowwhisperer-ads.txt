@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 27,509
-# Updated: 8/23/2026  02:11 (2:11 AM CST)
+# Domains: 27,533
+# Updated: 8/24/2026  08:14 (8:14 AM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -1033,6 +1033,7 @@ a.brilmaver.com
 a.broim.xyz
 a.bronca.site
 abs.devicemed.dev
+absdom.com
 absinthium.in
 abskursin.com
 absolutclick.com
@@ -8416,6 +8417,7 @@ auksizox.com
 a.ulisxyz.store
 aumago.com
 a.umbrosadigital.com
+auqot.com
 auraads.co.uk
 auraonline.com.au
 ausgezeichnet.org
@@ -8433,6 +8435,7 @@ autoaffiliateprogram.com
 autocommerce.io
 auto-dash.com
 automatad.com
+automatica.xyz
 automaticcorner.com
 automizelyads.com
 automizely.com
@@ -9628,6 +9631,7 @@ broadstreet.ai
 broadstreet-common.s3.amazonaws.com
 broadwavestudios.com
 broaker.com
+brochureclear.com
 broimg.net
 brokenease.com
 brokertraffic.com
@@ -9909,6 +9913,7 @@ candid-revenue.com
 can-digital.net
 candy-network.com
 cangatu.xyz
+cannabis-eventscdn.benzinga.com
 cannaclicks.com
 cannonballagency.com
 cannonborough.com
@@ -10762,6 +10767,7 @@ confiant.msn.com
 confidencetalks.com
 configchain.com
 configcontrol.com
+config-factory.com
 confirmglobal.com
 confirmic.com
 conforama-push.com
@@ -10959,6 +10965,7 @@ coordinate.abudhabi
 coordinatedglass.pro
 cootlogix.com
 copper6.com
+copper6.live
 copperstills.net
 copyandartny.com
 copyfranchise.com
@@ -12785,6 +12792,8 @@ empty-advantage.pro
 empty-airport.com
 emptysale.pro
 emrgods.com
+emrld.ltd
+emrldtp.cc
 emsi.livetwo.store
 emssas.bancsabadell.com
 emsservice.de
@@ -14287,11 +14296,13 @@ googleadapis.l.google.com
 googleadservices.com
 googleads.github.io
 googleadsserving.cn
+googledv-match.dotomi.com
 googlefinland.com
 googlesyndication.com
 gopotent.info
 gopush.click
 go.qf3lfzqkktcd2auhx3xx3pzlxlj6j1nj.com
+goqon.com
 goraps.com
 go.redanemone.xyz
 gorgeousmonth.pro
@@ -16200,6 +16211,7 @@ kubikads.com
 kueez.com
 kueez.net
 kueezrtb.com
+kueezssp.com
 kuhdsysdas.indexsubtitle.com
 kukicadvertising.com
 kunner.wiesentbote.de
@@ -18306,6 +18318,7 @@ nicoad.nicovideo.jp
 nico.digital
 nictelroalps.com
 niddocks.com
+nidiv.com
 nielsen-admosphere.bg
 niftygraphs.com
 niftyreports.com
@@ -20374,6 +20387,7 @@ provely.io
 provenpixel.net
 proventusquantum.com
 provers.pro
+providedwell.com
 prowlapp.com
 proxena-adserver.com
 proxsrv.com
@@ -21233,6 +21247,7 @@ redbasketball.com
 redbricksoap.com
 redbutton-adproxy-lb-prod.redbutton.de
 redcable.pro
+redcar.ai
 redclick.ru
 reddot.com.kh
 rededesignstudio.com
@@ -22104,6 +22119,7 @@ rtbinternet.com
 rtbiq.com
 rtb.junnya.com
 rtb.liantezmedia.com
+rtb.linkedin.com
 rtbmarket.com
 rtbmarkt.de
 rtb-mix.com
@@ -22123,6 +22139,7 @@ rtbsuperhub.com
 rtbsystem.com
 rtbtraf.com
 rtbuniverse.com
+rtb-us-west.linkedin.com
 rtb.value.us
 rtbwire.com
 rtbwise.com
@@ -23791,6 +23808,7 @@ starrylook.com
 starsmarter.com
 stars.pl
 startappexchange.com
+startappnetwork.com
 startappservice.com
 startercost.com
 statesmanmedia.com
@@ -25165,6 +25183,7 @@ troubledpackage.pro
 trovesleepit.com
 trpkc.com
 trpst.com
+trpwdg.com
 trsqyugcyer.live
 truaudience.com
 true.aahen.site
@@ -26481,6 +26500,7 @@ wheeleradvertising.com
 wherabygry.com
 where.com
 whewsv.com
+whichfreely.com
 which-impact.pro
 whimsical-desire.pro
 whimsical-inspection.pro
@@ -26931,6 +26951,7 @@ xktbdw.com
 x.latelust.site
 xl-cash.com
 xlfccb.com
+xlgmedia.com
 xlink3.com
 xlirdr.com
 xlovecash.com
@@ -27103,6 +27124,7 @@ yahoho.de
 yahooadblaster.com
 yahoobluelithium.com
 yahoofs.com
+yahoolock.com
 yahoo-match.dotomi.com
 yahoosandbox.com
 yajani.com
@@ -27211,6 +27233,7 @@ yoc-adserver.com
 yoc.com
 yodelmobile.com
 yoggrt.com
+yohle.com
 yohoads.com
 yojnclk.com
 yolkclknu.com
@@ -27256,6 +27279,7 @@ youxiaoad.com
 yovoads.com
 yowzagently.com
 yoyadsdom.com
+ypetp.com
 ypnciu.com
 ypxnu.com
 yqeuu.com
