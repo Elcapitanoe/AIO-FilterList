@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 27,567
-# Updated: 8/28/2026  13:38 (1:38 PM CST)
+# Domains: 27,581
+# Updated: 8/29/2026  11:42 (11:42 AM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -2994,6 +2994,7 @@ adrefresh.com
 adregain.com
 adregain.ru
 ad.rejichoice.jp
+ad.rejuvacare.com
 ad.reklm.com
 adrelevantis.com
 a.dremp.xyz
@@ -5092,7 +5093,6 @@ adskill.ru
 ads.kinet.cz
 ads.kitchensync.pro
 ads.kitesista.com
-ads.kiwi.shigotech.io
 adskkkkk.com
 adsklick.de
 ads.klick-kaernten.at
@@ -7978,6 +7978,7 @@ api-promo.samsungknowledge.com
 api-push.com
 api.reviews.co.uk
 api.rtnews.pro
+api-sg.tingot.com
 api.shinybirdwhispered.com
 api.sleepingrockhappy.com
 api.smartlauncher.net
@@ -8059,6 +8060,7 @@ app-mobile-solutions.com
 appmonet.com
 appmonsta.ai
 appmultiple.net
+appnerve.net
 appnexus.com
 appnexusgslb.net
 appnexus.net
@@ -9794,6 +9796,7 @@ b-y.net
 byobglobal.com
 byron-marketing.com
 bytde.com
+bytegle.site
 bytesfuture.com
 bywiola.com
 byyanmaor.com
@@ -10605,6 +10608,7 @@ cmcgc.com
 cmdetp.s3.ap-southeast-1.amazonaws.com
 cmd.mediahuset.se
 cmdmtc.com
+cm-exchange.toast.com
 cm.igaw.io
 cmod452.live.streamtheworld.com
 cmp2.bild.de
@@ -12954,6 +12958,7 @@ erohub.com
 erosads.com
 erosadv.com
 erotiekbuddy.com
+error-report.com
 erscdf.com
 ertise.com
 ertya.com
@@ -13252,6 +13257,7 @@ fastdlr.com
 fastdmr.com
 fasterfineart.com
 fasterjson.com
+fastertrain.com
 fast-hunter.com
 fast-pair.pro
 fastpush.io
@@ -14004,6 +14010,7 @@ gepuma.republiknews.fr
 germaniavid.com
 get4click.ru
 getadfinity.com
+getadmiral.com
 getads.co
 getads.online
 getadv.net
@@ -18916,6 +18923,7 @@ openrtb-banner.com
 opentracker.net
 openvideoads.com
 openvv.org
+openwebmedia.org
 openwidget.com
 openx2.cpitrademedia.com
 openx2.kytary.cz
@@ -19420,6 +19428,7 @@ pedibanner.ca
 peep5.com
 peer2profit.com
 peer2profit.site
+peer-39.com
 peer39.net
 peerclicktrk.com
 peerfly.com
@@ -21621,6 +21630,7 @@ rfpozf.com
 rfxmnd.com
 rg35.net
 rgrd.xyz
+rhcdom.com
 rhendam.com
 rhinomg.com
 rhmkttrack.com
@@ -22140,6 +22150,7 @@ rtb.buzz
 rtb.cat
 rtbcl.com
 rtbcon.com
+rtb.dealer.com
 rtbdemand.com
 rtb.discountbro.com
 rtb.ex.co
@@ -22169,6 +22180,7 @@ rtbsuperhub.com
 rtbsystem.com
 rtbtraf.com
 rtbuniverse.com
+rtb-us-east.linkedin.com
 rtb-us-west.linkedin.com
 rtb.value.us
 rtbwire.com
@@ -24253,6 +24265,7 @@ synchromesh.com.au
 syncingbridge.com
 sync.ortb.152media.info
 sync.partyetalon.com
+sync.rubyblu.com
 sync.sumetalon.com
 sync.theetalon.com
 sync.tv
@@ -25263,6 +25276,7 @@ tryinteract.com
 tryvoxpopme.com
 tsadvertising.com
 tscf8.com
+tsdtocl.com
 tsepyk.com
 tshop.r10s.jp
 t.skimresources.com
