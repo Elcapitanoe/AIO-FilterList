@@ -8,10 +8,10 @@
 !
 !For more information about this list, see: https://pgl.yoyo.org/adservers/
 !----
-!Last modified: Sat, 29 Aug 2026 18:36:54 GMT
+!Last modified: Sun, 30 Aug 2026 12:24:12 GMT
 !Homepage:      https://pgl.yoyo.org/adservers/
 !Format:        adblockplus
-!Entries:       3535
+!Entries:       3539
 !Credits:       Peter Lowe - pgl@yoyo.org - pgl on github - https://pgl.yoyo.org/
 !This URL:      https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
 !Policy:        https://pgl.yoyo.org/adservers/policy.php
@@ -410,6 +410,7 @@
 ||ads.eagletribune.com^
 ||ads.easy-forex.com^
 ||ads.economist.com^
+||ads.egrana.com.br^
 ||ads.elcarado.com^
 ||ads.electrocelt.com^
 ||ads.emdee.ca^
@@ -598,6 +599,7 @@
 ||ads.yldmgrimg.net^
 ||ads.youtube.com^
 ||ads.yumenetworks.com^
+||ads.zorvec.name^
 ||ads1-adnow.com^
 ||ads1.msn.com^
 ||ads1.virtual-nights.com^
@@ -2395,6 +2397,7 @@
 ||oascentral.fortunecity.com^
 ||oascentral.register.com^
 ||objecthero.com^
+||obs.sd4823.spglobal.com^
 ||obscenesidewalk.com^
 ||oceancloudhosts.com^
 ||odbierz-bony.ovp.pl^
@@ -3501,6 +3504,7 @@
 ||xfreeservice.com^
 ||xg4ken.com^
 ||xiti.com^
+||xml-v4.oceanfall.xyz^
 ||xplusone.com^
 ||xponsor.com^
 ||xpu.samsungelectronics.com^
