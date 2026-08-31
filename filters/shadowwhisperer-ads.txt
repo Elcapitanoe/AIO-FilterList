@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 27,589
-# Updated: 8/30/2026  12:31 (12:31 PM CST)
+# Domains: 27,602
+# Updated: 8/31/2026  09:08 (9:08 AM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -7983,6 +7983,7 @@ api.shinybirdwhispered.com
 api.sleepingrockhappy.com
 api.smartlauncher.net
 api.smilingtrainyellow.com
+apistp.com
 api-taboola.com
 api.techwalla.com
 api.tend-table.com
@@ -8956,6 +8957,7 @@ beesocialmarketing.co.uk
 beeswax.com
 beeviewd.com
 beewhispering.com
+bef77.com
 be.forklift.de
 begbjfecjaddbcehaai.world
 begun.ru
@@ -9338,6 +9340,7 @@ blossomadnetwork.com
 blow.week1time.com
 bloxdigital.com
 blu5fdclr.com
+bluadz.com
 bludwan.com
 blue-ball.pro
 blue-coffee.pro
@@ -11261,6 +11264,7 @@ crakrevenue.com
 craktraffic.com
 craterbox.com
 crazyrocket.io
+crbbgate.com
 crcgrilses.com
 crcvba.com
 crdl.io
@@ -12327,6 +12331,7 @@ doublepimp.com
 doublepimpssl.com
 doublestatement.com
 doubleverify.com
+douvibube.com
 downloadkernel.com
 downloads1qwe.ru
 downloads.mailchimp.com
@@ -15205,6 +15210,7 @@ ili.dtu0itqvnilimdqlq554qf1.online
 ilikeclick.com
 ilkwork.com
 illegalimprovement.pro
+ill-fatedodd.com
 illinformedad.com
 illinformed-camp.pro
 illinformedhistorian.com
@@ -16024,6 +16030,7 @@ kbnmnl.com
 kbtzxl.com
 kcmarketingagency.com
 kcpapy8.com
+kcray.com
 kctruth.com
 kdbov.com
 kdretc.com
@@ -18273,6 +18280,7 @@ newroadadvertising.com
 newrotatormarch23.bid
 newsadds.com.au
 newsadst.com
+newsbotnet.com
 newsconcierge.com.au
 news.coveringkaty.com
 newsexclusive.net
@@ -22153,6 +22161,7 @@ rtb-1.yourlust.com
 rtb-6.jizzberry.com
 rtb.audiretrade.fm
 rtb.bingg.ca
+rtbbtr.com
 rtb.buzz
 rtb.cat
 rtbcl.com
@@ -22955,6 +22964,7 @@ service.bv-aff-trx.com
 service-cookie-sync.clusters.pluto.tv
 servicedirect.com
 service.goadnow.com
+servicesadmedia.com
 services.freizeitalpin.at
 services-tags-prod.fubo.tv
 serving-ad.tv24.vn
@@ -23594,6 +23604,7 @@ sparkstudios.in
 sparrow.ru
 sparseeconomics.pro
 sparteo.com
+spbgc.com
 sp-consent.schwarzwaelder-bote.de
 spe79o5b.de
 speakol.com
@@ -25734,6 +25745,7 @@ uwsxz.com
 uwuw.online
 uwuyn.us
 uwxtp.com
+uxmum.top
 uxzah.com
 uygab.com
 uytxeqdovxhhx.site
@@ -27585,6 +27597,7 @@ zwrwdy.com
 zws.avvo.com
 zx-adnet.com
 zxclan.com
+zxxst.com
 zxyvrtd.com
 zyarijbubiloer.com
 zynashipty.pro
