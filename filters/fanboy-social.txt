@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202609021925
+! Version: 202609031913
 ! Title: Fanboy's Social Blocking List
-! Last modified: 02 Sep 2026 19:25 UTC
+! Last modified: 03 Sep 2026 19:13 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 97b7686fc650da8276f54c0d296dccf3faf6decd
+! Commit: e1f1297c0104497e834e558b1b0e9b49553ca13f
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -12553,6 +12553,7 @@ adticket.de##.c-ticket-fan__social-icons
 nebelspalter.ch##.ccm-element-social-share
 soeren-hentzschel.at##.circle-icons
 deutsche-startups.de##.connectButtons
+web.de##.content__share
 kurier.at##.coral-comment-shareButton
 hornoxe.com##.custom-html-widget
 express.de##.dm-articleUserActions
