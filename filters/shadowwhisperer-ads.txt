@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 27,687
-# Updated: 9/3/2026  20:03 (8:03 PM CST)
+# Domains: 27,693
+# Updated: 9/5/2026  12:51 (12:51 PM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -621,6 +621,7 @@
 68s8.com
 6969.javher.com
 69741211.clicknplay.to
+69ktq.com
 6a29f2964719025ed21ad70eada81a50.com
 6abe6fc415d6aad809ddede8b4e9834f.com
 6ad5d7a9aa285849df0f7a776f52d17a861901df9fdcda9db9b3404d.com
@@ -7807,6 +7808,7 @@ amp.services
 ampsinc.net
 ampxchange.com
 ampxdirect.com
+amrox.org
 amrytt.com
 ams-ads-cornerstone-creatives.s3.amazonaws.com
 ams.londonschoolofmarketing.com
@@ -9042,6 +9044,7 @@ bestshoesboot.com
 besttextservice.top
 bestxxxaction.com
 betacash.com
+betadw.com
 betaedito.com
 betalonflamechan.com
 betamountwo.com
@@ -11705,6 +11708,7 @@ dab342ab8887461995aad393cb294948a5ce800ca279cd1027026d47.com
 dabiaozhi.com
 dable.io
 dac.co.jp
+dadgah.org
 dadispapi.auction.co.kr
 dadispapi.gmarket.co.kr
 dadofad.com
@@ -12517,6 +12521,7 @@ dytupr.com
 dyv1bugovvq1g.cloudfront.net
 dyverse.com
 dyw6vs16ub8yk.cloudfront.net
+dyxalo.com
 dz2fz0bgyq9tn.cloudfront.net
 dz4ad.com
 dz9qn8fh4jznm.cloudfront.net
@@ -14215,6 +14220,7 @@ glunaukaimo.net
 glxmedia.com
 gmads.net
 gmcsco.com
+gmeuco.com
 gmh.ink
 gmiads.com
 gmo-am.jp
@@ -18509,7 +18515,6 @@ notifications.skype.com
 notifications.thunderbird.net
 notifications.trophyapi.com
 notifications-ueeshp-pa.googleapis.com
-notification.tubecup.net
 notificup.com
 notifly.tech
 notif-push.9gag.com
@@ -18535,6 +18540,7 @@ notsy.io
 noundictionary.com
 nourdream-bid.com
 novabeyond.com
+novadw.com
 novalead.xyz
 novamia.biz
 novanet.vn
@@ -25046,6 +25052,7 @@ tororango.com
 toro-tags.com
 torpsol.com
 torrango.com
+torraria.com
 toshapsyvu.pro
 tosuicunea.com
 totaldrag.pro
@@ -26967,7 +26974,6 @@ wow-l.com
 wowlnk.com
 wowyowapi.com
 woxcreative.com
-wpadmngr.com
 wpadvancedads.com
 wpcc.io
 wpmsx.com
