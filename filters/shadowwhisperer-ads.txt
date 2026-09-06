@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 27,693
-# Updated: 9/5/2026  12:51 (12:51 PM CST)
+# Domains: 27,724
+# Updated: 9/6/2026  13:40 (1:40 PM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -1882,6 +1882,7 @@ adeptli.net
 adeptmight.pro
 adept-peak.pro
 adept-shock.pro
+aderbid.co
 ad.esc.li
 ad.esmplus.com
 adespresso.com
@@ -2037,6 +2038,7 @@ adgomx.com
 adgonehefelt.org
 ad-good.com
 adgoon.it
+adgora.net
 adgoto.com
 ad.gpwa.org
 ad.grandprixgroup.com
@@ -2045,6 +2047,7 @@ ad.greenfo.hu
 adgreetz.com
 adgrid.io
 adgroupagency.com
+adgroup.in
 adgroups.com
 adgrowthdigital.com
 adgulf.net
@@ -2248,6 +2251,7 @@ adition.de
 adition.net
 aditize.com
 adit-media.com
+aditude.cloud
 aditude.io
 ad.itwissen.de
 ad.itworld.co.kr
@@ -2654,6 +2658,7 @@ ad.moo-mam-tai.com
 admospheres.com
 admost.com
 ad-move.jp
+admove.org
 admoxi.com
 admozart.com
 admozartexchange.com
@@ -4867,6 +4872,7 @@ ads.gotxx.net
 ads.govoritmoskva.ru
 ads.gpas.co
 ads.gpk.gov.by
+ads.gpm-ssp.ru
 ads.gr
 ads.gradar.jp
 ads.grandefm.com.br
@@ -7074,6 +7080,7 @@ adx.techtunes.io
 adxtrem.com
 adxvip.com
 adxv.zum.com
+adx.ws
 adx.xn--e1aabhzcw.bg
 adx.xtv.vn
 adxxx.com
@@ -7566,9 +7573,11 @@ aj2744.top
 aj2745.top
 aj2752.top
 aj2759.top
+aj2787.top
 aj3039.bid
 aj3054.bid
 aj3067.bid
+aj3101.top
 aj3105.top
 a.jamez.site
 a.jamni.xyz
@@ -8552,6 +8561,7 @@ ayelads.click
 ayelads.xyz
 ayhal.com
 ayotising.com
+ayyg.org
 ayzvd.com
 azadify.com
 azadv.co.il
@@ -8573,6 +8583,7 @@ b2bmg.com
 b2bmg.net
 b2cadvertisers.com
 b2cdigitalpro.com
+b3mny.com
 b4u-advertising.it
 b6c6k88qe1.ru
 b8i2q.gaypornhd.com
@@ -9678,6 +9689,7 @@ browsiprod.com
 brsrv-id.com
 brtsumthree.com
 bruceads.com
+brumx.com
 brunchforher.com
 brutus.clicknplay.to
 bryzr.com
@@ -9752,6 +9764,7 @@ burdensome-chain.com
 burdensomegear.pro
 burdensometoe.pro
 burgersalt.com
+burgnetwork.com
 buriba.com
 burlingtonadvertising.com
 burlybathroom.pro
@@ -12760,6 +12773,7 @@ ejfps.com
 ejvnu.com
 ekamsply.com
 ekcsc2.com
+ekhay.com
 ekofelj.xyz
 ekspress.delfi.ee
 ela1.com
@@ -13585,6 +13599,7 @@ flippedfunnel.com
 flirtads.net
 flite.com
 flittz.com
+fliwe.com
 flixfacts.com
 floatjav09212026.shop
 flodesk.com
@@ -13967,6 +13982,7 @@ gamned.com
 gamoshi.com
 gamoshi.io
 ganancia360.com
+ganziv.com
 gaon-adagency.com
 garage08062025.shop
 gardenovens.com
@@ -14007,6 +14023,7 @@ gearbubbles.com
 gecdwmkee.com
 geckohost.net
 gedeg.online
+gee8.com
 geekactive.com
 geekbackyard.com
 geistm.com
@@ -14850,6 +14867,7 @@ hightower.video
 highway.18manwa.com
 highway-tb.ele.me
 hihgin.com
+hiibel.com
 hikingbars.com
 hilariouspurpose.pro
 hilltopads.com
@@ -15115,7 +15133,6 @@ iadsdk.apple.com
 iads.unity3d.com
 iamaffiliate.com
 iambivert.com
-iamcommunication.co
 iamniyati.com
 iamyourpusherman.com
 iasds01.com
@@ -16335,6 +16352,7 @@ kxhhim.com
 kyaassolutions.com
 kymsf.com
 kytupian1.oss-cn-hongkong.aliyuncs.com
+kyvixo.com
 kzeaa.com
 kzecc.com
 kzehh.com
@@ -16512,6 +16530,7 @@ lemonet.xyz
 lemonpackage.com
 lemonpi.io
 lemonsandjoy.com
+lemuxa.com
 lenkmio.com
 lenzmx.com
 leoffertedimari.it
@@ -16536,6 +16555,7 @@ lewebfacilement.com
 lexs9.com
 lfstmedia.com
 lgfeht.com
+lg.media
 lgsmartad.com
 lh.bigcrunch.com
 lhigsh.com
@@ -17563,6 +17583,7 @@ mindmakers.in
 mindthegapproject.eu
 mindvolt.com
 mineinvoice.com
+minert.pro
 miniatureengineering.pro
 miniature-injury.pro
 miniaturereality.pro
@@ -19166,6 +19187,7 @@ otbqdw.com
 otcash.com
 otclick-adv.ru
 o.techmaniak.pl
+otelev.com
 othercharacter.pro
 other-log.pro
 otherprofit.com
@@ -20588,6 +20610,7 @@ pubadx.one
 pub.audio-video.es
 pub.bayard.io
 pub.bordercloudnet.com
+pubbug.com
 pub.daily-media.ch
 pubdirecte.com
 pub.doubleverify.com.cdn.cloudflare.net
@@ -20666,6 +20689,7 @@ puffycash.com
 pugna.mbiz.co.id
 puhyjyf.com
 p.ulesxbo.com
+pu-ll.com
 pulpindia.com
 pulsaredit.com
 pulsepoint.com
@@ -22355,6 +22379,7 @@ rxlnd.net
 rx-news.com
 rxrtb.com
 ryfehushu.pro
+ryfweb.com
 rygfjv.com
 rypo-pii.space
 rytheshigro.pro
@@ -23222,6 +23247,7 @@ shyrepair.pro
 sibboventures.com
 sibboventures.net
 sickbroad.pro
+sided.ai
 sided.co
 sideqik.com
 siderain.com
@@ -23895,6 +23921,7 @@ ssliivuqpm.ru
 ssltest.soundrussian.com
 ssp.asiaflix.net
 ssp-bcc-ads.com
+ssp.disqus.com
 ssp-ges.gameloft.com
 ssp.igaw.io
 ssp.lbanez.net
@@ -24972,6 +24999,7 @@ todayoman.com
 todoenusa.com
 todo-fey.space
 to-dy-roe.space
+toeiad.co.jp
 tofumarketing.com
 tofupancake.com
 tofusquirrel.com
@@ -25072,6 +25100,7 @@ touristfuel.com
 tovarro.com
 townsquaremedia.com
 toxsales1.com
+toxvm.vip
 toxye.com
 toysbasics.com
 toytakeover.com
@@ -26651,6 +26680,7 @@ whalecash.com
 whalehunter.cash
 whamuthygle.com
 whatismyipaddress.co.il
+whatsad.io
 whatsnew.teamviewer.com
 whatwetly.com
 whavaluwhi.pro
@@ -27056,6 +27086,7 @@ xad.js.org
 xadsmart.com
 xads.one
 x.amain.com
+xamek.com
 xanaxxanax.3xforum.ro
 xandr.com
 xandr-g-geo.trafficmanager.net
