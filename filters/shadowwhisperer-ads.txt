@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 27,724
-# Updated: 9/6/2026  13:40 (1:40 PM CST)
+# Domains: 27,764
+# Updated: 9/7/2026  11:13 (11:13 AM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -12,6 +12,7 @@
 00px.com.br
 00px.net
 014uu.com
+02academylagos.com
 03ab2paradisecdn.com
 041gg.com
 04697a0ddea24c610de68229dadbc4390c37813647c2827bbc1f9041.com
@@ -47,6 +48,7 @@
 1000mercis.co.uk
 100conversions.com
 100kia.xyz
+100ktraffic.com
 100widgets.com
 1021e76f5.de
 1090pjopm.de
@@ -640,6 +642,7 @@
 6thborough.agency
 6thgearadvertising.com
 6tip.com
+6tve.com
 701.oss-cn-hongkong.aliyuncs.com
 71213zhazha.com
 71360.com
@@ -2382,6 +2385,7 @@ adktrack98.xyz
 adktrack99.xyz
 ad.kubicserves.icu
 ad.kurocore.com
+adlabadvertising.com
 adlab.co.uk
 adlab.co.za
 adlab.dk
@@ -2391,23 +2395,28 @@ adlabs.com
 adlabsnetworks.com
 adlabs.ru
 adlab.weather.com
+adlabz.co
 adland.co.il
 adland-media.com
 adlandpro.com
 adlane.info
 adlantic.nl
 adlantis.jp
+adlarge.com
 ad.lasnoticiasdecuenca.es
 ad-layer.com
 adlayer.net
 adlayer.se
 adleadevent.com
+adleaid.com
 ad.leap.app
 adleave.com
 adledge.com
 adlefee.com
 adlegend.com
 ad.legit.si
+adlengo.com
+adleo.co.in
 adlesse.com
 adleverage.tv
 ad.lg24.pl
@@ -8640,6 +8649,7 @@ bam.actionnetwork.com
 bam-ads.com
 bam-bam-slam.com
 bambao.lol
+bameb.com
 bamifyads.com
 bam-interactive.de
 bamitdo.com
@@ -10085,6 +10095,7 @@ cclpub.com
 ccm19.de
 ccnc.online
 cc.opowiadaniaerotyczne-darmowo.pl
+ccopyright.org
 ccpa-no-script.psg.nexstardigital.net
 ccpa-script.psg.nexstardigital.net
 cc.relatoseroticos-gratis.com
@@ -10703,6 +10714,7 @@ codenode.works
 codevelop.io
 codigofuente.info
 coffeesidehustle.com
+cofmun.com
 cognisensemedia.com
 cognitionads.com
 cogocast.net
@@ -12020,6 +12032,7 @@ detailedhit.pro
 determined-client.pro
 determinedinternational.pro
 detourgame.com
+detyep.com
 deuxseethe.com
 dev-applovin.com
 devbuddy.ca
@@ -12940,6 +12953,7 @@ enotify.io
 en-promo.com
 enquirermedia.com
 enraged-moment.pro
+enseq50a.xyz
 enspyredigital.com
 ensure08062025.shop
 entelia-adserver.com
@@ -13693,6 +13707,7 @@ fortudios-wriefs.com
 fortunatemark.com
 fortunate-politics.pro
 fortunateproposal.pro
+foruftuiov.com
 forumjav09212026.shop
 forums-sonarr-tv.s3.dualstack.us-east-1.amazonaws.com
 forwardslashetc.com
@@ -13778,6 +13793,7 @@ fresh8.co
 fresh8gaming.com
 freshlyhuman.com
 frestacero.com
+frhiys.com
 fr-hmd.com
 friedone.com
 friendlybunny.com
@@ -13884,6 +13900,7 @@ funnydust.pro
 funoverbored.com
 funoverflow.com
 funtoyplanet.com
+funyme.com
 fuojuw.com
 fupozbz11a.com
 furnstudio.com
@@ -13933,6 +13950,7 @@ g13media.com
 g2afse.com
 g4s.nfss.my.id
 g594253006.co
+g5kl83he.xyz
 g6j.cupidonmedia.com
 g7a556lf.de
 g8ads.com
@@ -13946,6 +13964,7 @@ gadsbee.com
 gad-s.com
 gadsme.com
 gadzoog.com
+gafghbhfaihaeggdaade.world
 gahfinallytame.com
 gajja.online
 galaksion.com
@@ -13977,6 +13996,7 @@ gamingadult.biz
 gamingadult.com
 gamionex.live
 gamma.cachefly.net
+gammaplatform.com
 gammastats.com
 gamned.com
 gamoshi.com
@@ -14087,6 +14107,7 @@ getfastads.com
 getfluid.com
 getfreebacklinks.com
 getfreebl.com
+get-gx.com
 gethatch.com
 gethyped.io
 getintent.com
@@ -15152,6 +15173,7 @@ ib-trade.global
 ica-adv.copernicus.org
 icafabjjhidegejaaaeh.world
 icaimlf7.de
+iccku.com
 i.cdnboosler.cloud
 icenineonline.com
 icilfj.com
@@ -16398,6 +16420,7 @@ larapush.com
 larasub.conxxx.pro
 largeboyfriend.com
 largetulip.com
+lasalle2.com
 laseradvertising.com
 lasersightdigital.com
 lastanonymous.com
@@ -16441,6 +16464,7 @@ lbsinters.shop
 lc-app.pimory.com
 lcbfk.4wank.com
 lcfboq.carolgames.com
+lckts.com
 lcx-widgets.bambuser.com
 ldrws.com
 lduhtrp.net
@@ -16696,6 +16720,7 @@ lkg6g644.de
 lknxdluctcdyou.com
 lkqd.com
 lkqd.net
+lksda.com
 llamavoice.com
 lldsnrhnacgbx.com
 llmfr.com
@@ -18208,6 +18233,7 @@ nauticalfox.com
 nauticalhair.com
 nautubone.info
 navigaglobal.com
+navlek.com
 nav.srcdn.xyz
 nbcdebris2021.com
 nbcsearch.com
@@ -19177,6 +19203,7 @@ osbarter.in
 osm-ads-aka.delivery.roku.com
 osn2.com
 o.socoms.net
+osrra.com
 osskanger.com
 ossscatterbuga.com
 ostasheesukaus.com
@@ -19220,6 +19247,7 @@ outbrain.org
 outdoorsoil.com
 outdoorthingy.com
 outd.org
+outerwords.com
 outflowdesigns.com
 outfox.ai
 outgrow.co
@@ -19230,6 +19258,7 @@ outlandish-feature.pro
 outlandishlocal.pro
 outlandish-net.pro
 outlandish-pitch.pro
+outletpeople.com
 outlinemedia.in
 outlookads.live.com
 outlyingagency.pro
@@ -19846,6 +19875,7 @@ p.janads.shop
 p.jandaqwe.com
 pjatr.com
 p.jeckear.com
+pjhit.com
 p.jhoncj.com
 pjjpp.com
 p.jodl.cloud
@@ -19875,6 +19905,7 @@ platform.edealer.ca
 platform.io
 platform-one.co.jp
 platform.viewtv.cloud
+plat.pp.ua
 platypost.net
 play4traffic.com
 playablefactory.app
@@ -20334,6 +20365,7 @@ pro-advert.de
 probable-holiday.com
 probablepartner.com
 probid.ai
+procollecting.com
 procpascript.com
 prod.appnexus.map.fastly.net
 prodatamg.com
@@ -21899,6 +21931,7 @@ round2mg.com
 roundcow.pro
 round-extension.pro
 round-highlight.pro
+routebug.com
 routejav09212026.shop
 routr.link
 rovememoirs.com
@@ -23320,6 +23353,7 @@ siteplug.com
 siteprotects.net
 sitescoutadserver.com
 sittingpets.com
+sivbop.com
 sixads.net
 sixft-apart.com
 sixide.com
@@ -24591,6 +24625,7 @@ tccbanner.com
 tc.ci123.com
 tcicanada.com
 tckn-code.com
+tcktp.com
 tc.mcmedios.com
 t.cpa-space.com
 tcp.topcomicporno.net
@@ -24835,6 +24870,7 @@ theprimead.co.kr
 thepushhub.com
 thequixoticstudios.com
 thequizgo.com
+thera-go.com
 therba.com
 therefinery.je
 therelevancegraph.mobi
@@ -26267,6 +26303,7 @@ vimoshare.com
 vincodo.com
 vinge.de
 vinit.cloud
+vinoys.com
 violet-space.pro
 violet-strip.pro
 vionito.com
@@ -26841,6 +26878,7 @@ widget.ybug.io
 widget.yhelper.net
 wifi.garden
 wigetmedia.com
+wigglepoploaderfast.monster
 wiggly-bathroom.pro
 wiggly-spend.pro
 wigzo.com
@@ -27361,6 +27399,7 @@ yellowish-oil.pro
 yellowish-yesterday.pro
 yellowsignal.pro
 yellowwash.pro
+yelziv.com
 yengo.com
 yenlqi.com
 yepads.com
@@ -27369,6 +27408,7 @@ yeps.io
 yesadvertising.com
 yeshwecan.com
 yesmarketing.com.au
+yexru.com
 yfzbn.com
 yh20230625tu.vip
 yheyit.com
