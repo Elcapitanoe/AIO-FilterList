@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202609101913
+! Version: 202609111915
 ! Title: Fanboy's Social Blocking List
-! Last modified: 10 Sep 2026 19:13 UTC
+! Last modified: 11 Sep 2026 19:15 UTC
 ! Expires: 4 days (update frequency)
-! Commit: e1ec29532c9eafb22689b12507ff4cf757e80462
+! Commit: bdf346a6ebf76f14ac9812239791a89b8ce41821
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -12547,6 +12547,7 @@ vogel.de##.inf-toolbar
 islamische-zeitung.de##.iz-socmed
 portfoliojournal.de##.j-sharebuttons
 freiewelt.net##.jksocials
+derstandard.at,derstandard.de##.js-article-tool-socialshare-menu
 kicker.de##.kick__article__social
 lebensmittelwarnung.de##.lmw-footer-nav--social
 muenchen.de##.m-social-link
