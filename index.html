@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIO Filter List — High-Performance Adblock & Tracker Mirror</title>
+  <meta name="description" content="Automated aggregation, deduplication, and CDN distribution pipeline for adblock and privacy filter lists. Over 1 million active rules updated daily.">
+  <meta name="theme-color" content="#090d16">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AIO Filter List">
+  <meta property="og:description" content="Automated adblock & privacy filter aggregator. 1,030,000+ consolidated unique rules with global CDN endpoints.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hosts.domi.my.id/">
+
+  <style>
+    :root {
+      --bg-base: #090d16;
+      --bg-surface: #0f172a;
+      --bg-surface-elevated: #162036;
+      --border-subtle: #1e293b;
+      --border-focus: #38bdf8;
+      
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      
+      --accent-emerald: #10b981;
+      --accent-emerald-dim: rgba(16, 185, 129, 0.12);
+      --accent-cyan: #06b6d4;
+      --accent-cyan-dim: rgba(6, 182, 212, 0.12);
+      --accent-sky: #38bdf8;
+      --accent-sky-dim: rgba(56, 189, 248, 0.1);
+      
+      --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-subtle: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Ambient background glow */
+    .ambient-glow {
+      position: fixed;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(6, 182, 212, 0.12) 0%, rgba(9, 13, 22, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Navigation / Header */
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border-subtle);
+      background: rgba(9, 13, 22, 0.85);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+
+    .brand-icon {
+      width: 34px;
+      height: 34px;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-emerald));
+      border-radius: var(--radius-sm);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+    }
+
+    .brand-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: #090d16;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .brand-text {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      font-family: var(--font-mono);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--text-primary);
+    }
+
+    .btn-gh {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--bg-surface-elevated);
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      transition: all 0.2s ease;
+    }
+
+    .btn-gh:hover {
+      border-color: var(--text-muted);
+      background: #1c2944;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 64px 0 48px;
+      text-align: center;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 14px;
+      background: var(--accent-emerald-dim);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 9999px;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent-emerald);
+      margin-bottom: 24px;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--accent-emerald);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--accent-emerald);
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4.5vw, 3.25rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, #38bdf8 0%, #10b981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      max-width: 680px;
+      margin: 0 auto 32px;
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+
+    /* Telemetry HUD Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 56px;
+    }
+
+    .stat-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      margin-bottom: 8px;
+    }
+
+    .stat-value {
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      font-family: var(--font-mono);
+      color: var(--text-primary);
+    }
+
+    .stat-sub {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+
+    /* Subscription Box */
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    .subscription-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 48px;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .endpoint-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .endpoint-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .endpoint-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .endpoint-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .endpoint-badge {
+      font-size: 0.7rem;
+      font-family: var(--font-mono);
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: var(--accent-sky-dim);
+      color: var(--accent-sky);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    .endpoint-bar {
+      display: flex;
+      background: #080c14;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      align-items: center;
+    }
+
+    .endpoint-url {
+      padding: 12px 16px;
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      color: var(--accent-cyan);
+      overflow-x: auto;
+      white-space: nowrap;
+      flex: 1;
+    }
+
+    .copy-btn {
+      background: var(--bg-surface-elevated);
+      color: var(--text-primary);
+      border: none;
+      border-left: 1px solid var(--border-subtle);
+      padding: 0 18px;
+      height: 100%;
+      min-height: 44px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+      font-family: var(--font-mono);
+    }
+
+    .copy-btn:hover {
+      background: #1e2b45;
+      color: var(--accent-sky);
+    }
+
+    .copy-btn.copied {
+      background: var(--accent-emerald);
+      color: #090d16;
+    }
+
+    .quick-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action-primary {
+      background: linear-gradient(135deg, #0284c7, #06b6d4);
+      color: #ffffff;
+      box-shadow: 0 2px 10px rgba(2, 132, 199, 0.3);
+    }
+
+    .btn-action-primary:hover {
+      opacity: 0.95;
+      transform: translateY(-1px);
+    }
+
+    .btn-action-secondary {
+      background: var(--bg-surface-elevated);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .btn-action-secondary:hover {
+      background: #1c2944;
+      border-color: var(--text-muted);
+    }
+
+    /* Sources Table & Filter */
+    .table-container {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 48px;
+    }
+
+    .table-header-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .search-input {
+      background: #080c14;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 8px 14px;
+      font-size: 0.88rem;
+      color: var(--text-primary);
+      width: 100%;
+      max-width: 320px;
+      outline: none;
+      font-family: var(--font-mono);
+      transition: border-color 0.2s ease;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent-sky);
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      padding: 12px 16px;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      border-bottom: 1px solid var(--border-subtle);
+      background: rgba(8, 12, 20, 0.4);
+    }
+
+    td {
+      padding: 14px 16px;
+      font-size: 0.88rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(22, 32, 54, 0.5);
+    }
+
+    .source-name {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .source-file {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--accent-sky);
+    }
+
+    .source-link {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: var(--font-mono);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .source-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Architecture Flow */
+    .pipeline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .pipeline-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      position: relative;
+    }
+
+    .pipeline-step {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      margin-bottom: 10px;
+    }
+
+    .pipeline-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+
+    .pipeline-text {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Client Integration Tabs */
+    .setup-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 64px;
+    }
+
+    .tab-bar {
+      display: flex;
+      gap: 8px;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 20px;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-primary);
+    }
+
+    .tab-btn.active {
+      color: var(--accent-sky);
+      border-bottom-color: var(--accent-sky);
+    }
+
+    .tab-pane {
+      display: none;
+    }
+
+    .tab-pane.active {
+      display: block;
+    }
+
+    .tab-pane ol {
+      padding-left: 20px;
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+
+    .tab-pane li {
+      margin-bottom: 10px;
+    }
+
+    .tab-pane li strong {
+      color: var(--text-primary);
+    }
+
+    .code-inline {
+      background: #080c14;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--accent-sky);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+      border-top: 1px solid var(--border-subtle);
+      background: #060910;
+      padding: 40px 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .footer-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--text-primary);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .endpoint-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .copy-btn {
+        border-left: none;
+        border-top: 1px solid var(--border-subtle);
+        justify-content: center;
+        padding: 10px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ambient-glow"></div>
+
+  <header>
+    <div class="container nav-wrap">
+      <a href="#" class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <span class="brand-text">AIO-FilterList</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#endpoints" class="nav-link">Endpoints</a></li>
+          <li><a href="#sources" class="nav-link">Sources</a></li>
+          <li><a href="#architecture" class="nav-link">Architecture</a></li>
+          <li><a href="#setup" class="nav-link">Setup</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://github.com/Elcapitanoe/AIO-FilterList" target="_blank" rel="noopener" class="btn-gh">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>Automated Sync Active • 17:00 UTC Daily</span>
+      </div>
+      <h1>Universal Adblock & Tracker<br><span>Consolidation Mirror</span></h1>
+      <p class="hero-desc">
+        A high-performance pipeline that aggregates community blocklists, strips comments, purges redundant rules via stream deduplication, and serves blazing-fast CDN mirrors.
+      </p>
+    </section>
+
+    <!-- Telemetry Stats Grid -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Active Unique Rules</div>
+        <div class="stat-value">1,031,533</div>
+        <div class="stat-sub">Cleaned & deduplicated rules</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Duplicates Purged</div>
+        <div class="stat-value">211,480</div>
+        <div class="stat-sub">17.01% rule bloat eliminated</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Raw Rules Processed</div>
+        <div class="stat-value">1,243,013</div>
+        <div class="stat-sub">From all upstream providers</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Upstream Feeds</div>
+        <div class="stat-value">18 Sources</div>
+        <div class="stat-sub">Validated daily with curl staging</div>
+      </div>
+    </section>
+
+    <!-- Subscription Endpoints -->
+    <section id="endpoints" class="subscription-panel">
+      <h2 class="section-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        Subscription Endpoints
+      </h2>
+      <p class="section-subtitle">Add any of the following URLs to your adblocker client (uBlock Origin, AdGuard, Brave, Pi-hole).</p>
+
+      <div class="endpoint-item">
+        <div class="endpoint-meta">
+          <span class="endpoint-name">Primary Custom Domain <span class="endpoint-badge">Fastest Direct Route</span></span>
+        </div>
+        <div class="endpoint-bar">
+          <div class="endpoint-url" id="url-primary">https://hosts.domi.my.id/AIO_Filter_List.txt</div>
+          <button class="copy-btn" onclick="copyToClipboard('url-primary', this)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="endpoint-item">
+        <div class="endpoint-meta">
+          <span class="endpoint-name">jsDelivr Global Edge CDN <span class="endpoint-badge">Anycast CDN</span></span>
+        </div>
+        <div class="endpoint-bar">
+          <div class="endpoint-url" id="url-jsdelivr">https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/AIO_Filter_List.txt</div>
+          <button class="copy-btn" onclick="copyToClipboard('url-jsdelivr', this)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="endpoint-item">
+        <div class="endpoint-meta">
+          <span class="endpoint-name">Edge Reverse Proxy <span class="endpoint-badge">Alternative Fallback</span></span>
+        </div>
+        <div class="endpoint-bar">
+          <div class="endpoint-url" id="url-edge">https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/AIO_Filter_List.txt</div>
+          <button class="copy-btn" onclick="copyToClipboard('url-edge', this)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="quick-actions">
+        <a href="abp:subscribe?location=https%3A%2F%2Fhosts.domi.my.id%2FAIO_Filter_List.txt&title=AIO%20Filter%20List" class="btn-action btn-action-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          One-Click Subscribe (uBlock / AdGuard)
+        </a>
+        <a href="/AIO_Filter_List.txt" target="_blank" class="btn-action btn-action-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          View Raw Merged List
+        </a>
+        <a href="/build.log" target="_blank" class="btn-action btn-action-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          Inspect Build Log
+        </a>
+      </div>
+    </section>
+
+    <!-- Upstream Sources & Live Mirror Directory -->
+    <section id="sources" class="table-container">
+      <div class="table-header-controls">
+        <div>
+          <h2 class="section-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Upstream Sources & Mirrors
+          </h2>
+          <p class="section-subtitle" style="margin-bottom: 0;">18 verified community blocklists mirrored standalone and aggregated.</p>
+        </div>
+        <input type="text" id="sourceSearch" class="search-input" placeholder="Search filter source..." onkeyup="filterTable()">
+      </div>
+
+      <div class="table-wrapper">
+        <table id="sourcesTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Filter Name</th>
+              <th>Local Mirror</th>
+              <th>Original Upstream URL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01</td>
+              <td class="source-name">EasyList</td>
+              <td><a href="/filters/easylist.txt" target="_blank" class="source-file">easylist.txt</a></td>
+              <td><a href="https://easylist.to/easylist/easylist.txt" target="_blank" rel="noopener" class="source-link">easylist.to ↗</a></td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td class="source-name">EasyList Cookie List</td>
+              <td><a href="/filters/fanboy-cookiemonster.txt" target="_blank" class="source-file">fanboy-cookiemonster.txt</a></td>
+              <td><a href="https://secure.fanboy.co.nz/fanboy-cookiemonster.txt" target="_blank" rel="noopener" class="source-link">fanboy.co.nz ↗</a></td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td class="source-name">Fanboy's Annoyance List</td>
+              <td><a href="/filters/fanboy-annoyance.txt" target="_blank" class="source-file">fanboy-annoyance.txt</a></td>
+              <td><a href="https://secure.fanboy.co.nz/fanboy-annoyance.txt" target="_blank" rel="noopener" class="source-link">fanboy.co.nz ↗</a></td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td class="source-name">Fanboy's Social Blocking List</td>
+              <td><a href="/filters/fanboy-social.txt" target="_blank" class="source-file">fanboy-social.txt</a></td>
+              <td><a href="https://easylist.to/easylist/fanboy-social.txt" target="_blank" rel="noopener" class="source-link">easylist.to ↗</a></td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td class="source-name">AdGuard Base</td>
+              <td><a href="/filters/adguard-base.txt" target="_blank" class="source-file">adguard-base.txt</a></td>
+              <td><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt" target="_blank" rel="noopener" class="source-link">AdguardTeam ↗</a></td>
+            </tr>
+            <tr>
+              <td>06</td>
+              <td class="source-name">AdGuard Protection</td>
+              <td><a href="/filters/adguard-tracking-protection.txt" target="_blank" class="source-file">adguard-tracking-protection.txt</a></td>
+              <td><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt" target="_blank" rel="noopener" class="source-link">AdguardTeam ↗</a></td>
+            </tr>
+            <tr>
+              <td>07</td>
+              <td class="source-name">AdGuard URL Tracking</td>
+              <td><a href="/filters/adguard-url-tracking.txt" target="_blank" class="source-file">adguard-url-tracking.txt</a></td>
+              <td><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt" target="_blank" rel="noopener" class="source-link">AdguardTeam ↗</a></td>
+            </tr>
+            <tr>
+              <td>08</td>
+              <td class="source-name">AdGuard Social Media</td>
+              <td><a href="/filters/adguard-social-media.txt" target="_blank" class="source-file">adguard-social-media.txt</a></td>
+              <td><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt" target="_blank" rel="noopener" class="source-link">AdguardTeam ↗</a></td>
+            </tr>
+            <tr>
+              <td>09</td>
+              <td class="source-name">AdGuard Annoyances</td>
+              <td><a href="/filters/adguard-annoyances.txt" target="_blank" class="source-file">adguard-annoyances.txt</a></td>
+              <td><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt" target="_blank" rel="noopener" class="source-link">AdguardTeam ↗</a></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td class="source-name">AdGuard Mobile ADS</td>
+              <td><a href="/filters/adguard-mobile-ads.txt" target="_blank" class="source-file">adguard-mobile-ads.txt</a></td>
+              <td><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt" target="_blank" rel="noopener" class="source-link">AdguardTeam ↗</a></td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td class="source-name">ABPindo</td>
+              <td><a href="/filters/abpindo.txt" target="_blank" class="source-file">abpindo.txt</a></td>
+              <td><a href="https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt" target="_blank" rel="noopener" class="source-link">ABPindo ↗</a></td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td class="source-name">OISD Big</td>
+              <td><a href="/filters/oisd-big.txt" target="_blank" class="source-file">oisd-big.txt</a></td>
+              <td><a href="https://big.oisd.nl/domainswild" target="_blank" rel="noopener" class="source-link">oisd.nl ↗</a></td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td class="source-name">HaGeZi's Pro</td>
+              <td><a href="/filters/hagezi-pro.txt" target="_blank" class="source-file">hagezi-pro.txt</a></td>
+              <td><a href="https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt" target="_blank" rel="noopener" class="source-link">hagezi ↗</a></td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td class="source-name">URLhaus Malicious URL Blocklist</td>
+              <td><a href="/filters/urlhaus-malicious.txt" target="_blank" class="source-file">urlhaus-malicious.txt</a></td>
+              <td><a href="https://malware-filter.gitlab.io/malware-filter/urlhaus-filter.txt" target="_blank" rel="noopener" class="source-link">malware-filter ↗</a></td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td class="source-name">1Hosts (Lite)</td>
+              <td><a href="/filters/1hosts-lite.txt" target="_blank" class="source-file">1hosts-lite.txt</a></td>
+              <td><a href="https://badmojr.github.io/1Hosts/Lite/adblock.txt" target="_blank" rel="noopener" class="source-link">1Hosts ↗</a></td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td class="source-name">Peter Lowe's List</td>
+              <td><a href="/filters/peter-lowes-list.txt" target="_blank" class="source-file">peter-lowes-list.txt</a></td>
+              <td><a href="https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext" target="_blank" rel="noopener" class="source-link">pgl.yoyo.org ↗</a></td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td class="source-name">ShadowWhisperer - ADS</td>
+              <td><a href="/filters/shadowwhisperer-ads.txt" target="_blank" class="source-file">shadowwhisperer-ads.txt</a></td>
+              <td><a href="https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads" target="_blank" rel="noopener" class="source-link">ShadowWhisperer ↗</a></td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td class="source-name">Steven Black's Hosts</td>
+              <td><a href="/filters/steven-blacks-hosts.txt" target="_blank" class="source-file">steven-blacks-hosts.txt</a></td>
+              <td><a href="https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts" target="_blank" rel="noopener" class="source-link">StevenBlack ↗</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture">
+      <h2 class="section-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        Pipeline Architecture
+      </h2>
+      <p class="section-subtitle">Deterministic 4-stage pipeline built entirely on POSIX shell and coreutils.</p>
+
+      <div class="pipeline-grid">
+        <div class="pipeline-card">
+          <div class="pipeline-step">STAGE 01</div>
+          <div class="pipeline-title">Staged Parallel Fetch</div>
+          <div class="pipeline-text">Downloads 18 upstream lists into isolation buffers (<code>.tmp</code>). Validates HTTP 200 and non-empty payload before atomic swap. Swallows no child exit codes.</div>
+        </div>
+        <div class="pipeline-card">
+          <div class="pipeline-step">STAGE 02</div>
+          <div class="pipeline-title">Streaming Deduplication</div>
+          <div class="pipeline-text">Single-pass <code>awk</code> strips comment headers and carriage returns, piping directly into <code>LC_ALL=C sort -u</code>. Processes 1.2M+ rules in &lt;3s.</div>
+        </div>
+        <div class="pipeline-card">
+          <div class="pipeline-step">STAGE 03</div>
+          <div class="pipeline-title">Telemetry & Marker Injection</div>
+          <div class="pipeline-text">Parses build metrics and injects updated routing tables directly into protected HTML comment blocks without clobbering documentation.</div>
+        </div>
+        <div class="pipeline-card">
+          <div class="pipeline-step">STAGE 04</div>
+          <div class="pipeline-title">Anycast CDN Delivery</div>
+          <div class="pipeline-text">Artefacts deployed to <code>hosts.domi.my.id</code> edge GitHub Pages and globally mirrored across jsDelivr and secondary reverse proxies.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Setup Guide -->
+    <section id="setup" class="setup-box">
+      <h2 class="section-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Client Setup Guide
+      </h2>
+      <p class="section-subtitle">How to configure AIO Filter List in your preferred client.</p>
+
+      <div class="tab-bar">
+        <button class="tab-btn active" onclick="switchTab('tab-ublock', this)">uBlock Origin</button>
+        <button class="tab-btn" onclick="switchTab('tab-adguard', this)">AdGuard Home</button>
+        <button class="tab-btn" onclick="switchTab('tab-pihole', this)">Pi-hole</button>
+        <button class="tab-btn" onclick="switchTab('tab-brave', this)">Brave Browser</button>
+      </div>
+
+      <div id="tab-ublock" class="tab-pane active">
+        <ol>
+          <li>Open <strong>uBlock Origin Dashboard</strong> (gear icon).</li>
+          <li>Navigate to the <strong>Filter lists</strong> tab.</li>
+          <li>Scroll to the bottom and expand <strong>Import...</strong>.</li>
+          <li>Paste <span class="code-inline">https://hosts.domi.my.id/AIO_Filter_List.txt</span> into the text box.</li>
+          <li>Click <strong>Apply changes</strong> at the top.</li>
+        </ol>
+      </div>
+
+      <div id="tab-adguard" class="tab-pane">
+        <ol>
+          <li>Navigate to your <strong>AdGuard Home Dashboard</strong>.</li>
+          <li>Go to <strong>Filters</strong> &rarr; <strong>DNS blocklists</strong>.</li>
+          <li>Click <strong>Add blocklist</strong> &rarr; <strong>Add a custom list</strong>.</li>
+          <li>Name the list: <span class="code-inline">AIO-FilterList</span>.</li>
+          <li>Paste URL: <span class="code-inline">https://hosts.domi.my.id/AIO_Filter_List.txt</span>.</li>
+          <li>Click <strong>Save</strong> and wait for the download and compile step to complete.</li>
+        </ol>
+      </div>
+
+      <div id="tab-pihole" class="tab-pane">
+        <ol>
+          <li>Open <strong>Pi-hole Admin Console</strong>.</li>
+          <li>Go to <strong>Group Management</strong> &rarr; <strong>Adlists</strong>.</li>
+          <li>Paste <span class="code-inline">https://hosts.domi.my.id/AIO_Filter_List.txt</span> in the Address field.</li>
+          <li>Add a comment (e.g., <em>AIO Aggregated Mirror</em>) and click <strong>Add</strong>.</li>
+          <li>Run <strong>Gravity</strong> update under <em>Tools &rarr; Update Gravity</em>.</li>
+        </ol>
+      </div>
+
+      <div id="tab-brave" class="tab-pane">
+        <ol>
+          <li>Open Brave and type <span class="code-inline">brave://settings/shields/filters</span> in the address bar.</li>
+          <li>Scroll to the bottom to <strong>Custom Filters</strong>.</li>
+          <li>Click <strong>Add custom filter list</strong>.</li>
+          <li>Paste <span class="code-inline">https://hosts.domi.my.id/AIO_Filter_List.txt</span>.</li>
+          <li>Click <strong>Submit</strong> and verify the filter updates.</li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <div>
+        <p>Maintained by <strong>Domi Adiwijaya</strong> (<a href="https://github.com/Elcapitanoe" target="_blank" rel="noopener" style="color:inherit;">@Elcapitanoe</a>).</p>
+        <p style="margin-top: 4px; font-size: 0.8rem;">All filter rules belong to their respective community authors. Aggregation & mirroring automated via GitHub Actions.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="https://github.com/Elcapitanoe/AIO-FilterList" target="_blank" rel="noopener">GitHub Repository</a></li>
+        <li><a href="/AIO_Filter_List.txt">Raw Filter</a></li>
+        <li><a href="/build.log">Telemetry</a></li>
+        <li><a href="https://github.com/Elcapitanoe/AIO-FilterList/blob/main/LICENSE" target="_blank" rel="noopener">License</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function copyToClipboard(elementId, button) {
+      const urlText = document.getElementById(elementId).innerText.trim();
+      navigator.clipboard.writeText(urlText).then(() => {
+        const originalText = button.innerHTML;
+        button.innerHTML = `
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Copied!</span>
+        `;
+        button.classList.add('copied');
+        setTimeout(() => {
+          button.innerHTML = originalText;
+          button.classList.remove('copied');
+        }, 2000);
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+    }
+
+    function switchTab(tabId, button) {
+      document.querySelectorAll('.tab-pane').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      button.classList.add('active');
+    }
+
+    function filterTable() {
+      const query = document.getElementById('sourceSearch').value.toLowerCase();
+      const rows = document.querySelectorAll('#sourcesTable tbody tr');
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(query) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
