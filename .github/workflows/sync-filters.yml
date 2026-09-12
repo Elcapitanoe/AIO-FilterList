@@ -1,29 +1,37 @@
 name: Upstream Filter Synchronization
 
 on:
-  push:
-    paths:
-      - 'config/sources.txt'
-      - 'scripts/*.sh'
   schedule:
     - cron: '0 17 * * *'
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'config/sources.txt'
+      - 'scripts/**'
+      - '.github/workflows/sync-filters.yml'
+
+concurrency:
+  group: sync-filters
+  cancel-in-progress: false
 
 jobs:
   sync-and-merge:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: write
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Grant execution rights to scripts
-        run: chmod +x scripts/*.sh
+      - name: Validate repository configuration & scripts
+        run: ./scripts/validate.sh
 
       - name: Fetch latest filter lists
         run: ./scripts/fetch_filters.sh
@@ -34,15 +42,18 @@ jobs:
       - name: Update README dynamic table
         run: ./scripts/update_readme.sh
 
+      - name: Validate build artifacts
+        run: ./scripts/validate.sh --check-artifacts
+
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin main --rebase || true
           git add filters/ AIO_Filter_List.txt build.log README.md
-          if git diff-index --quiet HEAD --; then
+          if git diff --staged --quiet; then
             echo "No upstream changes detected today. Skipping commit."
           else
-            git commit -m "chore(scripts): overhaul filterlist mirror, logging, and readme injection" -m "Automated routine triggered by GitHub Actions."
-            git push origin main --force-with-lease
+            git commit -m "chore(filters): auto-sync upstream filter lists [skip ci]" -m "Automated routine triggered by GitHub Actions."
+            git push origin main
           fi
