@@ -3,42 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AIO Filter List — High-Performance Adblock & Tracker Mirror</title>
-  <meta name="description" content="Automated aggregation, deduplication, and CDN distribution pipeline for adblock and privacy filter lists. Over 1 million active rules updated daily.">
-  <meta name="theme-color" content="#090d16">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="AIO Filter List">
-  <meta property="og:description" content="Automated adblock & privacy filter aggregator. 1,030,000+ consolidated unique rules with global CDN endpoints.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://hosts.domi.my.id/">
-
+  <title>AIO Filter List - Adblock &amp; Tracker Aggregator</title>
+  <meta name="description" content="Automated consolidation pipeline aggregating 18 upstream adblock, tracking, and malware blocklists into a unified, deduplicated filter list.">
+  <meta name="author" content="Domi Adiwijaya">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
   <style>
     :root {
-      --bg-base: #090d16;
-      --bg-surface: #0f172a;
-      --bg-surface-elevated: #162036;
-      --border-subtle: #1e293b;
-      --border-focus: #38bdf8;
-      
-      --text-primary: #f8fafc;
-      --text-secondary: #94a3b8;
-      --text-muted: #64748b;
-      
-      --accent-emerald: #10b981;
-      --accent-emerald-dim: rgba(16, 185, 129, 0.12);
-      --accent-cyan: #06b6d4;
-      --accent-cyan-dim: rgba(6, 182, 212, 0.12);
-      --accent-sky: #38bdf8;
-      --accent-sky-dim: rgba(56, 189, 248, 0.1);
-      
-      --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace;
-      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      
-      --radius-sm: 6px;
-      --radius-md: 10px;
-      --radius-lg: 14px;
-      --shadow-subtle: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+      --bg: #0d1117;
+      --surface: #161b22;
+      --surface-subtle: #1c2128;
+      --surface-hover: #21262d;
+      --border: #30363d;
+      --border-muted: #21262d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --text-dim: #6e7681;
+      --accent: #2f81f7;
+      --accent-hover: #58a6ff;
+      --success: #238636;
+      --success-text: #3fb950;
+      --code-bg: #0b0f14;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --max-width: 1120px;
     }
 
     * {
@@ -48,1060 +36,970 @@
     }
 
     body {
-      background-color: var(--bg-base);
-      color: var(--text-primary);
+      background-color: var(--bg);
+      color: var(--text);
       font-family: var(--font-sans);
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+      font-size: 14px;
+      line-height: 1.5;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Ambient background glow */
-    .ambient-glow {
-      position: fixed;
-      top: -100px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 800px;
-      height: 400px;
-      background: radial-gradient(ellipse, rgba(6, 182, 212, 0.12) 0%, rgba(9, 13, 22, 0) 70%);
-      pointer-events: none;
-      z-index: 0;
+    a {
+      color: var(--accent-hover);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code, kbd, samp, pre {
+      font-family: var(--font-mono);
+      font-size: 12.5px;
     }
 
     .container {
-      width: 100%;
-      max-width: 1120px;
+      max-width: var(--max-width);
       margin: 0 auto;
-      padding: 0 24px;
-      position: relative;
-      z-index: 1;
+      padding: 0 16px;
     }
 
-    /* Navigation / Header */
-    header {
-      padding: 24px 0;
-      border-bottom: 1px solid var(--border-subtle);
-      background: rgba(9, 13, 22, 0.85);
-      backdrop-filter: blur(12px);
+    /* Top Navigation */
+    .nav-bar {
+      border-bottom: 1px solid var(--border);
+      background-color: rgba(13, 17, 23, 0.92);
       position: sticky;
       top: 0;
       z-index: 100;
+      backdrop-filter: blur(8px);
     }
-
-    .nav-wrap {
+    .nav-inner {
+      height: 56px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       gap: 16px;
     }
-
-    .brand {
+    .nav-brand {
       display: flex;
       align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      color: var(--text-primary);
-    }
-
-    .brand-icon {
-      width: 34px;
-      height: 34px;
-      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-emerald));
-      border-radius: var(--radius-sm);
-      display: grid;
-      place-items: center;
-      box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
-    }
-
-    .brand-icon svg {
-      width: 18px;
-      height: 18px;
-      fill: none;
-      stroke: #090d16;
-      stroke-width: 2.5;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .brand-text {
-      font-size: 1.15rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      font-family: var(--font-mono);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      list-style: none;
-    }
-
-    .nav-link {
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: color 0.15s ease;
-    }
-
-    .nav-link:hover {
-      color: var(--text-primary);
-    }
-
-    .btn-gh {
-      display: inline-flex;
-      align-items: center;
       gap: 8px;
-      padding: 6px 14px;
-      background: var(--bg-surface-elevated);
-      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+    .nav-brand:hover {
       text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 500;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border-subtle);
-      transition: all 0.2s ease;
+      color: #fff;
     }
-
-    .btn-gh:hover {
-      border-color: var(--text-muted);
-      background: #1c2944;
-    }
-
-    /* Hero Section */
-    .hero {
-      padding: 64px 0 48px;
-      text-align: center;
-    }
-
-    .status-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 4px 14px;
-      background: var(--accent-emerald-dim);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      border-radius: 9999px;
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      color: var(--accent-emerald);
-      margin-bottom: 24px;
-    }
-
-    .status-dot {
-      width: 7px;
-      height: 7px;
-      background: var(--accent-emerald);
-      border-radius: 50%;
-      box-shadow: 0 0 8px var(--accent-emerald);
-      animation: pulse 2s infinite ease-in-out;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.85); }
-    }
-
-    .hero h1 {
-      font-size: clamp(2rem, 4.5vw, 3.25rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      line-height: 1.15;
-      margin-bottom: 16px;
-      color: var(--text-primary);
-    }
-
-    .hero h1 span {
-      background: linear-gradient(135deg, #38bdf8 0%, #10b981 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-desc {
-      max-width: 680px;
-      margin: 0 auto 32px;
-      font-size: 1.1rem;
-      color: var(--text-secondary);
+    .nav-brand .org {
+      color: var(--text-muted);
       font-weight: 400;
     }
-
-    /* Telemetry HUD Grid */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    .nav-links {
+      display: flex;
+      align-items: center;
       gap: 16px;
-      margin-bottom: 56px;
+      list-style: none;
     }
-
-    .stat-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 20px 24px;
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-
-    .stat-card:hover {
-      transform: translateY(-2px);
-      border-color: rgba(56, 189, 248, 0.4);
-    }
-
-    .stat-label {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+    .nav-links a {
       color: var(--text-muted);
-      font-family: var(--font-mono);
-      margin-bottom: 8px;
+      font-size: 13px;
+      transition: color 0.15s ease;
     }
-
-    .stat-value {
-      font-size: 1.85rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      font-family: var(--font-mono);
-      color: var(--text-primary);
+    .nav-links a:hover {
+      color: var(--text);
+      text-decoration: none;
     }
-
-    .stat-sub {
-      font-size: 0.8rem;
-      color: var(--text-secondary);
-      margin-top: 4px;
-    }
-
-    /* Subscription Box */
-    .section-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .section-subtitle {
-      color: var(--text-secondary);
-      font-size: 0.95rem;
-      margin-bottom: 24px;
-    }
-
-    .subscription-panel {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      margin-bottom: 48px;
-      box-shadow: var(--shadow-subtle);
-    }
-
-    .endpoint-item {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-bottom: 20px;
-    }
-
-    .endpoint-item:last-child {
-      margin-bottom: 0;
-    }
-
-    .endpoint-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .endpoint-name {
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .endpoint-badge {
-      font-size: 0.7rem;
-      font-family: var(--font-mono);
-      padding: 2px 8px;
-      border-radius: 4px;
-      background: var(--accent-sky-dim);
-      color: var(--accent-sky);
-      border: 1px solid rgba(56, 189, 248, 0.2);
-    }
-
-    .endpoint-bar {
-      display: flex;
-      background: #080c14;
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-sm);
-      overflow: hidden;
-      align-items: center;
-    }
-
-    .endpoint-url {
-      padding: 12px 16px;
-      font-family: var(--font-mono);
-      font-size: 0.88rem;
-      color: var(--accent-cyan);
-      overflow-x: auto;
-      white-space: nowrap;
-      flex: 1;
-    }
-
-    .copy-btn {
-      background: var(--bg-surface-elevated);
-      color: var(--text-primary);
-      border: none;
-      border-left: 1px solid var(--border-subtle);
-      padding: 0 18px;
-      height: 100%;
-      min-height: 44px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      cursor: pointer;
+    .nav-status {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      transition: all 0.15s ease;
+      font-size: 12px;
       font-family: var(--font-mono);
+      color: var(--success-text);
+      background-color: rgba(35, 134, 54, 0.15);
+      border: 1px solid rgba(46, 160, 67, 0.3);
+      padding: 3px 8px;
+      border-radius: 12px;
+    }
+    .nav-status-dot {
+      width: 6px;
+      height: 6px;
+      background-color: var(--success-text);
+      border-radius: 50%;
     }
 
-    .copy-btn:hover {
-      background: #1e2b45;
-      color: var(--accent-sky);
+    /* Header / Hero */
+    .header-section {
+      padding: 36px 0 28px;
+      border-bottom: 1px solid var(--border-muted);
+    }
+    .header-title {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .header-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 80ch;
+      line-height: 1.55;
+      margin-bottom: 24px;
     }
 
-    .copy-btn.copied {
-      background: var(--accent-emerald);
-      color: #090d16;
+    /* Telemetry HUD Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background-color: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .metric-cell {
+      background-color: var(--surface);
+      padding: 14px 16px;
+    }
+    .metric-label {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    .metric-value {
+      font-size: 20px;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+    .metric-sub {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      margin-top: 2px;
     }
 
-    .quick-actions {
+    /* Content Layout */
+    .content-section {
+      padding: 32px 0;
+      border-bottom: 1px solid var(--border-muted);
+    }
+    .section-header {
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: -0.01em;
       display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 24px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border-subtle);
-    }
-
-    .btn-action {
-      display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 10px 18px;
-      border-radius: var(--radius-sm);
-      font-size: 0.85rem;
+    }
+    .section-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Endpoint Blocks */
+    .endpoints-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .endpoint-card {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .endpoint-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .endpoint-title {
       font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s ease;
+      font-size: 13px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
-
-    .btn-action-primary {
-      background: linear-gradient(135deg, #0284c7, #06b6d4);
-      color: #ffffff;
-      box-shadow: 0 2px 10px rgba(2, 132, 199, 0.3);
+    .endpoint-tag {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      padding: 1px 6px;
+      border-radius: 4px;
+      background-color: var(--surface-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
     }
-
-    .btn-action-primary:hover {
-      opacity: 0.95;
-      transform: translateY(-1px);
+    .endpoint-tag.primary {
+      background-color: rgba(47, 129, 247, 0.12);
+      border-color: rgba(56, 139, 253, 0.35);
+      color: var(--accent-hover);
     }
-
-    .btn-action-secondary {
-      background: var(--bg-surface-elevated);
-      color: var(--text-primary);
-      border: 1px solid var(--border-subtle);
+    .endpoint-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--code-bg);
+      border: 1px solid var(--border-muted);
+      border-radius: 4px;
+      padding: 6px 10px;
     }
-
-    .btn-action-secondary:hover {
-      background: #1c2944;
+    .endpoint-url {
+      flex: 1;
+      overflow-x: auto;
+      white-space: nowrap;
+      color: #7ee787;
+      scrollbar-width: none;
+    }
+    .endpoint-url::-webkit-scrollbar {
+      display: none;
+    }
+    .btn-copy {
+      background-color: var(--surface-hover);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: var(--font-mono);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: background 0.15s ease, border-color 0.15s ease;
+      flex-shrink: 0;
+    }
+    .btn-copy:hover {
+      background-color: #2b313a;
       border-color: var(--text-muted);
     }
-
-    /* Sources Table & Filter */
-    .table-container {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-      margin-bottom: 48px;
+    .btn-copy.copied {
+      background-color: var(--success);
+      border-color: rgba(46, 160, 67, 0.6);
+      color: #fff;
     }
-
-    .table-header-controls {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 20px;
-    }
-
-    .search-input {
-      background: #080c14;
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-sm);
-      padding: 8px 14px;
-      font-size: 0.88rem;
-      color: var(--text-primary);
-      width: 100%;
-      max-width: 320px;
-      outline: none;
-      font-family: var(--font-mono);
-      transition: border-color 0.2s ease;
-    }
-
-    .search-input:focus {
-      border-color: var(--accent-sky);
-    }
-
-    .table-wrapper {
-      overflow-x: auto;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-    }
-
-    th {
-      padding: 12px 16px;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-      border-bottom: 1px solid var(--border-subtle);
-      background: rgba(8, 12, 20, 0.4);
-    }
-
-    td {
-      padding: 14px 16px;
-      font-size: 0.88rem;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-    tr:hover td {
-      background: rgba(22, 32, 54, 0.5);
-    }
-
-    .source-name {
-      font-weight: 600;
-      color: var(--text-primary);
-    }
-
-    .source-file {
-      font-family: var(--font-mono);
-      font-size: 0.82rem;
-      color: var(--accent-sky);
-    }
-
-    .source-link {
-      color: var(--accent-cyan);
-      text-decoration: none;
-      font-size: 0.82rem;
+    .btn-subscribe {
+      background-color: #21262d;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
       font-family: var(--font-mono);
       display: inline-flex;
       align-items: center;
       gap: 4px;
+      text-decoration: none;
     }
-
-    .source-link:hover {
-      text-decoration: underline;
-    }
-
-    /* Architecture Flow */
-    .pipeline-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
-      margin-bottom: 48px;
-    }
-
-    .pipeline-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 24px;
-      position: relative;
-    }
-
-    .pipeline-step {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: var(--accent-cyan);
-      margin-bottom: 10px;
-    }
-
-    .pipeline-title {
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-      color: var(--text-primary);
-    }
-
-    .pipeline-text {
-      font-size: 0.85rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
+    .btn-subscribe:hover {
+      background-color: #30363d;
+      text-decoration: none;
+      color: #fff;
     }
 
     /* Client Integration Tabs */
-    .setup-box {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      margin-bottom: 64px;
+    .tabs-container {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
     }
-
-    .tab-bar {
+    .tabs-nav {
       display: flex;
-      gap: 8px;
-      border-bottom: 1px solid var(--border-subtle);
-      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      background-color: var(--surface-subtle);
       overflow-x: auto;
+      scrollbar-width: none;
     }
-
     .tab-btn {
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
       background: none;
       border: none;
-      padding: 8px 16px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--text-secondary);
-      cursor: pointer;
       border-bottom: 2px solid transparent;
-      transition: all 0.2s ease;
+      cursor: pointer;
       white-space: nowrap;
+      transition: color 0.15s ease, border-color 0.15s ease;
     }
-
     .tab-btn:hover {
-      color: var(--text-primary);
+      color: var(--text);
     }
-
     .tab-btn.active {
-      color: var(--accent-sky);
-      border-bottom-color: var(--accent-sky);
+      color: var(--text);
+      border-bottom-color: var(--accent);
+      background-color: var(--surface);
     }
-
     .tab-pane {
       display: none;
+      padding: 16px;
     }
-
     .tab-pane.active {
       display: block;
     }
-
-    .tab-pane ol {
-      padding-left: 20px;
-      color: var(--text-secondary);
-      font-size: 0.92rem;
+    .tab-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
     }
-
-    .tab-pane li {
-      margin-bottom: 10px;
+    .code-block-wrapper {
+      position: relative;
     }
-
-    .tab-pane li strong {
-      color: var(--text-primary);
-    }
-
-    .code-inline {
-      background: #080c14;
-      padding: 2px 6px;
+    .code-block {
+      background-color: var(--code-bg);
+      border: 1px solid var(--border-muted);
       border-radius: 4px;
-      font-family: var(--font-mono);
-      font-size: 0.85rem;
-      color: var(--accent-sky);
-      border: 1px solid var(--border-subtle);
+      padding: 12px 14px;
+      overflow-x: auto;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .code-block .comment {
+      color: var(--text-dim);
+    }
+    .code-block .highlight {
+      color: #7ee787;
     }
 
-    /* Footer */
-    footer {
-      margin-top: auto;
-      border-top: 1px solid var(--border-subtle);
-      background: #060910;
-      padding: 40px 0;
-      font-size: 0.85rem;
+    /* Upstream Sources Table */
+    .table-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .search-input-wrap {
+      position: relative;
+      flex: 1;
+      max-width: 380px;
+    }
+    .search-input {
+      width: 100%;
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      padding: 6px 12px;
+      border-radius: 4px;
+      outline: none;
+      transition: border-color 0.15s ease;
+    }
+    .search-input:focus {
+      border-color: var(--accent);
+    }
+    .table-stats-count {
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--text-dim);
+    }
+    .table-wrap {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow-x: auto;
+      background-color: var(--surface);
+    }
+    table.sources-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13px;
+    }
+    table.sources-table th {
+      background-color: var(--surface-subtle);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    table.sources-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border-muted);
+      color: var(--text);
+      vertical-align: middle;
+    }
+    table.sources-table tr:last-child td {
+      border-bottom: none;
+    }
+    table.sources-table tr:hover td {
+      background-color: var(--surface-hover);
+    }
+    .mono-cell {
+      font-family: var(--font-mono);
+      font-size: 12px;
+    }
+    .rule-count {
+      text-align: right;
+      font-family: var(--font-mono);
+      font-variant-numeric: tabular-nums;
+      color: var(--text-muted);
+    }
+    .source-mirror-link {
+      color: var(--accent-hover);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .source-upstream-link {
+      color: var(--text-dim);
+      font-size: 11.5px;
+      max-width: 260px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+    }
+    .source-upstream-link:hover {
       color: var(--text-muted);
     }
 
-    .footer-wrap {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
+    /* Pipeline Architecture Box */
+    .pipeline-ascii-card {
+      background-color: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px;
+      overflow-x: auto;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--text);
     }
 
+    /* Footer */
+    .site-footer {
+      padding: 32px 0 48px;
+      font-size: 12.5px;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
     .footer-links {
       display: flex;
+      align-items: center;
       gap: 16px;
       list-style: none;
     }
-
     .footer-links a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      transition: color 0.15s ease;
+      color: var(--text-muted);
     }
-
     .footer-links a:hover {
-      color: var(--text-primary);
+      color: var(--text);
     }
 
-    /* Responsive */
+    /* Responsive adjustments */
     @media (max-width: 768px) {
+      .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
       .nav-links {
         display: none;
       }
-
-      .endpoint-bar {
+      .header-title {
+        font-size: 22px;
+      }
+      .site-footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    @media (max-width: 480px) {
+      .metrics-grid {
+        grid-template-columns: 1fr;
+      }
+      .table-controls {
         flex-direction: column;
         align-items: stretch;
       }
-
-      .copy-btn {
-        border-left: none;
-        border-top: 1px solid var(--border-subtle);
-        justify-content: center;
-        padding: 10px;
-      }
-
-      .stats-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .stats-grid {
-        grid-template-columns: 1fr;
+      .search-input-wrap {
+        max-width: 100%;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="ambient-glow"></div>
+  <!-- Top Navigation -->
+  <nav class="nav-bar">
+    <div class="container nav-inner">
+      <a href="https://github.com/Elcapitanoe/AIO-FilterList" class="nav-brand" target="_blank" rel="noopener">
+        <svg height="20" viewBox="0 0 16 16" width="20" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+        <span><span class="org">Elcapitanoe /</span> AIO-FilterList</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#endpoints">Endpoints</a></li>
+        <li><a href="#clients">Integration</a></li>
+        <li><a href="#sources">Upstream Registry</a></li>
+        <li><a href="#pipeline">Pipeline</a></li>
+      </ul>
+      <div class="nav-status">
+        <span class="nav-status-dot"></span>
+        <span>Sync: Daily 17:00 UTC</span>
+      </div>
+    </div>
+  </nav>
 
-  <header>
-    <div class="container nav-wrap">
-      <a href="#" class="brand">
-        <div class="brand-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+  <!-- Header / Overview -->
+  <header class="header-section">
+    <div class="container">
+      <h1 class="header-title">AIO Filter List</h1>
+      <p class="header-desc">
+        Automated consolidation pipeline aggregating 18 upstream adblock, tracking, and malware blocklists into a unified, deduplicated filter list. Synchronized daily with atomic staging and high-speed streaming deduplication.
+      </p>
+
+      <!-- Key Metrics -->
+      <div class="metrics-grid">
+        <div class="metric-cell">
+          <div class="metric-label">Active Unique Rules</div>
+          <div class="metric-value">1,031,533</div>
+          <div class="metric-sub">Processed payload rules</div>
         </div>
-        <span class="brand-text">AIO-FilterList</span>
-      </a>
-
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#endpoints" class="nav-link">Endpoints</a></li>
-          <li><a href="#sources" class="nav-link">Sources</a></li>
-          <li><a href="#architecture" class="nav-link">Architecture</a></li>
-          <li><a href="#setup" class="nav-link">Setup</a></li>
-        </ul>
-      </nav>
-
-      <a href="https://github.com/Elcapitanoe/AIO-FilterList" target="_blank" rel="noopener" class="btn-gh">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        <span>GitHub</span>
-      </a>
+        <div class="metric-cell">
+          <div class="metric-label">Duplicates Dropped</div>
+          <div class="metric-value">211,480</div>
+          <div class="metric-sub">17.01% redundancy purged</div>
+        </div>
+        <div class="metric-cell">
+          <div class="metric-label">Raw Rules Evaluated</div>
+          <div class="metric-value">1,243,013</div>
+          <div class="metric-sub">Across all upstream feeds</div>
+        </div>
+        <div class="metric-cell">
+          <div class="metric-label">Upstream Feeds</div>
+          <div class="metric-value">18 Sources</div>
+          <div class="metric-sub">Tracked and mirrored</div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="container">
+  <!-- Distribution Endpoints -->
+  <section class="content-section" id="endpoints">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Distribution Endpoints</h2>
+        <p class="section-subtitle">Direct HTTPS endpoints for adblock extensions, DNS resolvers, and network sinkholes.</p>
+      </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="status-pill">
-        <span class="status-dot"></span>
-        <span>Automated Sync Active • 17:00 UTC Daily</span>
-      </div>
-      <h1>Universal Adblock & Tracker<br><span>Consolidation Mirror</span></h1>
-      <p class="hero-desc">
-        A high-performance pipeline that aggregates community blocklists, strips comments, purges redundant rules via stream deduplication, and serves blazing-fast CDN mirrors.
-      </p>
-    </section>
-
-    <!-- Telemetry Stats Grid -->
-    <section class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-label">Active Unique Rules</div>
-        <div class="stat-value">1,031,533</div>
-        <div class="stat-sub">Cleaned & deduplicated rules</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">Duplicates Purged</div>
-        <div class="stat-value">211,480</div>
-        <div class="stat-sub">17.01% rule bloat eliminated</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">Raw Rules Processed</div>
-        <div class="stat-value">1,243,013</div>
-        <div class="stat-sub">From all upstream providers</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">Upstream Feeds</div>
-        <div class="stat-value">18 Sources</div>
-        <div class="stat-sub">Validated daily with curl staging</div>
-      </div>
-    </section>
-
-    <!-- Subscription Endpoints -->
-    <section id="endpoints" class="subscription-panel">
-      <h2 class="section-title">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-        Subscription Endpoints
-      </h2>
-      <p class="section-subtitle">Add any of the following URLs to your adblocker client (uBlock Origin, AdGuard, Brave, Pi-hole).</p>
-
-      <div class="endpoint-item">
-        <div class="endpoint-meta">
-          <span class="endpoint-name">Primary Custom Domain <span class="endpoint-badge">Fastest Direct Route</span></span>
+      <div class="endpoints-stack">
+        <!-- Primary Custom Domain -->
+        <div class="endpoint-card">
+          <div class="endpoint-meta">
+            <div class="endpoint-title">
+              <span>Primary CDN Endpoint</span>
+              <span class="endpoint-tag primary">Custom Domain</span>
+              <span class="endpoint-tag">34 MB</span>
+            </div>
+            <div>
+              <a href="abp:subscribe?location=https%3A%2F%2Fhosts.domi.my.id%2FAIO_Filter_List.txt&amp;title=AIO%20Filter%20List" class="btn-subscribe" title="Subscribe via uBlock Origin / AdGuard">
+                + Subscribe to Client
+              </a>
+            </div>
+          </div>
+          <div class="endpoint-bar">
+            <code class="endpoint-url" id="url-primary">https://hosts.domi.my.id/AIO_Filter_List.txt</code>
+            <button class="btn-copy" onclick="copyEndpoint('url-primary', this)">Copy URL</button>
+          </div>
         </div>
-        <div class="endpoint-bar">
-          <div class="endpoint-url" id="url-primary">https://hosts.domi.my.id/AIO_Filter_List.txt</div>
-          <button class="copy-btn" onclick="copyToClipboard('url-primary', this)">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span>Copy</span>
-          </button>
-        </div>
-      </div>
 
-      <div class="endpoint-item">
-        <div class="endpoint-meta">
-          <span class="endpoint-name">jsDelivr Global Edge CDN <span class="endpoint-badge">Anycast CDN</span></span>
+        <!-- GitHub Raw Mirror -->
+        <div class="endpoint-card">
+          <div class="endpoint-meta">
+            <div class="endpoint-title">
+              <span>GitHub Raw Mirror</span>
+              <span class="endpoint-tag">Direct Upstream</span>
+            </div>
+          </div>
+          <div class="endpoint-bar">
+            <code class="endpoint-url" id="url-github">https://raw.githubusercontent.com/Elcapitanoe/AIO-FilterList/main/AIO_Filter_List.txt</code>
+            <button class="btn-copy" onclick="copyEndpoint('url-github', this)">Copy URL</button>
+          </div>
         </div>
-        <div class="endpoint-bar">
-          <div class="endpoint-url" id="url-jsdelivr">https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/AIO_Filter_List.txt</div>
-          <button class="copy-btn" onclick="copyToClipboard('url-jsdelivr', this)">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span>Copy</span>
-          </button>
+
+        <!-- jsDelivr Global Edge -->
+        <div class="endpoint-card">
+          <div class="endpoint-meta">
+            <div class="endpoint-title">
+              <span>jsDelivr Global Edge</span>
+              <span class="endpoint-tag">Multi-CDN Anycast</span>
+            </div>
+          </div>
+          <div class="endpoint-bar">
+            <code class="endpoint-url" id="url-jsdelivr">https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList@main/AIO_Filter_List.txt</code>
+            <button class="btn-copy" onclick="copyEndpoint('url-jsdelivr', this)">Copy URL</button>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="endpoint-item">
-        <div class="endpoint-meta">
-          <span class="endpoint-name">Edge Reverse Proxy <span class="endpoint-badge">Alternative Fallback</span></span>
-        </div>
-        <div class="endpoint-bar">
-          <div class="endpoint-url" id="url-edge">https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/AIO_Filter_List.txt</div>
-          <button class="copy-btn" onclick="copyToClipboard('url-edge', this)">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span>Copy</span>
-          </button>
-        </div>
+  <!-- Client Integration Guide -->
+  <section class="content-section" id="clients">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Client Integration</h2>
+        <p class="section-subtitle">Configuration instructions for popular content filters and DNS daemons.</p>
       </div>
 
-      <div class="quick-actions">
-        <a href="abp:subscribe?location=https%3A%2F%2Fhosts.domi.my.id%2FAIO_Filter_List.txt&title=AIO%20Filter%20List" class="btn-action btn-action-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-          One-Click Subscribe (uBlock / AdGuard)
-        </a>
-        <a href="/AIO_Filter_List.txt" target="_blank" class="btn-action btn-action-secondary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          View Raw Merged List
-        </a>
-        <a href="/build.log" target="_blank" class="btn-action btn-action-secondary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-          Inspect Build Log
-        </a>
-      </div>
-    </section>
-
-    <!-- Upstream Sources & Live Mirror Directory -->
-    <section id="sources" class="table-container">
-      <div class="table-header-controls">
-        <div>
-          <h2 class="section-title">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            Upstream Sources & Mirrors
-          </h2>
-          <p class="section-subtitle" style="margin-bottom: 0;">18 verified community blocklists mirrored standalone and aggregated.</p>
+      <div class="tabs-container">
+        <div class="tabs-nav">
+          <button class="tab-btn active" onclick="switchTab('tab-ublock', this)">uBlock Origin</button>
+          <button class="tab-btn" onclick="switchTab('tab-adguard', this)">AdGuard Home</button>
+          <button class="tab-btn" onclick="switchTab('tab-pihole', this)">Pi-hole</button>
+          <button class="tab-btn" onclick="switchTab('tab-cli', this)">CLI / Script</button>
         </div>
-        <input type="text" id="sourceSearch" class="search-input" placeholder="Search filter source..." onkeyup="filterTable()">
+
+        <!-- Tab 1: uBlock Origin -->
+        <div class="tab-pane active" id="tab-ublock">
+          <p class="tab-desc">Add as an external subscription in the uBlock Origin dashboard:</p>
+          <div class="code-block-wrapper">
+            <pre class="code-block"><span class="comment"># 1. Open uBlock Origin Dashboard -> "Filter lists" tab</span>
+<span class="comment"># 2. Scroll to the bottom and expand "Custom"</span>
+<span class="comment"># 3. Check "Import..." and paste the URL below:</span>
+<span class="highlight">https://hosts.domi.my.id/AIO_Filter_List.txt</span>
+
+<span class="comment"># 4. Click "Apply changes" in the top bar to pull rules</span></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: AdGuard Home -->
+        <div class="tab-pane" id="tab-adguard">
+          <p class="tab-desc">Configure in the AdGuard Home Web Administrator interface:</p>
+          <div class="code-block-wrapper">
+            <pre class="code-block"><span class="comment"># 1. Navigate to: Filters -> DNS blocklists</span>
+<span class="comment"># 2. Click "Add blocklist" -> "Add a custom list"</span>
+<span class="comment"># 3. Name: "AIO Filter List"</span>
+<span class="comment"># 4. URL:</span>
+<span class="highlight">https://hosts.domi.my.id/AIO_Filter_List.txt</span>
+
+<span class="comment"># 5. Click Save. The daemon will parse and compile rules automatically.</span></pre>
+          </div>
+        </div>
+
+        <!-- Tab 3: Pi-hole -->
+        <div class="tab-pane" id="tab-pihole">
+          <p class="tab-desc">Add to Pi-hole v5 / v6 adlists database:</p>
+          <div class="code-block-wrapper">
+            <pre class="code-block"><span class="comment"># In Pi-hole Web Admin:</span>
+<span class="comment"># 1. Go to: Adlists (Group Management -> Adlists)</span>
+<span class="comment"># 2. Add Address:</span>
+<span class="highlight">https://hosts.domi.my.id/AIO_Filter_List.txt</span>
+<span class="comment"># 3. Click "Add"</span>
+
+<span class="comment"># Then update gravity via terminal or web interface:</span>
+pihole -g</pre>
+          </div>
+        </div>
+
+        <!-- Tab 4: CLI -->
+        <div class="tab-pane" id="tab-cli">
+          <p class="tab-desc">Automated fetch with conditional HTTP cache validation:</p>
+          <div class="code-block-wrapper">
+            <pre class="code-block"><span class="comment"># Download using curl with atomic temporary file swap</span>
+curl -sSL --fail --compressed \
+  "https://hosts.domi.my.id/AIO_Filter_List.txt" \
+  -o AIO_Filter_List.txt.tmp &amp;&amp; mv AIO_Filter_List.txt.tmp AIO_Filter_List.txt
+
+<span class="comment"># Verify rule count</span>
+wc -l AIO_Filter_List.txt</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upstream Sources Registry -->
+  <section class="content-section" id="sources">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Upstream Source Registry</h2>
+        <p class="section-subtitle">All 18 synchronized lists, raw line counts, and local mirror endpoints.</p>
       </div>
 
-      <div class="table-wrapper">
-        <table id="sourcesTable">
+      <div class="table-controls">
+        <div class="search-input-wrap">
+          <input type="text" id="sourceSearch" class="search-input" placeholder="Filter sources by name or mirror file..." oninput="filterTable()">
+        </div>
+        <div class="table-stats-count" id="tableCount">Showing 18 of 18 sources</div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="sources-table" id="sourcesTable">
           <thead>
             <tr>
-              <th>#</th>
-              <th>Filter Name</th>
+              <th style="width: 44px;">#</th>
+              <th>Feed Name</th>
               <th>Local Mirror</th>
-              <th>Original Upstream URL</th>
+              <th style="text-align: right; width: 110px;">Raw Lines</th>
+              <th>Upstream Feed URL</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>01</td>
-              <td class="source-name">EasyList</td>
-              <td><a href="/filters/easylist.txt" target="_blank" class="source-file">easylist.txt</a></td>
-              <td><a href="https://easylist.to/easylist/easylist.txt" target="_blank" rel="noopener" class="source-link">easylist.to ↗</a></td>
+              <td><strong>AdGuard Base</strong></td>
+              <td><a href="filters/adguard-base.txt" class="source-mirror-link mono-cell" target="_blank">filters/adguard-base.txt</a></td>
+              <td class="rule-count">162,891</td>
+              <td><a href="https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt" class="source-upstream-link" target="_blank" rel="noopener">filters.adtidy.org/.../2_without_easylist.txt</a></td>
             </tr>
             <tr>
               <td>02</td>
-              <td class="source-name">EasyList Cookie List</td>
-              <td><a href="/filters/fanboy-cookiemonster.txt" target="_blank" class="source-file">fanboy-cookiemonster.txt</a></td>
-              <td><a href="https://secure.fanboy.co.nz/fanboy-cookiemonster.txt" target="_blank" rel="noopener" class="source-link">fanboy.co.nz ↗</a></td>
+              <td><strong>AdGuard Mobile Ads</strong></td>
+              <td><a href="filters/adguard-mobile-ads.txt" class="source-mirror-link mono-cell" target="_blank">filters/adguard-mobile-ads.txt</a></td>
+              <td class="rule-count">9,964</td>
+              <td><a href="https://filters.adtidy.org/extension/ublock/filters/11.txt" class="source-upstream-link" target="_blank" rel="noopener">filters.adtidy.org/.../11.txt</a></td>
             </tr>
             <tr>
               <td>03</td>
-              <td class="source-name">Fanboy's Annoyance List</td>
-              <td><a href="/filters/fanboy-annoyance.txt" target="_blank" class="source-file">fanboy-annoyance.txt</a></td>
-              <td><a href="https://secure.fanboy.co.nz/fanboy-annoyance.txt" target="_blank" rel="noopener" class="source-link">fanboy.co.nz ↗</a></td>
+              <td><strong>AdGuard Tracking Protection</strong></td>
+              <td><a href="filters/adguard-tracking-protection.txt" class="source-mirror-link mono-cell" target="_blank">filters/adguard-tracking-protection.txt</a></td>
+              <td class="rule-count">331,924</td>
+              <td><a href="https://filters.adtidy.org/extension/ublock/filters/3.txt" class="source-upstream-link" target="_blank" rel="noopener">filters.adtidy.org/.../3.txt</a></td>
             </tr>
             <tr>
               <td>04</td>
-              <td class="source-name">Fanboy's Social Blocking List</td>
-              <td><a href="/filters/fanboy-social.txt" target="_blank" class="source-file">fanboy-social.txt</a></td>
-              <td><a href="https://easylist.to/easylist/fanboy-social.txt" target="_blank" rel="noopener" class="source-link">easylist.to ↗</a></td>
+              <td><strong>AdGuard URL Tracking</strong></td>
+              <td><a href="filters/adguard-url-tracking.txt" class="source-mirror-link mono-cell" target="_blank">filters/adguard-url-tracking.txt</a></td>
+              <td class="rule-count">3,974</td>
+              <td><a href="https://filters.adtidy.org/extension/ublock/filters/17.txt" class="source-upstream-link" target="_blank" rel="noopener">filters.adtidy.org/.../17.txt</a></td>
             </tr>
             <tr>
               <td>05</td>
-              <td class="source-name">AdGuard Base</td>
-              <td><a href="/filters/adguard-base.txt" target="_blank" class="source-file">adguard-base.txt</a></td>
-              <td><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt" target="_blank" rel="noopener" class="source-link">AdguardTeam ↗</a></td>
+              <td><strong>AdGuard Annoyances</strong></td>
+              <td><a href="filters/adguard-annoyances.txt" class="source-mirror-link mono-cell" target="_blank">filters/adguard-annoyances.txt</a></td>
+              <td class="rule-count">69,556</td>
+              <td><a href="https://filters.adtidy.org/extension/ublock/filters/14.txt" class="source-upstream-link" target="_blank" rel="noopener">filters.adtidy.org/.../14.txt</a></td>
             </tr>
             <tr>
               <td>06</td>
-              <td class="source-name">AdGuard Protection</td>
-              <td><a href="/filters/adguard-tracking-protection.txt" target="_blank" class="source-file">adguard-tracking-protection.txt</a></td>
-              <td><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt" target="_blank" rel="noopener" class="source-link">AdguardTeam ↗</a></td>
+              <td><strong>AdGuard Social Media</strong></td>
+              <td><a href="filters/adguard-social-media.txt" class="source-mirror-link mono-cell" target="_blank">filters/adguard-social-media.txt</a></td>
+              <td class="rule-count">17,328</td>
+              <td><a href="https://filters.adtidy.org/extension/ublock/filters/4.txt" class="source-upstream-link" target="_blank" rel="noopener">filters.adtidy.org/.../4.txt</a></td>
             </tr>
             <tr>
               <td>07</td>
-              <td class="source-name">AdGuard URL Tracking</td>
-              <td><a href="/filters/adguard-url-tracking.txt" target="_blank" class="source-file">adguard-url-tracking.txt</a></td>
-              <td><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt" target="_blank" rel="noopener" class="source-link">AdguardTeam ↗</a></td>
+              <td><strong>EasyList</strong></td>
+              <td><a href="filters/easylist.txt" class="source-mirror-link mono-cell" target="_blank">filters/easylist.txt</a></td>
+              <td class="rule-count">79,707</td>
+              <td><a href="https://easylist.to/easylist/easylist.txt" class="source-upstream-link" target="_blank" rel="noopener">easylist.to/easylist/easylist.txt</a></td>
             </tr>
             <tr>
               <td>08</td>
-              <td class="source-name">AdGuard Social Media</td>
-              <td><a href="/filters/adguard-social-media.txt" target="_blank" class="source-file">adguard-social-media.txt</a></td>
-              <td><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt" target="_blank" rel="noopener" class="source-link">AdguardTeam ↗</a></td>
+              <td><strong>Fanboy's Annoyance</strong></td>
+              <td><a href="filters/fanboy-annoyance.txt" class="source-mirror-link mono-cell" target="_blank">filters/fanboy-annoyance.txt</a></td>
+              <td class="rule-count">56,071</td>
+              <td><a href="https://secure.fanboy.co.nz/fanboy-annoyance.txt" class="source-upstream-link" target="_blank" rel="noopener">secure.fanboy.co.nz/fanboy-annoyance.txt</a></td>
             </tr>
             <tr>
               <td>09</td>
-              <td class="source-name">AdGuard Annoyances</td>
-              <td><a href="/filters/adguard-annoyances.txt" target="_blank" class="source-file">adguard-annoyances.txt</a></td>
-              <td><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt" target="_blank" rel="noopener" class="source-link">AdguardTeam ↗</a></td>
+              <td><strong>Fanboy's Cookie Monster</strong></td>
+              <td><a href="filters/fanboy-cookiemonster.txt" class="source-mirror-link mono-cell" target="_blank">filters/fanboy-cookiemonster.txt</a></td>
+              <td class="rule-count">25,974</td>
+              <td><a href="https://secure.fanboy.co.nz/fanboy-cookiemonster.txt" class="source-upstream-link" target="_blank" rel="noopener">secure.fanboy.co.nz/fanboy-cookiemonster.txt</a></td>
             </tr>
             <tr>
               <td>10</td>
-              <td class="source-name">AdGuard Mobile ADS</td>
-              <td><a href="/filters/adguard-mobile-ads.txt" target="_blank" class="source-file">adguard-mobile-ads.txt</a></td>
-              <td><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt" target="_blank" rel="noopener" class="source-link">AdguardTeam ↗</a></td>
+              <td><strong>Fanboy's Social</strong></td>
+              <td><a href="filters/fanboy-social.txt" class="source-mirror-link mono-cell" target="_blank">filters/fanboy-social.txt</a></td>
+              <td class="rule-count">14,070</td>
+              <td><a href="https://easylist.to/easylist/fanboy-social.txt" class="source-upstream-link" target="_blank" rel="noopener">easylist.to/easylist/fanboy-social.txt</a></td>
             </tr>
             <tr>
               <td>11</td>
-              <td class="source-name">ABPindo</td>
-              <td><a href="/filters/abpindo.txt" target="_blank" class="source-file">abpindo.txt</a></td>
-              <td><a href="https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt" target="_blank" rel="noopener" class="source-link">ABPindo ↗</a></td>
+              <td><strong>OISD Big</strong></td>
+              <td><a href="filters/oisd-big.txt" class="source-mirror-link mono-cell" target="_blank">filters/oisd-big.txt</a></td>
+              <td class="rule-count">247,068</td>
+              <td><a href="https://big.oisd.nl" class="source-upstream-link" target="_blank" rel="noopener">big.oisd.nl</a></td>
             </tr>
             <tr>
               <td>12</td>
-              <td class="source-name">OISD Big</td>
-              <td><a href="/filters/oisd-big.txt" target="_blank" class="source-file">oisd-big.txt</a></td>
-              <td><a href="https://big.oisd.nl/domainswild" target="_blank" rel="noopener" class="source-link">oisd.nl ↗</a></td>
+              <td><strong>Peter Lowe's Ad &amp; Tracking List</strong></td>
+              <td><a href="filters/peter-lowes-list.txt" class="source-mirror-link mono-cell" target="_blank">filters/peter-lowes-list.txt</a></td>
+              <td class="rule-count">3,577</td>
+              <td><a href="https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&amp;showintro=0&amp;mimetype=plaintext" class="source-upstream-link" target="_blank" rel="noopener">pgl.yoyo.org/.../serverlist.php</a></td>
             </tr>
             <tr>
               <td>13</td>
-              <td class="source-name">HaGeZi's Pro</td>
-              <td><a href="/filters/hagezi-pro.txt" target="_blank" class="source-file">hagezi-pro.txt</a></td>
-              <td><a href="https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt" target="_blank" rel="noopener" class="source-link">hagezi ↗</a></td>
+              <td><strong>1Hosts Lite</strong></td>
+              <td><a href="filters/1hosts-lite.txt" class="source-mirror-link mono-cell" target="_blank">filters/1hosts-lite.txt</a></td>
+              <td class="rule-count">102,275</td>
+              <td><a href="https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/adblock.txt" class="source-upstream-link" target="_blank" rel="noopener">github.com/badmojr/1Hosts (Lite)</a></td>
             </tr>
             <tr>
               <td>14</td>
-              <td class="source-name">URLhaus Malicious URL Blocklist</td>
-              <td><a href="/filters/urlhaus-malicious.txt" target="_blank" class="source-file">urlhaus-malicious.txt</a></td>
-              <td><a href="https://malware-filter.gitlab.io/malware-filter/urlhaus-filter.txt" target="_blank" rel="noopener" class="source-link">malware-filter ↗</a></td>
+              <td><strong>ABPindo</strong></td>
+              <td><a href="filters/abpindo.txt" class="source-mirror-link mono-cell" target="_blank">filters/abpindo.txt</a></td>
+              <td class="rule-count">10,290</td>
+              <td><a href="https://raw.githubusercontent.com/ABPindo/indonesian-adblock-rules/master/subscriptions/abpindo.txt" class="source-upstream-link" target="_blank" rel="noopener">github.com/ABPindo/indonesian-adblock-rules</a></td>
             </tr>
             <tr>
               <td>15</td>
-              <td class="source-name">1Hosts (Lite)</td>
-              <td><a href="/filters/1hosts-lite.txt" target="_blank" class="source-file">1hosts-lite.txt</a></td>
-              <td><a href="https://badmojr.github.io/1Hosts/Lite/adblock.txt" target="_blank" rel="noopener" class="source-link">1Hosts ↗</a></td>
+              <td><strong>Steven Black Hosts</strong></td>
+              <td><a href="filters/steven-blacks-hosts.txt" class="source-mirror-link mono-cell" target="_blank">filters/steven-blacks-hosts.txt</a></td>
+              <td class="rule-count">3,269</td>
+              <td><a href="https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts" class="source-upstream-link" target="_blank" rel="noopener">github.com/StevenBlack/hosts</a></td>
             </tr>
             <tr>
               <td>16</td>
-              <td class="source-name">Peter Lowe's List</td>
-              <td><a href="/filters/peter-lowes-list.txt" target="_blank" class="source-file">peter-lowes-list.txt</a></td>
-              <td><a href="https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext" target="_blank" rel="noopener" class="source-link">pgl.yoyo.org ↗</a></td>
+              <td><strong>ShadowWhisperer Ads</strong></td>
+              <td><a href="filters/shadowwhisperer-ads.txt" class="source-mirror-link mono-cell" target="_blank">filters/shadowwhisperer-ads.txt</a></td>
+              <td class="rule-count">27,789</td>
+              <td><a href="https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads" class="source-upstream-link" target="_blank" rel="noopener">github.com/ShadowWhisperer/BlockLists (Ads)</a></td>
             </tr>
             <tr>
               <td>17</td>
-              <td class="source-name">ShadowWhisperer - ADS</td>
-              <td><a href="/filters/shadowwhisperer-ads.txt" target="_blank" class="source-file">shadowwhisperer-ads.txt</a></td>
-              <td><a href="https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads" target="_blank" rel="noopener" class="source-link">ShadowWhisperer ↗</a></td>
+              <td><strong>URLhaus Malicious URLs</strong></td>
+              <td><a href="filters/urlhaus-malicious.txt" class="source-mirror-link mono-cell" target="_blank">filters/urlhaus-malicious.txt</a></td>
+              <td class="rule-count">25,937</td>
+              <td><a href="https://urlhaus.abuse.ch/downloads/adblockplus/" class="source-upstream-link" target="_blank" rel="noopener">urlhaus.abuse.ch/downloads/adblockplus/</a></td>
             </tr>
             <tr>
               <td>18</td>
-              <td class="source-name">Steven Black's Hosts</td>
-              <td><a href="/filters/steven-blacks-hosts.txt" target="_blank" class="source-file">steven-blacks-hosts.txt</a></td>
-              <td><a href="https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts" target="_blank" rel="noopener" class="source-link">StevenBlack ↗</a></td>
+              <td><strong>HaGeZi Pro DNS Blocklist</strong></td>
+              <td><a href="filters/hagezi-pro.txt" class="source-mirror-link mono-cell" target="_blank">filters/hagezi-pro.txt</a></td>
+              <td class="rule-count">180,065</td>
+              <td><a href="https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt" class="source-upstream-link" target="_blank" rel="noopener">github.com/hagezi/dns-blocklists (Pro)</a></td>
             </tr>
           </tbody>
         </table>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Architecture Section -->
-    <section id="architecture">
-      <h2 class="section-title">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        Pipeline Architecture
-      </h2>
-      <p class="section-subtitle">Deterministic 4-stage pipeline built entirely on POSIX shell and coreutils.</p>
-
-      <div class="pipeline-grid">
-        <div class="pipeline-card">
-          <div class="pipeline-step">STAGE 01</div>
-          <div class="pipeline-title">Staged Parallel Fetch</div>
-          <div class="pipeline-text">Downloads 18 upstream lists into isolation buffers (<code>.tmp</code>). Validates HTTP 200 and non-empty payload before atomic swap. Swallows no child exit codes.</div>
-        </div>
-        <div class="pipeline-card">
-          <div class="pipeline-step">STAGE 02</div>
-          <div class="pipeline-title">Streaming Deduplication</div>
-          <div class="pipeline-text">Single-pass <code>awk</code> strips comment headers and carriage returns, piping directly into <code>LC_ALL=C sort -u</code>. Processes 1.2M+ rules in &lt;3s.</div>
-        </div>
-        <div class="pipeline-card">
-          <div class="pipeline-step">STAGE 03</div>
-          <div class="pipeline-title">Telemetry & Marker Injection</div>
-          <div class="pipeline-text">Parses build metrics and injects updated routing tables directly into protected HTML comment blocks without clobbering documentation.</div>
-        </div>
-        <div class="pipeline-card">
-          <div class="pipeline-step">STAGE 04</div>
-          <div class="pipeline-title">Anycast CDN Delivery</div>
-          <div class="pipeline-text">Artefacts deployed to <code>hosts.domi.my.id</code> edge GitHub Pages and globally mirrored across jsDelivr and secondary reverse proxies.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Client Setup Guide -->
-    <section id="setup" class="setup-box">
-      <h2 class="section-title">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-        Client Setup Guide
-      </h2>
-      <p class="section-subtitle">How to configure AIO Filter List in your preferred client.</p>
-
-      <div class="tab-bar">
-        <button class="tab-btn active" onclick="switchTab('tab-ublock', this)">uBlock Origin</button>
-        <button class="tab-btn" onclick="switchTab('tab-adguard', this)">AdGuard Home</button>
-        <button class="tab-btn" onclick="switchTab('tab-pihole', this)">Pi-hole</button>
-        <button class="tab-btn" onclick="switchTab('tab-brave', this)">Brave Browser</button>
+  <!-- Pipeline Architecture -->
+  <section class="content-section" id="pipeline">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Pipeline Architecture</h2>
+        <p class="section-subtitle">Deterministic aggregation lifecycle executed daily via GitHub Actions.</p>
       </div>
 
-      <div id="tab-ublock" class="tab-pane active">
-        <ol>
-          <li>Open <strong>uBlock Origin Dashboard</strong> (gear icon).</li>
-          <li>Navigate to the <strong>Filter lists</strong> tab.</li>
-          <li>Scroll to the bottom and expand <strong>Import...</strong>.</li>
-          <li>Paste <span class="code-inline">https://hosts.domi.my.id/AIO_Filter_List.txt</span> into the text box.</li>
-          <li>Click <strong>Apply changes</strong> at the top.</li>
-        </ol>
+      <div class="pipeline-ascii-card">
++---------------------------------------------------------------------------------------------+
+|                                  AIO-FilterList Pipeline                                    |
++---------------------------------------------------------------------------------------------+
+|                                                                                             |
+|  [18 Upstream Sources]  (AdGuard, EasyList, OISD, HaGeZi, Fanboy, 1Hosts, URLhaus, etc.)    |
+|            |                                                                                |
+|            v                                                                                |
+|  [Stage 1: Fetch] ----> curl parallel download to filters/.&lt;file&gt;.tmp                        |
+|                         HTTP 200 &amp; non-empty size verification before atomic move           |
+|            |                                                                                |
+|            v                                                                                |
+|  [Stage 2: Merge] ----> single-pass awk stream (CRLF strip, discard comments ^[!#])         |
+|                         piped directly into LC_ALL=C sort -u (deduplication)                |
+|            |                                                                                |
+|            v                                                                                |
+|  [Stage 3: Artifact] -> prepend official Adblock header with dynamic timestamp &amp; counts    |
+|                         atomic swap into AIO_Filter_List.txt (34 MB, 1.03M+ rules)          |
+|            |                                                                                |
+|            v                                                                                |
+|  [Stage 4: Telemetry]   awk HTML comment marker injection into README.md                    |
+|                         write metadata telemetry to build.log                               |
+|            |                                                                                |
+|            v                                                                                |
+|  [Stage 5: Edge Deploy] published to GitHub Pages (hosts.domi.my.id) &amp; CDN mirrors          |
+|                                                                                             |
++---------------------------------------------------------------------------------------------+
       </div>
+    </div>
+  </section>
 
-      <div id="tab-adguard" class="tab-pane">
-        <ol>
-          <li>Navigate to your <strong>AdGuard Home Dashboard</strong>.</li>
-          <li>Go to <strong>Filters</strong> &rarr; <strong>DNS blocklists</strong>.</li>
-          <li>Click <strong>Add blocklist</strong> &rarr; <strong>Add a custom list</strong>.</li>
-          <li>Name the list: <span class="code-inline">AIO-FilterList</span>.</li>
-          <li>Paste URL: <span class="code-inline">https://hosts.domi.my.id/AIO_Filter_List.txt</span>.</li>
-          <li>Click <strong>Save</strong> and wait for the download and compile step to complete.</li>
-        </ol>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap; gap: 16px;">
+      <div class="footer-left">
+        <div>Maintained by <strong>Domi Adiwijaya</strong> (<a href="https://github.com/Elcapitanoe" target="_blank" rel="noopener">@Elcapitanoe</a>)</div>
+        <div>Aggregated rules remain copyright of their respective upstream list authors.</div>
       </div>
-
-      <div id="tab-pihole" class="tab-pane">
-        <ol>
-          <li>Open <strong>Pi-hole Admin Console</strong>.</li>
-          <li>Go to <strong>Group Management</strong> &rarr; <strong>Adlists</strong>.</li>
-          <li>Paste <span class="code-inline">https://hosts.domi.my.id/AIO_Filter_List.txt</span> in the Address field.</li>
-          <li>Add a comment (e.g., <em>AIO Aggregated Mirror</em>) and click <strong>Add</strong>.</li>
-          <li>Run <strong>Gravity</strong> update under <em>Tools &rarr; Update Gravity</em>.</li>
-        </ol>
-      </div>
-
-      <div id="tab-brave" class="tab-pane">
-        <ol>
-          <li>Open Brave and type <span class="code-inline">brave://settings/shields/filters</span> in the address bar.</li>
-          <li>Scroll to the bottom to <strong>Custom Filters</strong>.</li>
-          <li>Click <strong>Add custom filter list</strong>.</li>
-          <li>Paste <span class="code-inline">https://hosts.domi.my.id/AIO_Filter_List.txt</span>.</li>
-          <li>Click <strong>Submit</strong> and verify the filter updates.</li>
-        </ol>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container footer-wrap">
-      <div>
-        <p>Maintained by <strong>Domi Adiwijaya</strong> (<a href="https://github.com/Elcapitanoe" target="_blank" rel="noopener" style="color:inherit;">@Elcapitanoe</a>).</p>
-        <p style="margin-top: 4px; font-size: 0.8rem;">All filter rules belong to their respective community authors. Aggregation & mirroring automated via GitHub Actions.</p>
-      </div>
-
       <ul class="footer-links">
         <li><a href="https://github.com/Elcapitanoe/AIO-FilterList" target="_blank" rel="noopener">GitHub Repository</a></li>
-        <li><a href="/AIO_Filter_List.txt">Raw Filter</a></li>
-        <li><a href="/build.log">Telemetry</a></li>
-        <li><a href="https://github.com/Elcapitanoe/AIO-FilterList/blob/main/LICENSE" target="_blank" rel="noopener">License</a></li>
+        <li><a href="https://github.com/Elcapitanoe/AIO-FilterList/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a></li>
+        <li><a href="build.log" target="_blank">build.log</a></li>
       </ul>
     </div>
   </footer>
 
   <script>
-    function copyToClipboard(elementId, button) {
+    function copyEndpoint(elementId, btn) {
       const urlText = document.getElementById(elementId).innerText.trim();
-      navigator.clipboard.writeText(urlText).then(() => {
-        const originalText = button.innerHTML;
-        button.innerHTML = `
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Copied!</span>
-        `;
-        button.classList.add('copied');
-        setTimeout(() => {
-          button.innerHTML = originalText;
-          button.classList.remove('copied');
+      navigator.clipboard.writeText(urlText).then(function() {
+        const originalText = btn.innerText;
+        btn.innerText = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.innerText = originalText;
+          btn.classList.remove('copied');
         }, 2000);
-      }).catch(err => {
+      }).catch(function(err) {
         console.error('Failed to copy text: ', err);
       });
     }
 
-    function switchTab(tabId, button) {
-      document.querySelectorAll('.tab-pane').forEach(el => el.classList.remove('active'));
-      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-      document.getElementById(tabId).classList.add('active');
-      button.classList.add('active');
+    function switchTab(tabId, btn) {
+      document.querySelectorAll('.tab-btn').forEach(function(b) {
+        b.classList.remove('active');
+      });
+      document.querySelectorAll('.tab-pane').forEach(function(p) {
+        p.classList.remove('active');
+      });
+      btn.classList.add('active');
+      const pane = document.getElementById(tabId);
+      if (pane) {
+        pane.classList.add('active');
+      }
     }
 
     function filterTable() {
-      const query = document.getElementById('sourceSearch').value.toLowerCase();
-      const rows = document.querySelectorAll('#sourcesTable tbody tr');
-      rows.forEach(row => {
-        const text = row.innerText.toLowerCase();
-        row.style.display = text.includes(query) ? '' : 'none';
-      });
+      const input = document.getElementById('sourceSearch');
+      const filter = input.value.toLowerCase().trim();
+      const table = document.getElementById('sourcesTable');
+      const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+      let visibleCount = 0;
+
+      for (let i = 0; i < rows.length; i++) {
+        const text = rows[i].textContent.toLowerCase();
+        if (text.indexOf(filter) > -1) {
+          rows[i].style.display = '';
+          visibleCount++;
+        } else {
+          rows[i].style.display = 'none';
+        }
+      }
+
+      document.getElementById('tableCount').innerText = 'Showing ' + visibleCount + ' of ' + rows.length + ' sources';
     }
   </script>
 </body>
