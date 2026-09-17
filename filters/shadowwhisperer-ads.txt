@@ -1,8 +1,8 @@
 #
 #    File: Ads
 #    Info: Advertisements, Banners, Widgets & Push Notifications
-# Domains: 27,807
-# Updated: 9/16/2026  14:32 (2:32 PM CST)
+# Domains: 27,810
+# Updated: 9/17/2026  13:54 (1:54 PM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -1041,6 +1041,7 @@ a.brene.site
 a.brilmaver.com
 a.broim.xyz
 a.bronca.site
+abscloud.org
 abs.devicemed.dev
 absdom.com
 absinthium.in
@@ -1144,7 +1145,6 @@ a.craftbeerclub.com.ua
 a.cramb.site
 acreecreative.com
 a.creis.site
-a.crme7srv.com
 acrobatic-carry.pro
 acrobaticdesire.com
 a.cromq.xyz
@@ -1517,7 +1517,6 @@ adbuka.com
 adbull.me
 adbull.org
 adbunce.com
-adbundle.empowerlocal.co
 adbureau.de
 adbureau.net
 adbustersagency.com
@@ -3737,7 +3736,6 @@ adsemirate.com
 ads.e-m-m-o.com
 adsemo.com
 ads.emolus.com
-ads.empowerlocal.co
 ads.emprendedoresnews.com
 ads.emprosnet.gr
 adsender.us
@@ -7917,6 +7915,7 @@ ansira.com
 anson-stoner.com
 ans.oobesaas.adobe.com
 anstrex.com
+answeringfinenessshingle.com
 answermedia.com
 antaraimedia.com
 antevenio.com
@@ -8899,6 +8898,7 @@ battlekite.com
 bauernative.com
 bauertrader.com.au
 baukeri.ehrydnmdoe.com
+bauval.org
 bayengage.com
 baynetfuse.com
 bazzoola.ru
@@ -11499,6 +11499,7 @@ cruxcreativesolutions.com
 crwdcntrl.net
 crx.levivblackburn.site
 cryjun.com
+cryptechpak.com
 crypticgenius.com
 crypto-ad.com
 cryptoadvertising.net
@@ -17883,6 +17884,7 @@ mooncrustpizza.com
 moonicorn.network
 moonlitads.com
 moonlitengine.com
+moon-zoom.info
 mooreandscarry.com
 moosavic.com
 mopub.com
@@ -19945,10 +19947,12 @@ player.reklamvidi.net
 playersagency.ru
 playeven.in
 playfulriver.com
+playfunpartner.com
 playground.xyz
 playitviral.com
 playmmogames.com
 playoctopus.com
+playonrain.com
 playony.ru
 playrcart.com
 play.rooski.net
@@ -24546,7 +24550,6 @@ tagbucks.xyz
 tagcombiner.com
 tagdeliver.com
 tagdelivery.com
-tag.gammaplatform.com
 tag.gohike.com.br
 tagivi.com
 tag-manager.frontiersin.org
