@@ -100586,6 +100586,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||stats.stellar.rip^
+||dtam.thrive.today^
+||jnt.bild.de^
 ||otl.minefun.io^
 ||counter.wargamings.net^
 ||analyticssec.overwolf.com^
@@ -314795,6 +314798,9 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||oeamtc.at/*/js/cms.frontend._js.tracking/
+||spaziogames.it/6vzv/
+||batcave.biz/p/script.js
 ||analyticsindiamag.com/~api/analytics|
 ||s.omsolution.net/omStatApi/
 karofilm.ru,cinemastar.ru#%#//scriptlet('set-local-storage-item', 'device_uuid', '$remove$')
@@ -321881,6 +321887,8 @@ $cookie=bf_visit
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
 !
+! oita-press.co.jp
+||oita-press.co.jp^$cookie=guid
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241391
 ||nikkei.com^$cookie=atlasId
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241302
@@ -329432,6 +329440,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||anxiousapples.com^
 ||applocus.com^
 ||applyless.com^
+||appsecstudio.com^
 ||aquaticowl.com^
 ||archswimming.com^
 ||arclet.net^
@@ -329590,6 +329599,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||boundlessargument.com^
 ||boundlessbrake.com^
 ||boundlessveil.com^
+||bowlershut.com^
 ||boxandcover.com^
 ||brainybasin.com^
 ||branchborder.com^
@@ -329854,6 +329864,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||cuddlycake.com^
 ||cuddlylab.com^
 ||cuddlylunchroom.com^
+||cuisinevoyager.com^
 ||culturedcamera.com^
 ||culturedfeather.com^
 ||cumbersomecarpenter.com^
@@ -331059,6 +331070,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||redbasketball.com^
 ||redbricksoap.com^
 ||redexecs.com^
+||redmillgroup.com^
 ||reflectpaint.com^
 ||refundradar.com^
 ||regenergize.com^
@@ -331075,6 +331087,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||rentinfrared.com^
 ||rentpenny.com^
 ||repeatsweater.com^
+||repfineart.com^
 ||replaceroute.com^
 ||republicfarm.net^
 ||rescueothers.com^
