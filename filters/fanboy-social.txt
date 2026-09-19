@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202609181905
+! Version: 202609191852
 ! Title: Fanboy's Social Blocking List
-! Last modified: 18 Sep 2026 19:05 UTC
+! Last modified: 19 Sep 2026 18:52 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 9bd016e81a487be99dd88b5f66660aed7656af73
+! Commit: 1f0280682ca1f6f6748a70235e717b4eee8986ac
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -10134,6 +10134,7 @@ _social_footer_
 ##a[href^="https://www.pinterest.com/pin/create/link/"]
 ##a[href^="https://www.reddit.com/submit?"]
 ##a[href^="https://x.com/intent/follow?screen_name="]
+##a[href^="https://x.com/share?"]
 ##a[href^="whatsapp://send?text="]
 ##a[rel="share-on-facebook"]
 ##a[rel="share-on-twitter"]
