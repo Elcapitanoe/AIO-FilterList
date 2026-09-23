@@ -100592,6 +100592,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1) { remove: true; }
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||analytics.sportigio.com^
 ||bzr.openai.com^
 ||rlog.baifentan.com^
 ||analytics.laxamentum.tech^
@@ -314810,6 +314811,11 @@ naver.com#%#//scriptlet('trusted-json-set', 'JSON.stringify', '$.env.br_sr', '38
 !
 ! NOTE: Specific rules
 !
+||ispazio.net/wp-content/plugins/wc-site-stats/
+||tracker.telegram.hr^
+||beam.telegram.hr^
+||campaign.telegram.hr^
+app.socios.com#%#//scriptlet('set-local-storage-item', 'deviceId', '$remove$')
 ||im.np-payment-gateway.com/bff/atone/event/tracking
 ||storage.googleapis.com/*/js/comscore.js
 ||eurozpravy.cz/js/matomo-events.js
@@ -331143,6 +331149,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||reversetickets.com^
 ||reviewacousticguitar.com^
 ||revivalvoice.com^
+||rewardangels.com^
 ||rhetoricalactivity.com^
 ||rhetoricalloss.com^
 ||rhetoricalveil.com^
@@ -331529,6 +331536,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||stomachscience.com^
 ||stonepole.com^
 ||stonetumble.com^
+||stopcast.net^
 ||stopstomach.com^
 ||stormyflower.com^
 ||straightnest.com^
@@ -331702,6 +331710,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||topcrazypress.com^
 ||topicalcartel.com^
 ||topicjungle.com^
+||toplaunch.net^
 ||topsecretapp.net^
 ||topthrowbacks.com^
 ||tortoisepage.com^
@@ -331711,6 +331720,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||tracecontent.com^
 ||traderbyte.com^
 ||tradetooth.com^
+||trainingreality.com^
 ||tranquilcan.com^
 ||tranquilplume.com^
 ||tranquilveil.com^
@@ -331797,6 +331807,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||velvetquasar.com^
 ||vengefulgrass.com^
 ||venomousvessel.com^
+||venturemen.com^
 ||venusgloria.com^
 ||verbacademy.com^
 ||verdantanswer.com^
