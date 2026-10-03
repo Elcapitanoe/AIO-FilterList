@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202610022043
+! Version: 202610031918
 ! Title: Fanboy's Social Blocking List
-! Last modified: 02 Oct 2026 20:43 UTC
+! Last modified: 03 Oct 2026 19:18 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 9f19bc71ad66c6e45fe35f2fa4972ce64bd766c3
+! Commit: 0ce904c7e960686eb75c8779711a8db6ab509350
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -11301,6 +11301,7 @@ iphoneincanada.ca,teslanorth.com##.item--share
 flyercity.ca##.item_share_area
 theenergymix.com##.jeg_custom_share_wrapper
 psypost.org##.jeg_share_bottom_container
+orissapost.com##.jeg_share_button
 psypost.org,thelondoneconomic.com##.jeg_share_top_container
 news.abplive.com##.join-channels-wrap
 business2community.com##.join-tg
