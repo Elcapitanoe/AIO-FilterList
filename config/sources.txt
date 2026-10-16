@@ -5,4 +5,4 @@ hagezi-doh-vpn-proxy-bypass.txt|https://cdn.jsdelivr.net/gh/hagezi/dns-blocklist
 hagezi-anti-piracy.txt|https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/anti.piracy.txt|HaGeZi's Anti Piracy
 hagezi-gambling.txt|https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.txt|HaGeZi's Gambling
 hagezi-nsfw.txt|https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt|HaGeZi's NSFW
-shadowwhisperer-tracking.txt|https://cdn.jsdelivr.net/gh/ShadowWhisperer/BlockLists@raw/refs/heads/master/Lists/Tracking|ShadowWhisperer's Tracking
+shadowwhisperer-tracking.txt|https://cdn.jsdelivr.net/gh/ShadowWhisperer/BlockLists@latest/Lists/Tracking|ShadowWhisperer's Tracking
