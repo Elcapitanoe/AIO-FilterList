@@ -1,6 +1,8 @@
 # Temporary files and artifacts
+filters/.aio-fetch.*/
 *.tmp
 *.temp
+*.tmp.*
 temp_rules.txt
 final_rules.txt
 

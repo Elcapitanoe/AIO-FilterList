@@ -29,62 +29,34 @@ Subscribe to the consolidated `AIO_Filter_List.txt` in any compatible adblocker 
 | **Duplicates Removed** | `138,374` |
 | **Sources Synced** | `8 upstream lists` |
 | **Version Tag** | `26.10.16.0852` |
-| **Last Synchronized** | `2026-10-16 08:52:42 UTC+7` |
+| **Last Synchronized** | `2026-10-16 09:09:49 UTC+7` |
 <!-- AUTOGEN_STATS_END -->
 
 ---
 
 ## Upstream Sources & Standalone Mirrors
 
-The routing table below lists all synchronized upstream lists with direct CDN mirror links and latest synchronization timestamps:
+The routing table below lists all synchronized upstream lists with direct CDN mirror links. Timestamps come from Git history; they are shown as `unknown` when the repository is run from an archive without Git metadata.
 
 <!-- AUTOGEN_TABLE_START -->
 | Filter Name | Upstream | Main Mirror | jsDelivr CDN | Edge CDN | Last Updated |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **HaGeZi's Anti Piracy** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/anti.piracy.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-anti-piracy.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-anti-piracy.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-anti-piracy.txt) | `2026-10-16 01:44:59` |
-| **HaGeZi's DoH/VPN/Tor/Proxy Bypass** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-doh-vpn-proxy-bypass.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-doh-vpn-proxy-bypass.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-doh-vpn-proxy-bypass.txt) | `2026-10-16 01:44:59` |
-| **HaGeZi's Gambling** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-gambling.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-gambling.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-gambling.txt) | `2026-10-16 01:44:59` |
-| **HaGeZi's Multi Pro** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-pro.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-pro.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-pro.txt) | `2026-10-16 01:44:59` |
-| **HaGeZi's NSFW** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-nsfw.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-nsfw.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-nsfw.txt) | `2026-10-16 01:44:59` |
-| **HaGeZi's Pop-Up Ads** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-popupads.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-popupads.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-popupads.txt) | `2026-10-16 01:44:59` |
-| **HaGeZi's Threat Intelligence Feeds** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-tif.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-tif.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-tif.txt) | `2026-10-16 01:44:59` |
-| **ShadowWhisperer's Tracking** | [Source](https://cdn.jsdelivr.net/gh/ShadowWhisperer/BlockLists@latest/Lists/Tracking) | [hosts.domi](https://hosts.domi.my.id/filters/shadowwhisperer-tracking.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/shadowwhisperer-tracking.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/shadowwhisperer-tracking.txt) | `2026-10-16 01:44:59` |
+| **HaGeZi's Anti Piracy** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/anti.piracy.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-anti-piracy.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-anti-piracy.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-anti-piracy.txt) | `unknown` |
+| **HaGeZi's DoH/VPN/Tor/Proxy Bypass** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-doh-vpn-proxy-bypass.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-doh-vpn-proxy-bypass.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-doh-vpn-proxy-bypass.txt) | `unknown` |
+| **HaGeZi's Gambling** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-gambling.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-gambling.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-gambling.txt) | `unknown` |
+| **HaGeZi's Multi Pro** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-pro.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-pro.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-pro.txt) | `unknown` |
+| **HaGeZi's NSFW** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-nsfw.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-nsfw.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-nsfw.txt) | `unknown` |
+| **HaGeZi's Pop-Up Ads** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-popupads.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-popupads.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-popupads.txt) | `unknown` |
+| **HaGeZi's Threat Intelligence Feeds** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-tif.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-tif.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-tif.txt) | `unknown` |
+| **ShadowWhisperer's Tracking** | [Source](https://cdn.jsdelivr.net/gh/ShadowWhisperer/BlockLists@latest/Lists/Tracking) | [hosts.domi](https://hosts.domi.my.id/filters/shadowwhisperer-tracking.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/shadowwhisperer-tracking.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/shadowwhisperer-tracking.txt) | `unknown` |
 <!-- AUTOGEN_TABLE_END -->
 
 ---
 
 ## Pipeline Architecture
 
-```
-                                  [ config/sources.txt ]
-                                             |
-                                             v
-[ Upstream Providers ]  -----( parallel fetch with staging )----->  [ filters/*.txt ]
-                                                                           |
-                                                                           v
-                                                            [ scripts/merge_filters.sh ]
-                                                            - Strip comments & headers
-                                                            - Normalize CRLF
-                                                            - Deduplicate (sort -u)
-                                                                           |
-                                             +-----------------------------+-----------------------------+
-                                             |                                                           |
-                                             v                                                           v
-                                  [ AIO_Filter_List.txt ]                                         [ build.log ]
-                                             |                                                           |
-                                             +-----------------------------+-----------------------------+
-                                                                           |
-                                                                           v
-                                                             [ scripts/update_readme.sh ]
-                                                             - Inject build metrics
-                                                             - Update mirror routing table
-                                                                           |
-                                                                           v
-                                                                     [ README.md ]
-```
-
-1. **Ingestion & Mirroring (`scripts/fetch_filters.sh`)**: Concurrently fetches upstream sources using staged temporary files, verifying HTTP status and payload integrity before replacing local mirrors in `filters/`.
-2. **Sanitization & Deduplication (`scripts/merge_filters.sh`)**: Streams filter files through a single `awk` pass to remove comments (`!`, `#`), empty lines, and section markers, then deduplicates via `LC_ALL=C sort -u`. Outputs the production artifact `AIO_Filter_List.txt` with Adblock metadata and generates `build.log`.
+1. **Ingestion & Mirroring (`scripts/fetch_filters.sh`)**: Fetches upstream sources with bounded concurrency into a staging directory. It rejects empty or obviously invalid responses, applies new mirrors only after every configured download succeeds, and avoids replacing files whose contents are unchanged. Stale mirrors are removed only after a successful full sync.
+2. **Sanitization & Deduplication (`scripts/merge_filters.sh`)**: Processes only sources declared in `config/sources.txt`, normalizes surrounding whitespace and line endings, removes comments and section markers, and deduplicates via `LC_ALL=C sort -u`. An input signature and output checksum allow no-op runs to skip the expensive merge and avoid rewriting the large published list when only upstream metadata changes.
 3. **Documentation Injection (`scripts/update_readme.sh`)**: Replaces dynamic blocks in `README.md` between HTML marker comments (`<!-- AUTOGEN_* -->`), keeping documentation clean without overwriting human-maintained content.
 4. **Validation Suite (`scripts/validate.sh`)**: Verifies shell syntax, configuration schema, mirror presence, and compiled artifact integrity.
 
@@ -96,7 +68,7 @@ The routing table below lists all synchronized upstream lists with direct CDN mi
 
 - Unix-like environment (Linux, macOS, or WSL)
 - Bash `4.0+`
-- GNU Coreutils (`awk`, `sort`, `wc`, `xargs`)
+- Core utilities (`awk`, `sort`, `wc`, `xargs`) and either `sha256sum` or `shasum`
 - `curl`
 - `git`
 - `make` (optional, for convenience)
@@ -113,9 +85,12 @@ cd AIO-FilterList
 Run pipeline targets:
 
 ```bash
-# Validate scripts, configuration, and artifacts
+# Validate scripts, configuration, and project metadata
 make validate
-# or: ./scripts/validate.sh --check-artifacts
+# Run offline regression tests
+make test
+# Validate generated artifacts after a build
+./scripts/validate.sh --check-artifacts
 
 # Fetch upstream filter lists into filters/
 make fetch

@@ -1,34 +1,40 @@
-# ==============================================================================
-# AIO-FilterList - Development & Build Automation Makefile
-# ==============================================================================
+# AIO-FilterList build automation.
 SHELL := /usr/bin/env bash
-.PHONY: help all build fetch merge readme validate clean
-
 .DEFAULT_GOAL := help
 
-help: ## Display available commands
-	@echo "AIO-FilterList Build Automation"
-	@echo "Usage: make [target]"
-	@echo ""
-	@echo "Targets:"
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-12s\033[0m %s\n", $$1, $$2}'
+.PHONY: help fetch merge readme validate test build all clean
 
-fetch: ## Concurrently fetch all upstream filter lists into filters/
+help: ## Display available commands
+	@printf 'AIO-FilterList Build Automation\n\nUsage: make [target]\n\nTargets:\n'
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  %-12s %s\n", $$1, $$2}'
+
+fetch: ## Fetch configured upstream filter lists
 	@./scripts/fetch_filters.sh
 
-merge: ## Sanitize, deduplicate, and compile rules into AIO_Filter_List.txt
+merge: ## Compile configured lists into AIO_Filter_List.txt
 	@./scripts/merge_filters.sh
 
-readme: ## Update dynamic telemetry and routing table in README.md
+readme: ## Update README telemetry and mirror table
 	@./scripts/update_readme.sh
 
-validate: ## Validate shell scripts, configuration syntax, and artifact integrity
+validate: ## Validate scripts, source configuration, and project metadata
+	@./scripts/validate.sh
+
+test: ## Run offline pipeline regression tests
+	@./tests/test_pipeline.sh
+
+build: merge ## Compile, update documentation, and validate artifacts
+	@./scripts/update_readme.sh
 	@./scripts/validate.sh --check-artifacts
 
-build: merge readme validate ## Compile filter list, update README, and validate artifacts
+all: ## Run the complete fetch-to-validation pipeline sequentially
+	@./scripts/validate.sh
+	@./scripts/fetch_filters.sh
+	@./scripts/merge_filters.sh
+	@./scripts/update_readme.sh
+	@./scripts/validate.sh --check-artifacts
 
-all: fetch merge readme validate ## Execute full pipeline from fetch to validation
-
-clean: ## Remove temporary build files and download artifacts
-	@rm -f *.tmp filters/.*.tmp filters/*.tmp temp_rules.txt final_rules.txt
-	@echo "Cleanup complete."
+clean: ## Remove temporary build and download files
+	@for dir in filters/.aio-fetch.*; do if [[ -d "$$dir" ]]; then rm -rf -- "$$dir"; fi; done
+	@rm -f -- *.tmp *.tmp.* filters/.*.tmp filters/.*.tmp.* filters/*.tmp filters/*.tmp.* temp_rules.txt final_rules.txt
+	@echo 'Cleanup complete.'
