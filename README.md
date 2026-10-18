@@ -24,12 +24,12 @@ Subscribe to the consolidated `AIO_Filter_List.txt` in any compatible adblocker 
 <!-- AUTOGEN_STATS_START -->
 | Metric | Value |
 | :--- | :--- |
-| **Active Filter Rules** | `2,873,562` |
-| **Raw Rules Processed** | `3,167,540` |
-| **Duplicates Removed** | `293,978` |
+| **Active Filter Rules** | `2,931,394` |
+| **Raw Rules Processed** | `3,341,882` |
+| **Duplicates Removed** | `410,488` |
 | **Sources Synced** | `8 upstream lists` |
-| **Version Tag** | `26.10.18.0156` |
-| **Last Synchronized** | `2026-10-18 01:56:21 UTC+7` |
+| **Version Tag** | `26.10.19.0203` |
+| **Last Synchronized** | `2026-10-19 02:03:44 UTC+7` |
 <!-- AUTOGEN_STATS_END -->
 
 ---
@@ -41,14 +41,14 @@ The routing table below lists all synchronized upstream lists with direct CDN mi
 <!-- AUTOGEN_TABLE_START -->
 | Filter Name | Upstream | Main Mirror | jsDelivr CDN | Edge CDN | Last Updated |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **HaGeZi's Anti Piracy** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/anti.piracy.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-anti-piracy.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-anti-piracy.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-anti-piracy.txt) | `2026-10-18 01:56:21` |
-| **HaGeZi's DoH/VPN/Tor/Proxy Bypass** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-doh-vpn-proxy-bypass.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-doh-vpn-proxy-bypass.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-doh-vpn-proxy-bypass.txt) | `2026-10-18 01:56:21` |
-| **HaGeZi's Gambling** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-gambling.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-gambling.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-gambling.txt) | `2026-10-18 01:56:22` |
-| **HaGeZi's Multi Pro** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-pro.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-pro.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-pro.txt) | `2026-10-18 01:56:22` |
-| **HaGeZi's NSFW** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-nsfw.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-nsfw.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-nsfw.txt) | `2026-10-18 01:56:22` |
-| **HaGeZi's Pop-Up Ads** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-popupads.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-popupads.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-popupads.txt) | `2026-10-18 01:56:22` |
-| **HaGeZi's Threat Intelligence Feeds** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-tif.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-tif.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-tif.txt) | `2026-10-18 01:56:22` |
-| **ShadowWhisperer's Tracking** | [Source](https://cdn.jsdelivr.net/gh/ShadowWhisperer/BlockLists@latest/Lists/Tracking) | [hosts.domi](https://hosts.domi.my.id/filters/shadowwhisperer-tracking.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/shadowwhisperer-tracking.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/shadowwhisperer-tracking.txt) | `2026-10-18 01:56:22` |
+| **HaGeZi's Anti Piracy** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/anti.piracy.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-anti-piracy.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-anti-piracy.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-anti-piracy.txt) | `2026-10-19 02:03:44` |
+| **HaGeZi's DoH/VPN/Tor/Proxy Bypass** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-doh-vpn-proxy-bypass.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-doh-vpn-proxy-bypass.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-doh-vpn-proxy-bypass.txt) | `2026-10-19 02:03:44` |
+| **HaGeZi's Gambling** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-gambling.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-gambling.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-gambling.txt) | `2026-10-19 02:03:44` |
+| **HaGeZi's Multi Pro** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-pro.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-pro.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-pro.txt) | `2026-10-19 02:03:44` |
+| **HaGeZi's NSFW** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-nsfw.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-nsfw.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-nsfw.txt) | `2026-10-19 02:03:44` |
+| **HaGeZi's Pop-Up Ads** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-popupads.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-popupads.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-popupads.txt) | `2026-10-19 02:03:44` |
+| **HaGeZi's Threat Intelligence Feeds** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-tif.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-tif.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-tif.txt) | `2026-10-19 02:03:44` |
+| **ShadowWhisperer's Tracking** | [Source](https://cdn.jsdelivr.net/gh/ShadowWhisperer/BlockLists@latest/Lists/Tracking) | [hosts.domi](https://hosts.domi.my.id/filters/shadowwhisperer-tracking.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/shadowwhisperer-tracking.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/shadowwhisperer-tracking.txt) | `2026-10-19 02:03:44` |
 <!-- AUTOGEN_TABLE_END -->
 
 ---
