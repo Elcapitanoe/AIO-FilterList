@@ -7,10 +7,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Disclaimer: https://github.com/hagezi/dns-blocklists/blob/main/README.md#disclaimer
 ! Expires: 8 hours
-! Last modified: 24 Oct 2026 09:46 UTC
-! Version: 2026.1024.0946.50
+! Last modified: 26 Oct 2026 16:46 UTC
+! Version: 2026.1026.1646.42
 ! Syntax: AdBlock
-! Number of entries: 16285
+! Number of entries: 16260
 !
 ||ss.0001.xyz^
 ||ns.00dani.me^
@@ -1905,23 +1905,23 @@
 ||shsh.anotelinopalk.co.uk^
 ||yek.anotelinopalk.co.uk^
 ||333.antony-gordon.co.uk^
-||noon.begir.co.uk^
-||panir.begir.co.uk^
 ||adguard.cell.co.id^
 ||dns.chaosen3.co.uk^
 ||silver.ciaude.co.uk^
 ||good.cipservice.co.uk^
 ||great.cipservice.co.uk^
+||ir.closcloud.co.uk^
 ||dns-01.computerservices.co.nz^
 ||dns-02.computerservices.co.nz^
 ||adg.datamatter.co.za^
 ||pihole.datamatter.co.za^
-||tazenafas.dingi3.co.uk^
 ||adguard.discounthost.co.uk^
+||im.dumaniltd.co.uk^
 ||dns.eliv.co.kr^
 ||dashi.estabonita.co.uk^
 ||haji.estabonita.co.uk^
 ||team.fast--pro.co.uk^
+||ir.forzajuve.co.uk^
 ||gn-z11.franscois.co.za^
 ||dns.gayanalysing.co.uk^
 ||dns.gi.co.id^
@@ -1941,11 +1941,14 @@
 ||soheil.goooalir.co.uk^
 ||tassian.goooalir.co.uk^
 ||vasle.goooalir.co.uk^
+||web3.graduat.co.uk^
+||ir.groundfloorsolutions.co.uk^
 ||focus.utopia.gzone.co.kr^
-||dns.hashemlabs.co.uk^
-||panel.hook--tehran.co.uk^
+||ccc.horizon555.co.uk^
+||one.horizon555.co.uk^
 ||ag.hostme.co.il^
 ||ixl.math.hsf.co.za^
+||d1.jadroom.co.uk^
 ||dns.kloiber.co.at^
 ||dns2.kloiber.co.at^
 ||dns-one.lins.co.tt^
@@ -1953,44 +1956,29 @@
 ||guard.lumusimc.co.uk^
 ||aseman.lunavane.co.uk^
 ||craft.malavanann.co.uk^
-||jadide.mamadali.co.uk^
-||vasalshim.mamadgoli.co.uk^
 ||api.mangoseason5.co.uk^
 ||web.mangoseason7.co.uk^
 ||ir.mediaad.co.uk^
 ||org.mediaad.co.uk^
-||bastani.mikhay.co.uk^
-||nooshabe.mikhay.co.uk^
-||pashmak.mikhay.co.uk^
-||pofak.mikhay.co.uk^
-||new7.mizanmizanesgh.co.uk^
+||puot.mozitop.co.uk^
+||ving.mozitop.co.uk^
 ||new.nakoskoskesh.co.uk^
-||dokhtar.nanaz.co.uk^
-||hapoo.nanaz.co.uk^
-||pishi.nanaz.co.uk^
 ||dns.neilzone.co.uk^
 ||ns02.nerdytechgeeks.co.za^
-||e.networkmodeai.co.uk^
-||1.hide.newflamingodomain.co.uk^
-||21.hide.newflamingodomain.co.uk^
-||31.hide.newflamingodomain.co.uk^
-||41.hide.newflamingodomain.co.uk^
 ||home.norvrandt.co.uk^
 ||arthi.rajmohan.nowhearthis.co.uk^
 ||apple11.nowhearthis.co.uk^
 ||opsecmastur.nowhearthis.co.uk^
 ||dns.nzxti5.co.uk^
 ||dns.oliviertv.co.za^
-||boro.poolaki.co.uk^
-||refiq.poolaki.co.uk^
 ||lightspeed.qr-code.co.za^
 ||mathnotes.qr-code.co.za^
 ||dns.rawalker.co.nz^
 ||speed.runserver.co.uk^
 ||darya.saheledarya.co.uk^
-||reyhoon.shambelile.co.uk^
 ||dns.skuy.co.id^
-||s3.soft98.co.uk^
+||dns.speed-benz.co.uk^
+||premium.speed-benz.co.uk^
 ||dns.spil.co.id^
 ||dns.srinivasrao.co.in^
 ||star.talebi.co.uk^
@@ -2006,13 +1994,14 @@
 ||doh.vpsdns.co.za^
 ||dns.walshnet.co.uk^
 ||agh.workfordemo.co.in^
-||qadim.zhigool.co.uk^
+||1y23.e7.yayayajd.co.uk^
+||f123.e7.yayayajd.co.uk^
 ||10bestvpn.co.uk^
 ||accessvpn.co.uk^
-||ahvaz.co.uk^
 ||akashiro.co.id^
 ||antidnsvpn.co.cc^
 ||binhexsolutions.co.uk^
+||bo0ji.co.uk^
 ||burgerip.co.uk^
 ||buystoryapp.co.uk^
 ||cipherdns.co.za^
@@ -2042,11 +2031,12 @@
 ||readingforfun.co.com^
 ||rfastvpn.co.cc^
 ||rmdns26.co.uk^
+||rudmoain.co.uk^
 ||safesurfer.co.nz^
 ||sbdns.co.in^
 ||secvpnproxy.co.cc^
-||severjadid.co.uk^
 ||sols.co.in^
+||suodbo.co.uk^
 ||surfshark.co.uk^
 ||surfshark.co.za^
 ||surfvpn.co.cc^
@@ -2617,7 +2607,6 @@
 ||dualpower.duia.eu^
 ||georgetown.duia.us^
 ||dns.dumk.in^
-||adguard.duongphuckhanh.dev^
 ||atlantic.dyn1.de^
 ||dns.dyn1.de^
 ||akhilkalwakurthy.dyndns.org^
@@ -3193,6 +3182,7 @@
 ||croxy.ghgi.site^
 ||www-croxy.ghgi.site^
 ||adguard.ghkyzz.us^
+||vahshianeh.ghodratitarin.info^
 ||dns.ghost.pm^
 ||adguard.maison.gifino.fr^
 ||evol.mrco.giize.com^
@@ -3518,9 +3508,6 @@
 ||adguard.shuting.idv.tw^
 ||gitea.sukon.idv.tw^
 ||cyliu.idv.tw^
-||ariobarzanes.ir.igakwvwa.info^
-||artmis.ir.igakwvwa.info^
-||bozorgmehr.ir.igakwvwa.info^
 ||galaxyiscool.ignorelist.com^
 ||learningscience.ignorelist.com^
 ||samuel-and-toes.ignorelist.com^
@@ -3769,7 +3756,6 @@
 ||workwithsktechh.jumpingcrab.com^
 ||dns.jundev.org^
 ||dns.jungle-im.ir^
-||jp01.just-a-web.com^
 ||sgs02.just-a-web.com^
 ||ad.justincounts.com^
 ||dns.justinnetworkingsolutions.com^
@@ -3816,6 +3802,7 @@
 ||doh.kidzonet.io^
 ||doh.killtw.im^
 ||blog.kimiblock.top^
+||max.kimt.click^
 ||rh.kindlytouch.me^
 ||imbored.kinemasot.cl^
 ||what.kinemasot.cl^
@@ -4001,6 +3988,7 @@
 ||purchase.machines.asia^
 ||v971850.macloud.host^
 ||dns.mafyuh.io^
+||web3.magli200.info^
 ||dns.mahiro.online^
 ||adhome.maige.fun^
 ||dns.mailcastle.in^
@@ -4097,8 +4085,7 @@
 ||api.miningbest.com^
 ||dns.mipauns.com^
 ||guard.miracloud.fr^
-||77.mishutkin.click^
-||work.mishutkin.click^
+||on.mishutkin.click^
 ||netcup.mismat.ch^
 ||httpdns.browser.miui.com^
 ||dns.miyun1.com^
@@ -4135,11 +4122,9 @@
 ||vst-sh-se.mooo.com^
 ||doh.moorecloud.id^
 ||dns.moraes.tech^
-||sarzamin.mosbatbashim.info^
 ||web-kook.mosbatbashim.info^
-||male58.mosswren.vip^
-||nyka85.mosswren.vip^
-||toleka79.mosswren.vip^
+||misuga76.mosswren.vip^
+||ramane52.mosswren.vip^
 ||dns.motazhakim.com^
 ||bio.learn.mouse-hole.com^
 ||vpn.mozilla.org^
@@ -4670,6 +4655,7 @@
 ||adguard.pancybertronics.com^
 ||adguard.pangerl.it^
 ||ir.panhandleflyers.info^
+||ir-ir.panhandleflyers.info^
 ||dns.panszelescik.pl^
 ||dns-ovh.panszelescik.pl^
 ||cocorichmond.pareporeh.info^
@@ -4888,7 +4874,6 @@
 ||dns.api.rackspacecloud.com^
 ||void.radio.am^
 ||void.radio.fm^
-||ir-ir.radio-zvez.info^
 ||music.radiobest.ro^
 ||educational.radissontucson.com^
 ||check.ragpets.com^
@@ -5005,7 +4990,6 @@
 ||hi.ryuflowing.org^
 ||f1.dns.s3cure.me^
 ||doh.sa-sa.eu^
-||s3.saalaad.info^
 ||ksd-resource.sababat.com^
 ||adguard.app.sabino.pro^
 ||pns2.sadraidc.com^
@@ -5157,7 +5141,6 @@
 ||dns.skrep.eu^
 ||dns.skrep.in^
 ||gr.skrsteam.info^
-||tr.skrsteam.pro^
 ||dns.sky-plex.com^
 ||selenite.skys.day^
 ||55gms.skysthelimit.dev^
@@ -5359,7 +5342,6 @@
 ||dns.superstefan.win^
 ||ams01-n.surf-p.com^
 ||dns.surfsharkdns.com^
-||relay.surfvpn.app^
 ||bashful-stretch.surge.sh^
 ||best-dock.surge.sh^
 ||bumpy-picture.surge.sh^
@@ -5547,9 +5529,7 @@
 ||dns.thore.cloud^
 ||topic.know.ticpu.net^
 ||fdfhgbv.ticsur.cl^
-||kasu85.tidelark.cc^
-||letosu66.tidelark.cc^
-||supora40.tidelark.cc^
+||suvisu27.tidelark.cc^
 ||education.timbalemail.com^
 ||dns.timboeh.me^
 ||ad.timefine.org^
@@ -5961,6 +5941,7 @@
 ||www-bruh.xenon.lol^
 ||vsrv15195.customer.xenway.de^
 ||ir.xeonxu.info^
+||ir-ir.xeonxu.info^
 ||doh2.gslb2.xfinity.com^
 ||doh.xfinity.com^
 ||dot.xfinity.com^
@@ -5972,7 +5953,6 @@
 ||dns.xlion.tw^
 ||cloud.xn--4gq62f52gdss.asia^
 ||ir.xn--ds-bja.info^
-||ir-ir.xn--ds-bja.info^
 ||gw-1.xn--ehqx7tcnnope.com^
 ||doh.xorlet.ru^
 ||state.mass.xpatholiday.com^
@@ -6231,7 +6211,6 @@
 ||302verify.com^
 ||30eec7eee452ff883ea3d12afa49ef9147ae505f.com^
 ||30t.online^
-||318341906.fun^
 ||3245.uk^
 ||32a4d72553ef312ef80776398f08515bac249ee5.com^
 ||33253.com^
@@ -6739,7 +6718,6 @@
 ||alohabrowser.app^
 ||alohabrowser.com^
 ||alohaprofile.com^
-||alon93rus.ru^
 ||alphabr.online^
 ||alphabrowser.xyz^
 ||alphagame.co^
@@ -6782,7 +6760,6 @@
 ||androidruleonline.xyz^
 ||androidshopweb.rocks^
 ||androvpn.com^
-||andy123123.xyz^
 ||andyvpn.cc^
 ||angdwml6.com^
 ||angelvpn.com^
@@ -7426,7 +7403,6 @@
 ||bettingbet365.com^
 ||bexumvpn.help^
 ||bezlimitvpn.homes^
-||bfesedv.uk^
 ||bfgok.com^
 ||bfjqye.com^
 ||bgpnet.org^
@@ -9746,6 +9722,7 @@
 ||getlantern.org^
 ||getmalus.com^
 ||getmalus.net^
+||getmdl.io^
 ||getnord.net^
 ||getnord.org^
 ||getoinfo.com^
@@ -10703,7 +10680,6 @@
 ||iqia.org^
 ||irckyb7t9a.com^
 ||iriczcsx.com^
-||irluxcars.site^
 ||irongrime.com^
 ||ironpebble.com^
 ||ironrhythms.com^
@@ -11672,7 +11648,6 @@
 ||luqkhccn.com^
 ||lurk.info^
 ||luxerno.xyz^
-||luxuryman.sbs^
 ||luxvpn.cc^
 ||luzubu.com^
 ||lvchavpn.click^
@@ -13313,6 +13288,7 @@
 ||qavrenio.ru^
 ||qaxwjqdo.com^
 ||qaz.tw^
+||qazmel.ir^
 ||qbcqn17eijd2ow6cun.online^
 ||qcnjh2vv.com^
 ||qdpswfk9.online^
@@ -13567,7 +13543,6 @@
 ||roundrockisd.online^
 ||route7890.com^
 ||rovexali.forum^
-||royaclinic.beauty^
 ||roycom.win^
 ||rpttechnologies.org^
 ||rs1s.com^
