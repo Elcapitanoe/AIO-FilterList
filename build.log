@@ -1,13 +1,13 @@
 ==================================================
         AIO FILTER LIST - AUTOMATED BUILD LOG
 ==================================================
-Build Timestamp : 2026-10-28 04:03:20 UTC+7
-Version tag     : 26.10.28.0403
+Build Timestamp : 2026-10-29 04:28:36 UTC+7
+Version tag     : 26.10.29.0428
 Sources Synced  : 8 upstream lists
-Input signature : e013d3b5b69aa8edbfe44cf695c53a6725a2bf86dc1864229be48671064d8bdc
-Merged SHA256   : 421eaafd295b5e2e7c5350fb433c771e4c6c7da9bb0e0b51720d6244a8e359eb
+Input signature : 160c44838f6659ca578288286e137a01248cdf5822b5de2734f320928aa26b36
+Merged SHA256   : 023c429ebfc7a4f2fc7b12ef35a3d196ce5b64b1606acd99fad001074ca41551
 ==================================================
-Raw Rules       : 3257735
-Duplicates Drop : 274738
-Final Payload   : 2982997 active rules
+Raw Rules       : 3236982
+Duplicates Drop : 279803
+Final Payload   : 2957179 active rules
 ==================================================

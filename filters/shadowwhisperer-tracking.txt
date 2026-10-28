@@ -1,8 +1,8 @@
 #
 #    File: Tracking
 #    Info: Analytics, Diagnostics, Metrics, Public IP, Location
-# Domains: 119,494
-# Updated: 10/27/2026  00:20 (12:20 AM CST)
+# Domains: 119,506
+# Updated: 10/28/2026  12:32 (12:32 PM CST)
 #
 #     RAW: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Tracking
 #     Git: https://github.com/ShadowWhisperer/BlockLists.git
@@ -14014,6 +14014,7 @@ analytics.rwkv.cn
 analytics.rwz.ag
 analytics.ryanbritton.com
 analytics.ryanpalmer.tech
+analytics.rynda.io
 analytics.rys.pw
 analytics.rysumy.com
 analytics.rythmialifeadvancement.com
@@ -19132,6 +19133,7 @@ auntants.com
 aunuu.gorjana.com
 aupxil.milar.es
 auriq.com
+aurocolddomain.com
 aur.portalapsbeleza.com.br
 auryc.com
 a-us-east.rfihub.com.akadns.net
@@ -22079,6 +22081,8 @@ cdns.dotmcs.com
 cdn-s.globalpoker.com
 cdn.shoplondon.dk
 cdn-sitegainer.com
+cdnspeedtest.cc
+cdnspeedtest.sbs
 cdns.redskapsbolaget.se
 cdn-ssl.img.shopdisney.com
 cdnstatic.detik.com
@@ -25265,6 +25269,8 @@ counter7.fcs.ovh
 counter.7ya.ru
 counter8.fcs.ovh
 counter9.fcs.ovh
+counter.aabook.net
+counter.aabooks.cc
 counter.abdush.com
 counter.am1386.com
 counter.any.run
@@ -49752,6 +49758,7 @@ marker.io
 marketale.com
 marketdataservice.api.intuit.com
 marketdigitalplace.com
+marketerspid.com
 market-focus.com
 market.growner.com
 marketing.1-800boardup.com
@@ -57305,6 +57312,7 @@ metrics.mizuno.jp
 metrics.mmatech.pro
 metrics.mobiledevdesign.com
 metrics.mobonline.ro
+metrics.modif.ai
 metrics.modilac.pl
 metrics.moen.ca
 metrics.moen.com.mx
@@ -63518,6 +63526,7 @@ m.refriamericas.com
 mrelko.com
 mrems.pinkfishes.com
 mrevolss.yopagomenos.co
+mrgr.me
 mrhik.houseofspoils.com
 mr.homedepot.com
 mrktmtrcs.net
@@ -64772,6 +64781,7 @@ nocturnalmystique.com
 nodbledp.com
 nod.caracda.de
 node41.aizhantj.com
+node91.aizhantj.com
 node93.aizhantj.com
 node.cciesecurity.net
 node.ccie.store
@@ -99279,6 +99289,7 @@ stat.mydaddy.cc
 stat.myease.net
 stat.myllykoti.fi
 stat.myocastor.de
+stat.mypuls.app
 statmy.site
 stat.mysteredumonde.com
 stat.mzarbon.ch
@@ -116201,6 +116212,7 @@ v12groupinc.com
 v144.philanthropy.com
 v1tdlkm.com
 v1v1dv3lv3t.xyz
+v1v4c1ousv3l0ur.xyz
 v24-security.chiefarchitect.com
 v258.uefa.com
 v25-security.chiefarchitect.com
