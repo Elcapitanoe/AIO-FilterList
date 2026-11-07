@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-07 16:24:01 UTC+7",
-  "version": "26.11.07.1624",
+  "generated_at": "2026-11-08 03:36:01 UTC+7",
+  "version": "26.11.08.0336",
   "metrics": {
-    "active_rules": 2524732,
-    "raw_rules": 2684193,
-    "duplicates_removed": 159461,
+    "active_rules": 2503344,
+    "raw_rules": 2658389,
+    "duplicates_removed": 155045,
     "source_count": 8
   },
   "sources": [
@@ -13,56 +13,56 @@
       "filename": "hagezi-anti-piracy.txt",
       "upstream_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/anti.piracy.txt",
       "mirror_url": "https://hosts.domi.my.id/filters/hagezi-anti-piracy.txt",
-      "raw_lines": 59712,
-      "last_updated": "2026-11-07 16:24:01 UTC+7"
+      "raw_lines": 59832,
+      "last_updated": "2026-11-08 03:36:01 UTC+7"
     },
     {
       "title": "HaGeZi's DoH/VPN/Tor/Proxy Bypass",
       "filename": "hagezi-doh-vpn-proxy-bypass.txt",
       "upstream_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt",
       "mirror_url": "https://hosts.domi.my.id/filters/hagezi-doh-vpn-proxy-bypass.txt",
-      "raw_lines": 16401,
-      "last_updated": "2026-11-07 16:24:01 UTC+7"
+      "raw_lines": 16389,
+      "last_updated": "2026-11-08 03:36:01 UTC+7"
     },
     {
       "title": "HaGeZi's Gambling",
       "filename": "hagezi-gambling.txt",
       "upstream_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.txt",
       "mirror_url": "https://hosts.domi.my.id/filters/hagezi-gambling.txt",
-      "raw_lines": 630924,
-      "last_updated": "2026-11-07 16:24:01 UTC+7"
+      "raw_lines": 633318,
+      "last_updated": "2026-11-08 03:36:01 UTC+7"
     },
     {
       "title": "HaGeZi's Multi Pro",
       "filename": "hagezi-pro.txt",
       "upstream_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt",
       "mirror_url": "https://hosts.domi.my.id/filters/hagezi-pro.txt",
-      "raw_lines": 225585,
-      "last_updated": "2026-11-07 16:24:01 UTC+7"
+      "raw_lines": 211483,
+      "last_updated": "2026-11-08 03:36:01 UTC+7"
     },
     {
       "title": "HaGeZi's NSFW",
       "filename": "hagezi-nsfw.txt",
       "upstream_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt",
       "mirror_url": "https://hosts.domi.my.id/filters/hagezi-nsfw.txt",
-      "raw_lines": 78035,
-      "last_updated": "2026-11-07 16:24:01 UTC+7"
+      "raw_lines": 78063,
+      "last_updated": "2026-11-08 03:36:01 UTC+7"
     },
     {
       "title": "HaGeZi's Pop-Up Ads",
       "filename": "hagezi-popupads.txt",
       "upstream_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt",
       "mirror_url": "https://hosts.domi.my.id/filters/hagezi-popupads.txt",
-      "raw_lines": 76756,
-      "last_updated": "2026-11-07 16:24:01 UTC+7"
+      "raw_lines": 76667,
+      "last_updated": "2026-11-08 03:36:01 UTC+7"
     },
     {
       "title": "HaGeZi's Threat Intelligence Feeds",
       "filename": "hagezi-tif.txt",
       "upstream_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt",
       "mirror_url": "https://hosts.domi.my.id/filters/hagezi-tif.txt",
-      "raw_lines": 1475789,
-      "last_updated": "2026-11-07 16:24:01 UTC+7"
+      "raw_lines": 1461646,
+      "last_updated": "2026-11-08 03:36:01 UTC+7"
     },
     {
       "title": "ShadowWhisperer's Tracking",
@@ -70,7 +70,7 @@
       "upstream_url": "https://cdn.jsdelivr.net/gh/ShadowWhisperer/BlockLists@latest/Lists/Tracking",
       "mirror_url": "https://hosts.domi.my.id/filters/shadowwhisperer-tracking.txt",
       "raw_lines": 121095,
-      "last_updated": "2026-11-07 16:24:01 UTC+7"
+      "last_updated": "2026-11-08 03:36:01 UTC+7"
     }
   ]
 }
