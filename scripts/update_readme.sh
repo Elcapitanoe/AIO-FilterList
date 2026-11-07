@@ -162,7 +162,13 @@ done < "$TMP_SORTED"
 
 # Fail closed rather than risk deleting README content if markers are missing or duplicated.
 for marker in AUTOGEN_STATS_START AUTOGEN_STATS_END AUTOGEN_TABLE_START AUTOGEN_TABLE_END; do
-    count="$(grep -Fxc "<!-- $marker -->" "$README_FILE" || true)"
+    count="$(awk -v marker="<!-- $marker -->" '
+        {
+            sub(/\r$/, "")
+            if ($0 == marker) count++
+        }
+        END { print count + 0 }
+    ' "$README_FILE")"
     if [[ "$count" != 1 ]]; then
         log_error "README must contain exactly one '<!-- $marker -->' marker (found $count)."
         exit 1
@@ -185,6 +191,7 @@ if ! awk '
 fi
 
 awk -v stats_file="$TMP_STATS" -v table_file="$TMP_TABLE" '
+    { sub(/\r$/, "") }
     /<!-- AUTOGEN_STATS_START -->/ {
         print
         while ((getline line < stats_file) > 0) print line
