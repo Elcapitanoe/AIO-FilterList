@@ -13,6 +13,8 @@ on:
       - 'tests/**'
       - 'Makefile'
       - '.github/workflows/sync-filters.yml'
+      - 'site/**'
+      - 'scripts/update_site.sh'
 
 concurrency:
   group: sync-filters
@@ -24,6 +26,11 @@ jobs:
     timeout-minutes: 30
     permissions:
       contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repository
@@ -47,6 +54,9 @@ jobs:
       - name: Update README dynamic table
         run: ./scripts/update_readme.sh
 
+      - name: Generate website data from the daily build
+        run: bash scripts/update_site.sh
+
       - name: Validate build artifacts
         run: ./scripts/validate.sh --check-artifacts
 
@@ -56,7 +66,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -- filters/ AIO_Filter_List.txt build.log README.md
+          git add -- filters/ AIO_Filter_List.txt build.log README.md site/data.json
           if git diff --cached --quiet; then
             echo "No upstream changes detected. Skipping commit."
             exit 0
@@ -65,3 +75,15 @@ jobs:
             -m "Automated routine triggered by GitHub Actions."
           git pull --rebase origin "$BRANCH_NAME"
           git push origin "HEAD:$BRANCH_NAME"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4

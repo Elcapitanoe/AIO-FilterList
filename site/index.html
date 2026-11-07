@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIO Filter List - Adblock &amp; Tracker Aggregator</title>
+  <meta name="description" content="Daily-built, deduplicated AIO filter list with current upstream source and build telemetry.">
+  <meta name="author" content="Domi Adiwijaya">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --surface-subtle: #1c2128;
+      --surface-hover: #21262d;
+      --border: #30363d;
+      --border-muted: #21262d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --text-dim: #6e7681;
+      --accent: #2f81f7;
+      --accent-hover: #58a6ff;
+      --success: #238636;
+      --success-text: #3fb950;
+      --code-bg: #0b0f14;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 14px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent-hover);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code, kbd, samp, pre {
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* Top Navigation */
+    .nav-bar {
+      border-bottom: 1px solid var(--border);
+      background-color: rgba(13, 17, 23, 0.92);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+    .nav-inner {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+    .nav-brand:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+    .nav-brand .org {
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      font-size: 13px;
+      transition: color 0.15s ease;
+    }
+    .nav-links a:hover {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--success-text);
+      background-color: rgba(35, 134, 54, 0.15);
+      border: 1px solid rgba(46, 160, 67, 0.3);
+      padding: 3px 8px;
+      border-radius: 12px;
+    }
+    .nav-status-dot {
+      width: 6px;
+      height: 6px;
+      background-color: var(--success-text);
+      border-radius: 50%;
+    }
+
+    /* Header / Hero */
+    .header-section {
+      padding: 36px 0 28px;
+      border-bottom: 1px solid var(--border-muted);
+    }
+    .header-title {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .header-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 80ch;
+      line-height: 1.55;
+      margin-bottom: 24px;
+    }
+
+    /* Telemetry HUD Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background-color: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .metric-cell {
+      background-color: var(--surface);
+      padding: 14px 16px;
+    }
+    .metric-label {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    .metric-value {
+      font-size: 20px;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+    .metric-sub {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Content Layout */
+    .content-section {
+      padding: 32px 0;
+      border-bottom: 1px solid var(--border-muted);
+    }
+    .section-header {
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Endpoint Blocks */
+    .endpoints-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .endpoint-card {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .endpoint-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .endpoint-title {
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .endpoint-tag {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      padding: 1px 6px;
+      border-radius: 4px;
+      background-color: var(--surface-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+    .endpoint-tag.primary {
+      background-color: rgba(47, 129, 247, 0.12);
+      border-color: rgba(56, 139, 253, 0.35);
+      color: var(--accent-hover);
+    }
+    .endpoint-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--code-bg);
+      border: 1px solid var(--border-muted);
+      border-radius: 4px;
+      padding: 6px 10px;
+    }
+    .endpoint-url {
+      flex: 1;
+      overflow-x: auto;
+      white-space: nowrap;
+      color: #7ee787;
+      scrollbar-width: none;
+    }
+    .endpoint-url::-webkit-scrollbar {
+      display: none;
+    }
+    .btn-copy {
+      background-color: var(--surface-hover);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: var(--font-mono);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: background 0.15s ease, border-color 0.15s ease;
+      flex-shrink: 0;
+    }
+    .btn-copy:hover {
+      background-color: #2b313a;
+      border-color: var(--text-muted);
+    }
+    .btn-copy.copied {
+      background-color: var(--success);
+      border-color: rgba(46, 160, 67, 0.6);
+      color: #fff;
+    }
+    .btn-subscribe {
+      background-color: #21262d;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: var(--font-mono);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      text-decoration: none;
+    }
+    .btn-subscribe:hover {
+      background-color: #30363d;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    /* Client Integration Tabs */
+    .tabs-container {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .tabs-nav {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      background-color: var(--surface-subtle);
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .tab-btn {
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .tab-btn:hover {
+      color: var(--text);
+    }
+    .tab-btn.active {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+      background-color: var(--surface);
+    }
+    .tab-pane {
+      display: none;
+      padding: 16px;
+    }
+    .tab-pane.active {
+      display: block;
+    }
+    .tab-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .code-block-wrapper {
+      position: relative;
+    }
+    .code-block {
+      background-color: var(--code-bg);
+      border: 1px solid var(--border-muted);
+      border-radius: 4px;
+      padding: 12px 14px;
+      overflow-x: auto;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .code-block .comment {
+      color: var(--text-dim);
+    }
+    .code-block .highlight {
+      color: #7ee787;
+    }
+
+    /* Upstream Sources Table */
+    .table-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .search-input-wrap {
+      position: relative;
+      flex: 1;
+      max-width: 380px;
+    }
+    .search-input {
+      width: 100%;
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      padding: 6px 12px;
+      border-radius: 4px;
+      outline: none;
+      transition: border-color 0.15s ease;
+    }
+    .search-input:focus {
+      border-color: var(--accent);
+    }
+    .table-stats-count {
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--text-dim);
+    }
+    .table-wrap {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow-x: auto;
+      background-color: var(--surface);
+    }
+    table.sources-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13px;
+    }
+    table.sources-table th {
+      background-color: var(--surface-subtle);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    table.sources-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border-muted);
+      color: var(--text);
+      vertical-align: middle;
+    }
+    table.sources-table tr:last-child td {
+      border-bottom: none;
+    }
+    table.sources-table tr:hover td {
+      background-color: var(--surface-hover);
+    }
+    .mono-cell {
+      font-family: var(--font-mono);
+      font-size: 12px;
+    }
+    .rule-count {
+      text-align: right;
+      font-family: var(--font-mono);
+      font-variant-numeric: tabular-nums;
+      color: var(--text-muted);
+    }
+    .source-mirror-link {
+      color: var(--accent-hover);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .source-upstream-link {
+      color: var(--text-dim);
+      font-size: 11.5px;
+      max-width: 260px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+    }
+    .source-upstream-link:hover {
+      color: var(--text-muted);
+    }
+
+    /* Pipeline Architecture Box */
+    .pipeline-ascii-card {
+      background-color: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px;
+      overflow-x: auto;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--text);
+    }
+
+    /* Footer */
+    .site-footer {
+      padding: 32px 0 48px;
+      font-size: 12.5px;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      list-style: none;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+    }
+    .footer-links a:hover {
+      color: var(--text);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .nav-links {
+        display: none;
+      }
+      .header-title {
+        font-size: 22px;
+      }
+      .site-footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    @media (max-width: 480px) {
+      .metrics-grid {
+        grid-template-columns: 1fr;
+      }
+      .table-controls {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .search-input-wrap {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="nav-bar">
+    <div class="container nav-inner">
+      <a href="https://github.com/Elcapitanoe/AIO-FilterList" class="nav-brand" target="_blank" rel="noopener">
+        <svg height="20" viewBox="0 0 16 16" width="20" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+        <span><span class="org">Elcapitanoe /</span> AIO-FilterList</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#endpoints">Endpoints</a></li>
+        <li><a href="#clients">Integration</a></li>
+        <li><a href="#sources">Upstream Registry</a></li>
+        <li><a href="#pipeline">Pipeline</a></li>
+      </ul>
+      <div class="nav-status">
+        <span class="nav-status-dot"></span>
+        <span>Sync: Daily 17:00 UTC</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header / Overview -->
+  <header class="header-section">
+    <div class="container">
+      <h1 class="header-title">AIO Filter List</h1>
+      <p class="header-desc">
+        A unified, deduplicated filter list built from the configured upstream feeds. Build statistics and source mirrors update with the daily synchronization.
+      </p>
+
+      <!-- Key Metrics -->
+      <div class="metrics-grid">
+        <div class="metric-cell">
+          <div class="metric-label">Active Unique Rules</div>
+          <div class="metric-value" id="metricActiveRules">--</div>
+          <div class="metric-sub" id="metricBuildTime">Latest completed build</div>
+        </div>
+        <div class="metric-cell">
+          <div class="metric-label">Duplicates Dropped</div>
+          <div class="metric-value" id="metricDuplicates">--</div>
+          <div class="metric-sub" id="metricDuplicateRate">Duplicates removed</div>
+        </div>
+        <div class="metric-cell">
+          <div class="metric-label">Raw Rules Evaluated</div>
+          <div class="metric-value" id="metricRawRules">--</div>
+          <div class="metric-sub">Across all upstream feeds</div>
+        </div>
+        <div class="metric-cell">
+          <div class="metric-label">Upstream Feeds</div>
+          <div class="metric-value" id="metricSources">--</div>
+          <div class="metric-sub">Tracked and mirrored</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Distribution Endpoints -->
+  <section class="content-section" id="endpoints">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Distribution Endpoints</h2>
+        <p class="section-subtitle">Direct HTTPS endpoints for adblock extensions, DNS resolvers, and network sinkholes.</p>
+      </div>
+
+      <div class="endpoints-stack">
+        <!-- Primary Custom Domain -->
+        <div class="endpoint-card">
+          <div class="endpoint-meta">
+            <div class="endpoint-title">
+              <span>Primary CDN Endpoint</span>
+              <span class="endpoint-tag primary">Custom Domain</span>
+              <span class="endpoint-tag">34 MB</span>
+            </div>
+            <div>
+              <a href="abp:subscribe?location=https%3A%2F%2Fhosts.domi.my.id%2FAIO_Filter_List.txt&amp;title=AIO%20Filter%20List" class="btn-subscribe" title="Subscribe via uBlock Origin / AdGuard">
+                + Subscribe to Client
+              </a>
+            </div>
+          </div>
+          <div class="endpoint-bar">
+            <code class="endpoint-url" id="url-primary">https://hosts.domi.my.id/AIO_Filter_List.txt</code>
+            <button class="btn-copy" onclick="copyEndpoint('url-primary', this)">Copy URL</button>
+          </div>
+        </div>
+
+        <!-- GitHub Raw Mirror -->
+        <div class="endpoint-card">
+          <div class="endpoint-meta">
+            <div class="endpoint-title">
+              <span>GitHub Raw Mirror</span>
+              <span class="endpoint-tag">Direct Upstream</span>
+            </div>
+          </div>
+          <div class="endpoint-bar">
+            <code class="endpoint-url" id="url-github">https://raw.githubusercontent.com/Elcapitanoe/AIO-FilterList/main/AIO_Filter_List.txt</code>
+            <button class="btn-copy" onclick="copyEndpoint('url-github', this)">Copy URL</button>
+          </div>
+        </div>
+
+        <!-- jsDelivr Global Edge -->
+        <div class="endpoint-card">
+          <div class="endpoint-meta">
+            <div class="endpoint-title">
+              <span>jsDelivr Global Edge</span>
+              <span class="endpoint-tag">Multi-CDN Anycast</span>
+            </div>
+          </div>
+          <div class="endpoint-bar">
+            <code class="endpoint-url" id="url-jsdelivr">https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList@main/AIO_Filter_List.txt</code>
+            <button class="btn-copy" onclick="copyEndpoint('url-jsdelivr', this)">Copy URL</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Integration Guide -->
+  <section class="content-section" id="clients">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Client Integration</h2>
+        <p class="section-subtitle">Configuration instructions for popular content filters and DNS daemons.</p>
+      </div>
+
+      <div class="tabs-container">
+        <div class="tabs-nav">
+          <button class="tab-btn active" onclick="switchTab('tab-ublock', this)">uBlock Origin</button>
+          <button class="tab-btn" onclick="switchTab('tab-adguard', this)">AdGuard Home</button>
+          <button class="tab-btn" onclick="switchTab('tab-pihole', this)">Pi-hole</button>
+          <button class="tab-btn" onclick="switchTab('tab-cli', this)">CLI / Script</button>
+        </div>
+
+        <!-- Tab 1: uBlock Origin -->
+        <div class="tab-pane active" id="tab-ublock">
+          <p class="tab-desc">Add as an external subscription in the uBlock Origin dashboard:</p>
+          <div class="code-block-wrapper">
+            <pre class="code-block"><span class="comment"># 1. Open uBlock Origin Dashboard -> "Filter lists" tab</span>
+<span class="comment"># 2. Scroll to the bottom and expand "Custom"</span>
+<span class="comment"># 3. Check "Import..." and paste the URL below:</span>
+<span class="highlight">https://hosts.domi.my.id/AIO_Filter_List.txt</span>
+
+<span class="comment"># 4. Click "Apply changes" in the top bar to pull rules</span></pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: AdGuard Home -->
+        <div class="tab-pane" id="tab-adguard">
+          <p class="tab-desc">Configure in the AdGuard Home Web Administrator interface:</p>
+          <div class="code-block-wrapper">
+            <pre class="code-block"><span class="comment"># 1. Navigate to: Filters -> DNS blocklists</span>
+<span class="comment"># 2. Click "Add blocklist" -> "Add a custom list"</span>
+<span class="comment"># 3. Name: "AIO Filter List"</span>
+<span class="comment"># 4. URL:</span>
+<span class="highlight">https://hosts.domi.my.id/AIO_Filter_List.txt</span>
+
+<span class="comment"># 5. Click Save. The daemon will parse and compile rules automatically.</span></pre>
+          </div>
+        </div>
+
+        <!-- Tab 3: Pi-hole -->
+        <div class="tab-pane" id="tab-pihole">
+          <p class="tab-desc">Add to Pi-hole v5 / v6 adlists database:</p>
+          <div class="code-block-wrapper">
+            <pre class="code-block"><span class="comment"># In Pi-hole Web Admin:</span>
+<span class="comment"># 1. Go to: Adlists (Group Management -> Adlists)</span>
+<span class="comment"># 2. Add Address:</span>
+<span class="highlight">https://hosts.domi.my.id/AIO_Filter_List.txt</span>
+<span class="comment"># 3. Click "Add"</span>
+
+<span class="comment"># Then update gravity via terminal or web interface:</span>
+pihole -g</pre>
+          </div>
+        </div>
+
+        <!-- Tab 4: CLI -->
+        <div class="tab-pane" id="tab-cli">
+          <p class="tab-desc">Automated fetch with conditional HTTP cache validation:</p>
+          <div class="code-block-wrapper">
+            <pre class="code-block"><span class="comment"># Download using curl with atomic temporary file swap</span>
+curl -sSL --fail --compressed \
+  "https://hosts.domi.my.id/AIO_Filter_List.txt" \
+  -o AIO_Filter_List.txt.tmp &amp;&amp; mv AIO_Filter_List.txt.tmp AIO_Filter_List.txt
+
+<span class="comment"># Verify rule count</span>
+wc -l AIO_Filter_List.txt</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upstream Sources Registry -->
+  <section class="content-section" id="sources">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Upstream Source Registry</h2>
+        <p class="section-subtitle" id="registrySubtitle">Configured lists, raw line counts, and mirror endpoints.</p>
+      </div>
+
+      <div class="table-controls">
+        <div class="search-input-wrap">
+          <input type="text" id="sourceSearch" class="search-input" placeholder="Filter sources by name or mirror file..." oninput="filterTable()">
+        </div>
+        <div class="table-stats-count" id="tableCount">Loading source data...</div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="sources-table" id="sourcesTable">
+          <thead>
+            <tr>
+              <th style="width: 44px;">#</th>
+              <th>Feed Name</th>
+              <th>Local Mirror</th>
+              <th style="text-align: right; width: 110px;">Raw Lines</th>
+              <th>Upstream Feed URL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="5" style="text-align:center">Loading source data...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pipeline Architecture -->
+  <section class="content-section" id="pipeline">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Pipeline Architecture</h2>
+        <p class="section-subtitle">Deterministic aggregation lifecycle executed daily via GitHub Actions.</p>
+      </div>
+
+      <div class="pipeline-ascii-card">
++---------------------------------------------------------------------------------------------+
+|                                  AIO-FilterList Pipeline                                    |
++---------------------------------------------------------------------------------------------+
+|                                                                                             |
+|  [Configured Upstream Sources]  (AdGuard, EasyList, OISD, HaGeZi, Fanboy, and others)      |
+|            |                                                                                |
+|            v                                                                                |
+|  [Stage 1: Fetch] ----> curl parallel download to filters/.&lt;file&gt;.tmp                        |
+|                         HTTP 200 &amp; non-empty size verification before atomic move           |
+|            |                                                                                |
+|            v                                                                                |
+|  [Stage 2: Merge] ----> single-pass awk stream (CRLF strip, discard comments ^[!#])         |
+|                         piped directly into LC_ALL=C sort -u (deduplication)                |
+|            |                                                                                |
+|            v                                                                                |
+|  [Stage 3: Artifact] -> prepend official Adblock header with dynamic timestamp &amp; counts    |
+|                         atomic swap into AIO_Filter_List.txt (34 MB, 1.03M+ rules)          |
+|            |                                                                                |
+|            v                                                                                |
+|  [Stage 4: Telemetry]   awk HTML comment marker injection into README.md                    |
+|                         write metadata telemetry to build.log                               |
+|            |                                                                                |
+|            v                                                                                |
+|  [Stage 5: Edge Deploy] published to GitHub Pages (hosts.domi.my.id) &amp; CDN mirrors          |
+|                                                                                             |
++---------------------------------------------------------------------------------------------+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap; gap: 16px;">
+      <div class="footer-left">
+        <div>Maintained by <strong>Domi Adiwijaya</strong> (<a href="https://github.com/Elcapitanoe" target="_blank" rel="noopener">@Elcapitanoe</a>)</div>
+        <div>Aggregated rules remain copyright of their respective upstream list authors.</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/Elcapitanoe/AIO-FilterList" target="_blank" rel="noopener">GitHub Repository</a></li>
+        <li><a href="https://github.com/Elcapitanoe/AIO-FilterList/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a></li>
+        <li><a href="https://github.com/Elcapitanoe/AIO-FilterList/blob/main/build.log" target="_blank" rel="noopener">build.log</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function formatNumber(value) {
+      return Number(value).toLocaleString('en-US');
+    }
+
+    function makeCell(text, className) {
+      const cell = document.createElement('td');
+      if (className) cell.className = className;
+      cell.textContent = text;
+      return cell;
+    }
+
+    async function loadBuildData() {
+      const response = await fetch('./data.json', { cache: 'no-store' });
+      if (!response.ok) throw new Error('Build data request failed: ' + response.status);
+      const data = await response.json();
+      const metrics = data.metrics;
+      const sources = data.sources;
+
+      document.getElementById('metricActiveRules').textContent = formatNumber(metrics.active_rules);
+      document.getElementById('metricDuplicates').textContent = formatNumber(metrics.duplicates_removed);
+      document.getElementById('metricRawRules').textContent = formatNumber(metrics.raw_rules);
+      document.getElementById('metricSources').textContent = metrics.source_count + ' Sources';
+      document.getElementById('metricBuildTime').textContent = 'Built ' + data.generated_at;
+      const duplicateRate = metrics.raw_rules
+        ? (metrics.duplicates_removed / metrics.raw_rules * 100).toFixed(2)
+        : '0.00';
+      document.getElementById('metricDuplicateRate').textContent = duplicateRate + '% redundancy purged';
+      document.getElementById('registrySubtitle').textContent =
+        'All ' + metrics.source_count + ' configured lists, raw line counts, and mirror endpoints.';
+
+      const body = document.querySelector('#sourcesTable tbody');
+      body.replaceChildren();
+      sources.forEach(function(source, index) {
+        const row = document.createElement('tr');
+        row.appendChild(makeCell(String(index + 1).padStart(2, '0')));
+
+        const title = document.createElement('td');
+        const strong = document.createElement('strong');
+        strong.textContent = source.title;
+        title.appendChild(strong);
+        row.appendChild(title);
+
+        const mirror = document.createElement('a');
+        mirror.href = source.mirror_url;
+        mirror.className = 'source-mirror-link mono-cell';
+        mirror.target = '_blank';
+        mirror.rel = 'noopener';
+        mirror.textContent = 'filters/' + source.filename;
+        const mirrorCell = document.createElement('td');
+        mirrorCell.appendChild(mirror);
+        row.appendChild(mirrorCell);
+
+        row.appendChild(makeCell(formatNumber(source.raw_lines), 'rule-count'));
+        const upstream = document.createElement('a');
+        upstream.href = source.upstream_url;
+        upstream.className = 'source-upstream-link';
+        upstream.target = '_blank';
+        upstream.rel = 'noopener';
+        upstream.textContent = new URL(source.upstream_url).hostname;
+        const upstreamCell = document.createElement('td');
+        upstreamCell.appendChild(upstream);
+        row.appendChild(upstreamCell);
+        body.appendChild(row);
+      });
+
+      document.getElementById('tableCount').textContent = 'Showing ' + sources.length + ' of ' + sources.length + ' sources';
+      filterTable();
+    }
+
+    function copyEndpoint(elementId, btn) {
+      const urlText = document.getElementById(elementId).innerText.trim();
+      navigator.clipboard.writeText(urlText).then(function() {
+        const originalText = btn.innerText;
+        btn.innerText = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.innerText = originalText;
+          btn.classList.remove('copied');
+        }, 2000);
+      }).catch(function(err) {
+        console.error('Failed to copy text: ', err);
+      });
+    }
+
+    function switchTab(tabId, btn) {
+      document.querySelectorAll('.tab-btn').forEach(function(b) {
+        b.classList.remove('active');
+      });
+      document.querySelectorAll('.tab-pane').forEach(function(p) {
+        p.classList.remove('active');
+      });
+      btn.classList.add('active');
+      const pane = document.getElementById(tabId);
+      if (pane) {
+        pane.classList.add('active');
+      }
+    }
+
+    function filterTable() {
+      const input = document.getElementById('sourceSearch');
+      const filter = input.value.toLowerCase().trim();
+      const table = document.getElementById('sourcesTable');
+      const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+      let visibleCount = 0;
+
+      for (let i = 0; i < rows.length; i++) {
+        const text = rows[i].textContent.toLowerCase();
+        if (text.indexOf(filter) > -1) {
+          rows[i].style.display = '';
+          visibleCount++;
+        } else {
+          rows[i].style.display = 'none';
+        }
+      }
+
+      document.getElementById('tableCount').innerText = 'Showing ' + visibleCount + ' of ' + rows.length + ' sources';
+    }
+
+    loadBuildData().catch(function(error) {
+      console.error('Unable to load current build data:', error);
+      document.getElementById('tableCount').textContent = 'Build data is unavailable';
+      const body = document.querySelector('#sourcesTable tbody');
+      body.replaceChildren();
+      const row = document.createElement('tr');
+      const cell = makeCell('Current build data could not be loaded. Please try again later.');
+      cell.colSpan = 5;
+      row.appendChild(cell);
+      body.appendChild(row);
+    });
+  </script>
+</body>
+</html>

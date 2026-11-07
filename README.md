@@ -60,6 +60,10 @@ The routing table below lists all synchronized upstream lists with direct CDN mi
 3. **Documentation Injection (`scripts/update_readme.sh`)**: Replaces dynamic blocks in `README.md` between HTML marker comments (`<!-- AUTOGEN_* -->`), keeping documentation clean without overwriting human-maintained content.
 4. **Validation Suite (`scripts/validate.sh`)**: Verifies shell syntax, configuration schema, mirror presence, and compiled artifact integrity.
 
+## Website Deployment
+
+The static dashboard source lives in `site/`. The daily synchronization workflow generates `site/data.json` from the completed filter build, commits the refreshed telemetry with the filter artifacts, and deploys the `site/` directory to GitHub Pages. Pages uses the GitHub Actions publishing source; it does not deploy from the `gh-pages` branch.
+
 ---
 
 ## Local Development & Setup
@@ -70,6 +74,7 @@ The routing table below lists all synchronized upstream lists with direct CDN mi
 - Bash `4.0+`
 - Core utilities (`awk`, `sort`, `wc`, `xargs`) and either `sha256sum` or `shasum`
 - `curl`
+- `jq`
 - `git`
 - `make` (optional, for convenience)
 

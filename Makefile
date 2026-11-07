@@ -2,7 +2,7 @@
 SHELL := /usr/bin/env bash
 .DEFAULT_GOAL := help
 
-.PHONY: help fetch merge readme validate test build all clean
+.PHONY: help fetch merge readme website validate test build all clean
 
 help: ## Display available commands
 	@printf 'AIO-FilterList Build Automation\n\nUsage: make [target]\n\nTargets:\n'
@@ -17,6 +17,9 @@ merge: ## Compile configured lists into AIO_Filter_List.txt
 readme: ## Update README telemetry and mirror table
 	@./scripts/update_readme.sh
 
+website: ## Generate current GitHub Pages dashboard data
+	@bash scripts/update_site.sh
+
 validate: ## Validate scripts, source configuration, and project metadata
 	@./scripts/validate.sh
 
@@ -25,6 +28,7 @@ test: ## Run offline pipeline regression tests
 
 build: merge ## Compile, update documentation, and validate artifacts
 	@./scripts/update_readme.sh
+	@bash scripts/update_site.sh
 	@./scripts/validate.sh --check-artifacts
 
 all: ## Run the complete fetch-to-validation pipeline sequentially
@@ -32,6 +36,7 @@ all: ## Run the complete fetch-to-validation pipeline sequentially
 	@./scripts/fetch_filters.sh
 	@./scripts/merge_filters.sh
 	@./scripts/update_readme.sh
+	@bash scripts/update_site.sh
 	@./scripts/validate.sh --check-artifacts
 
 clean: ## Remove temporary build and download files
