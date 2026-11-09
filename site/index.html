@@ -724,7 +724,7 @@ pihole -g</pre>
 
         <!-- Tab 4: CLI -->
         <div class="tab-pane" id="tab-cli">
-          <p class="tab-desc">Automated fetch with conditional HTTP cache validation:</p>
+          <p class="tab-desc">Download to a temporary file, then replace the local copy:</p>
           <div class="code-block-wrapper">
             <pre class="code-block"><span class="comment"># Download using curl with atomic temporary file swap</span>
 curl -sSL --fail --compressed \
@@ -798,7 +798,7 @@ wc -l AIO_Filter_List.txt</pre>
 |            |                                                                                |
 |            v                                                                                |
 |  [Stage 3: Artifact] -> prepend official Adblock header with dynamic timestamp &amp; counts    |
-|                         atomic swap into AIO_Filter_List.txt (34 MB, 1.03M+ rules)          |
+|                         atomic swap into AIO_Filter_List.txt (about 53.4 MiB, 2.5M+ rules) |
 |            |                                                                                |
 |            v                                                                                |
 |  [Stage 4: Telemetry]   awk HTML comment marker injection into README.md                    |

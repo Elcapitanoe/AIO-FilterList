@@ -150,6 +150,7 @@ fetch_source() {
     if ! curl \
         --silent \
         --show-error \
+        --compressed \
         --location \
         --fail \
         --retry 3 \

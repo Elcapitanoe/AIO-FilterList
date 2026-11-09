@@ -15,6 +15,39 @@ log_error() {
     printf '[ERROR] %s\n' "$1" >&2
 }
 
+hash_stream() {
+    if command -v sha256sum >/dev/null 2>&1; then
+        sha256sum | awk '{print $1}'
+    elif command -v shasum >/dev/null 2>&1; then
+        shasum -a 256 | awk '{print $1}'
+    else
+        log_error 'Neither sha256sum nor shasum is available.'
+        return 1
+    fi
+}
+
+hash_file() {
+    if command -v sha256sum >/dev/null 2>&1; then
+        sha256sum "$1" | awk '{print $1}'
+    elif command -v shasum >/dev/null 2>&1; then
+        shasum -a 256 "$1" | awk '{print $1}'
+    else
+        log_error 'Neither sha256sum nor shasum is available.'
+        return 1
+    fi
+}
+
+hash_files_signature() {
+    if command -v sha256sum >/dev/null 2>&1; then
+        sha256sum "$@" | awk '{print $1}' | hash_stream
+    elif command -v shasum >/dev/null 2>&1; then
+        shasum -a 256 "$@" | awk '{print $1}' | hash_stream
+    else
+        log_error 'Neither sha256sum nor shasum is available.'
+        return 1
+    fi
+}
+
 trim() {
     local value="$1"
     value="${value#"${value%%[![:space:]]*}"}"
@@ -101,7 +134,7 @@ CURRENT_RULES_TEMP="$TMP_DIR/current_rules.txt"
 
 # Hash configuration, source contents, and this compiler. Identical inputs can skip
 # an expensive scan/sort of millions of rules, while compiler changes invalidate cache.
-INPUT_SIGNATURE="$(sha256sum "$CONFIG_FILE" "$SCRIPT_DIR/merge_filters.sh" "${FILTER_FILES[@]}" | awk '{print $1}' | sha256sum | awk '{print $1}')"
+INPUT_SIGNATURE="$(hash_files_signature "$CONFIG_FILE" "$SCRIPT_DIR/merge_filters.sh" "${FILTER_FILES[@]}")"
 CURRENT_SIGNATURE=""
 STORED_OUTPUT_HASH=""
 CURRENT_OUTPUT_HASH=""
@@ -119,7 +152,7 @@ if [[ -f "$MERGED_FILE" ]] \
     && head -n 10 "$MERGED_FILE" | grep -q '^! Expires: ' \
     && head -n 10 "$MERGED_FILE" | grep -q '^! Format: '; then
     HEADER_VALID=true
-    CURRENT_OUTPUT_HASH="$(sha256sum "$MERGED_FILE" | awk '{print $1}')"
+    CURRENT_OUTPUT_HASH="$(hash_file "$MERGED_FILE")"
     CURRENT_LOG_VERSION="$(awk -F': ' '/^! Version:/ {print $2; exit}' "$MERGED_FILE")"
 fi
 
@@ -198,12 +231,12 @@ EOF_HEADER
     chmod 644 "$MERGED_TMP"
     mv -f "$MERGED_TMP" "$MERGED_FILE"
     MERGED_TMP=""
-    CURRENT_OUTPUT_HASH="$(sha256sum "$MERGED_FILE" | awk '{print $1}')"
+    CURRENT_OUTPUT_HASH="$(hash_file "$MERGED_FILE")"
     CURRENT_LOG_VERSION="$VERSION"
     printf '==> The rule payload changed; refreshed %s.\n' "$MERGED_FILE"
 else
     printf '==> Rule payload is unchanged; preserving the published list metadata.\n'
-    CURRENT_OUTPUT_HASH="$(sha256sum "$MERGED_FILE" | awk '{print $1}')"
+    CURRENT_OUTPUT_HASH="$(hash_file "$MERGED_FILE")"
     if [[ -z "$CURRENT_LOG_VERSION" ]]; then
         CURRENT_LOG_VERSION="$(awk -F': ' '/^! Version:/ {print $2; exit}' "$MERGED_FILE")"
     fi
