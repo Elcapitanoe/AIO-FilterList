@@ -1,15 +1,15 @@
 # AIO Filter List
 
 [![Upstream Filter Synchronization](https://github.com/Elcapitanoe/AIO-FilterList/actions/workflows/sync-filters.yml/badge.svg)](https://github.com/Elcapitanoe/AIO-FilterList/actions/workflows/sync-filters.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
-An automated aggregation pipeline and CDN mirror network for community adblock filter lists. This repository synchronizes upstream filter subscriptions daily, provides standalone high-availability mirrors, deduplicates rules into a unified consolidated list, and automatically publishes build telemetry.
+An automatically updated collection of community ad-blocking filter lists. This project downloads the configured upstream lists, keeps a copy of each one, and combines their rules into one deduplicated list.
 
----
+The combined list contains millions of rules and is large. Check that your ad blocker or DNS filter supports lists of this size before subscribing.
 
-## Direct Subscription URLs
+## Subscribe to the combined list
 
-Subscribe to the consolidated `AIO_Filter_List.txt` in any compatible adblocker (uBlock Origin, AdGuard, Brave, Vivaldi, Pi-hole, AdGuard Home):
+Add one of these URLs to your ad blocker or DNS filtering app:
 
 | Provider | Endpoint URL |
 | :--- | :--- |
@@ -17,9 +17,9 @@ Subscribe to the consolidated `AIO_Filter_List.txt` in any compatible adblocker 
 | **jsDelivr CDN** | `https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/AIO_Filter_List.txt` |
 | **Edge CDN** | `https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/AIO_Filter_List.txt` |
 
----
+The combined list is intended for compatible ad-blocking and DNS filtering tools. To subscribe to only selected sources, use their individual URLs below.
 
-## Build Telemetry
+## Latest build
 
 <!-- AUTOGEN_STATS_START -->
 | Metric | Value |
@@ -29,113 +29,110 @@ Subscribe to the consolidated `AIO_Filter_List.txt` in any compatible adblocker 
 | **Duplicates Removed** | `169,689` |
 | **Sources Synced** | `8 upstream lists` |
 | **Version Tag** | `26.11.09.0352` |
-| **Last Synchronized** | `2026-11-09 12:57:28 UTC+7` |
+| **Last Synchronized** | `2026-11-09 03:52:14 UTC+7` |
 <!-- AUTOGEN_STATS_END -->
 
 ---
 
-## Upstream Sources & Standalone Mirrors
+## Individual sources and mirrors
 
-The routing table below lists all synchronized upstream lists with direct CDN mirror links. Timestamps come from Git history; they are shown as `unknown` when the repository is run from an archive without Git metadata.
+Each row links to the original upstream list and to copies hosted by this project. The update time is based on this repository's Git history. It may show `unknown` when Git history is unavailable.
 
 <!-- AUTOGEN_TABLE_START -->
 | Filter Name | Upstream | Main Mirror | jsDelivr CDN | Edge CDN | Last Updated |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **HaGeZi's Anti Piracy** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/anti.piracy.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-anti-piracy.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-anti-piracy.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-anti-piracy.txt) | `2026-11-08 20:52:18` |
-| **HaGeZi's DoH/VPN/Tor/Proxy Bypass** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-doh-vpn-proxy-bypass.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-doh-vpn-proxy-bypass.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-doh-vpn-proxy-bypass.txt) | `2026-11-08 20:52:18` |
-| **HaGeZi's Gambling** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-gambling.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-gambling.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-gambling.txt) | `2026-11-08 20:52:18` |
-| **HaGeZi's Multi Pro** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-pro.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-pro.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-pro.txt) | `2026-11-08 20:52:18` |
-| **HaGeZi's NSFW** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-nsfw.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-nsfw.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-nsfw.txt) | `2026-11-08 20:52:18` |
-| **HaGeZi's Pop-Up Ads** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-popupads.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-popupads.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-popupads.txt) | `2026-11-08 20:52:18` |
-| **HaGeZi's Threat Intelligence Feeds** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-tif.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-tif.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-tif.txt) | `2026-11-08 20:52:18` |
-| **ShadowWhisperer's Tracking** | [Source](https://cdn.jsdelivr.net/gh/ShadowWhisperer/BlockLists@latest/Lists/Tracking) | [hosts.domi](https://hosts.domi.my.id/filters/shadowwhisperer-tracking.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/shadowwhisperer-tracking.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/shadowwhisperer-tracking.txt) | `2026-11-08 20:52:18` |
+| **HaGeZi's Anti Piracy** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/anti.piracy.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-anti-piracy.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-anti-piracy.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-anti-piracy.txt) | `2026-11-09 03:52:14` |
+| **HaGeZi's DoH/VPN/Tor/Proxy Bypass** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh-vpn-proxy-bypass.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-doh-vpn-proxy-bypass.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-doh-vpn-proxy-bypass.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-doh-vpn-proxy-bypass.txt) | `2026-11-09 03:52:14` |
+| **HaGeZi's Gambling** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/gambling.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-gambling.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-gambling.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-gambling.txt) | `2026-11-09 03:52:14` |
+| **HaGeZi's Multi Pro** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-pro.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-pro.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-pro.txt) | `2026-11-09 03:52:14` |
+| **HaGeZi's NSFW** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/nsfw.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-nsfw.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-nsfw.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-nsfw.txt) | `2026-11-09 03:52:14` |
+| **HaGeZi's Pop-Up Ads** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-popupads.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-popupads.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-popupads.txt) | `2026-11-09 03:52:14` |
+| **HaGeZi's Threat Intelligence Feeds** | [Source](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/tif.txt) | [hosts.domi](https://hosts.domi.my.id/filters/hagezi-tif.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/hagezi-tif.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/hagezi-tif.txt) | `2026-11-09 03:52:14` |
+| **ShadowWhisperer's Tracking** | [Source](https://cdn.jsdelivr.net/gh/ShadowWhisperer/BlockLists@latest/Lists/Tracking) | [hosts.domi](https://hosts.domi.my.id/filters/shadowwhisperer-tracking.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Elcapitanoe/AIO-FilterList/filters/shadowwhisperer-tracking.txt) | [cdn.domi](https://cdn.domi.my.id/Elcapitanoe/AIO-FilterList/filters/shadowwhisperer-tracking.txt) | `2026-11-09 03:52:14` |
 <!-- AUTOGEN_TABLE_END -->
 
 ---
 
-## Pipeline Architecture
+## How the build works
 
-1. **Ingestion & Mirroring (`scripts/fetch_filters.sh`)**: Fetches upstream sources with bounded concurrency into a staging directory. It rejects empty or obviously invalid responses, applies new mirrors only after every configured download succeeds, and avoids replacing files whose contents are unchanged. Stale mirrors are removed only after a successful full sync.
-2. **Sanitization & Deduplication (`scripts/merge_filters.sh`)**: Processes only sources declared in `config/sources.txt`, normalizes surrounding whitespace and line endings, removes comments and section markers, and deduplicates via `LC_ALL=C sort -u`. An input signature and output checksum allow no-op runs to skip the expensive merge and avoid rewriting the large published list when only upstream metadata changes.
-3. **Documentation Injection (`scripts/update_readme.sh`)**: Replaces dynamic blocks in `README.md` between HTML marker comments (`<!-- AUTOGEN_* -->`), keeping documentation clean without overwriting human-maintained content.
-4. **Validation Suite (`scripts/validate.sh`)**: Verifies shell syntax, configuration schema, mirror presence, and compiled artifact integrity.
+1. **Download sources:** `make fetch` downloads every list in `config/sources.txt` into `filters/`. Downloads are checked before they replace the current copies.
+2. **Combine rules:** `make merge` removes comments and blank lines, normalizes whitespace, and sorts and removes duplicate rules. The result is `AIO_Filter_List.txt`.
+3. **Update project information:** `make readme` refreshes the build statistics and source table in this file. `make website` updates the dashboard data in `site/data.json`.
+4. **Check the output:** `make validate` checks scripts, configuration, and project files. The build target also checks the generated list and build log.
 
-## Website Deployment
+GitHub Actions runs the full download and build every day, when relevant project files change, or when started manually. It commits changed files and publishes the `site/` dashboard to GitHub Pages.
 
-The static dashboard source lives in `site/`. The daily synchronization workflow generates `site/data.json` from the completed filter build, commits the refreshed telemetry with the filter artifacts, and deploys the `site/` directory to GitHub Pages. Pages uses the GitHub Actions publishing source; it does not deploy from the `gh-pages` branch.
+## Build it locally
 
----
+Use Linux or WSL with Bash 4 or newer. You also need `curl`, `jq`, `git`, GNU `find`, standard command-line tools (`awk`, `sort`, `wc`, `grep`, `cmp`), and either `sha256sum` or `shasum`. `make` is optional if you run the scripts directly.
 
-## Local Development & Setup
+### First run
 
-### Prerequisites
-
-- Unix-like environment (Linux, macOS, or WSL)
-- Bash `4.0+`
-- Core utilities (`awk`, `sort`, `wc`, `xargs`) and either `sha256sum` or `shasum`
-- `curl`
-- `jq`
-- `git`
-- `make` (optional, for convenience)
-
-### Quickstart
-
-Clone the repository:
+Clone the repository and enter its directory:
 
 ```bash
 git clone https://github.com/Elcapitanoe/AIO-FilterList.git
 cd AIO-FilterList
 ```
 
-Run pipeline targets:
+Run the offline checks, then build from the checked-in source copies:
 
 ```bash
-# Validate scripts, configuration, and project metadata
-make validate
-# Run offline regression tests
 make test
-# Validate generated artifacts after a build
-./scripts/validate.sh --check-artifacts
+make validate
+make build
+```
 
-# Fetch upstream filter lists into filters/
-make fetch
-# or: ./scripts/fetch_filters.sh
+`make build` does not download upstream lists. It uses the source files included in `filters/`, combines them, updates the README and dashboard data, and validates the generated files.
 
-# Compile and deduplicate into AIO_Filter_List.txt
-make merge
-# or: ./scripts/merge_filters.sh
+To download the latest upstream lists and run the complete pipeline, use:
 
-# Update README.md telemetry and table markers
-make readme
-# or: ./scripts/update_readme.sh
-
-# Execute full pipeline end-to-end
+```bash
 make all
+```
+
+`make all` needs an internet connection. It validates the project, downloads the configured lists, builds the combined list, updates the README and dashboard data, then validates the results.
+
+### Useful commands
+
+```bash
+make help       # Show available commands
+make test       # Run offline pipeline regression tests
+make validate   # Check scripts, source configuration, and project files
+make fetch      # Download the latest configured source lists
+make merge      # Build AIO_Filter_List.txt from local source copies
+make readme     # Refresh the generated README sections
+make website    # Refresh site/data.json
+make build      # Merge, update generated files, and validate
+make all        # Fetch sources, build, update, and validate
 ```
 
 ---
 
-## Adding Upstream Sources
+## Add an upstream source
 
-To register a new upstream list, append an entry to `config/sources.txt` in pipe-delimited format:
+Add one line to `config/sources.txt` using this format:
 
 ```text
 filename.txt|https://upstream.example.com/filter.txt|Display Name
 ```
 
-Rules:
-- Filename must end in `.txt` and be unique within `config/sources.txt`.
-- URL must be a valid HTTP or HTTPS endpoint returning plain text filter rules.
-- Run `make validate` to ensure configuration syntax before committing.
+Use a unique `.txt` filename, an `http://` or `https://` URL, and a display name. Do not use the `|` character inside a field. Then run:
+
+```bash
+make validate
+make fetch
+make build
+```
 
 ---
 
-## Disclaimer & Attribution
+## Attribution
 
-**The maintainer of this repository does not claim ownership or authorship of the upstream filter rules.** This project is strictly an automated aggregation, deduplication, and high-availability mirror utility. All credit and copyright belong to the respective upstream maintainers and open-source communities. Please support the upstream projects listed in the routing table.
+The upstream filter rules belong to their respective authors and projects. This repository collects and mirrors those lists; it does not claim authorship of their rules. Please review and follow each upstream project's license and terms.
 
 ---
 
 ## License
 
-This pipeline code and configuration are licensed under the [MIT License](LICENSE). Aggregated upstream filter lists remain subject to their respective original licenses and terms.
+The project code and configuration in this repository are licensed under the [GNU General Public License v3.0](LICENSE). The upstream filter lists keep their original licenses and terms; the GPL license for this project does not replace those terms.
